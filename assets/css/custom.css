@@ -1,3 +1,32 @@
+/* footer */
 .footer-logo {
-    width: 200px;
+  width: 200px;
+}
+.footer-lungwort {
+  background-color: #081033;
+}
+/* footer */
+
+.banner-lungwort {
+  background: #151845;
+}
+
+.io-lungwort .subscribe-section-s2::before {
+    background-color: #081033;
+}
+
+.io-lungwort .loader-section {
+  background: #151845;
+}
+
+.io-lungwort .section-bg-dark {
+  background: #070c33;
+}
+
+.io-lungwort .section-bg {
+  background: #151845;
+}
+
+.io-lungwort .section-bg-alt {
+  background-color: #081033;
 }
