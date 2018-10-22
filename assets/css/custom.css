@@ -1,3 +1,39 @@
+/* navbar */
+.io-lungwort .site-header.has-fixed .navbar {
+    background: #020207;
+    border-bottom-color: rgba(0, 0, 0, 0.04);
+}
+/* navbar */
+
+/* footer */
 .footer-logo {
-    width: 200px;
+  width: 200px;
+}
+.footer-lungwort {
+  background-color: #0b0c22;
+}
+/* footer */
+
+.banner-lungwort {
+  background: #08091b;
+}
+
+.io-lungwort .section-bg-dark {
+  background-color: #0b0c22;
+}   
+
+.io-lungwort .section-bg {
+  background: #08091b;
+}
+
+.io-lungwort .section-bg-alt {
+  background-color: #0b0c22;
+}
+
+.io-lungwort .subscribe-section-s2::before {
+    background-color: #0b0c22;
+}
+
+.io-lungwort .loader-section {
+  background: #10122d;
 }
