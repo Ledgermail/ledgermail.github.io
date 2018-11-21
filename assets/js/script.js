@@ -592,5 +592,25 @@
       );
 	}
 	
-    
+    $('#mc-embedded-subscribe').submit(function (e) {
+		e.preventDefault();
+	
+		$.ajax({
+			url: 'https://ledgermail.us19.list-manage.com/subscribe?u=6f88f3da82704f1b7fab08d0c&id=9d3dee05ee',
+			type: 'GET',
+			data: $('#mc-embedded-subscribe').serialize(),
+			dataType: 'jsonp',
+			contentType: "application/json; charset=utf-8",
+			success: function (data) {
+			   if (data['result'] != "success") {
+					//ERROR
+					console.log(data['msg']);
+			   } else {
+					//SUCCESS - Do what you like here
+					
+			   }
+			}
+		});
+	});
+
 })(jQuery);
