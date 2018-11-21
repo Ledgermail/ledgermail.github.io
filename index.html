@@ -1308,10 +1308,28 @@
 					</div>
 					<div class="col-lg-6">
 						<div class="gaps size-2x"></div>
-						<form id="subscribe-form" action="form/subscribe.php" method="post" class="subscription-form inline-form-s2">
-							<input type="text" name="youremail" class="input-round-s2 required email" placeholder="Enter your email address">
-							<input type="text" class="d-none" name="form-anti-honeypot" value="">
+						<form id="subscribe-form" action="https://ledgermail.us19.list-manage.com/subscribe/post" method="post" class="subscription-form inline-form-s2">
+
+							<input type="hidden" name="u" value="6f88f3da82704f1b7fab08d0c">
+							<input type="hidden" name="id" value="9d3dee05ee">
+
+							<!-- people should not fill these in and expect good things -->
+							<div class="d-none" aria-label="Please leave the following three fields empty">
+								<label for="b_name">Name: </label>
+								<input type="text" name="b_name" tabindex="-1" value="" placeholder="Freddie" id="b_name">
+
+								<label for="b_email">Email: </label>
+								<input type="email" name="b_email" tabindex="-1" value="" placeholder="youremail@gmail.com" id="b_email">
+
+								<label for="b_comment">Comment: </label>
+								<textarea name="b_comment" tabindex="-1" placeholder="Please comment" id="b_comment"></textarea>
+							</div>
+
+							<input type="email" name="MERGE0" class="input-round-s2 required email" placeholder="Enter your email address">
+							<!-- <input type="text" class="d-none" name="form-anti-honeypot" value=""> -->
 							<button type="submit" class="btn">Subscribe</button>
+							<input type="hidden" name="ht" value="90803b4936b6de4edd192d9537bd0bb7f15fb99c:MTU0Mjc4MDYzNi43Mjcx">
+							<input type="hidden" name="mc_signupsource" value="hosted">
 							<div class="subscribe-results"></div>
 						</form>
 					</div>
