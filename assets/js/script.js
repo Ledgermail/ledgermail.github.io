@@ -592,22 +592,24 @@
       );
 	}
 	
-    $('#mc-embedded-subscribe').submit(function (e) {
+    $('#subscribe-form').submit(function (e) {
 		e.preventDefault();
 	
 		$.ajax({
-			url: 'https://ledgermail.us19.list-manage.com/subscribe?u=6f88f3da82704f1b7fab08d0c&id=9d3dee05ee',
+			url: 'https://ledgermail.us19.list-manage.com/subscribe/post-json?u=6f88f3da82704f1b7fab08d0c&id=9d3dee05ee&c=?',
 			type: 'GET',
-			data: $('#mc-embedded-subscribe').serialize(),
+			data: $('#subscribe-form').serialize(),
 			dataType: 'jsonp',
 			contentType: "application/json; charset=utf-8",
 			success: function (data) {
 			   if (data['result'] != "success") {
 					//ERROR
 					console.log(data['msg']);
+					$(".subscribe-success").hide();
+					$(".subscribe-failed").show();
 			   } else {
-					//SUCCESS - Do what you like here
-					
+					$(".subscribe-failed").hide();
+					$(".subscribe-success").show();
 			   }
 			}
 		});

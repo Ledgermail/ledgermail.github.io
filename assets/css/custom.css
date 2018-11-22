@@ -37,3 +37,11 @@
 .io-lungwort .loader-section {
   background: #10122d;
 }
+
+.subscribe-success {
+  display: none;
+}
+
+.subscribe-failed {
+  display: none;
+}
