@@ -2690,7 +2690,7 @@ label.error { display: none !important; font-size: 13px; margin-top: 5px; color:
 
 .form-message-s2 .input-field .btn { margin-top: 0; }
 
-.subscribe-box { background-image: linear-gradient(35deg, #2b56f5 0%, #16a1ff 100%); border-radius: 6px; padding: 65px 65px; }
+.subscribe-box { background-image: linear-gradient(35deg, #2b56f5 0%, #16a1ff 100%); border-radius: 6px; padding: 45px 65px; }
 
 .subscribe-section-s2 { position: relative; }
 .subscribe-section-s2:before { position: absolute; left: 0; top: 50%; content: ''; height: 1px; width: 100%; background: #e3e7eb; }

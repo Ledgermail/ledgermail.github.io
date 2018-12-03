@@ -45,3 +45,7 @@
 .subscribe-failed {
   display: none;
 }
+
+.team-profile-info > .dark {
+  color: darkblue;
+}
