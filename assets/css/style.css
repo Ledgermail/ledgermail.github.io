@@ -3768,3 +3768,18 @@ label.error { display: none !important; font-size: 13px; margin-top: 5px; color:
 @media only screen and (min-height: 1000px) { .io-jasmine .is-transparent + .banner .banner-content { padding-top: 150px; } }
 @media only screen and (min-width: 768px) and (max-width: 1024px) { .io-jasmine .countdown-box .countdown-time:after, .io-lungwort .countdown-box .countdown-time:after { font-size: 24px; } }
 /** END */
+
+
+.pop-contact-form {
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 50px 20px;
+  background: rgba(10,55,55, 0.5);
+  position: relative;
+  color: #3c3c3c;
+  border-radius: 20px;
+}
+
+.pop-contact-form > .mfp-close {
+  color: white;
+}
