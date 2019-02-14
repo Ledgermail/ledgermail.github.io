@@ -27,6 +27,11 @@
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-129657838-1"
     ></script>
+    <script
+      src="https://www.google.com/recaptcha/api.js?onload=onLoad&render=explicit"
+      async
+      defer
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -63,13 +68,13 @@
       <div class="container-fluid">
         <div class="row no-mg">
           <div class="col-lg-8 offset-lg-2">
-			<h3> Drop a message and we will connect with you.</h3>
+            <h3>Drop a message and we will connect with you.</h3>
             <div class="gaps size-2x"></div>
             <form
               id="p-contact-form"
-              class="form-message form-message-s2 text-left"
-              action="form/contact.php"
-              method="post"
+			  class="form-message form-message-s2 text-left"
+			  action="https://j2cjf2ifhg.execute-api.us-east-2.amazonaws.com/prod/contact-form-email"
+			  method="POST"
               novalidate="novalidate"
             >
               <div class="form-results"></div>
@@ -80,7 +85,7 @@
                 style="visibility: visible; animation-delay: 0.7s;"
               >
                 <input
-                  name="contact-name"
+                  name="name"
                   type="text"
                   placeholder="Your Name"
                   class="input-border required"
@@ -94,7 +99,7 @@
                 style="visibility: visible; animation-delay: 0.8s;"
               >
                 <input
-                  name="contact-email"
+                  name="email"
                   type="email"
                   placeholder="Your Email"
                   class="input-border required email"
@@ -108,7 +113,7 @@
                 style="visibility: visible; animation-delay: 0.9s;"
               >
                 <textarea
-                  name="contact-message"
+                  name="message"
                   placeholder="Your Message"
                   class="txtarea input-border required"
                   aria-required="true"
@@ -125,7 +130,14 @@
                 data-animate="fadeInUp"
                 data-delay="0.5"
                 style="visibility: visible; animation-delay: 1s;"
-              >
+			  >
+			  <div
+				  class="g-recaptcha"
+				  id="contact-pop-captcha"
+                  data-sitekey="6Lf5X5EUAAAAAOsnMMtfxZKXioIOuK1gGLf2vF8E"
+                  data-callback="onSubmitPop"
+                  data-size="invisible"
+                ></div>
                 <button type="submit" class="btn">Submit</button>
               </div>
             </form>
@@ -241,7 +253,10 @@
                       </a>
                     </li> -->
                     <li>
-                      <a class="btn btn-sm btn-outline content-popup" href="#pop-contact-form">
+                      <a
+                        class="btn btn-sm btn-outline content-popup"
+                        href="#pop-contact-form"
+                      >
                         Demo
                       </a>
                     </li>
@@ -475,7 +490,9 @@
                 >
               </li> -->
               <li>
-                <a href="#pop-contact-form" class="btn btn-outline content-popup"
+                <a
+                  href="#pop-contact-form"
+                  class="btn btn-outline content-popup"
                   >Shout out for a demo</a
                 >
               </li>
@@ -697,9 +714,8 @@
             <form
               id="contact-form"
               class="form-message form-message-s2 text-left"
-              action="form/contact.php"
-              method="post"
-              novalidate="novalidate"
+              action="https://j2cjf2ifhg.execute-api.us-east-2.amazonaws.com/prod/contact-form-email"
+              method="POST"
             >
               <div class="form-results"></div>
               <div
@@ -709,7 +725,7 @@
                 style="visibility: visible; animation-delay: 0.7s;"
               >
                 <input
-                  name="contact-name"
+                  name="name"
                   type="text"
                   placeholder="Your Name"
                   class="input-border required"
@@ -723,7 +739,7 @@
                 style="visibility: visible; animation-delay: 0.8s;"
               >
                 <input
-                  name="contact-email"
+                  name="email"
                   type="email"
                   placeholder="Your Email"
                   class="input-border required email"
@@ -737,7 +753,7 @@
                 style="visibility: visible; animation-delay: 0.9s;"
               >
                 <textarea
-                  name="contact-message"
+                  name="message"
                   placeholder="Your Message"
                   class="txtarea input-border required"
                   aria-required="true"
@@ -755,6 +771,13 @@
                 data-delay="1.0"
                 style="visibility: visible; animation-delay: 1s;"
               >
+                <div
+				  class="g-recaptcha"
+				  id="contact-form-captcha"
+                  data-sitekey="6Lf5X5EUAAAAAOsnMMtfxZKXioIOuK1gGLf2vF8E"
+                  data-callback="onSubmit"
+                  data-size="invisible"
+                ></div>
                 <button type="submit" class="btn">Submit</button>
               </div>
             </form>
@@ -797,5 +820,9 @@
     <!-- JavaScript (include all script here) -->
     <script src="assets/js/jquery.bundle.js?ver=142"></script>
     <script src="assets/js/script.js?ver=142"></script>
+    <script src="assets/js/captcha.js"></script>
+    <script>
+    //   onLoad();
+    </script>
   </body>
 </html>

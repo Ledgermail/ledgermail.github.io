@@ -3774,7 +3774,7 @@ label.error { display: none !important; font-size: 13px; margin-top: 5px; color:
   max-width: 850px;
   margin: 30px auto;
   padding: 50px 20px;
-  background: rgba(10,55,55, 0.5);
+  background: rgba(0,0,0, 0.6);
   position: relative;
   color: #3c3c3c;
   border-radius: 20px;
@@ -3782,4 +3782,16 @@ label.error { display: none !important; font-size: 13px; margin-top: 5px; color:
 
 .pop-contact-form > .mfp-close {
   color: white;
+}
+
+.contact-form-error {
+  display: none;
+}
+
+.contact-pop-error {
+  display: none;
+}
+
+.g-recaptcha {
+  display: none;
 }
