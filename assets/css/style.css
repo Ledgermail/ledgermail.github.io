@@ -11979,7 +11979,10 @@ label.error {
   font-weight: 400;
   margin-bottom: 11px;
   color: #08bcf0;
+   padding-bottom: 23px;
+  margin-bottom: 20px;
 }
+
 .features-subtitle-s4 {
   color: #d1ccff;
   display: block;
