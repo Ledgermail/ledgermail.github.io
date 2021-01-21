@@ -1,18 +1,24 @@
 .pricingTable {
-    border: 1px solid #5d4e65;
-    height: 100%;
+    /* border: 1px solid #5d4e65;
     position: relative;
     text-align: center;
-    transition: all .2s ease-in-out;
     margin: 0 -16px;
-    background: #0b0c22;
     padding-bottom: 80px;
+    border-radius: 5px; */
+    padding: 15px;
     border-radius: 5px;
+    height: 100%;
+    transition: all .2s ease-in-out;
+    background: transparent linear-gradient(155deg, #363F4B 0%, #1A1F26 100%);
 }
 
-/* .pricing-row {
+.pricing-row {
 justify-content: space-evenly;
-} */
+}
+
+.pricing-wrapper {
+    padding-bottom: 30px;
+}
 
 .pricing-wrapper:hover {
     z-index: 5;
@@ -22,92 +28,23 @@ justify-content: space-evenly;
 .pricing-wrapper:hover .pricingTable {
     transform: scale(1.035);
     z-index: 5;
-    border-color: #3e2bc5;
 }
 
-/* ***************** Header [start] ***************** */
-.pricingTable .pricingTable-header {
-    padding: 15px 0;
-    border-radius: 5px 5px 50% 50%;
-    margin-bottom: 15px;
-    background: #101127;
-    transition: all .5s ease 0s;
+.p-section {
+    font-size: 0.8em;
 }
 
-.pricing-wrapper:hover .pricingTable-header {
-    background: #3e2bc5;
+.p-features {
+    min-height: 150px;
 }
 
-.pricingTable .pricingTable-header .price-value {
-    line-height: 1;
+.p-section .border-top {
+    border-top: 2px solid #707070;
+    margin-top: 10px;
+    padding-top: 10px;
 }
 
-.pricingTable .pricingTable-header .fa {
-    font-size: 16px;
-    display: none;
+.p-section .heading {
+    font-size: 1rem;
+    color: #259BDD;
 }
-
-.pricingTable .pricingTable-header .price-value .price {
-    font-size: 42px;
-}
-
-.pricingTable .pricingTable-header .price-value .currency {
-    font-size: 22px;
-}
-
-.pricingTable .pricingTable-header .price-value .month {
-    display: block;
-    font-size: 14px;
-    padding: 0px;
-    margin: 10px;
-    color: #a2b4d2;
-}
-
-.pricingTable .offer .offer-name {
-    font-size: 30px;
-}
-
-.pricingTable .offer .offer-s {
-    font-size: 26px;
-    margin: 10px auto;
-    display: block;
-}
-
-/* ***************** Header [end] ***************** */
-
-
-/* ***************** Heading [start] ***************** */
-.pricingTable .heading {
-    letter-spacing: 2px;
-    margin: 40px auto;
-    font-size: 24px;
-    font-weight: 400;
-    margin-bottom: 20px;
-    transition: all .5s ease 0s;
-    text-transform: uppercase;
-}
-
-.pricing-wrapper:hover .heading {
-    color: #3e2bc5;
-}
-/* ***************** Heading [end] ***************** */
-
-
-/* ***************** Heading [start] ***************** */
-.pricingTable .pricingTable-btn {
-    position: absolute;
-    width: 100%;
-    height: 80px;
-    bottom: 0;
-}
-
-.pricingTable .pricingTable-btn a {
-    position: relative;
-    width: max-content;
-    display: block;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-/* ***************** Heading [end] ***************** */

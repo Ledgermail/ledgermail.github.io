@@ -18,7 +18,9 @@
   <link rel="stylesheet" href="assets/css/theme-blue.css?ver=142" />
   <link rel="stylesheet" href="assets/css/custom.css" />
   <link rel="stylesheet" href="assets/css/pricing-table.css">
+  <link rel="stylesheet" href="assets/css/slider.css">
   <link rel="stylesheet" href="assets/css/faq-section.css">
+  <link rel="stylesheet" href="assets/css/intro-video.css">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129657838-1"></script>
@@ -57,15 +59,17 @@
           <h3>Drop a message and we will connect with you.</h3>
           <div class="gaps size-2x"></div>
           <form id="p-contact-form" class="form-message form-message-s2 text-left"
-            action="https://j2cjf2ifhg.execute-api.us-east-2.amazonaws.com/prod/contact-form-email" method="POST"
+            action="https://tqobynyog0.execute-api.us-east-2.amazonaws.com/default/contact-form" method="POST"
             novalidate="novalidate">
-            <div class="form-results"></div>9+
+            <div class="form-results"></div>
+            <input type="hidden" name="dummy" value="dummy">
 
             <div class="input-field animated fadeInUp" data-animate="fadeInUp" data-delay=".2"
               style="visibility: visible; animation-delay: 0.7s;">
               <input name="name" type="text" placeholder="Your Name" class="input-border required"
                 aria-required="true" />
             </div>
+            <input type="hidden" name="website" value="ledgermail-contact">
             <div class="input-field animated fadeInUp" data-animate="fadeInUp" data-delay=".3"
               style="visibility: visible; animation-delay: 0.8s;">
               <input name="email" type="email" placeholder="Your Email" class="input-border required email"
@@ -88,6 +92,17 @@
       </div>
     </div>
   </div>
+
+  <div class="modal fade hero-video-popup" id="hero-video-popup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body p-0">
+            <iframe width="100%" height="600" src="https://www.youtube.com/embed/NTNQMKB0A3A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <header class="site-header is-sticky">
     <div class="navbar navbar-expand-lg is-transparent" id="mainnav">
       <nav class="container">
@@ -120,9 +135,7 @@
             <!-- <li class="nav-item"><a class="nav-link menu-link" href="#whitepaper">Whitepaper</a></li> -->
             <!-- <li class="nav-item"><a class="nav-link menu-link" href="#roadmap">Roadmap</a></li> -->
             <!-- <li class="nav-item"><a class="nav-link menu-link" href="#team">Team</a></li> -->
-            <li class="nav-item">
-              <a class="nav-link menu-link" href="#faq">Faqs</a>
-            </li>
+            <!-- <li class="nav-item"><a class="nav-link menu-link" href="#faq">Faqs</a></li> -->
             <li class="nav-item">
               <a class="nav-link menu-link" href="#contact">Contact</a>
             </li>
@@ -150,30 +163,19 @@
                   integration with O365/GSuite
                 </h1>
                 <!-- <p class="lead">LedgerMail is a decentralised platform which focuses on private and secure emails.</p> -->
-                <p
-                  class="lead animated"
-                  data-animate="fadeInUp"
-                  data-delay=".2"
-                >
+                <p class="lead animated" data-animate="fadeInUp" data-delay=".2">
                   Secure, Encrypt and Prevent your Email Platforms with Power
                   of Blockchain
                 </p>
 
-                <ul
-                  class="btns animated"
-                  data-animate="fadeInUp"
-                  data-delay="1.65"
-                >
+                <ul class="btns animated" data-animate="fadeInUp" data-delay="1.65">
                   <!-- <li>
                     <a href="#contact" class="btn"
                       ><em class="ti ti-files"></em> Demo
                     </a>
                   </li> -->
                   <li>
-                    <a
-                      class="btn btn-sm btn-outline content-popup"
-                      href="#pop-contact-form"
-                    >
+                    <a class="btn btn-sm btn-outline content-popup" href="#pop-contact-form">
                       Demo
                     </a>
                   </li>
@@ -182,16 +184,8 @@
             </div>
             <!-- .col  -->
             <div class="col-lg-5 order-first order-lg-last">
-              <div
-                class="header-image-lg animated"
-                data-animate="fadeInUp"
-                data-delay="1.35"
-              >
-                <img
-                  src="images/header-image.png"
-                  width="500px"
-                  alt="header-image"
-                />
+              <div class="header-image-lg animated" data-animate="fadeInUp" data-delay="1.35">
+                <img src="images/header-image.png" width="500px" alt="header-image" />
               </div>
             </div>
             <!-- .col  -->
@@ -304,6 +298,17 @@
   </div>
   <!-- Start Section -->
 
+
+
+
+
+
+
+
+
+
+
+
   <!-- Start Section -->
   <div class="section section-pad section-bg-alt" id="features">
     <div class="background-shape bs-reverse"></div>
@@ -312,11 +317,7 @@
         <div class="col-lg-6">
           <div class="section-head-s6">
             <!-- <h6 class="heading-sm-s2">How it work</h6> -->
-            <h2
-              class="section-title-s6 animated"
-              data-animate="fadeInUp"
-              data-delay=".1"
-            >
+            <h2 class="section-title-s6 animated" data-animate="fadeInUp" data-delay=".1">
               Best Features
             </h2>
             <p class="animated" data-animate="fadeInUp" data-delay=".2">
@@ -328,196 +329,75 @@
           <div class="gaps size-1x d-none d-md-block"></div>
         </div>
       </div>
-      <div class="row justify-content-center">
-        <div class="col-md-6 col-lg-4 res-m-bttm">
-          <div
-            class="features-box-s4 animated"
-            data-animate="fadeInUp"
-            data-delay=".3"
-          >
-            <div class="features-icon-s4">
-              <img
-                src="images/decentralization.png"
-                style="width: 120px"
-                alt="icon"
-              />
-            </div>
-            <h5 class="features-title-s4">decentralization</h5>
-            <!-- <span class="features-subtitle-s4">decentralization</span> -->
-            <p>
-              We are leveraging Blockchain Technology to store emails on
-              shared ledger with distribution of nodes across Blockchain
-              Network <br />
-              <br />
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 res-m-bttm">
-          <div
-            class="features-box-s4 animated"
-            data-animate="fadeInUp"
-            data-delay=".4"
-          >
-            <div class="features-icon-s4">
-              <img
-                src="images/security.png"
-                style="width: 120px"
-                alt="icon"
-              />
-            </div>
-            <h5 class="features-title-s4">Security</h5>
-            <!-- <span class="features-subtitle-s4"
-              >Attach email address with ledgermail</span
-            > -->
-            <p>
-              We are inheriting all the capabilities of Blockchain Technology
-              to build immutable, tamper-proof and non-hackable service within
-              Decentralized Email Ecosystem
-            </p>
-            <!-- <a href="#" class="features-action"><em class="ti ti-arrow-right"></em></a> -->
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div
-            class="features-box-s4 animated"
-            data-animate="fadeInUp"
-            data-delay=".5"
-          >
-            <div class="features-icon-s4">
-              <img
-                src="images/encryption.png"
-                style="width: 120px"
-                alt="icon"
-              />
-            </div>
-            <h5 class="features-title-s4">Encryption</h5>
-            <!-- <span class="features-subtitle-s4">Encrypted attachments</span> -->
-            <p>
-              Cryptographic algorithms, Asymmetric-Key Mechanism and Hashing
-              Functions to provide highest level of Encryption mechanism.
-              <br />
-              <br />
-            </p>
-            <!-- <a href="#" class="features-action"><em class="ti ti-arrow-right"></em></a> -->
-          </div>
-        </div>
-     
-        <div class="col-md-6 col-lg-4 res-m-bttm">
-          <div
-            class="features-box-s4 animated"
-            data-animate="fadeInUp"
-            data-delay=".3"
-          >
-            <div class="features-icon-s4">
-              <img
-                src="images/privacy.png"
-                style="width: 120px"
-                alt="icon"
-              />
-            </div>
-            <h5 class="features-title-s4">Privacy</h5>
-            <!-- <span class="features-subtitle-s4">Instant Private Emails</span> -->
-            <p>
-              Eliminating centralized governance and using asymmetric
-              cryptography for enhancing the privacy of users. <br />
-              <br />
-            </p>
-            <!-- <a href="#" class="features-action"><em class="ti ti-arrow-right"></em></a> -->
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 res-m-bttm">
-          <div
-            class="features-box-s4 animated"
-            data-animate="fadeInUp"
-            data-delay=".4"
-          >
-            <div class="features-icon-s4">
-              <img
-                src="images/prevention.png"
-                style="width: 120px"
-                alt="icon"
-              />
-            </div>
-            <h5 class="features-title-s4">Prevention</h5>
-            <!-- <span class="features-subtitle-s4"
-              >Attach email address with ledgermail</span
-            > -->
-            <p>
-              No more header manipulation, editing or overwriting to spoof
-              Email ID’s, breach the network and hack the user data.
-            </p>
-          </div>
-        </div>
-      </div>
 
-      <!-- <div class="row">
-        <div class="col-md-4 res-m-bttm">
-          <div
-            class="features-box-s4 animated"
-            data-animate="fadeInUp"
-            data-delay=".3"
-          >
-            <div class="features-icon-s4">
-              <img src="images/lungwort/icon-a.png" alt="icon" />
+      <div class="row text-center feature-container animated" data-animate="fadeInUp" data-delay=".3">
+        <div class="owl-carousel owl-theme">
+          <div class="item first prev">
+            <div class="feature-card features-box-s4">
+              <div class="features-icon-s4">
+                <img src="images/decentralization.png" style="width: 120px; margin:auto" alt="icon" />
+              </div>
+              <h5 class="text-white thin-title">Decentralization</h5>
+              <p class="text-white">
+                We are leveraging Blockchain Technology to store emails on
+                shared ledger with distribution of nodes across Blockchain
+                Network <br />
+                <br />
+              </p>
             </div>
-            <h5 class="features-title-s4">Ultra Secure &amp; Private</h5>
-            <span class="features-subtitle-s4">Instant Private Emails</span>
-            <p>Send secure and private emails, locked with encryption</p>
           </div>
-        </div>
-        <div class="col-md-4 res-m-bttm">
-          <div
-            class="features-box-s4 animated"
-            data-animate="fadeInUp"
-            data-delay=".4"
-          >
-            <div class="features-icon-s4">
-              <img src="images/lungwort/icon-b.png" alt="icon" />
+          <div class="item show">
+            <div class="feature-card features-box-s4">
+              <div class="features-icon-s4">
+                <img src="images/security.png" style="width: 120px; margin:auto" alt="icon" />
+              </div>
+              <h5 class="text-white thin-title">Security</h5>
+              <p class="text-white">
+                We are inheriting all the capabilities of Blockchain Technology
+                to build immutable, tamper-proof and non-hackable service within
+                Decentralized Email Ecosystem
+              </p>
             </div>
-            <h5 class="features-title-s4">Use Existing Email Address</h5>
-            <span class="features-subtitle-s4"
-              >Attach email address with ledgermail</span
-            >
-            <p>Send and receive emails to your existing email address.</p>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div
-            class="features-box-s4 animated"
-            data-animate="fadeInUp"
-            data-delay=".5"
-          >
-            <div class="features-icon-s4">
-              <img src="images/lungwort/icon-c.png" alt="icon" />
+          <div class="item next">
+            <div class="feature-card features-box-s4">
+              <div class="features-icon-s4">
+                <img src="images/encryption.png" style="width: 120px; margin:auto" alt="icon" />
+              </div>
+              <h5 class="text-white thin-title">Encryption</h5>
+              <p class="text-white">
+                Cryptographic algorithms, Asymmetric-Key Mechanism and Hashing
+                Functions to provide highest level of Encryption mechanism.
+                <br />
+                <br />
+              </p>
             </div>
-            <h5 class="features-title-s4">Ultra secure attachments</h5>
-            <span class="features-subtitle-s4">Encrypted attachments</span>
-            <p>
-              The attachemnts are encrypted and stored on a decentralised
-              network.
-            </p>
           </div>
-        </div>
-      </div> -->
-
-      <div class="gaps size-2x"></div>
-      <div class="gaps size-1x d-none d-md-block"></div>
-      <div class="row text-center">
-        <div class="col-md-12">
-          <ul class="btns animated" data-animate="fadeInUp" data-delay=".6">
-            <!-- <li>
-              <a href="#coming-soon" class="btn content-popup"
-                >Let's Get in Touch</a
-              >
-            </li> -->
-            <li>
-              <a
-                href="#pop-contact-form"
-                class="btn btn-outline content-popup"
-                >Shout out for a demo</a
-              >
-            </li>
-          </ul>
+          <div class="item">
+            <div class="feature-card features-box-s4">
+              <div class="features-icon-s4">
+                <img src="images/privacy.png" style="width: 120px; margin:auto" alt="icon" />
+              </div>
+              <h5 class="text-white thin-title">Privacy</h5>
+              <p class="text-white">
+                Eliminating centralized governance and using asymmetric
+                cryptography for enhancing the privacy of users. <br />
+                <br />
+              </p>
+            </div>
+          </div>
+          <div class="item last">
+            <div class="feature-card features-box-s4">
+              <div class="features-icon-s4">
+                <img src="images/prevention.png" style="width: 120px; margin:auto" alt="icon" />
+              </div>
+              <h5 class="text-white thin-title">Prevention</h5>
+              <p class="text-white">
+                No more header manipulation, editing or overwriting to spoof
+                Email ID’s, breach the network and hack the user data.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -654,54 +534,9 @@
     <!-- .conatiner  -->
   </div>
 
-  <!-- Start Section -->
-  <section class="section section-pad no-pb section-bg">
-    <div class="container">
-      <div class="row align-items-center justify-content-between">
-        <div class="col-md-6">
-          <div class="res-m-btm animated" data-animate="fadeInUp" data-delay=".1">
-            <!-- <img src="images/asset_3.png" alt="graph" /> -->
-            IMAGE
-          </div>
-        </div>
-        <!-- .col  -->
-        <div class="col-md-6 order-md-first order-last">
-          <div class="text-block">
-            <h2 class="animated" data-animate="fadeInUp" data-delay=".3">
-              Customization
-            </h2>
-            <h6 class="heading-sm-s2 animated" data-animate="fadeInUp" data-delay=".2"> </h6>
-            <p>&nbsp;</p>
-            <p class="animated" data-animate="fadeInUp" data-delay=".4">
-              Customization of LedgerMail UI as per email platform
-            </p>
-            <p class="animated" data-animate="fadeInUp" data-delay=".5">
-              Customization of LedgerMail functionalities for Chat and Messaging
-            </p>
-            <p class="animated" data-animate="fadeInUp" data-delay=".6">
-              On-board users at scale without worrying about email domain
-            </p>
-            <p class="animated" data-animate="fadeInUp" data-delay=".7">
-              Easy integration with Web Applications
-            </p>
-            <p class="animated" data-animate="fadeInUp" data-delay=".8">
-              Develop LedgerMail Ecosystem to transfer decentralized emails
-            </p>
-            <p class="animated" data-animate="fadeInUp" data-delay=".9">
-              Mobile Application <b>coming soon</b> – Android and iOS
-            </p>
-          </div>
-        </div>
-        <!-- .col  -->
-      </div>
-      <!-- .row  -->
-    </div>
-    <!-- .conatiner  -->
-  </section>
-  <!-- Start Section -->
 
   <!-- Start Section -->
-  <section class="section section-pad section-bg">
+  <section class="section section-pad no-pb section-bg">
     <div class="container">
       <div class="row align-items-center justify-content-between">
         <div class="col-md-6">
@@ -714,43 +549,174 @@
         <div class="col-md-6">
           <div class="text-block">
             <h2 class="animated" data-animate="fadeInUp" data-delay=".2">
-              Commercialization
+              Integration with O365/Gmail
             </h2>
-            <h6 class="heading-sm-s2 animated" data-animate="fadeInUp" data-delay=".3"> </h6>
-            <p>&nbsp;</p>
             <p class="animated" data-animate="fadeInUp" data-delay=".4">
-              Commercialization for existing user base
+              <span class="bullet-point"><span class="bp-blur"></span></span>&ensp;
+              Easy Integration through Browser Extension
             </p>
             <p class="animated" data-animate="fadeInUp" data-delay=".5">
-              &emsp;-&ensp; For inter-user communication
+              <span class="bullet-point"><span class="bp-blur"></span></span>&ensp;
+              Seamless User Experience and Hassle Free operations
             </p>
             <p class="animated" data-animate="fadeInUp" data-delay=".6">
-              &emsp;-&ensp; PaaS for LedgerMail
+              <span class="bullet-point"><span class="bp-blur"></span></span>&ensp;
+              No need of Email Migration
             </p>
             <p class="animated" data-animate="fadeInUp" data-delay=".7">
-              &emsp;-&ensp; Competitive Advantage
+              <span class="bullet-point"><span class="bp-blur"></span></span>&ensp;
+              No need of changing email ID, email domain, email alias and email platform
             </p>
             <p class="animated" data-animate="fadeInUp" data-delay=".8">
-              &emsp;-&ensp; Value added and must have security service
+              <span class="bullet-point"><span class="bp-blur"></span></span>&ensp;
+              Image showing integration with Gmail and Outlook
             </p>
-            <p class="animated" data-animate="fadeInUp" data-delay=".9">
-              &emsp;-&ensp; Commercialization factors such as email ID, email transfer, storage capacity, support
-            </p>
+            <ul class="btns animated" data-animate="fadeInUp" data-delay=".9">
+              <li>
+                <p>
+                  Use Existing Infrastructure and Cloud Storage for Emails, no need to upgrade GSuite/O365 Plans,
+                  <a href="#pop-contact-form" class="content-popup">Talk to us on How?</a>
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
         <!-- .col  -->
       </div>
-      <!-- .row  -->
-      <div class="gaps size-2x"></div>
-      <div class="gaps size-1x d-none d-md-block"></div>
-      <div class="row text-center">
-        <div class="col-md-12">
-          <ul class="btns animated" data-animate="fadeInUp" data-delay=".6">
-            <!-- <li>
-                <a href="#coming-soon" class="btn content-popup"
-                  >Let's Get in Touch</a
-                >
-              </li> -->
+    </div>
+    <!-- .conatiner  -->
+  </section>
+  <!-- Start Section -->
+
+
+
+
+  <section class="section section-pad no-pb section-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <div class="section-head-s6">
+            <h2 class="section-title-s6 animated" data-animate="fadeInUp" data-delay=".1">
+              How Ledger Mail Works
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5 animated" data-animate="fadeInUp" data-delay=".2">
+        <div class="col">
+          <div class="intro-video">
+            <img src="./images/hero.jpg" alt="LedgerMail">
+            <button class="intro-btn" data-toggle="modal" data-target="#hero-video-popup">play</button>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-3 text-center animated" data-animate="fadeInUp" data-delay=".3">
+          <div class="info">
+            <!-- <img src="/images/asset_4.png" > -->
+            IMAGE <br>
+            Enable Ledger Mail Extension
+          </div>
+        </div>
+        <div class="col-md-3 text-center animated" data-animate="fadeInUp" data-delay=".4">
+          <div class="info">
+            <!-- <img src="/images/asset_4.png" > -->
+            IMAGE <br>
+            Login with existing email ID
+          </div>
+        </div>
+        <div class="col-md-3 text-center animated" data-animate="fadeInUp" data-delay=".5">
+          <div class="info">
+            <!-- <img src="/images/asset_4.png" > -->
+            IMAGE <br>
+            Key Phrase for login
+          </div>
+        </div>
+        <div class="col-md-3 text-center animated" data-animate="fadeInUp" data-delay=".6">
+          <div class="info">
+            <!-- <img src="/images/asset_4.png" > -->
+            IMAGE <br>
+            Easy UI and UX
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- Start Section -->
+  <section class="section section-pad section-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="section-head-s6">
+            <h2 class="section-title-s6 animated" data-animate="fadeInUp" data-delay=".1">
+              Customization and Commercialization
+            </h2>
+          </div>
+          <div class="gaps size-2x"></div>
+          <div class="gaps size-1x d-none d-md-block"></div>
+        </div>
+      </div>
+
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md-6">
+          <div class="res-m-btm animated" data-animate="fadeInUp" data-delay=".2">
+            <!-- <img src="images/asset_4.png" alt="graph" /> -->
+            IMAGE
+          </div>
+        </div>
+        <!-- .col  -->
+        <div class="col-md-6">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs tab-nav animated" data-animate="fadeInUp" data-delay=".3">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#customization">Customization</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ml-4" data-toggle="tab" href="#commercialization">Commercialization</a>
+            </li>
+
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div id="customization" class="container tab-pane active"><br>
+              <ul class="tab-ul">
+                <li class="animated" data-animate="fadeInUp" data-delay=".3">
+                  Customization of LedgerMail UI as per email platform</li>
+                <li class="animated" data-animate="fadeInUp" data-delay=".4">
+                  Customization of LedgerMail functionalities for Chat and Messaging</li>
+                <li class="animated" data-animate="fadeInUp" data-delay=".5">
+                  On-board users at scale without worrying about email domain</li>
+                <li class="animated" data-animate="fadeInUp" data-delay=".6">
+                  Easy integration with Web Applications</li>
+                <li class="animated" data-animate="fadeInUp" data-delay=".7">
+                  Develop LedgerMail Ecosystem to transfer decentralized emails</li>
+              </ul>
+            </div>
+            <div id="commercialization" class="container tab-pane fade"><br>
+              <ul class="tab-ul">
+                <li class="animated" data-animate="fadeInUp" data-delay=".3">
+                  For inter-user communication</li>
+                <li class="animated" data-animate="fadeInUp" data-delay=".4">
+                  PaaS for LedgerMail</li>
+                <li class="animated" data-animate="fadeInUp" data-delay=".5">
+                  Competitive Advantage</li>
+                <li class="animated" data-animate="fadeInUp" data-delay=".6">
+                  Value added and must have security service</li>
+                <li class="animated" data-animate="fadeInUp" data-delay=".7">
+                  Commercialization factors such as email ID, email transfer, storage capacity, support</li>
+              </ul>
+            </div>
+          </div>
+          <div class="gaps size-2x"></div>
+
+          <ul class="btns animated" data-animate="fadeInUp" data-delay=".3">
             <li>
               <p>
                 Do you have huge user base and want to partner with us,
@@ -760,6 +726,9 @@
           </ul>
         </div>
       </div>
+      <!-- .col  -->
+    </div>
+    <!-- .row  -->
     </div>
     <!-- .conatiner  -->
   </section>
@@ -787,193 +756,181 @@
         </div>
       </div>
 
-
       <div class="row pricing-row">
 
-        <div class="col-md col-sm-6">
+        <div class="col-md-4 col-sm-6">
           <div class="animated h-100 pricing-wrapper" data-animate="fadeInUp" data-delay=".3">
             <div class="pricingTable">
               <div class="pricingTable-header">
-                <i class="fa fa-adjust"></i>
-                <div class="price-value">
-                  <span class="currency">$</span>
-                  <span class="price">0750</span>
-                  <span class="month">per month</span>
+                <h3 class="heading">Basic</h3>
+                <div class="main-price price-value">
+                  <span class="price">$750</span>
+                  <span class="month">/ month</span>
+                </div>
+                <div class="pricing-content p-section">
+                  <span>upto 500 users</span> <br>
+                  <span>$1.5 per person per month.</span>
                 </div>
               </div>
-              <h3 class="heading">Basic</h3>
-              <div class="pricing-content">
-                <ul>
-                  <li>Upto <b>500</b> Users</li>
-                  <li><b>$1.50</b> per user per month</li>
-                </ul>
+              <div class="p-section p-features">
+                <div class="border-top"></div>
+                <div class="heading">Features</div>
+                <div class="">
+                  Unlimited email exchange.
+                </div>
               </div>
-              <div class="pricingTable-btn">
-                <a class="btn btn-outline content-popup" href="#">CONTACT US</a>
+              <div class="p-section">
+                <div class="border-top"></div>
+                <div class="heading">Support</div>
+                <div class="">
+                  Bug fix and applying updates.
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-md col-sm-6">
+        <div class="col-md-4 col-sm-6">
           <div class="animated h-100 pricing-wrapper" data-animate="fadeInUp" data-delay=".4">
             <div class="pricingTable">
               <div class="pricingTable-header">
-                <i class="fa fa-briefcase"></i>
-                <div class="price-value">
-                  <span class="currency">$</span>
-                  <span class="price">1000</span>
-                  <span class="month">per month</span>
+                <h3 class="heading">Standard</h3>
+                <div class="main-price price-value">
+                  <span class="price">$1000</span>
+                  <span class="month">/ month</span>
+                </div>
+                <div class="pricing-content p-section">
+                  <span>upto 1000 users</span> <br>
+                  <span>$1 per person per month.</span>
                 </div>
               </div>
-              <h3 class="heading">Standard</h3>
-              <div class="pricing-content">
-                <ul>
-                  <li>Upto <b>1000</b> Users</li>
-                  <li><b>$1.00</b> per user per month</li>
-                </ul>
+              <div class="p-section p-features">
+                <div class="border-top"></div>
+                <div class="heading">Features</div>
+                <div> Unlimited email exchange. </div>
+                <div>Unlimited Storage.</div>
               </div>
-              <div class="pricingTable-btn">
-                <a class="btn btn-outline" href="#">CONTACT US</a>
+              <div class="p-section">
+                <div class="border-top"></div>
+                <div class="heading">Support</div>
+                <div> Bug fix and applying updates. </div>
+                <div>Integration of new accounts and users.</div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-md col-sm-6">
+        <div class="col-md-4 col-sm-6">
           <div class="animated h-100 pricing-wrapper" data-animate="fadeInUp" data-delay=".5">
             <div class="pricingTable">
               <div class="pricingTable-header">
-                <i class="fa fa-cube"></i>
-                <div class="price-value">
-                  <span class="currency">$</span>
-                  <span class="price">1875</span>
-                  <span class="month">per month</span>
+                <h3 class="heading">Enterprise</h3>
+                <div class="main-price price-value">
+                  <span class="price">$1875</span>
+                  <span class="month">/ month</span>
+                </div>
+                <div class="pricing-content p-section">
+                  <span>upto 2500 users</span> <br>
+                  <span>$0.75 per person per month.</span>
                 </div>
               </div>
-              <h3 class="heading">Enterprise</h3>
-              <div class="pricing-content">
-                <ul>
-                  <li>Upto <b>2500</b> Users</li>
-                  <li><b>$0.75</b> per user per month</li>
-                </ul>
+              <div class="p-section p-features">
+                <div class="border-top"></div>
+                <div class="heading">Features</div>
+                <div> Unlimited email exchange. </div>
+                <div>Unlimited Storage.</div>
+                <div>Unlimited domains.</div>
               </div>
-              <div class="pricingTable-btn">
-                <a class="btn btn-outline content-popup" target="_blank" href="/pricing.html">CONTACT US</a>
+              <div class="p-section">
+                <div class="border-top"></div>
+                <div class="heading">Support</div>
+                <div> Bug fix and applying updates. </div>
+                <div>Integration of new accounts and users.</div>
+                <div>Applying Cosmetic change to UI</div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-md col-sm-6">
+
+        <div class="col-md-4 col-sm-6">
           <div class="animated h-100 pricing-wrapper" data-animate="fadeInUp" data-delay=".6">
             <div class="pricingTable">
               <div class="pricingTable-header">
-                <i class="fa fa-gem"></i>
-                <div class="price-value">
-                  <span class="currency">$</span>
-                  <span class="price">2500</span>
-                  <span class="month">per month</span>
+                <h3 class="heading">Elite</h3>
+                <div class="main-price price-value">
+                  <span class="price">$2500</span>
+                  <span class="month">/ month</span>
+                </div>
+                <div class="pricing-content p-section">
+                  <span>upto 5000 users</span> <br>
+                  <span>$0.5 per person per month.</span>
                 </div>
               </div>
-              <h3 class="heading">Elite</h3>
-              <div class="pricing-content">
-                <ul>
-                  <li>Upto <b>5000</b> Users</li>
-                  <li><b>$0.50</b> per user per month</li>
-                </ul>
+              <div class="p-section p-features">
+                <div class="border-top"></div>
+                <div class="heading">Features</div>
+                <div> Unlimited email exchange. </div>
+                <div>Unlimited Storage.</div>
+                <div>Unlimited domains.</div>
+                <div>Unlimited email alias.</div>
               </div>
-              <div class="pricingTable-btn">
-                <a class="btn btn-outline content-popup" href="#">CONTACT US</a>
+              <div class="p-section">
+                <div class="border-top"></div>
+                <div class="heading">Support</div>
+                <div> Bug fix and applying updates. </div>
+                <div>Integration of new accounts and users.</div>
+                <div>Applying Cosmetic change to UI</div>
+                <div>LedgerMail crash or down</div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-md col-sm-6">
+        <div class="col-md-4 col-sm-6">
           <div class="animated h-100 pricing-wrapper" data-animate="fadeInUp" data-delay=".7">
             <div class="pricingTable">
-              <div class="pricingTable-header offer">
-                <i class="fa fa-users"></i>
-                <div class="price-value">
-                  <span class="offer-name">Special</span>
-                  <span class="offer-s">offer</span>
+              <div class="pricingTable-header">
+                <h3 class="heading">Corporate</h3>
+                <div class="main-price price-value">
+                  <span class="price">$2500</span>
+                  <span class="month">/ month</span>
+                </div>
+                <div class="pricing-content p-section">
+                  <span>more than 5000 users</span> <br>
+                  <span>We have special offer for you!</span>
                 </div>
               </div>
-              <h3 class="heading">Corporate</h3>
-              <div class="pricing-content">
-                <ul>
-                  <li>more than <b>5000</b> Users?</li>
-                  <li>talk to us we have special offer for you!</li>
-                </ul>
+              <div class="p-section p-features">
+                <div class="border-top"></div>
+                <div class="heading">Features</div>
+                <div> Unlimited email exchange. </div>
+                <div>Unlimited Storage.</div>
+                <div>Unlimited domains.</div>
+                <div>Unlimited email alias.</div>
+                <div>Early Access to new features.</div>
               </div>
-              <div class="pricingTable-btn">
-                <a class="btn btn-outline content-popup" href="#">CONTACT US</a>
+              <div class="p-section">
+                <div class="border-top"></div>
+                <div class="heading">Support</div>
+                <div> Bug fix and applying updates. </div>
+                <div>Integration of new accounts and users.</div>
+                <div>Applying Cosmetic change to UI</div>
+                <div>LedgerMail crash or down</div>
+                <div>Applying LedgerMail updates</div>
               </div>
             </div>
           </div>
         </div>
 
+
+
+
+
+
+
       </div>
 
-      <div class="gaps size-2x"></div>
-      <div class="gaps size-2x"></div>
-      <div class="gaps size-1x d-none d-md-block"></div>
-
-
-      <div class="row">
-        <div class="col-md-3 col-sm-6">
-          <div class="text-block">
-            <h2 class="animated" data-animate="fadeInUp" data-delay=".1">
-              Features
-            </h2>
-            <h6 class="heading-sm-s2 animated" data-animate="fadeInUp" data-delay=".2"></h6>
-            <p>&nbsp;</p>
-            <p class="animated" data-animate="fadeInUp" data-delay=".3">
-              Unlimited email exchange.
-            </p>
-            <p class="animated" data-animate="fadeInUp" data-delay=".4">
-              Unlimited Storage.
-            </p>
-            <p class="animated" data-animate="fadeInUp" data-delay=".5">
-              Unlimited domains.
-            </p>
-            <p class="animated" data-animate="fadeInUp" data-delay=".6">
-              Unlimited email alias.
-            </p>
-            <p class="animated" data-animate="fadeInUp" data-delay=".7">
-              Early Access to new features
-            </p>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="text-block">
-            <h2 class="animated" data-animate="fadeInUp" data-delay=".1">
-              Support
-            </h2>
-            <h6 class="heading-sm-s2 animated" data-animate="fadeInUp" data-delay=".2"></h6>
-            <p>&nbsp;</p>
-            <p class="animated" data-animate="fadeInUp" data-delay=".3">
-              Bug fix and applying updates
-            </p>
-            <p class="animated" data-animate="fadeInUp" data-delay=".4">
-              Integration of new accounts and users
-            </p>
-            <p class="animated" data-animate="fadeInUp" data-delay=".5">
-              Applying Cosmetic change to UI
-            </p>
-            <p class="animated" data-animate="fadeInUp" data-delay=".6">
-              LedgerMail crash or down
-            </p>
-            <p class="animated" data-animate="fadeInUp" data-delay=".7">
-              Applying LedgerMail updates
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          IMAGE
-        </div>
-      </div>
       <div class="gaps size-2x"></div>
       <div class="gaps size-1x d-none d-md-block"></div>
       <div class="row text-center">
@@ -981,7 +938,7 @@
           <ul class="btns animated" data-animate="fadeInUp" data-delay=".6">
             <li>
               <p>
-                <a href="#contact" class="menu-link btn">
+                <a href="./pricing.html" target="_blank" class="menu-link btn">
                   Connect with our Sales team
                 </a>
               </p>
@@ -1125,7 +1082,7 @@
           <!-- <div class="gaps size-3x d-none d-md-block"></div> -->
           <div class="gaps size-2x"></div>
           <form id="contact-form" class="form-message form-message-s2 text-left"
-            action="https://j2cjf2ifhg.execute-api.us-east-2.amazonaws.com/prod/contact-form-email" method="POST">
+            action="https://tqobynyog0.execute-api.us-east-2.amazonaws.com/default/contact-form" method="POST">
             <div class="form-results"></div>
             <div class="input-field animated fadeInUp" data-animate="fadeInUp" data-delay=".7"
               style="visibility: visible; animation-delay: 0.7s;">
@@ -1187,6 +1144,8 @@
   <script src="assets/js/jquery.bundle.js?ver=142"></script>
   <script src="assets/js/script.js?ver=142"></script>
   <script src="assets/js/captcha.js"></script>
+  <script src="assets/js/slider-script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
   <script>
     //   onLoad();
   </script>

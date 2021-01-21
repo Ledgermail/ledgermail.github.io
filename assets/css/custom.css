@@ -1,18 +1,64 @@
 /* navbar */
 .io-lungwort .site-header.has-fixed .navbar {
-    background: #020207;
-    border-bottom-color: rgba(0, 0, 0, 0.04);
+  background: #020207;
+  border-bottom-color: rgba(0, 0, 0, 0.04);
 }
+
 /* navbar */
+
 
 /* footer */
 .footer-logo {
   width: 200px;
 }
+
 .footer-lungwort {
   background-color: #0b0c22;
 }
+
 /* footer */
+
+/* tab */
+.tab-nav {
+  border: none;
+}
+
+.tab-nav .nav-item .nav-link {
+  background: transparent;
+  color: white;
+  font-weight: 500;
+  border: none;
+  padding: 5px 0;
+  border-bottom: 2px solid transparent;
+}
+
+.tab-nav .nav-item .active {
+  border-color:  #1A8FD8;
+}
+
+.tab-ul li {
+  list-style: lower-alpha;
+}
+
+/* tab */
+
+.bullet-point {
+  background: #FFFFFF;
+  opacity: 1;
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  position: relative;
+  border-radius: 50%;
+}
+
+.bullet-point .bp-blur {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: white;
+  filter: blur(5px);
+}
 
 .banner-lungwort {
   background: #08091b;
@@ -20,7 +66,7 @@
 
 .io-lungwort .section-bg-dark {
   background-color: #0b0c22;
-}   
+}
 
 .io-lungwort .section-bg {
   background: #08091b;
@@ -31,7 +77,7 @@
 }
 
 .io-lungwort .subscribe-section-s2::before {
-    background-color: #0b0c22;
+  background-color: #0b0c22;
 }
 
 .io-lungwort .loader-section {
@@ -46,6 +92,6 @@
   display: none;
 }
 
-.team-profile-info > .dark {
+.team-profile-info>.dark {
   color: darkblue;
 }
