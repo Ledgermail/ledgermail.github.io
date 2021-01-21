@@ -1,10 +1,4 @@
 .pricingTable {
-    /* border: 1px solid #5d4e65;
-    position: relative;
-    text-align: center;
-    margin: 0 -16px;
-    padding-bottom: 80px;
-    border-radius: 5px; */
     padding: 15px;
     border-radius: 5px;
     height: 100%;
@@ -13,7 +7,7 @@
 }
 
 .pricing-row {
-justify-content: space-evenly;
+    justify-content: space-evenly;
 }
 
 .pricing-wrapper {
@@ -47,4 +41,20 @@ justify-content: space-evenly;
 .p-section .heading {
     font-size: 1rem;
     color: #259BDD;
+}
+
+.pricingTable-header .heading {
+    text-align: center;
+    color: #FFA400;
+}
+
+.pricingTable-header .main-price {
+    text-align: center;
+    color: #F3F3F3;
+    padding-bottom: 15px;
+}
+
+.pricingTable-header .main-price .price {
+    font-weight: 700;
+    font-size: 1.3em;
 }
