@@ -23,6 +23,31 @@
   border: none;
 }
 
+/* tab */
+
+.text-blue {
+  color: #259BDD !important;
+}
+
+.working-image-wrapper img {
+  height: 150px;
+}
+
+@media (max-width: 991px) {
+  .working-image-wrapper img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 425px) {
+  .working-image-wrapper img {
+    height: 80px;
+    width: auto;
+  }
+}
+
 .tab-nav .nav-item .nav-link {
   background: transparent;
   color: white;
@@ -33,7 +58,7 @@
 }
 
 .tab-nav .nav-item .active {
-  border-color:  #1A8FD8;
+  border-color: #1A8FD8;
 }
 
 .tab-ul li {
