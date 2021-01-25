@@ -1,0 +1,60 @@
+.pricingTable {
+    padding: 15px;
+    border-radius: 5px;
+    height: 100%;
+    transition: all .2s ease-in-out;
+    background: transparent linear-gradient(155deg, #363F4B 0%, #1A1F26 100%);
+}
+
+.pricing-row {
+    justify-content: space-evenly;
+}
+
+.pricing-wrapper {
+    padding-bottom: 30px;
+}
+
+.pricing-wrapper:hover {
+    z-index: 5;
+    position: relative;
+}
+
+.pricing-wrapper:hover .pricingTable {
+    transform: scale(1.035);
+    z-index: 5;
+}
+
+.p-section {
+    font-size: 0.8em;
+}
+
+.p-features {
+    min-height: 150px;
+}
+
+.p-section .border-top {
+    border-top: 2px solid #707070;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.p-section .heading {
+    font-size: 1rem;
+    color: #259BDD;
+}
+
+.pricingTable-header .heading {
+    text-align: center;
+    color: #FFA400;
+}
+
+.pricingTable-header .main-price {
+    text-align: center;
+    color: #F3F3F3;
+    padding-bottom: 15px;
+}
+
+.pricingTable-header .main-price .price {
+    font-weight: 700;
+    font-size: 1.3em;
+}
