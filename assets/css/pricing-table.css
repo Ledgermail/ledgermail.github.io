@@ -1,3 +1,102 @@
+.pricing-container {
+    border-radius: 5px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+}
+
+.pricing-container .left-col {
+    border-right: 2px solid #dddddd;
+    display: block;
+    border-bottom: 0;
+}
+
+.pricing-container .left-tab {
+    display: block;
+    background: transparent linear-gradient(155deg, #363F4B 0%, #1A1F26 100%);
+    width: 250px;
+    margin: 10px 50px 10px 10px;
+    padding: 30px 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    text-align: center;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.pricing-container .left-tab:hover {
+    border-color: #dddddd;
+}
+
+.pricing-container .left-col .active,
+.pricing-container .left-col .active:hover {
+    border-color: #259BDD;
+    color: white;
+}
+
+.pricing-container .left-col .active::after {
+    content: "";
+    position: absolute;
+    right: -35px;
+    border-top: 10px solid transparent;
+    border-left: 20px solid #259BDD;
+    border-bottom: 10px solid transparent;
+}
+
+.pricing-container .col-detail {
+    margin-left: 50px;
+}
+
+.pricing-container .col-detail .pricingTable {
+    min-width: 250px;
+}
+
+.pricing-container .tab-pane {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 576px) {
+    .pricing-container {
+        display: block;
+    }
+}
+
+.price-title {
+    width: 100%;
+    background: transparent;
+    color: white;
+    outline: none !important;
+    border: none;
+    border-bottom: 1px solid;
+    display: flex;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    justify-content: space-between;
+    padding: 10px 5px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .pricingTable {
     padding: 15px;
     border-radius: 5px;
@@ -11,7 +110,8 @@
 }
 
 .pricing-wrapper {
-    padding-bottom: 30px;
+    margin: 5px auto;
+    max-width: 300px;
 }
 
 .pricing-wrapper:hover {
@@ -19,10 +119,10 @@
     position: relative;
 }
 
-.pricing-wrapper:hover .pricingTable {
+/* .pricing-wrapper:hover .pricingTable {
     transform: scale(1.035);
     z-index: 5;
-}
+} */
 
 .p-section {
     font-size: 0.8em;
@@ -57,4 +157,18 @@
 .pricingTable-header .main-price .price {
     font-weight: 700;
     font-size: 1.3em;
+}
+
+.mobile-only {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .pc-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+    }
 }
