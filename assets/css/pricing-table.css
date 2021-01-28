@@ -181,19 +181,22 @@
 }
 
 .table-2 .pricingTable-header {
-    display: flex;
+    /* display: flex; */
     align-items: baseline;
-    border-bottom: 1px solid #ffffff;
-    margin-bottom: 20px;
+    /* border-bottom: 1px solid #ffffff; */
+    /* margin-bottom: 20px; */
 }
 
 .table-2 .pricingTable-header .heading {
     text-align: left;
     margin-bottom: 5px;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .table-2 .pricingTable-header .main-price {
-    margin-left: 15px;
+    /* margin-left: 15px; */
     text-align: left;
     padding-bottom: 5px;
 }
@@ -205,6 +208,12 @@
 
 .table-2 .pricing-details .p-section {
     width: 33%;
+    padding-left: 15px;
+    border-right: 1px solid;
+}
+
+.table-2 .pricing-details .p-section:last-child {
+    border-right: 0;
 }
 
 .shine-border {
