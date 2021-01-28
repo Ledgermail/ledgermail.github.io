@@ -21,8 +21,10 @@
   <link rel="stylesheet" href="assets/css/slider.css">
   <link rel="stylesheet" href="assets/css/faq-section.css">
   <link rel="stylesheet" href="assets/css/intro-video.css">
+
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129657838-1"></script>
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129657838-1"></script>
   <script src="https://www.google.com/recaptcha/api.js?onload=onLoad&render=explicit" async defer></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -32,7 +34,7 @@
     gtag("js", new Date());
 
     gtag("config", "UA-129657838-1");
-  </script>
+  </script> -->
 </head>
 
 <body class="theme-dark io-lungwort" data-spy="scroll" data-target="#mainnav" data-offset="80">
@@ -49,7 +51,6 @@
         </div>
       </div>
     </div>
-  </div>
   </div>
   <div id="pop-contact-form" class="pop-contact-form mfp-hide">
     <button title="Close (Esc)" type="button" class="mfp-close">×</button>
@@ -164,18 +165,12 @@
                   World’s 1<sup>st</sup> Decentralized Email Solution Easy
                   integration with O365/GSuite
                 </h1>
-                <!-- <p class="lead">LedgerMail is a decentralised platform which focuses on private and secure emails.</p> -->
                 <p class="lead animated" data-animate="fadeInUp" data-delay=".2">
                   Secure, Encrypt and Prevent your Email Platforms with Power
                   of Blockchain
                 </p>
 
                 <ul class="btns animated" data-animate="fadeInUp" data-delay="1.65">
-                  <!-- <li>
-                    <a href="#contact" class="btn"
-                      ><em class="ti ti-files"></em> Demo
-                    </a>
-                  </li> -->
                   <li>
                     <a class="btn btn-sm btn-outline content-popup" href="#pop-contact-form">
                       Demo
@@ -187,7 +182,7 @@
             <!-- .col  -->
             <div class="col-lg-5 order-first order-lg-last">
               <div class="header-image-lg animated" data-animate="fadeInUp" data-delay="1.35">
-                <img src="images/header-image-2.svg" width="500px" alt="header-image" />
+                <img src="images/header-image-2.png" width="500px" alt="header-image" />
               </div>
               <!-- .col  -->
             </div>
@@ -595,6 +590,7 @@
 
 
   <section class="section section-pad no-pb section-bg">
+    <img src="/images/mask-2.png" alt="" class="video-mask">
     <div class="container">
       <div class="row">
         <div class="col text-center">
@@ -605,14 +601,16 @@
           </div>
         </div>
       </div>
-      <!-- <div class="row mt-5 animated" data-animate="fadeInUp" data-delay=".2">
+      <div class="row mt-5 animated" data-animate="fadeInUp" data-delay=".2">
         <div class="col">
           <div class="intro-video">
             <img src="./images/hero.jpg" alt="LedgerMail">
-            <button class="intro-btn" data-toggle="modal" data-target="#hero-video-popup">play</button>
+            <button class="intro-btn" data-toggle="modal" data-target="#hero-video-popup">
+              <i class="fas fa-play fa-2x"></i>
+            </button>
           </div>
         </div>
-      </div> -->
+      </div>
       <div class="row mt-5">
         <div class="col-md-3 col-sm-3 col-6 mb-5 text-center animated" data-animate="fadeInUp" data-delay=".3">
           <div class="info">
@@ -675,18 +673,22 @@
       <div class="row align-items-center justify-content-between">
         <div class="col-md-6">
           <div class="res-m-btm animated" data-animate="fadeInUp" data-delay=".2">
-            <img src="images/customization.png" alt="Customization" />
+            <img id="cus-com-img" src="images/customization.png" alt="Customization" />
+            <!-- <img src="images/commercialization.png" alt="Commercialization" /> -->
           </div>
         </div>
+
         <!-- .col  -->
         <div class="col-md-6">
           <!-- Nav tabs -->
           <ul class="nav nav-tabs tab-nav animated" data-animate="fadeInUp" data-delay=".3">
             <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#customization">Customization</a>
+              <a class="nav-link active" data-toggle="tab" onclick="showCustomization()"
+                href="#customization">Customization</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link ml-4" data-toggle="tab" href="#commercialization">Commercialization</a>
+              <a class="nav-link ml-4" data-toggle="tab" onclick="showCommercialization()"
+                href="#commercialization">Commercialization</a>
             </li>
 
           </ul>
@@ -758,188 +760,409 @@
               data.
             </p>
           </div>
-          <div class="gaps size-2x"></div>
-          <div class="gaps size-1x d-none d-md-block"></div>
         </div>
       </div>
 
-      <div class="row pricing-row">
+      <div class="pc-only">
+        <div class="row">
+          <div class="col">
+            <div class="pricing-container">
+              <div class="left-col nav nav-tabs">
+                <a data-toggle="tab" href="#basic_tabpc" class="animated left-tab nav-link active"
+                  data-animate="fadeInUp" data-delay=".3"><span>Basic</span>
+                </a>
+                <a data-toggle="tab" href="#standard_tabpc" class="animated left-tab nav-link" data-animate="fadeInUp"
+                  data-delay=".4"><span>Standard</span>
+                </a>
+                <a data-toggle="tab" href="#enterprise_tabpc" class="animated left-tab nav-link" data-animate="fadeInUp"
+                  data-delay=".5"><span>Enterprise</span>
+                </a>
+                <a data-toggle="tab" href="#elite_tabpc" class="animated left-tab nav-link" data-animate="fadeInUp"
+                  data-delay=".6"><span>Elite</span>
+                </a>
+                <a data-toggle="tab" href="#corporate_tabpc" class="animated left-tab nav-link" data-animate="fadeInUp"
+                  data-delay=".7"><span>Corporate</span>
+                </a>
+              </div>
+              <div id="pricing-pc" class="col-detail tab-content">
+                <div class="animated pricing-wrapper tab-pane active" data-animate="fadeInRight" data-delay=".2"
+                  id="basic_tabpc">
+                  <div class="pricingTable">
+                    <div class="pricingTable-header">
+                      <h3 class="heading">Basic</h3>
+                      <div class="main-price price-value">
+                        <span class="price">$750</span>
+                        <span class="month">/ month</span>
+                      </div>
+                      <div class="pricing-content p-section">
+                        <span>upto 500 users</span> <br>
+                        <span>$1.5 per person / month.</span>
+                      </div>
+                    </div>
+                    <div class="p-section p-features">
+                      <div class="border-top"></div>
+                      <div class="heading">Features</div>
+                      <div class="">
+                        Unlimited email exchange.
+                      </div>
+                    </div>
+                    <div class="p-section">
+                      <div class="border-top"></div>
+                      <div class="heading">Support</div>
+                      <div class="">
+                        Bug fix and applying updates.
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-        <div class="col-md-4 col-6">
-          <div class="animated h-100 pricing-wrapper" data-animate="fadeInUp" data-delay=".3">
-            <div class="pricingTable">
-              <div class="pricingTable-header">
-                <h3 class="heading">Basic</h3>
-                <div class="main-price price-value">
-                  <span class="price">$750</span>
-                  <span class="month">/ month</span>
+
+                <div class="animated pricing-wrapper tab-pane fade" data-animate="fadeInRight" data-delay=".2"
+                  id="standard_tabpc">
+                  <div class="pricingTable">
+                    <div class="pricingTable-header">
+                      <h3 class="heading">Standard</h3>
+                      <div class="main-price price-value">
+                        <span class="price">$1,000</span>
+                        <span class="month">/ month</span>
+                      </div>
+                      <div class="pricing-content p-section">
+                        <span>upto 1,000 users</span> <br>
+                        <span>$1 per person / month.</span>
+                      </div>
+                    </div>
+                    <div class="p-section p-features">
+                      <div class="border-top"></div>
+                      <div class="heading">Features</div>
+                      <div> Unlimited email exchange. </div>
+                      <div>Unlimited Storage.</div>
+                    </div>
+                    <div class="p-section">
+                      <div class="border-top"></div>
+                      <div class="heading">Support</div>
+                      <div> Bug fix and applying updates. </div>
+                      <div>Integration of new accounts and users.</div>
+                    </div>
+                  </div>
                 </div>
-                <div class="pricing-content p-section">
-                  <span>upto 500 users</span> <br>
-                  <span>$1.5 per person / month.</span>
+
+                <div class="animated pricing-wrapper tab-pane fade" data-animate="fadeInRight" data-delay=".2"
+                  id="enterprise_tabpc">
+                  <div class="pricingTable">
+                    <div class="pricingTable-header">
+                      <h3 class="heading">Enterprise</h3>
+                      <div class="main-price price-value">
+                        <span class="price">$1,875</span>
+                        <span class="month">/ month</span>
+                      </div>
+                      <div class="pricing-content p-section">
+                        <span>upto 2,500 users</span> <br>
+                        <span>$0.75 per person / month.</span>
+                      </div>
+                    </div>
+                    <div class="p-section p-features">
+                      <div class="border-top"></div>
+                      <div class="heading">Features</div>
+                      <div> Unlimited email exchange. </div>
+                      <div>Unlimited Storage.</div>
+                      <div>Unlimited domains.</div>
+                    </div>
+                    <div class="p-section">
+                      <div class="border-top"></div>
+                      <div class="heading">Support</div>
+                      <div> Bug fix and applying updates. </div>
+                      <div>Integration of new accounts and users.</div>
+                      <div>Applying Cosmetic change to UI</div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="p-section p-features">
-                <div class="border-top"></div>
-                <div class="heading">Features</div>
-                <div class="">
-                  Unlimited email exchange.
+
+
+                <div class="animated pricing-wrapper tab-pane fade" data-animate="fadeInRight" data-delay=".2"
+                  id="elite_tabpc">
+                  <div class="pricingTable">
+                    <div class="pricingTable-header">
+                      <h3 class="heading">Elite</h3>
+                      <div class="main-price price-value">
+                        <span class="price">$2,500</span>
+                        <span class="month">/ month</span>
+                      </div>
+                      <div class="pricing-content p-section">
+                        <span>upto 5,000 users</span> <br>
+                        <span>$0.5 per person / month.</span>
+                      </div>
+                    </div>
+                    <div class="p-section p-features">
+                      <div class="border-top"></div>
+                      <div class="heading">Features</div>
+                      <div> Unlimited email exchange. </div>
+                      <div>Unlimited Storage.</div>
+                      <div>Unlimited domains.</div>
+                      <div>Unlimited email alias.</div>
+                    </div>
+                    <div class="p-section">
+                      <div class="border-top"></div>
+                      <div class="heading">Support</div>
+                      <div> Bug fix and applying updates. </div>
+                      <div>Integration of new accounts and users.</div>
+                      <div>Applying Cosmetic change to UI</div>
+                      <div>LedgerMail crash or down</div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="p-section">
-                <div class="border-top"></div>
-                <div class="heading">Support</div>
-                <div class="">
-                  Bug fix and applying updates.
+
+
+                <div class="animated pricing-wrapper tab-pane fade" data-animate="fadeInRight" data-delay=".2"
+                  id="corporate_tabpc">
+                  <div class="pricingTable">
+                    <div class="pricingTable-header">
+                      <h3 class="heading">Corporate</h3>
+                      <div class="main-price price-value">
+                        <span class="price">$2,500</span>
+                        <span class="month">/ month</span>
+                      </div>
+                      <div class="pricing-content p-section">
+                        <span>more than 5,000 users</span> <br>
+                        <span>We have special offer for you!</span>
+                      </div>
+                    </div>
+                    <div class="p-section p-features">
+                      <div class="border-top"></div>
+                      <div class="heading">Features</div>
+                      <div> Unlimited email exchange. </div>
+                      <div>Unlimited Storage.</div>
+                      <div>Unlimited domains.</div>
+                      <div>Unlimited email alias.</div>
+                      <div>Early Access to new features.</div>
+                    </div>
+                    <div class="p-section">
+                      <div class="border-top"></div>
+                      <div class="heading">Support</div>
+                      <div> Bug fix and applying updates. </div>
+                      <div>Integration of new accounts and users.</div>
+                      <div>Applying Cosmetic change to UI</div>
+                      <div>LedgerMail crash or down</div>
+                      <div>Applying LedgerMail updates</div>
+                    </div>
+                  </div>
                 </div>
+
+
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="mobile-only">
+        <div class="row">
+          <div class="col">
+            <div class="pricing-container" id="pricingCollapse">
+              <div class="pricing-section">
+                <button class="price-title" type="button" data-toggle="collapse" data-target="#pricingCollapseOne"
+                  aria-expanded="true" aria-controls="pricingCollapseOne">
+                  Basic <i class="far fa-plus-square"></i>
+                </button>
+              </div>
+              <div id="pricingCollapseOne" class="collapse show" data-parent="#pricingCollapse">
+                <div class="pricing-wrapper">
+                  <div class="pricingTable">
+                    <div class="pricingTable-header">
+                      <h3 class="heading">Basic</h3>
+                      <div class="main-price price-value">
+                        <span class="price">$750</span>
+                        <span class="month">/ month</span>
+                      </div>
+                      <div class="pricing-content p-section">
+                        <span>upto 500 users</span> <br>
+                        <span>$1.5 per person / month.</span>
+                      </div>
+                    </div>
+                    <div class="p-section p-features">
+                      <div class="border-top"></div>
+                      <div class="heading">Features</div>
+                      <div class="">
+                        Unlimited email exchange.
+                      </div>
+                    </div>
+                    <div class="p-section">
+                      <div class="border-top"></div>
+                      <div class="heading">Support</div>
+                      <div class="">
+                        Bug fix and applying updates.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-        <div class="col-md-4 col-6">
-          <div class="animated h-100 pricing-wrapper" data-animate="fadeInUp" data-delay=".4">
-            <div class="pricingTable">
-              <div class="pricingTable-header">
-                <h3 class="heading">Standard</h3>
-                <div class="main-price price-value">
-                  <span class="price">$1,000</span>
-                  <span class="month">/ month</span>
+              <div class="pricing-section">
+                <button class="price-title collapsed" type="button" data-toggle="collapse"
+                  data-target="#pricingCollapseTwo" aria-expanded="false" aria-controls="pricingCollapseTwo">
+                  Standard <i class="far fa-plus-square"></i>
+                </button>
+              </div>
+
+              <div id="pricingCollapseTwo" class="collapse" data-parent="#pricingCollapse">
+                <div class="pricing-wrapper">
+                  <div class="pricingTable">
+                    <div class="pricingTable-header">
+                      <h3 class="heading">Standard</h3>
+                      <div class="main-price price-value">
+                        <span class="price">$1,000</span>
+                        <span class="month">/ month</span>
+                      </div>
+                      <div class="pricing-content p-section">
+                        <span>upto 1,000 users</span> <br>
+                        <span>$1 per person / month.</span>
+                      </div>
+                    </div>
+                    <div class="p-section p-features">
+                      <div class="border-top"></div>
+                      <div class="heading">Features</div>
+                      <div> Unlimited email exchange. </div>
+                      <div>Unlimited Storage.</div>
+                    </div>
+                    <div class="p-section">
+                      <div class="border-top"></div>
+                      <div class="heading">Support</div>
+                      <div> Bug fix and applying updates. </div>
+                      <div>Integration of new accounts and users.</div>
+                    </div>
+                  </div>
                 </div>
-                <div class="pricing-content p-section">
-                  <span>upto 1,000 users</span> <br>
-                  <span>$1 per person / month.</span>
+              </div>
+
+              <div class="pricing-section">
+                <button class="price-title collapsed" type="button" data-toggle="collapse"
+                  data-target="#pricingCollapseThree" aria-expanded="false" aria-controls="pricingCollapseThree">
+                  Enterprise <i class="far fa-plus-square"></i>
+                </button>
+              </div>
+
+              <div id="pricingCollapseThree" class="collapse" data-parent="#pricingCollapse">
+                <div class="pricing-wrapper">
+                  <div class="pricingTable">
+                    <div class="pricingTable-header">
+                      <h3 class="heading">Enterprise</h3>
+                      <div class="main-price price-value">
+                        <span class="price">$1,875</span>
+                        <span class="month">/ month</span>
+                      </div>
+                      <div class="pricing-content p-section">
+                        <span>upto 2,500 users</span> <br>
+                        <span>$0.75 per person / month.</span>
+                      </div>
+                    </div>
+                    <div class="p-section p-features">
+                      <div class="border-top"></div>
+                      <div class="heading">Features</div>
+                      <div> Unlimited email exchange. </div>
+                      <div>Unlimited Storage.</div>
+                      <div>Unlimited domains.</div>
+                    </div>
+                    <div class="p-section">
+                      <div class="border-top"></div>
+                      <div class="heading">Support</div>
+                      <div> Bug fix and applying updates. </div>
+                      <div>Integration of new accounts and users.</div>
+                      <div>Applying Cosmetic change to UI</div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="p-section p-features">
-                <div class="border-top"></div>
-                <div class="heading">Features</div>
-                <div> Unlimited email exchange. </div>
-                <div>Unlimited Storage.</div>
+
+              <div class="pricing-section">
+                <button class="price-title collapsed" type="button" data-toggle="collapse"
+                  data-target="#pricingCollapseFour" aria-expanded="false" aria-controls="pricingCollapseFour">
+                  Elite <i class="far fa-plus-square"></i>
+                </button>
               </div>
-              <div class="p-section">
-                <div class="border-top"></div>
-                <div class="heading">Support</div>
-                <div> Bug fix and applying updates. </div>
-                <div>Integration of new accounts and users.</div>
+
+              <div id="pricingCollapseFour" class="collapse" data-parent="#pricingCollapse">
+                <div class="pricing-wrapper">
+                  <div class="pricingTable">
+                    <div class="pricingTable-header">
+                      <h3 class="heading">Elite</h3>
+                      <div class="main-price price-value">
+                        <span class="price">$2,500</span>
+                        <span class="month">/ month</span>
+                      </div>
+                      <div class="pricing-content p-section">
+                        <span>upto 5,000 users</span> <br>
+                        <span>$0.5 per person / month.</span>
+                      </div>
+                    </div>
+                    <div class="p-section p-features">
+                      <div class="border-top"></div>
+                      <div class="heading">Features</div>
+                      <div> Unlimited email exchange. </div>
+                      <div>Unlimited Storage.</div>
+                      <div>Unlimited domains.</div>
+                      <div>Unlimited email alias.</div>
+                    </div>
+                    <div class="p-section">
+                      <div class="border-top"></div>
+                      <div class="heading">Support</div>
+                      <div> Bug fix and applying updates. </div>
+                      <div>Integration of new accounts and users.</div>
+                      <div>Applying Cosmetic change to UI</div>
+                      <div>LedgerMail crash or down</div>
+                    </div>
+                  </div>
+                </div>
               </div>
+
+              <div class="pricing-section">
+                <button class="price-title collapsed" type="button" data-toggle="collapse"
+                  data-target="#pricingCollapseFive" aria-expanded="false" aria-controls="pricingCollapseFive">
+                  Corporate <i class="far fa-plus-square"></i>
+                </button>
+              </div>
+
+              <div id="pricingCollapseFive" class="collapse" data-parent="#pricingCollapse">
+                <div class="pricing-wrapper">
+                  <div class="pricingTable">
+                    <div class="pricingTable-header">
+                      <h3 class="heading">Corporate</h3>
+                      <div class="main-price price-value">
+                        <span class="price">$2,500</span>
+                        <span class="month">/ month</span>
+                      </div>
+                      <div class="pricing-content p-section">
+                        <span>more than 5,000 users</span> <br>
+                        <span>We have special offer for you!</span>
+                      </div>
+                    </div>
+                    <div class="p-section p-features">
+                      <div class="border-top"></div>
+                      <div class="heading">Features</div>
+                      <div> Unlimited email exchange. </div>
+                      <div>Unlimited Storage.</div>
+                      <div>Unlimited domains.</div>
+                      <div>Unlimited email alias.</div>
+                      <div>Early Access to new features.</div>
+                    </div>
+                    <div class="p-section">
+                      <div class="border-top"></div>
+                      <div class="heading">Support</div>
+                      <div> Bug fix and applying updates. </div>
+                      <div>Integration of new accounts and users.</div>
+                      <div>Applying Cosmetic change to UI</div>
+                      <div>LedgerMail crash or down</div>
+                      <div>Applying LedgerMail updates</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
             </div>
           </div>
         </div>
-
-        <div class="col-md-4 col-6">
-          <div class="animated h-100 pricing-wrapper" data-animate="fadeInUp" data-delay=".5">
-            <div class="pricingTable">
-              <div class="pricingTable-header">
-                <h3 class="heading">Enterprise</h3>
-                <div class="main-price price-value">
-                  <span class="price">$1,875</span>
-                  <span class="month">/ month</span>
-                </div>
-                <div class="pricing-content p-section">
-                  <span>upto 2,500 users</span> <br>
-                  <span>$0.75 per person / month.</span>
-                </div>
-              </div>
-              <div class="p-section p-features">
-                <div class="border-top"></div>
-                <div class="heading">Features</div>
-                <div> Unlimited email exchange. </div>
-                <div>Unlimited Storage.</div>
-                <div>Unlimited domains.</div>
-              </div>
-              <div class="p-section">
-                <div class="border-top"></div>
-                <div class="heading">Support</div>
-                <div> Bug fix and applying updates. </div>
-                <div>Integration of new accounts and users.</div>
-                <div>Applying Cosmetic change to UI</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-md-4 col-6">
-          <div class="animated h-100 pricing-wrapper" data-animate="fadeInUp" data-delay=".6">
-            <div class="pricingTable">
-              <div class="pricingTable-header">
-                <h3 class="heading">Elite</h3>
-                <div class="main-price price-value">
-                  <span class="price">$2,500</span>
-                  <span class="month">/ month</span>
-                </div>
-                <div class="pricing-content p-section">
-                  <span>upto 5,000 users</span> <br>
-                  <span>$0.5 per person / month.</span>
-                </div>
-              </div>
-              <div class="p-section p-features">
-                <div class="border-top"></div>
-                <div class="heading">Features</div>
-                <div> Unlimited email exchange. </div>
-                <div>Unlimited Storage.</div>
-                <div>Unlimited domains.</div>
-                <div>Unlimited email alias.</div>
-              </div>
-              <div class="p-section">
-                <div class="border-top"></div>
-                <div class="heading">Support</div>
-                <div> Bug fix and applying updates. </div>
-                <div>Integration of new accounts and users.</div>
-                <div>Applying Cosmetic change to UI</div>
-                <div>LedgerMail crash or down</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-6 col-12">
-          <div class="animated h-100 pricing-wrapper" data-animate="fadeInUp" data-delay=".7">
-            <div class="pricingTable">
-              <div class="pricingTable-header">
-                <h3 class="heading">Corporate</h3>
-                <div class="main-price price-value">
-                  <span class="price">$2,500</span>
-                  <span class="month">/ month</span>
-                </div>
-                <div class="pricing-content p-section">
-                  <span>more than 5,000 users</span> <br>
-                  <span>We have special offer for you!</span>
-                </div>
-              </div>
-              <div class="p-section p-features">
-                <div class="border-top"></div>
-                <div class="heading">Features</div>
-                <div> Unlimited email exchange. </div>
-                <div>Unlimited Storage.</div>
-                <div>Unlimited domains.</div>
-                <div>Unlimited email alias.</div>
-                <div>Early Access to new features.</div>
-              </div>
-              <div class="p-section">
-                <div class="border-top"></div>
-                <div class="heading">Support</div>
-                <div> Bug fix and applying updates. </div>
-                <div>Integration of new accounts and users.</div>
-                <div>Applying Cosmetic change to UI</div>
-                <div>LedgerMail crash or down</div>
-                <div>Applying LedgerMail updates</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-
-
-
-
       </div>
 
       <div class="gaps size-2x"></div>
-      <div class="gaps size-1x d-none d-md-block"></div>
       <div class="row text-center">
         <div class="col-md-12">
           <ul class="btns animated" data-animate="fadeInUp" data-delay=".6">
@@ -1153,6 +1376,7 @@
   <script src="assets/js/jquery.bundle.js?ver=142"></script>
   <script src="assets/js/script.js?ver=142"></script>
   <script src="assets/js/captcha.js"></script>
+  <script src="assets/js/custom.js"></script>
   <script src="assets/js/slider-script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
   <script>
@@ -1163,7 +1387,7 @@
 <!-- JavaScript (include all script here) -->
 <script src="assets/js/jquery.bundle.js?ver=142"></script>
 <script src="assets/js/script.js?ver=142"></script>
-<script src="assets/js/captcha.js"></script>
+<!-- <script src="assets/js/captcha.js"></script> -->
 <script>
       //   onLoad();
 </script>
