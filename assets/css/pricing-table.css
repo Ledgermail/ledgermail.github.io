@@ -189,10 +189,12 @@
 
 .table-2 .pricingTable-header .heading {
     text-align: left;
-    margin-bottom: 5px;
-    font-size: 1.3rem;
+    /* margin-bottom: 5px;
+    font-size: 1.3rem; */
     text-transform: uppercase;
     letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-size: 25px;
 }
 
 .table-2 .pricingTable-header .main-price {
