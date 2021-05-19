@@ -61,7 +61,7 @@
     margin-bottom: 0.5rem;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 991px) {
     .pricing-container {
         display: block;
     }
@@ -150,7 +150,7 @@
 }
 
 .pricingTable-header .main-price {
-    text-align: center;
+    /* text-align: center; */
     color: #F3F3F3;
     padding-bottom: 15px;
 }
