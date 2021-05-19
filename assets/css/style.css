@@ -5371,6 +5371,10 @@ select:focus {
   a.collapsed {
   background-color: #fff;
 }
+.card:hover {
+    transform: scale(1.05);
+    transition: .5s;
+}
 .io-dark-light .section-light.section-bg .accordion .card:last-child,
 .io-dark-light .section-light-alt.section-bg .accordion .card:last-child {
   border-bottom: none;
