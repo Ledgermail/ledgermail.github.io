@@ -1348,8 +1348,8 @@
 
     <div class="section section-pad-md section-bg" id="contact">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-3 offset-lg-1">
+            <div class="row justify-content-around">
+                <div class="col-lg-4">
                     <div class="section-head-s6">
                         <h6 class="heading-sm-s2 animated fadeInUp" data-animate="fadeInUp" data-delay=".1" style="visibility: visible; animation-delay: 0.1s">
                             Contact
@@ -1363,18 +1363,52 @@
                     </div>
                     <ul class="contact-info-alt">
                         <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".4" style="visibility: visible; animation-delay: 0.4s">
-                            <em class="fa fa-user"></em><span>Mr. Suraj Mulla</span>
+                            <em class="fa fa-user"></em>
+				<span>Mr. Suraj Mulla</span>
                         </li>
                         <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.4s">
-                            <em class="fa fa-phone"></em><span>+91 7972816337</span>
+                            <em class="fa fa-phone"></em>
+				<span>+91 7972816337</span>
                         </li>
                         <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".6" style="visibility: visible; animation-delay: 0.5s">
-                            <em class="fa fa-envelope"></em><span>info@ledgermail.io</span>
+                            <em class="fa fa-envelope"></em>
+				<span>info@ledgermail.io</span>
                         </li>
+			     <li
+                class="animated fadeInUp"
+                data-animate="fadeInUp"
+                data-delay=".6"
+                style="visibility: visible; animation-delay: 0.5s"
+              >
+                <em class="fa fa-envelope"></em>
+                <span>info@ledgermail.io</span>
+              </li>
+              <li>
+                <em class="fas fa-handshake fa"></em>
+                <!-- Calendly link widget begin -->
+                <link
+                  href="https://assets.calendly.com/assets/external/widget.css"
+                  rel="stylesheet"
+                />
+                <script
+                  src="https://assets.calendly.com/assets/external/widget.js"
+                  type="text/javascript"
+                  async
+                ></script>
+                <a
+                  href=""
+                  class="menu-link"
+                  onclick="Calendly.initPopupWidget({url: 'https://calendly.com/suraj-27'});return false;"
+                >
+                  Schedule
+                  <span style="color: #ffffff"> meeting with Suraj </span></a
+                >
+                <!-- Calendly link widget end -->
+              </li>
                     </ul>
                 </div>
 
-                <div class="col-lg-6 offset-lg-1">
+                <div class="col-lg-6 ">
                     <!-- <div class="gaps size-3x d-none d-md-block"></div> -->
                     <div class="gaps size-2x"></div>
                     <form id="contact-form" class="form-message form-message-s2 text-left" action="https://tqobynyog0.execute-api.us-east-2.amazonaws.com/default/contact-form" method="POST">
