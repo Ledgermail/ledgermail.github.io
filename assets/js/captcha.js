@@ -1,6 +1,7 @@
 (function () {
   var onSubmit = function (response) {
    console.log("submit");
+     grecaptcha.execute(contactFormWidget);
     return new Promise(function (resolve, reject) {
       if (response) {
         $("#contact-form").ajaxSubmit({
@@ -71,7 +72,7 @@
   // ContactForm
   var contactForm = $("#contact-form");
   if (contactForm.length > 0) {
-    console.log("here", contactForm);
+    console.log("here", contactForm.length);
     var selectRec = contactForm.find("select.required"),
     qf_results = contactForm.find(".form-results");
     contactForm.validate({
