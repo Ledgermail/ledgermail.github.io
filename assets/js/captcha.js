@@ -71,6 +71,7 @@
   // ContactForm
   var contactForm = $("#contact-form");
   if (contactForm.length > 0) {
+    console.log(contactForm.length);
      grecaptcha.execute(contactFormWidget);
     var selectRec = contactForm.find("select.required"),
     qf_results = contactForm.find(".form-results");
@@ -78,7 +79,7 @@
       invalidHandler: function () {
         qf_results.slideUp(800);
       },
-      submitHandler: function (form) {
+      submitHandler: function () {
         qf_results.slideUp(800);
         grecaptcha.execute(contactFormWidget);
       }
