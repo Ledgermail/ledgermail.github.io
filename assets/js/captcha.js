@@ -72,14 +72,14 @@
   var contactForm = $("#contact-form");
   if (contactForm.length > 0) {
     console.log(contactForm.length);
-     grecaptcha.execute(contactFormWidget);
+    
     var selectRec = contactForm.find("select.required"),
     qf_results = contactForm.find(".form-results");
     contactForm.validate({
       invalidHandler: function () {
         qf_results.slideUp(800);
       },
-      submitHandler: function () {
+      submitHandler: function (form) {
         qf_results.slideUp(800);
         grecaptcha.execute(contactFormWidget);
       }
