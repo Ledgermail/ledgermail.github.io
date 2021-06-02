@@ -1425,6 +1425,14 @@
                         </div>
                         <input type="text" class="d-none" name="form-anti-honeypot" value="" />
                         <input type="hidden" name="website" value="ledgermail-contact" />
+			     <script type="text/javascript">
+				     console.log("clicked");
+                                var onloadCallback = function () {
+                                    grecaptcha.render('contact-form-captcha', {
+                                        'sitekey': '6Lf5X5EUAAAAAOsnMMtfxZKXioIOuK1gGLf2vF8'
+                                    });
+                                };
+                            </script>
                         <div class="input-field animated fadeInUp" data-animate="fadeInUp" data-delay="1.0" style="visibility: visible; animation-delay: 1s">
                             <div class="g-recaptcha" id="contact-form-captcha" data-sitekey="6Lf5X5EUAAAAAOsnMMtfxZKXioIOuK1gGLf2vF8E" data-callback="onSubmit" data-size="invisible"></div>
                             <button type="submit" class="btn">Submit</button>
