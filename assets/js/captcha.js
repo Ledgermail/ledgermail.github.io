@@ -1,6 +1,6 @@
 (function () {
   var onSubmit = function (response) {
-   console.log("submit");
+    console.log("here");
     return new Promise(function (resolve, reject) {
       if (response) {
         $("#contact-form").ajaxSubmit({
@@ -26,7 +26,6 @@
       resolve();
     });
   };
-  
   var onSubmitPop = function (response) {
     return new Promise(function (resolve, reject) {
       if (response) {
@@ -54,16 +53,15 @@
     });
   };
 
-  onLoad  = function () {
+  onLoad = function () {
     contactPopWidget = grecaptcha.render("contact-pop-captcha", {
       sitekey: "6Lf5X5EUAAAAAOsnMMtfxZKXioIOuK1gGLf2vF8E",
       callback: onSubmitPop
     });
     contactFormWidget = grecaptcha.render("contact-form-captcha", {
-      sitekey: "6Le9TAsbAAAAAIFPVTmcuZh-4vFOLEutiNCnFMi3",
+      sitekey: "6Lf5X5EUAAAAAOsnMMtfxZKXioIOuK1gGLf2vF8E",
       callback: onSubmit
     });
-    console.log("here)
   };
 
   if (!$().validate || !$().ajaxSubmit) {
@@ -73,7 +71,6 @@
   // ContactForm
   var contactForm = $("#contact-form");
   if (contactForm.length > 0) {
-   
     var selectRec = contactForm.find("select.required"),
     qf_results = contactForm.find(".form-results");
     contactForm.validate({
@@ -82,7 +79,7 @@
       },
       submitHandler: function (form) {
         qf_results.slideUp(800);
-      
+        grecaptcha.execute(contactFormWidget);
       }
     });
     selectRec.on("change", function () {
@@ -100,8 +97,7 @@
       },
       submitHandler: function (form) {
         qf_results_p.slideUp(400);
-        
-
+        grecaptcha.execute(contactPopWidget);
       }
     });
     selectRec.on("change", function () {
