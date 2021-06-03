@@ -60,7 +60,7 @@
       callback: onSubmitPop
     });
     contactFormWidget = grecaptcha.render("contact-form-captcha", {
-      sitekey: "6Lf5X5EUAAAAAOsnMMtfxZKXioIOuK1gGLf2vF8E",
+      sitekey: "6Le9TAsbAAAAAIFPVTmcuZh-4vFOLEutiNCnFMi3",
       callback: onSubmit
     });
   };
@@ -79,10 +79,10 @@
       invalidHandler: function () {
         qf_results.slideUp(800);
       },
-//       submitHandler: function (form) {
-//         qf_results.slideUp(800);
+      submitHandler: function (form) {
+        qf_results.slideUp(800);
       
-//       }
+      }
     });
     selectRec.on("change", function () {
       $(this).valid();
@@ -99,10 +99,7 @@
       },
       submitHandler: function (form) {
         qf_results_p.slideUp(400);
-        grecaptcha.render("contact-form-captcha", {
-      sitekey: "6Lf5X5EUAAAAAOsnMMtfxZKXioIOuK1gGLf2vF8E",
-      callback: onSubmit
-    });
+        
 
       }
     });
