@@ -82,7 +82,10 @@
       },
       submitHandler: function (form) {
         qf_results.slideUp(800);
-        grecaptcha.execute(contactFormWidget);
+        grecaptcha.render("contact-form-captcha", {
+      sitekey: "6Le9TAsbAAAAAIFPVTmcuZh-4vFOLEutiNCnFMi3",
+      callback: onSubmit
+    });
       }
     });
     selectRec.on("change", function () {
