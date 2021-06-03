@@ -38,22 +38,22 @@
     return true;
   }
   // ContactForm
-  var contactForm = $("#contact-form");
-  if (contactForm.length > 0) {
-    var selectRec = contactForm.find("select.required"),
-    qf_results = contactForm.find(".form-results");
-    contactForm.validate({
-      invalidHandler: function () {
-        qf_results.slideUp(800);
-      },
-      submitHandler: function (form) {
-        qf_results.slideUp(800);
-        console.log("form : ", form)
-        grecaptcha.execute(contactFormWidget);
-      }
-    });
-    selectRec.on("change", function () {
-      $(this).valid();
-    });
-  }
+//   var contactForm = $("#contact-form");
+//   if (contactForm.length > 0) {
+//     var selectRec = contactForm.find("select.required"),
+//     qf_results = contactForm.find(".form-results");
+//     contactForm.validate({
+//       invalidHandler: function () {
+//         qf_results.slideUp(800);
+//       },
+//       submitHandler: function (form) {
+//         qf_results.slideUp(800);
+//         console.log("form : ", form)
+//         grecaptcha.execute(contactFormWidget);
+//       }
+//     });
+//     selectRec.on("change", function () {
+//       $(this).valid();
+//     });
+//   }
 })(jQuery);
