@@ -1,6 +1,5 @@
 (function () {
   var onSubmit = function (response) {
-    console.log("here");
     return new Promise(function (resolve, reject) {
       if (response) {
         $("#contact-form").ajaxSubmit({
@@ -26,39 +25,12 @@
       resolve();
     });
   };
-  var onSubmitPop = function (response) {
-    return new Promise(function (resolve, reject) {
-      if (response) {
-        $("#p-contact-form").ajaxSubmit({
-          target: qf_results_p,
-          dataType: "json",
-          success: function (data) {
-            var type =
-              data.result === "error" ? "alert-danger" : "alert-success";
-            qf_results_p
-              .removeClass("alert-danger alert-success")
-              .addClass("alert " + type)
-              .html("Thank you!")
-              .slideDown(400);
-            if (data.result !== "error") {
-              $("#p-contact-form")
-                .clearForm()
-                .find(".input-field")
-                .removeClass("input-focused");
-            }
-          }
-        });
-      }
-      resolve();
-    });
-  };
 
   onLoad = function () {
-    contactPopWidget = grecaptcha.render("contact-pop-captcha", {
-      sitekey: "6LdUlwsbAAAAAONrbGgIsgAWhpUf0zmh1q2H6S8O",
-      callback: onSubmitPop
+    contactFormWidget = grecaptcha.render("contact-form-captcha", {
+      sitekey: "6LcupwsbAAAAAP-8IFRXYIkSa8Mvr8bHkGeWWGuT",
+      callback: onSubmit
     });
-  
   };
 
   if (!$().validate || !$().ajaxSubmit) {
@@ -76,28 +48,8 @@
       },
       submitHandler: function (form) {
         qf_results.slideUp(800);
-      grecaptcha.render("contact-form-captcha", {
-      sitekey: "6LcupwsbAAAAAP-8IFRXYIkSa8Mvr8bHkGeWWGuT",
-      callback: onSubmit
-    });
-      }
-    });
-    selectRec.on("change", function () {
-      $(this).valid();
-    });
-  }
-
-  var pContactForm = $("#p-contact-form");
-  if (pContactForm.length > 0) {
-    var selectRec = pContactForm.find("select.required"),
-      qf_results_p = pContactForm.find(".form-results");
-    pContactForm.validate({
-      invalidHandler: function () {
-        qf_results_p.slideUp(400);
-      },
-      submitHandler: function (form) {
-        qf_results_p.slideUp(400);
-        grecaptcha.execute(contactPopWidget);
+        console.log("form : ", form)
+        grecaptcha.execute();
       }
     });
     selectRec.on("change", function () {
