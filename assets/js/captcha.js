@@ -63,6 +63,7 @@
       sitekey: "6Le9TAsbAAAAAIFPVTmcuZh-4vFOLEutiNCnFMi3",
       callback: onSubmit
     });
+    console.log("here)
   };
 
   if (!$().validate || !$().ajaxSubmit) {
