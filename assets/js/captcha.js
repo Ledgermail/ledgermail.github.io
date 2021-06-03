@@ -27,7 +27,7 @@
   };
 
   onLoad = function () {
-    contactFormWidget = grecaptcha.render("contact-form-captcha", {
+    grecaptcha.render("contact-form-captcha", {
       sitekey: "6LcupwsbAAAAAP-8IFRXYIkSa8Mvr8bHkGeWWGuT",
       callback: onSubmit
     });
