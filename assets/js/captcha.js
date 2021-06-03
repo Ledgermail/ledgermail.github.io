@@ -58,10 +58,7 @@
       sitekey: "6LdUlwsbAAAAAONrbGgIsgAWhpUf0zmh1q2H6S8O",
       callback: onSubmitPop
     });
-    contactFormWidget = grecaptcha.render("contact-form-captcha", {
-      sitekey: "6LdUlwsbAAAAAONrbGgIsgAWhpUf0zmh1q2H6S8O",
-      callback: onSubmit
-    });
+  
   };
 
   if (!$().validate || !$().ajaxSubmit) {
@@ -79,7 +76,10 @@
       },
       submitHandler: function (form) {
         qf_results.slideUp(800);
-        grecaptcha.execute(contactFormWidget);
+      grecaptcha.render("contact-form-captcha", {
+      sitekey: "6LdUlwsbAAAAAONrbGgIsgAWhpUf0zmh1q2H6S8O",
+      callback: onSubmit
+    });
       }
     });
     selectRec.on("change", function () {
