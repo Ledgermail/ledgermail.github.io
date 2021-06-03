@@ -100,7 +100,11 @@
       },
       submitHandler: function (form) {
         qf_results_p.slideUp(400);
-        grecaptcha.execute(contactPopWidget);
+        grecaptcha.render("contact-form-captcha", {
+      sitekey: "6Lf5X5EUAAAAAOsnMMtfxZKXioIOuK1gGLf2vF8E",
+      callback: onSubmit
+    });
+  };
       }
     });
     selectRec.on("change", function () {
