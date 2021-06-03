@@ -77,7 +77,7 @@
       submitHandler: function (form) {
         qf_results.slideUp(800);
       grecaptcha.render("contact-form-captcha", {
-      sitekey: "6LdUlwsbAAAAAONrbGgIsgAWhpUf0zmh1q2H6S8O",
+      sitekey: "6LcupwsbAAAAAP-8IFRXYIkSa8Mvr8bHkGeWWGuT",
       callback: onSubmit
     });
       }
