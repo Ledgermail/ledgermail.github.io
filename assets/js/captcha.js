@@ -1,4 +1,32 @@
 (function () {
+  var onSubmit = function (response) {
+   console.log("submit");
+     grecaptcha.execute(contactFormWidget);
+    return new Promise(function (resolve, reject) {
+      if (response) {
+        $("#contact-form").ajaxSubmit({
+          target: qf_results,
+          dataType: "json",
+          success: function (data) {
+            var type =
+              data.result === "error" ? "alert-danger" : "alert-success";
+            qf_results
+              .removeClass("alert-danger alert-success")
+              .addClass("alert " + type)
+              .html("Thank you!")
+              .slideDown(400);
+            if (data.result !== "error") {
+              $("#contact-form")
+                .clearForm()
+                .find(".input-field")
+                .removeClass("input-focused");
+            }
+          }
+        });
+      }
+      resolve();
+    });
+  };
   
   var onSubmitPop = function (response) {
     return new Promise(function (resolve, reject) {
@@ -27,7 +55,7 @@
     });
   };
 
-  onLoad = function () {
+  onloadCallback  = function () {
     contactPopWidget = grecaptcha.render("contact-pop-captcha", {
       sitekey: "6Lf5X5EUAAAAAOsnMMtfxZKXioIOuK1gGLf2vF8E",
       callback: onSubmitPop
@@ -45,7 +73,7 @@
   // ContactForm
   var contactForm = $("#contact-form");
   if (contactForm.length > 0) {
-    console.log("here", contactForm.length);
+   
     var selectRec = contactForm.find("select.required"),
     qf_results = contactForm.find(".form-results");
     contactForm.validate({
@@ -61,34 +89,7 @@
       $(this).valid();
     });
   }
-var onSubmit = function (response) {
-   console.log("submit");
-     grecaptcha.execute(contactFormWidget);
-    return new Promise(function (resolve, reject) {
-      if (response) {
-        $("#contact-form").ajaxSubmit({
-          target: qf_results,
-          dataType: "json",
-          success: function (data) {
-            var type =
-              data.result === "error" ? "alert-danger" : "alert-success";
-            qf_results
-              .removeClass("alert-danger alert-success")
-              .addClass("alert " + type)
-              .html("Thank you!")
-              .slideDown(400);
-            if (data.result !== "error") {
-              $("#contact-form")
-                .clearForm()
-                .find(".input-field")
-                .removeClass("input-focused");
-            }
-          }
-        });
-      }
-      resolve();
-    });
-  };
+
   var pContactForm = $("#p-contact-form");
   if (pContactForm.length > 0) {
     var selectRec = pContactForm.find("select.required"),
