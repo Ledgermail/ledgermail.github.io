@@ -54,11 +54,11 @@
 
   onLoad = function () {
     contactPopWidget = grecaptcha.render("contact-pop-captcha", {
-      sitekey: "6Lf5X5EUAAAAAOsnMMtfxZKXioIOuK1gGLf2vF8E",
+      sitekey: "6LdUlwsbAAAAAONrbGgIsgAWhpUf0zmh1q2H6S8O",
       callback: onSubmitPop
     });
     contactFormWidget = grecaptcha.render("contact-form-captcha", {
-      sitekey: "6Lf5X5EUAAAAAOsnMMtfxZKXioIOuK1gGLf2vF8E",
+      sitekey: "6LdUlwsbAAAAAONrbGgIsgAWhpUf0zmh1q2H6S8O",
       callback: onSubmit
     });
   };
