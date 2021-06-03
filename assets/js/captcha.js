@@ -79,13 +79,10 @@
       invalidHandler: function () {
         qf_results.slideUp(800);
       },
-      submitHandler: function (form) {
-        qf_results.slideUp(800);
-        grecaptcha.render("contact-form-captcha", {
-      sitekey: "6Le9TAsbAAAAAIFPVTmcuZh-4vFOLEutiNCnFMi3",
-      callback: onSubmit
-    });
-      }
+//       submitHandler: function (form) {
+//         qf_results.slideUp(800);
+      
+//       }
     });
     selectRec.on("change", function () {
       $(this).valid();
