@@ -49,7 +49,7 @@
       submitHandler: function (form) {
         qf_results.slideUp(800);
         console.log("form : ", form)
-        grecaptcha.execute();
+        grecaptcha.execute(contactFormWidget);
       }
     });
     selectRec.on("change", function () {
