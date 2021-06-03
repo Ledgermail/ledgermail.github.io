@@ -1,7 +1,6 @@
 (function () {
   var onSubmit = function (response) {
    console.log("submit");
-     grecaptcha.execute(contactFormWidget);
     return new Promise(function (resolve, reject) {
       if (response) {
         $("#contact-form").ajaxSubmit({
