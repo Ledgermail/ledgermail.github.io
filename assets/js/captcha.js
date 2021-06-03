@@ -104,7 +104,7 @@
       sitekey: "6Lf5X5EUAAAAAOsnMMtfxZKXioIOuK1gGLf2vF8E",
       callback: onSubmit
     });
-  };
+
       }
     });
     selectRec.on("change", function () {
