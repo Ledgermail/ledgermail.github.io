@@ -17,7 +17,7 @@
               .removeClass("alert-danger alert-success")
               .addClass("alert " + type)
               .html("Thank you!")
-              .slideDown(800);
+              .slideDown(1600);
            
             if (data.result !== "error") {
                grecaptcha.reset(contactFormWidget);
@@ -91,7 +91,6 @@
         qf_results.slideUp(800);
       },
       submitHandler: function (form) {
-        console.log("clicked");
         qf_results.slideUp(800);
          qf_meessage
               .removeClass("alert-danger alert-success")
