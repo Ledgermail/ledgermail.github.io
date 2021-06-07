@@ -5,7 +5,7 @@
      console.log("+++", resp);
       };
  
-  var onSubmit = function () {
+  var onSubmit() {
  
     console.log("---",response);
     return new Promise(function (resolve, reject) {
@@ -86,8 +86,9 @@
         qf_results.slideUp(800);
       },
       submitHandler: function (form) {
+        console.log("clicked")
         qf_results.slideUp(800);
-        onSubmit;
+        onSubmit();
       }
     });
     selectRec.on("change", function () {
