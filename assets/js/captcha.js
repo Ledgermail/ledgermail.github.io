@@ -6,8 +6,6 @@
       };
  
   function onSubmit() {
- 
-    console.log("---",response);
     return new Promise(function (resolve, reject) {
       if (response) {
         $("#contact-form").ajaxSubmit({
@@ -29,6 +27,12 @@
             }
           }
         });
+      }else {
+         qf_meessage
+              .removeClass("alert-danger alert-success")
+              .addClass("alert alert-danger")
+              .html("complete captcha")
+              .slideDown(400);
       }
       resolve();
     });
@@ -80,13 +84,14 @@
   var contactForm = $("#contact-form");
   if (contactForm.length > 0) { 
     var selectRec = contactForm.find("select.required"),
-    qf_results = contactForm.find(".form-results");
+    qf_results = contactForm.find(".form-results"),
+    qf_meessage = contactForm.find(".form-captcha");
     contactForm.validate({
       invalidHandler: function () {
         qf_results.slideUp(800);
       },
       submitHandler: function (form) {
-        console.log("clicked")
+        console.log("clicked");
         qf_results.slideUp(800);
         onSubmit();
       }
