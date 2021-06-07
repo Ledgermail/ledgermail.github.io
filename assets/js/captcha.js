@@ -2,9 +2,8 @@
   
  
   var onSubmit = function (response) {
-   var contactForm = $("#contact-form");
-    console.log(contactForm);
-    console.log(response);
+ 
+
     return new Promise(function (resolve, reject) {
       if (response) {
         $("#contact-form").ajaxSubmit({
@@ -64,7 +63,6 @@
     });
     contactFormWidget = grecaptcha.render("contact-form-captcha", {
       sitekey: "6Le9FxkbAAAAAFZoz7TzhkrXK0uuRaL2hUlVhMEa",
-      callback: onSubmit
     });
   };
 
