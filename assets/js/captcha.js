@@ -54,16 +54,9 @@
   };
 
   onLoad = function () {
-    contactPopWidget = grecaptcha.render("contact-pop-captcha", {
-      sitekey: "6LdUlwsbAAAAAONrbGgIsgAWhpUf0zmh1q2H6S8O",
-      callback: onSubmitPop
-    });
-   
-
     contactFormWidget = grecaptcha.render("contact-form-captcha", {
       sitekey: "6Le9FxkbAAAAAFZoz7TzhkrXK0uuRaL2hUlVhMEa",
-      callback: onSubmit,
-   
+      callback: onSubmit, 
     });
   };
 
