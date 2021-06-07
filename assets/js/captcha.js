@@ -78,7 +78,7 @@
   }
   // ContactForm
   var contactForm = $("#contact-form");
-  if (contactForm.length > 0) {
+  if (contactForm.length > 0) { 
     var selectRec = contactForm.find("select.required"),
     qf_results = contactForm.find(".form-results");
     contactForm.validate({
