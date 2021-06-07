@@ -1,7 +1,11 @@
 (function () {
   
   function check_required_inputs() {
+    var contactForm = $("#contact-form");
+     var selectRec = contactForm.find("select.required");
+    console.log(selectRec);
     $('#contact-form.required').each(function(){
+      
         if( $(this).val() == "" ){
           console.log("here value")
 
