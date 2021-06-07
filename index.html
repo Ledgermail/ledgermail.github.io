@@ -2,13 +2,7 @@
 <html class="js">
 
 <head>
-	 <script type="text/javascript">
-      var onloadCallback = function() {
-        grecaptcha.render('html_element', {
-          'sitekey' : '6Le9FxkbAAAAAFZoz7TzhkrXK0uuRaL2hUlVhMEa',
-		theme : "dark"
-        });
-      };
+	
     </script>
     <meta charset="utf-8" />
     <meta name="author" content="Softnio" />
@@ -32,7 +26,7 @@
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129657838-1"></script>
-    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onLoad&render=explicit" async defer></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -1434,8 +1428,8 @@
                         <input type="text" class="d-none" name="form-anti-honeypot" value="" />
                         <input type="hidden" name="website" value="ledgermail-contact" />
                         <div class="input-field animated fadeInUp" data-animate="fadeInUp" data-delay="1.0" style="visibility: visible; animation-delay: 1s">
-<!--                             <div class="g-recaptcha" id="contact-form-captcha" data-sitekey="6LdUlwsbAAAAAONrbGgIsgAWhpUf0zmh1q2H6S8O" data-callback="onSubmit" data-size="invisible"></div> -->
-				 <div id="html_element"></div>
+                            <div  id="contact-form-captcha" data-callback="onSubmit" ></div>
+				
 				<button type="submit" class="btn">Submit</button>
                         </div>
                     </form>
