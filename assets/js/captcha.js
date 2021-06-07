@@ -61,7 +61,7 @@
     contactFormWidget = grecaptcha.render("contact-form-captcha", {
       sitekey: "6Le9FxkbAAAAAFZoz7TzhkrXK0uuRaL2hUlVhMEa",
       callback: onSubmit,
-      theme:"dark"
+   
     });
   };
 
