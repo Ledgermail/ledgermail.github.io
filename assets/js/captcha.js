@@ -70,14 +70,16 @@
   // ContactForm
   var contactForm = $("#contact-form");
   if (contactForm.length > 0) {
+    console.log(contactForm.length);
     var selectRec = contactForm.find("select.required"),
     qf_results = contactForm.find(".form-results");
     contactForm.validate({
       invalidHandler: function () {
         qf_results.slideUp(800);
+        console.log("invalid");
       },
       submitHandler: function (form) {
-        console.log("clicked")
+        console.log("clicked");
         qf_results.slideUp(800);
         grecaptcha.execute(contactFormWidget);
       }
