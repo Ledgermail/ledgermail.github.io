@@ -59,8 +59,9 @@
       callback: onSubmitPop
     });
     contactFormWidget = grecaptcha.render("contact-form-captcha", {
-      sitekey: "6LdUlwsbAAAAAONrbGgIsgAWhpUf0zmh1q2H6S8O",
-      callback: onSubmit
+      sitekey: "6Le9FxkbAAAAAFZoz7TzhkrXK0uuRaL2hUlVhMEa",
+      callback: onSubmit,
+      theme:"dark"
     });
   };
 
@@ -82,7 +83,7 @@
       submitHandler: function (form) {
         console.log("clicked");
         qf_results.slideUp(800);
-        grecaptcha.execute(contactFormWidget);
+       contactFormWidget
       }
     });
     selectRec.on("change", function () {
