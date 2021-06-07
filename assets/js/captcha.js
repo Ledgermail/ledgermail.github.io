@@ -12,7 +12,8 @@
 }
   var onSubmit = function (response) {
     var s = check_required_inputs();
-    console.log(s)
+    console.log(s);
+    console.log(response);
     return new Promise(function (resolve, reject) {
       if (response) {
         $("#contact-form").ajaxSubmit({
