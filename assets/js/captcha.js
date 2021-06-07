@@ -57,11 +57,11 @@
       sitekey: "6LdUlwsbAAAAAONrbGgIsgAWhpUf0zmh1q2H6S8O",
       callback: onSubmitPop
     });
-//     contactFormWidget = grecaptcha.render("contact-form-captcha", {
-//       sitekey: "6Le9FxkbAAAAAFZoz7TzhkrXK0uuRaL2hUlVhMEa",
-//       callback: onSubmit,
+    contactFormWidget = grecaptcha.render("contact-form-captcha", {
+      sitekey: "6Le9FxkbAAAAAFZoz7TzhkrXK0uuRaL2hUlVhMEa",
+      callback: onSubmit,
    
-//     });
+    });
   };
 
   if (!$().validate || !$().ajaxSubmit) {
@@ -86,10 +86,6 @@
               .removeClass("alert-danger alert-success")
               .addClass("alert alert-danger")
               .html("please verify captcha")
-      grecaptcha.render("contact-form-captcha", {
-      sitekey: "6Le9FxkbAAAAAFZoz7TzhkrXK0uuRaL2hUlVhMEa",
-      callback: onSubmit,
-    });
       }
     });
     selectRec.on("change", function () {
