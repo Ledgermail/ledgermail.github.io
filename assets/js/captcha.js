@@ -5,7 +5,7 @@
      console.log("+++", resp);
       };
  
-  var onSubmit() {
+  function onSubmit() {
  
     console.log("---",response);
     return new Promise(function (resolve, reject) {
