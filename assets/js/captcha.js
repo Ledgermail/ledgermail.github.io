@@ -1,5 +1,29 @@
 (function () {
   var onSubmit = function (response) {
+      var contactForm = $("#contact-form");
+  if (contactForm.length > 0) {
+    console.log(contactForm.length);
+    var selectRec = contactForm.find("select.required"),
+    qf_results = contactForm.find(".form-results"),
+    qf_captcha = contactForm.find(".form-captcha");
+    contactForm.validate({
+      invalidHandler: function () {
+        qf_results.slideUp(800);
+        console.log("invalid");
+      },
+      submitHandler: function (form) {
+        console.log("clicked");
+         qf_captcha
+              .removeClass("alert-danger alert-success")
+              .addClass("alert alert-danger")
+              .html("please verify captcha")
+      }
+    });
+    selectRec.on("change", function () {
+      $(this).valid();
+    });
+  }
+
     return new Promise(function (resolve, reject) {
       if (response) {
         console.log(response)
@@ -65,30 +89,30 @@
     return true;
   }
   // ContactForm
-  var contactForm = $("#contact-form");
-  if (contactForm.length > 0) {
-    console.log(contactForm.length);
-    var selectRec = contactForm.find("select.required"),
-    qf_results = contactForm.find(".form-results"),
-    qf_captcha = contactForm.find(".form-captcha");
-    contactForm.validate({
-      invalidHandler: function () {
-        qf_results.slideUp(800);
-        console.log("invalid");
-      },
-      submitHandler: function (form) {
-        console.log("clicked");
-         qf_captcha
-              .removeClass("alert-danger alert-success")
-              .addClass("alert alert-danger")
-              .html("please verify captcha")
-        contactFormWidget
-      }
-    });
-    selectRec.on("change", function () {
-      $(this).valid();
-    });
-  }
+//   var contactForm = $("#contact-form");
+//   if (contactForm.length > 0) {
+//     console.log(contactForm.length);
+//     var selectRec = contactForm.find("select.required"),
+//     qf_results = contactForm.find(".form-results"),
+//     qf_captcha = contactForm.find(".form-captcha");
+//     contactForm.validate({
+//       invalidHandler: function () {
+//         qf_results.slideUp(800);
+//         console.log("invalid");
+//       },
+//       submitHandler: function (form) {
+//         console.log("clicked");
+//          qf_captcha
+//               .removeClass("alert-danger alert-success")
+//               .addClass("alert alert-danger")
+//               .html("please verify captcha")
+//         contactFormWidget
+//       }
+//     });
+//     selectRec.on("change", function () {
+//       $(this).valid();
+//     });
+//   }
 
   var pContactForm = $("#p-contact-form");
   if (pContactForm.length > 0) {
