@@ -1,9 +1,10 @@
 (function () {
-  var response ;
-   var verifyCallback = function(resp) {
-        response = resp;
-      };
- 
+  var response;
+  var verifyCallback = function (resp) {
+    qf_results.removeClass("alert-danger alert-success").html("");
+    response = resp;
+  };
+
   function onSubmit() {
     return new Promise(function (resolve, reject) {
       if (response) {
@@ -18,26 +19,26 @@
               .addClass("alert " + type)
               .html("Thank you!")
               .slideDown(1600);
-           
+
             if (data.result !== "error") {
-               grecaptcha.reset(contactFormWidget);
+              grecaptcha.reset(contactFormWidget);
               $("#contact-form")
                 .clearForm()
                 .find(".input-field")
                 .removeClass("input-focused");
             }
-          }
+          },
         });
-      }else {
-         qf_meessage
-              .removeClass("alert-danger alert-success")
-              .addClass("alert alert-danger")
-              .html("complete captcha")
-              .slideDown(800);
+      } else {
+        qf_results
+          .removeClass("alert-danger alert-success")
+          .addClass("alert alert-danger")
+          .html("complete captcha")
+          .slideDown(800);
       }
       resolve();
     });
-  };
+  }
   var onSubmitPop = function (response) {
     return new Promise(function (resolve, reject) {
       if (response) {
@@ -58,7 +59,7 @@
                 .find(".input-field")
                 .removeClass("input-focused");
             }
-          }
+          },
         });
       }
       resolve();
@@ -68,11 +69,11 @@
   onLoad = function () {
     contactPopWidget = grecaptcha.render("contact-pop-captcha", {
       sitekey: "6Le9FxkbAAAAAFZoz7TzhkrXK0uuRaL2hUlVhMEa",
-      callback: onSubmitPop
+      callback: onSubmitPop,
     });
     contactFormWidget = grecaptcha.render("contact-form-captcha", {
       sitekey: "6Le9FxkbAAAAAFZoz7TzhkrXK0uuRaL2hUlVhMEa",
-      callback:verifyCallback
+      callback: verifyCallback,
     });
   };
 
@@ -82,21 +83,19 @@
   }
   // ContactForm
   var contactForm = $("#contact-form");
-  if (contactForm.length > 0) { 
+  if (contactForm.length > 0) {
     var selectRec = contactForm.find("select.required"),
-    qf_results = contactForm.find(".form-results"),
-    qf_meessage = contactForm.find(".form-captcha");
+      qf_results = contactForm.find(".form-results"),
+      qf_meessage = contactForm.find(".form-captcha");
     contactForm.validate({
       invalidHandler: function () {
         qf_results.slideUp(800);
       },
       submitHandler: function (form) {
         qf_results.slideUp(800);
-         qf_meessage
-              .removeClass("alert-danger alert-success")
-              .html("")
+
         onSubmit();
-      }
+      },
     });
     selectRec.on("change", function () {
       $(this).valid();
@@ -113,8 +112,8 @@
       },
       submitHandler: function (form) {
         qf_results_p.slideUp(400);
-        contactPopWidget
-      }
+        contactPopWidget;
+      },
     });
     selectRec.on("change", function () {
       $(this).valid();
