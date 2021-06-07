@@ -1,10 +1,7 @@
 (function () {
   var onSubmit = function (response) {
-     var contactForm = $("#contact-form");
-    
     return new Promise(function (resolve, reject) {
       if (response) {
-        console.log(response)
         $("#contact-form").ajaxSubmit({
           target: qf_results,
           dataType: "json",
@@ -56,9 +53,13 @@
   };
 
   onLoad = function () {
+    contactPopWidget = grecaptcha.render("contact-pop-captcha", {
+      sitekey: "6Le9FxkbAAAAAFZoz7TzhkrXK0uuRaL2hUlVhMEa",
+      callback: onSubmitPop
+    });
     contactFormWidget = grecaptcha.render("contact-form-captcha", {
       sitekey: "6Le9FxkbAAAAAFZoz7TzhkrXK0uuRaL2hUlVhMEa",
-      callback: onSubmit, 
+      callback: onSubmit
     });
   };
 
@@ -69,22 +70,16 @@
   // ContactForm
   var contactForm = $("#contact-form");
   if (contactForm.length > 0) {
-    console.log(contactForm);
+    console.log(contactForm)
     var selectRec = contactForm.find("select.required"),
-    qf_results = contactForm.find(".form-results"),
-    qf_captcha = contactForm.find(".form-captcha");
+    qf_results = contactForm.find(".form-results");
     contactForm.validate({
       invalidHandler: function () {
         qf_results.slideUp(800);
-        console.log("invalid");
       },
       submitHandler: function (form) {
-        console.log("clicked");
-         qf_captcha
-              .removeClass("alert-danger alert-success")
-              .addClass("alert alert-danger")
-              .html("please verify captcha")
-        contactFormWidget
+        qf_results.slideUp(800);
+       contactFormWidget;
       }
     });
     selectRec.on("change", function () {
@@ -102,7 +97,7 @@
       },
       submitHandler: function (form) {
         qf_results_p.slideUp(400);
-        grecaptcha.execute(contactPopWidget);
+        contactPopWidget
       }
     });
     selectRec.on("change", function () {
