@@ -77,7 +77,7 @@
         qf_results.slideUp(800);
       },
       submitHandler: function (form) {
-        alert("clicked")
+        console.log("clicked")
         qf_results.slideUp(800);
         grecaptcha.execute(contactFormWidget);
       }
