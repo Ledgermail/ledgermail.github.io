@@ -8,7 +8,6 @@
   function onSubmit() {
     return new Promise(function (resolve, reject) {
       if (response) {
-        console.log(response);
         $("#pricing-form").ajaxSubmit({
           target: qf_results,
           dataType: "json",
