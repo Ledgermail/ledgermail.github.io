@@ -1,9 +1,13 @@
 (function () {
-  
+  var response ;
+   var verifyCallback = function(resp) {
+        response = resp;
+     console.log("+++", resp);
+      };
  
-  var onSubmit = function (response) {
+  var onSubmit = function () {
  
-
+    console.log("---",response);
     return new Promise(function (resolve, reject) {
       if (response) {
         $("#contact-form").ajaxSubmit({
@@ -63,6 +67,7 @@
     });
     contactFormWidget = grecaptcha.render("contact-form-captcha", {
       sitekey: "6Le9FxkbAAAAAFZoz7TzhkrXK0uuRaL2hUlVhMEa",
+      callback:verifyCallback
     });
   };
 
