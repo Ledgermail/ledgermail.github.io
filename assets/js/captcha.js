@@ -1,5 +1,18 @@
 (function () {
+  
+  function check_required_inputs() {
+    $('#contact-form.required').each(function(){
+        if( $(this).val() == "" ){
+          console.log("here value")
+
+          return false;
+        }
+    });
+    return true;
+}
   var onSubmit = function (response) {
+    var s = check_required_inputs();
+    console.log(s)
     return new Promise(function (resolve, reject) {
       if (response) {
         $("#contact-form").ajaxSubmit({
