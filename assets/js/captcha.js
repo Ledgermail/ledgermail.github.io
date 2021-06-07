@@ -19,6 +19,7 @@
               .addClass("alert " + type)
               .html("Thank you!")
               .slideDown(400);
+            grecaptcha.reset();
             if (data.result !== "error") {
               $("#contact-form")
                 .clearForm()
@@ -93,6 +94,10 @@
       submitHandler: function (form) {
         console.log("clicked");
         qf_results.slideUp(800);
+         qf_meessage
+              .removeClass("alert-danger alert-success")
+              .html("")
+              .slideDown(400);
         onSubmit();
       }
     });
