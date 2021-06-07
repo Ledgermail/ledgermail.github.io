@@ -69,6 +69,7 @@
       sitekey: "6Le9FxkbAAAAAFZoz7TzhkrXK0uuRaL2hUlVhMEa",
       callback:verifyCallback
     });
+    console.log("xxxx", contactFormWidget)
   };
 
   if (!$().validate || !$().ajaxSubmit) {
@@ -80,14 +81,13 @@
   if (contactForm.length > 0) {
     var selectRec = contactForm.find("select.required"),
     qf_results = contactForm.find(".form-results");
-    console.log(selectRec);
     contactForm.validate({
       invalidHandler: function () {
         qf_results.slideUp(800);
       },
       submitHandler: function (form) {
         qf_results.slideUp(800);
-       contactFormWidget;
+        onSubmit;
       }
     });
     selectRec.on("change", function () {
