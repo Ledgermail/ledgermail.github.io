@@ -34,7 +34,7 @@
               .removeClass("alert-danger alert-success")
               .addClass("alert alert-danger")
               .html("complete captcha")
-              .slideDown(400);
+              .slideDown(800);
       }
       resolve();
     });
