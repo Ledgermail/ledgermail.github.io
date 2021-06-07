@@ -3,15 +3,12 @@
   var verifyCallback = function (resp) {
     qf_results.removeClass("alert-danger alert-success").html("");
     response = resp;
-    console.log(
-      "🚀 ~ file: pricingCaptcha.js ~ line 6 ~ verifyCallback ~ resp",
-      resp
-    );
   };
 
   function onSubmit() {
     return new Promise(function (resolve, reject) {
       if (response) {
+        console.log(response);
         $("#pricing-form").ajaxSubmit({
           target: qf_results,
           dataType: "json",
