@@ -2,7 +2,6 @@
   var response ;
    var verifyCallback = function(resp) {
         response = resp;
-     console.log("+++", resp);
       };
  
   function onSubmit() {
@@ -18,9 +17,11 @@
               .removeClass("alert-danger alert-success")
               .addClass("alert " + type)
               .html("Thank you!")
-              .slideDown(400);
-            grecaptcha.reset();
+              .slideDown(800);
+           
             if (data.result !== "error") {
+               grecaptcha.reset();
+              response = "";
               $("#contact-form")
                 .clearForm()
                 .find(".input-field")
@@ -74,7 +75,6 @@
       sitekey: "6Le9FxkbAAAAAFZoz7TzhkrXK0uuRaL2hUlVhMEa",
       callback:verifyCallback
     });
-    console.log("xxxx", contactFormWidget)
   };
 
   if (!$().validate || !$().ajaxSubmit) {
@@ -97,7 +97,6 @@
          qf_meessage
               .removeClass("alert-danger alert-success")
               .html("")
-              .slideDown(400);
         onSubmit();
       }
     });
