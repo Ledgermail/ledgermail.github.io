@@ -1,176 +1,340 @@
 <!DOCTYPE html>
 <html class="js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Softnio" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="The worlds 1st decentralised encrypted email service on blockchain."
+    />
+    <!-- Fav Icon  -->
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <!-- Site Title  -->
+    <title>Ledgermail - Encrypted Emails on Blockchain</title>
+    <!-- Vendor Bundle CSS -->
+    <link rel="stylesheet" href="assets/css/vendor.bundle.css?ver=142" />
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="assets/css/style.css?ver=142" />
+    <link rel="stylesheet" href="assets/css/theme-blue.css?ver=142" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="author" content="Softnio" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="The worlds 1st decentralised encrypted email service on blockchain." />
-  <!-- Fav Icon  -->
-  <link rel="shortcut icon" href="images/favicon.png" />
-  <!-- Site Title  -->
-  <title>Ledgermail - Encrypted Emails on Blockchain</title>
-  <!-- Vendor Bundle CSS -->
-  <link rel="stylesheet" href="assets/css/vendor.bundle.css?ver=142" />
-  <!-- Custom styles for this template -->
-  <link rel="stylesheet" href="assets/css/style.css?ver=142" />
-  <link rel="stylesheet" href="assets/css/theme-blue.css?ver=142" />
-  <link rel="stylesheet" href="assets/css/custom.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-129657838-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129657838-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
+      gtag("config", "UA-129657838-1");
+    </script>
+    <script
+      src="https://www.google.com/recaptcha/api.js?onload=onLoad&render=explicit"
+      async
+      defer
+    ></script>
+  </head>
 
-    gtag("config", "UA-129657838-1");
-  </script>
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-</head>
+  <body
+    class="theme-dark io-lungwort"
+    data-spy="scroll"
+    data-target="#mainnav"
+    data-offset="80"
+  >
+    <!-- Header -->
+    <!-- Navbar -->
 
-<body class="theme-dark io-lungwort" data-spy="scroll" data-target="#mainnav" data-offset="80">
-  <!-- Header -->
-  <!-- Navbar -->
+    <header class="site-header is-sticky">
+      <div class="navbar navbar-expand-lg is-transparent" id="mainnav">
+        <nav class="container">
+          <a
+            class="navbar-brand animated"
+            data-animate="fadeInDown"
+            data-delay=".65"
+            href="./"
+          >
+            <img
+              class="logo logo-dark"
+              alt="logo"
+              src="images/logo.png"
+              srcset="images/logo2x.png 2x"
+            />
+            <img
+              class="logo logo-light"
+              alt="logo"
+              src="images/logo.png"
+              srcset="images/logo2x.png 2x"
+            />
+          </a>
 
-  <header class="site-header is-sticky">
-    <div class="navbar navbar-expand-lg is-transparent" id="mainnav">
-      <nav class="container">
-        <a class="navbar-brand animated" data-animate="fadeInDown" data-delay=".65" href="./">
-          <img class="logo logo-dark" alt="logo" src="images/logo.png" srcset="images/logo2x.png 2x" />
-          <img class="logo logo-light" alt="logo" src="images/logo.png" srcset="images/logo2x.png 2x" />
-        </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarToggle"
+          >
+            <span class="navbar-toggler-icon">
+              <span class="ti ti-align-justify"></span>
+            </span>
+          </button>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle">
-          <span class="navbar-toggler-icon">
-            <span class="ti ti-align-justify"></span>
-          </span>
-        </button>
-
-        <div class="collapse navbar-collapse justify-content-end" id="navbarToggle">
-          <ul class="navbar-nav animated remove-animation" data-animate="fadeInDown" data-delay=".9">
-            <li class="nav-item">
-              <a class="nav-link menu-link" href="index.html#why">Why<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link menu-link" href="index.html#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link menu-link" href="index.html#features">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link menu-link active" href="pricing.html">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link menu-link" href="index.html#contact">Contact</a>
-            </li>
-          </ul>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarToggle"
+          >
+            <ul
+              class="navbar-nav animated remove-animation"
+              data-animate="fadeInDown"
+              data-delay=".9"
+            >
+              <li class="nav-item">
+                <a class="nav-link menu-link" href="index.html#why"
+                  >Why<span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu-link" href="index.html#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu-link" href="index.html#features"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu-link" href="pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu-link" href="index.html#contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="section section-pad-md section-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+              <h2
+                class="animated fadeInUp"
+                data-animate="fadeInUp"
+                data-delay=".5"
+              >
+                Pricing
+              </h2>
+              <div class="gaps size-2x"></div>
+              <form
+                id="pricing-form"
+                class="form-message form-message-s2 text-left"
+                action="https://j2cjf2ifhg.execute-api.us-east-2.amazonaws.com/prod/contact-form-email"
+                method="POST"
+                novalidate="novalidate"
+              >
+                <div class="form-results"></div>
+                <div class="row">
+                  <div
+                    class="input-field animated fadeInUp col-lg-6"
+                    data-animate="fadeInUp"
+                    data-delay="0.1"
+                    style="visibility: visible; animation-delay: 0.7s"
+                  >
+                    <input
+                      id="first-name"
+                      name="firstName"
+                      type="text"
+                      placeholder="First Name"
+                      class="input-border required"
+                      aria-required="true"
+                    />
+                  </div>
+                  <div
+                    class="input-field animated fadeInUp col-lg-6"
+                    data-animate="fadeInUp"
+                    data-delay="0.2"
+                    style="visibility: visible; animation-delay: 0.7s"
+                  >
+                    <input
+                      id="last-name"
+                      name="lastName"
+                      type="text"
+                      placeholder="Last Name"
+                      class="input-border required"
+                      aria-required="true"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="input-field animated fadeInUp"
+                  data-animate="fadeInUp"
+                  data-delay=".3"
+                  style="visibility: visible; animation-delay: 0.8s"
+                >
+                  <input
+                    name="email"
+                    type="email"
+                    placeholder="Email"
+                    class="input-border required email"
+                    aria-required="true"
+                  />
+                </div>
+                <div class="row">
+                  <div
+                    class="input-field animated fadeInUp col-lg-6"
+                    data-animate="fadeInUp"
+                    data-delay="0.4"
+                    style="visibility: visible; animation-delay: 0.7s"
+                  >
+                    <input
+                      name="mobileNumber"
+                      type="number"
+                      placeholder="Mobile Number"
+                      class="input-border required"
+                      aria-required="true"
+                      maxlength="10"
+                      minlength="10"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="input-field animated fadeInUp"
+                  data-animate="fadeInUp"
+                  data-delay=".5"
+                  style="visibility: visible; animation-delay: 0.7s"
+                >
+                  <input
+                    name="company"
+                    type="text"
+                    placeholder="Company"
+                    class="input-border required"
+                    aria-required="true"
+                  />
+                </div>
+                <div class="row">
+                  <div
+                    class="input-field animated fadeInUp col-lg-6"
+                    data-animate="fadeInUp"
+                    data-delay="0.6"
+                    style="visibility: visible; animation-delay: 0.7s"
+                  >
+                    <input
+                      name="numberOfUsers"
+                      type="number"
+                      placeholder="No. of Users"
+                      class="input-border required"
+                      aria-required="true"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div
+                    class="input-field animated fadeInUp col-lg-6"
+                    data-animate="fadeInUp"
+                    data-delay="0.7"
+                    style="visibility: visible; animation-delay: 0.7s"
+                  >
+                    <input
+                      name="country"
+                      type="text"
+                      placeholder="Country"
+                      class="input-border required"
+                      aria-required="true"
+                    />
+                  </div>
+                  <div
+                    class="input-field animated fadeInUp col-lg-6"
+                    data-animate="fadeInUp"
+                    data-delay="0.8"
+                    style="visibility: visible; animation-delay: 0.7s"
+                  >
+                    <input
+                      name="state"
+                      type="text"
+                      placeholder="State"
+                      class="input-border required"
+                      aria-required="true"
+                    />
+                    <input
+                      type="hidden"
+                      name="website"
+                      value="ledgermail-pricing"
+                    />
+                    <input id="name" type="hidden" name="name" value="" />
+                  </div>
+                </div>
+                <div
+                  class="input-field animated fadeInUp"
+                  data-animate="fadeInUp"
+                  data-delay="1.0"
+                  style="visibility: visible; animation-delay: 1s"
+                >
+                  <div id="contact-form-captcha"></div>
+                </div>
+                <div
+                  class="input-field animated fadeInUp"
+                  data-animate="fadeInUp"
+                  data-delay="1.0"
+                  style="visibility: visible; animation-delay: 1s"
+                >
+                  <div class="form-results"></div>
+                </div>
+                <div
+                  id="submit-pricing"
+                  class="input-field animated fadeInUp"
+                  data-animate="fadeInUp"
+                  data-delay="0.9"
+                  style="visibility: visible; animation-delay: 1s"
+                >
+                  <button id="pricing-submit" type="submit" class="btn">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
-      </nav>
-    </div>
-    <div class="section section-pad-md section-bg">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 offset-lg-3">
-            <h2 class="animated fadeInUp" data-animate="fadeInUp" data-delay=".5">
-              Pricing
-            </h2>
-            <div class="gaps size-2x"></div>
-            <form id="pricing-form" class="form-message form-message-s2 text-left" 
-              action="https://tqobynyog0.execute-api.us-east-2.amazonaws.com/default/contact-form"
-              method="POST" novalidate="novalidate">
-              <div class="form-results"></div>
-              <div class="row">
-                <div class="input-field animated fadeInUp col-lg-6" data-animate="fadeInUp" data-delay="0.1"
-                  style="visibility: visible; animation-delay: 0.7s;">
-                  <input id="first-name" name="firstName" type="text" placeholder="First Name"
-                    class="input-border required" aria-required="true" />
-                </div>
-                <div class="input-field animated fadeInUp col-lg-6" data-animate="fadeInUp" data-delay="0.2"
-                  style="visibility: visible; animation-delay: 0.7s;">
-                  <input id="last-name" name="lastName" type="text" placeholder="Last Name"
-                    class="input-border required" aria-required="true" />
-                </div>
-              </div>
-              <div class="input-field animated fadeInUp" data-animate="fadeInUp" data-delay=".3"
-                style="visibility: visible; animation-delay: 0.8s;">
-                <input name="email" type="email" placeholder="Email" class="input-border required email"
-                  aria-required="true" />
-              </div>
-              <div class="row">
-                <div class="input-field animated fadeInUp col-lg-6" data-animate="fadeInUp" data-delay="0.4"
-                  style="visibility: visible; animation-delay: 0.7s;">
-                  <input name="mobileNumber" type="number" placeholder="Mobile Number" class="input-border required"
-                    aria-required="true" maxlength="10" minlength="10" />
-                </div>
-              </div>
-              <div class="input-field animated fadeInUp" data-animate="fadeInUp" data-delay=".5"
-                style="visibility: visible; animation-delay: 0.7s;">
-                <input name="company" type="text" placeholder="Company" class="input-border required"
-                  aria-required="true" />
-              </div>
-              <div class="row">
-                <div class="input-field animated fadeInUp col-lg-6" data-animate="fadeInUp" data-delay="0.6"
-                  style="visibility: visible; animation-delay: 0.7s;">
-                  <input name="numberOfUsers" type="number" placeholder="No. of Users" class="input-border required"
-                    aria-required="true" />
-                </div>
-              </div>
-              <div class="row">
-                <div class="input-field animated fadeInUp col-lg-6" data-animate="fadeInUp" data-delay="0.7"
-                  style="visibility: visible; animation-delay: 0.7s;">
-                  <input name="country" type="text" placeholder="Country" class="input-border required"
-                    aria-required="true" />
-                </div>
-                <div class="input-field animated fadeInUp col-lg-6" data-animate="fadeInUp" data-delay="0.8"
-                  style="visibility: visible; animation-delay: 0.7s;">
-                  <input name="state" type="text" placeholder="State" class="input-border required"
-                    aria-required="true" />
-                  <input type="hidden" name="website" value="ledgermail-pricing">
-                  <input id="name" type="hidden" name="name" value="">
+      </div>
+    </header>
 
-                </div>
-              </div>
-              <div class="g-recaptcha" data-sitekey="6Lf5X5EUAAAAAOsnMMtfxZKXioIOuK1gGLf2vF8E" data-callback="onSubmit" data-size="invisible">
-              </div>
-              <div id="submit-pricing" class="input-field animated fadeInUp" data-animate="fadeInUp" data-delay="0.9"
-                style="visibility: visible; animation-delay: 1s;">
-                <button id="pricing-submit" type="submit" class="btn">Submit</button>
-              </div>
-            </form>
+    <!-- footer start -->
+    <div class="section footer-scetion footer-lungwort footer">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <ul class="social">
+              <li class="animated" data-animate="fadeInUp" data-delay=".2">
+                <a href="https://twitter.com/ledgermail"
+                  ><em class="fab fa-twitter"></em
+                ></a>
+              </li>
+              <li class="animated" data-animate="fadeInUp" data-delay=".5">
+                <a href="https://medium.com/@ledgermail"
+                  ><em class="fab fa-medium-m"></em
+                ></a>
+              </li>
+            </ul>
+            <a href="./" class="footer-logo"
+              ><img src="images/logo.png" srcset="images/logo2x.png 2x"
+            /></a>
+            <span class="copyright-text">
+              Copyright &copy; 2019, Ledgermail - A Pingala product
+            </span>
           </div>
         </div>
       </div>
     </div>
-  </header>
-
-  <!-- footer start -->
-  <div class="section footer-scetion footer-lungwort footer">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-md-12">
-          <ul class="social">
-            <li class="animated" data-animate="fadeInUp" data-delay=".2">
-              <a href="https://twitter.com/ledgermail"><em class="fab fa-twitter"></em></a>
-            </li>
-            <li class="animated" data-animate="fadeInUp" data-delay=".5">
-              <a href="https://medium.com/@ledgermail"><em class="fab fa-medium-m"></em></a>
-            </li>
-          </ul>
-          <a href="./" class="footer-logo"><img src="images/logo.png" srcset="images/logo2x.png 2x" /></a>
-          <span class="copyright-text">
-            Copyright &copy; 2019, Ledgermail - A Pingala product
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- footer end -->
-  <script src="assets/js/jquery.bundle.js?ver=142"></script>
-  <script src="assets/js/script.js?ver=142"></script>
-  <script src="assets/js/pricing-script.js"></script>
-</body>
-
+    <!-- footer end -->
+    <script src="assets/js/jquery.bundle.js?ver=142"></script>
+    <script src="assets/js/script.js?ver=142"></script>
+    <script src="assets/js/pricing-script.js"></script>
+    <script src="assets/js/captcha.js"></script>
+  </body>
 </html>
