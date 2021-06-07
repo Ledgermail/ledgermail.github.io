@@ -20,8 +20,7 @@
               .slideDown(800);
            
             if (data.result !== "error") {
-               grecaptcha.reset();
-              response = "";
+               grecaptcha.reset(contactFormWidget);
               $("#contact-form")
                 .clearForm()
                 .find(".input-field")
