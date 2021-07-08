@@ -170,13 +170,14 @@
     </div>
     <!-- add -->
     <div id="myModal" class="modal fade mt-5">
-      <div class="modal-dialog  modal-lg">
+      <div class="modal-dialog modal-lg">
         <div
           class="modal-content"
           style="
             color: white;
             background-size: cover;
-            background-image: url(/assets/images/Background2.jpg);
+
+            background-image: url(/assets/images/background3.png);
           "
         >
           <div class="modal-body" style="padding-top: 0 !important">
@@ -186,7 +187,7 @@
                   type="button"
                   class="close"
                   data-dismiss="modal"
-                  style="color: white"
+                  style="color: #060612"
                 >
                   &times;
                 </button>
@@ -253,10 +254,12 @@
               <div class="row mt-4 justify-content-center">
                 <div class="col-12 text-center">
                   <p class="modal-note">
-                    <span class="h5" style="color:  rgb(121, 15, 15) !important"> * </span>
+                    <span class="h5" style="color: rgb(121, 15, 15) !important">
+                      *
+                    </span>
                     Only Pre-registered users will get FREE access to LedgerMail
                     and FREE XDC coins once it is launched on
-                    <span class="h5" style="color:   rgb(51, 2, 51)">
+                    <span class="h5" style="color: rgb(51, 2, 51)">
                       1st August 2021
                     </span>
                   </p>
@@ -269,7 +272,7 @@
                     style="
                       background: linear-gradient(
                         to right,
-                       #000000 100%,
+                        #000000 100%,
                         #000000 100%
                       );
 
@@ -313,25 +316,23 @@
     </div>
 
     <header class="site-header is-sticky">
-      <div
-        style="
-          /* background-color: black; */
-          background-color: #706f6f;
-          position: fixed;
-          top: 0;
-          width: 100%;
-          z-index: 1050;
-          margin-bottom: 20px;
-          text-align: center;
-          padding: 5px;
-          font-size: 18px;
-          font-weight: 400;
-        "
-      >
-        Pre-Register yourself now and get FREE access to LedgerMail
+      <div class="pre-register-text">
+        <a
+          style="
+            cursor: pointer;
+            color: rgb(74, 26, 119);
+            text-decoration: none;
+            font-weight: 500;
+          "
+        >
+          Pre-Register
+        </a>
+        yourself now and get
+        <span style="color: red; font-weight: 500"> FREE</span> access to
+        LedgerMail
       </div>
-      <div class=" pt-5 navbar navbar-expand-lg is-transparent" id="mainnav">
-        <nav class="container ">
+      <div class="pt-2 pt-md-4 pt-lg-5 navbar navbar-expand-lg is-transparent" id="mainnav">
+        <nav class="container">
           <a
             class="navbar-brand animated"
             data-animate="fadeInDown"
