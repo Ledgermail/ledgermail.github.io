@@ -6,7 +6,7 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />  
+    />
     <meta
       name="description"
       content="Ledgermail.io - is  World's first email service on Blockchain - Ledgermail integrates with browsers and existing email web apps to allow easy access to ledgermail and send private, secure and encrypted emails."
@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="assets/css/slider.css" />
     <link rel="stylesheet" href="assets/css/faq-section.css" />
     <link rel="stylesheet" href="assets/css/intro-video.css" />
+    <link rel="stylesheet" href="assets/css/modal.css" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <!-- text -->
@@ -167,6 +168,125 @@
         </div>
       </div>
     </div>
+    <!-- add -->
+    <div id="myModal" class="modal fade mt-5">
+      <div class="modal-dialog  modal-lg">
+        <div
+          class="modal-content"
+          style="
+            color: white;
+            background-size: cover;
+            background-image: url(/assets//images/background1.png);
+          "
+        >
+          <div class="modal-body" style="padding-top: 0 !important">
+            <div class="row mb-3 justify-content-center px-1">
+              <div class="col-12 text-end" style="padding: 0 !important">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  style="color: white"
+                >
+                  &times;
+                </button>
+              </div>
+              <div class="col-12" style="padding: 0 !important">
+                <p class="modal-title">
+                  LedgerMail – Decentralized Email Solution
+                </p>
+              </div>
+            </div>
+            <p class="modal-question">
+              Are you worried about your emails being hacked, Privacy being
+              compromised through ads and want to be part of decentralized
+              ecosystem with complete control of your data?
+            </p>
+            <p class="text-center modal-preregister">
+              Pre-register yourself to access LedgerMail for
+              <span
+                class="h3"
+                style="-webkit-animation: colorchange 1s infinite alternate"
+                >FREE</span
+              >
+              <br />
+              &
+              <br />
+              Get rewarded with
+              <span
+                class="h3"
+                style="-webkit-animation: colorchange 1s infinite alternate"
+                >FREE</span
+              >
+              XDC Coins worth 1 USD
+            </p>
+            <form>
+              <div class="row justify-content-center">
+                <div class="col-12 col-lg-6 py-lg-4">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      size="10"
+                      class="form-control"
+                      placeholder="Name"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 py-lg-4">
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Email Address"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <button type="submit" class="btn btn-primary">
+                    Pre-Register
+                  </button>
+                </div>
+              </div>
+
+              <div class="row mt-4 justify-content-center">
+                <div class="col-12 text-center">
+                  <p class="modal-note">
+                    <span class="h5" style="color: yellow"> * </span>
+                    Only Pre-registered users will get FREE access to LedgerMail
+                    and FREE XDC coins once it is launched on
+                    <span class="h5" style="color: aliceblue">
+                      1st August 2021
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div class="row my-4 justify-content-center">
+                <div class="col-12 text-center">
+                  <p
+                    class="h3"
+                    style="
+                      background: linear-gradient(
+                        to right,
+                        #ff99cc 0%,
+                        #ffffcc 100%
+                      );
+
+                      -webkit-background-clip: text;
+                      -webkit-text-fill-color: transparent;
+                    "
+                  >
+                    Welcoming you to the World of Decentralization!
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end -->
 
     <div
       class="modal fade hero-video-popup"
@@ -193,8 +313,25 @@
     </div>
 
     <header class="site-header is-sticky">
-      <div class="navbar navbar-expand-lg is-transparent" id="mainnav">
-        <nav class="container">
+      <div
+        style="
+          /* background-color: black; */
+          background-color: #706f6f;
+          position: fixed;
+          top: 0;
+          width: 100%;
+          z-index: 1050;
+          margin-bottom: 20px;
+          text-align: center;
+          padding: 5px;
+          font-size: 18px;
+          font-weight: 400;
+        "
+      >
+        Pre-Register yourself now and get FREE access to LedgerMail
+      </div>
+      <div class=" pt-5 navbar navbar-expand-lg is-transparent" id="mainnav">
+        <nav class="container ">
           <a
             class="navbar-brand animated"
             data-animate="fadeInDown"
@@ -1980,7 +2117,7 @@
               >
                 <div id="contact-form-captcha"></div>
               </div>
-	      <div
+              <div
                 class="input-field animated fadeInUp"
                 data-animate="fadeInUp"
                 data-delay="2.0"
@@ -2056,6 +2193,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <script>
       //   onLoad();
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#myModal").modal("show");
+      });
     </script>
   </body>
 </html>
