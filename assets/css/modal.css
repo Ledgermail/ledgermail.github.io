@@ -1,0 +1,122 @@
+@-webkit-keyframes colorchange {
+  100% {
+    color: white;
+  }
+  50% {
+    color: blueviolet;
+  }
+  0% {
+    color: red;
+  }
+}
+
+
+.modal-title {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: white !important;
+  text-align: center !important;
+}
+
+.modal-question {
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  font-weight: 400;
+  color: white !important;
+  text-align: center;
+}
+
+.modal-preregister {
+  font-size: 26px;
+  color: yellow !important;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.modal-note {
+  font-size: 18px;
+  color: yellow !important;
+  font-weight: 500;
+}
+
+@media (max-width: 576px) {
+  .modal-title {
+    font-size: 18px;
+    text-align: left !important;
+  }
+  .modal-question {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .modal-preregister {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+  }
+  .modal-note {
+    font-size: 10px;
+    color: yellow !important;
+    font-weight: 400;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .modal-title {
+    font-size: 18px;
+    text-align: left !important;
+  }
+  .modal-question {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .modal-preregister {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .modal-title {
+    font-size: 18px;
+    text-align: center !important;
+  }
+  .modal-question {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .modal-note {
+    font-size: 12px;
+    color: yellow !important;
+    font-weight: 400;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .modal-title {
+    font-size: 18px;
+    text-align: left !important;
+  }
+  .modal-question {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .modal-preregister {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .modal-title {
+    font-size: 28px;
+    text-align: center !important;
+  }
+  .modal-question {
+  }
+}
