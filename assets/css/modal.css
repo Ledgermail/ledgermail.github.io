@@ -1,12 +1,12 @@
 @-webkit-keyframes colorchange {
   100% {
-    color: white;
+    color: black;
   }
   50% {
-    color: blueviolet;
+    color: rgb(87, 21, 149);
   }
   0% {
-    color: red;
+    color: rgb(200, 5, 5);
   }
 }
 
@@ -15,7 +15,7 @@
   font-size: 30px;
   font-weight: bold;
   letter-spacing: 1px;
-  color: white !important;
+  color: #060612 !important;
   text-align: center !important;
 }
 
@@ -24,20 +24,20 @@
   letter-spacing: 1px;
   line-height: 20px;
   font-weight: 400;
-  color: white !important;
+  color: #060612 !important;
   text-align: center;
 }
 
 .modal-preregister {
   font-size: 26px;
-  color: yellow !important;
+  color: rgb(51, 2, 51) !important;
   font-weight: 500;
   line-height: 26px;
 }
 
 .modal-note {
   font-size: 18px;
-  color: yellow !important;
+  color: rgb(121, 15, 15) !important;
   font-weight: 500;
 }
 
