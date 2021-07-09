@@ -221,21 +221,33 @@
               >
               XDC Coins worth 1 USD
             </p>
+            <div style="display: none">
+              <iframe name="hiddenFrame"></iframe>
+            </div>
+          
             <form
-              action="https://7q4us37nyd.execute-api.us-east-2.amazonaws.com/default/preregister-form"
+              action="https://tqobynyog0.execute-api.us-east-2.amazonaws.com/default/contact-form"
               method="POST"
+              target="hiddenFrame"
               id="preregister-form"
               class="float-right"
               style="min-width: 100%"
               role="form"
             >
+              <input
+                type="hidden"
+                name="website"
+                value="ledgermail-preregister"
+              />
+
               <div class="row justify-content-center py-lg-2">
                 <div class="col-12 col-lg-5 pt-lg-2">
                   <div class="form-group">
                     <input
-                      id="name"
+                      id="name preregister-name"
                       type="text"
-                      class="form-control"
+                      class="form-control required name"
+                       aria-required="true"
                       placeholder="Name"
                       name="name"
                       required
@@ -247,7 +259,8 @@
                     <input
                       id="email"
                       type="email"
-                      class="form-control"
+                       class="form-control required"
+                       aria-required="true"
                       placeholder="Primary Email Address"
                       name="email"
                       required
@@ -259,7 +272,8 @@
                     <input
                       id="age"
                       type="number"
-                      class="form-control"
+                       class="form-control required"
+                       aria-required="true"
                       placeholder="Age"
                       name="email"
                       required
@@ -267,12 +281,16 @@
                   </div>
                 </div>
                 <div class="col-auto">
-                  <button type="submit" class="btn btn-primary">
+                  <button
+                    type="submit"
+                    class="btn btn-primary"
+                    onclick="sendEmail()"
+                  >
                     Pre-Register
                   </button>
                 </div>
               </div>
-              <div id="message"></div>
+              <div class="message" role="alert"></div>
             </form>
 
             <div class="row mt-4 justify-content-center">
