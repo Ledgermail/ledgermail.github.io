@@ -221,70 +221,97 @@
               >
               XDC Coins worth 1 USD
             </p>
-            <form>
-              <div class="row justify-content-center">
-                <div class="col-12 col-lg-6 py-lg-4">
+            <!-- action="https://7q4us37nyd.execute-api.us-east-2.amazonaws.com/default/preregister-form"
+            method="POST" -->
+            <form
+              id="preregister-form"
+              class="float-right"
+              style="min-width: 100%"
+              role="form"
+            >
+              <div class="row justify-content-center py-lg-2">
+                <div class="col-12 col-lg-5 pt-lg-2">
                   <div class="form-group">
                     <input
+                      id="name"
                       type="text"
-                      size="10"
                       class="form-control"
                       placeholder="Name"
+                      name="name"
                       required
                     />
                   </div>
                 </div>
-                <div class="col-12 col-lg-6 py-lg-4">
+                <div class="col-12 col-lg-5 pt-lg-2">
                   <div class="form-group">
                     <input
+                      id="email"
                       type="email"
                       class="form-control"
-                      placeholder="Email Address"
+                      placeholder="Primary Email Address"
+                      name="email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-lg-2 pt-lg-2">
+                  <div class="form-group">
+                    <input
+                      id="age"
+                      type="number"
+                      class="form-control"
+                      placeholder="Age"
+                      name="email"
                       required
                     />
                   </div>
                 </div>
                 <div class="col-auto">
-                  <button type="submit" class="btn btn-primary">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    onclick="sendEmail()"
+                  >
                     Pre-Register
                   </button>
                 </div>
               </div>
-
-              <div class="row mt-4 justify-content-center">
-                <div class="col-12 text-center">
-                  <p class="modal-note">
-                    <span class="h5" style="color: rgb(121, 15, 15) !important">
-                      *
-                    </span>
-                    Only Pre-registered users will get FREE access to LedgerMail
-                    and FREE XDC coins once it is launched on
-                    <span class="h5" style="color: rgb(51, 2, 51)">
-                      1st August 2021
-                    </span>
-                  </p>
-                </div>
-              </div>
-              <div class="row my-4 justify-content-center">
-                <div class="col-12 text-center">
-                  <p
-                    class="h3"
-                    style="
-                      background: linear-gradient(
-                        to right,
-                        #000000 100%,
-                        #000000 100%
-                      );
-
-                      -webkit-background-clip: text;
-                      -webkit-text-fill-color: transparent;
-                    "
-                  >
-                    Welcoming you to the World of Decentralization!
-                  </p>
-                </div>
-              </div>
+              <div id="message"></div>
             </form>
+
+            <div class="row mt-4 justify-content-center">
+              <div class="col-12 text-center">
+                <p class="modal-note">
+                  <span class="h5" style="color: rgb(121, 15, 15) !important">
+                    *
+                  </span>
+                  Only Pre-registered users will get FREE access to LedgerMail
+                  and FREE XDC coins once it is launched on
+                  <span class="h5" style="color: rgb(51, 2, 51)">
+                    1st August 2021
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="row my-4 justify-content-center">
+              <div class="col-12 text-center">
+                <p
+                  class="h3"
+                  style="
+                    background: linear-gradient(
+                      to right,
+                      #000000 100%,
+                      #000000 100%
+                    );
+
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                  "
+                >
+                  Welcoming you to the World of Decentralization!
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -324,6 +351,8 @@
             text-decoration: none;
             font-weight: 500;
           "
+          data-toggle="modal"
+          data-target="#myModal"
         >
           Pre-Register
         </a>
@@ -331,7 +360,10 @@
         <span style="color: red; font-weight: 500"> FREE</span> access to
         LedgerMail
       </div>
-      <div class="pt-2 pt-md-4 pt-lg-5 navbar navbar-expand-lg is-transparent" id="mainnav">
+      <div
+        class="pt-2 pt-md-4 pt-lg-5 navbar navbar-expand-lg is-transparent"
+        id="mainnav"
+      >
         <nav class="container">
           <a
             class="navbar-brand animated"
@@ -1837,6 +1869,30 @@
             </ul>
           </div>
         </div>
+        <div class="row">
+          <div class="col-lg-12 text-center mt-5">
+            <h4>Pricing for Enterprises</h4>
+          </div>
+          <div class="col-lg-12">
+            <p class="text-center">
+              If you want individual account,
+              <a
+                href="#"
+                style="font-weight: 400"
+                class="menu-link"
+                data-toggle="modal"
+                data-target="#myModal"
+              >
+                Pre-Register
+              </a>
+              yourself for
+              <span style="color: red; font-size: 24px; font-weight: 500">
+                FREE
+              </span>
+              here!
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -2192,6 +2248,8 @@
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/slider-script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="assets/js/sendMail.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
       //   onLoad();
     </script>
