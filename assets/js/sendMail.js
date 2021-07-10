@@ -34,10 +34,7 @@ function sendEmail(e) {
         body: test.toString(),
       }
     ).then((response) => {
-      console.log(
-        "🚀 ~ file: sendMail.js ~ line 36 ~ ).then ~ response",
-        response
-      );
+   
       preregister.clearForm();
 
       alertmessage.removeClass("hide").addClass("show").slideDown(400);
