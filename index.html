@@ -180,7 +180,7 @@
             background-image: url(/assets/images/background3.png);
           "
         >
-          <div class="modal-body" style="padding-top: 0 !important">
+          <div class="modal-body" style="padding-top: 0 !important; padding-bottom: 0 !important">
             <div class="row mb-3 justify-content-center px-1">
               <div class="col-12 text-end" style="padding: 0 !important">
                 <button
@@ -198,12 +198,12 @@
                 </p>
               </div>
             </div>
-            <p class="modal-question">
+            <p class="modal-question" style="margin-bottom: 0 !important;">
               Are you worried about your emails being hacked, Privacy being
               compromised through ads and want to be part of decentralized
               ecosystem with complete control of your data?
             </p>
-            <p class="text-center modal-preregister">
+            <p class="text-center modal-preregister" style="margin-bottom: 0 !important;">
               Pre-register yourself to access LedgerMail for
               <span
                 class="h3"
@@ -224,10 +224,10 @@
             <div style="display: none">
               <iframe name="hiddenFrame"></iframe>
             </div>
-          
+
+            <!-- action="https://tqobynyog0.execute-api.us-east-2.amazonaws.com/default/contact-form"
+            method="POST" -->
             <form
-              action="https://tqobynyog0.execute-api.us-east-2.amazonaws.com/default/contact-form"
-              method="POST"
               target="hiddenFrame"
               id="preregister-form"
               class="float-right"
@@ -237,6 +237,7 @@
               <input
                 type="hidden"
                 name="website"
+                id="preregister_website"
                 value="ledgermail-preregister"
               />
 
@@ -244,10 +245,10 @@
                 <div class="col-12 col-lg-5 pt-lg-2">
                   <div class="form-group">
                     <input
-                      id="name preregister-name"
+                      id="preregister_name"
                       type="text"
                       class="form-control required name"
-                       aria-required="true"
+                      aria-required="true"
                       placeholder="Name"
                       name="name"
                       required
@@ -257,10 +258,10 @@
                 <div class="col-12 col-lg-5 pt-lg-2">
                   <div class="form-group">
                     <input
-                      id="email"
+                      id="preregister_email"
                       type="email"
-                       class="form-control required"
-                       aria-required="true"
+                      class="form-control required"
+                      aria-required="true"
                       placeholder="Primary Email Address"
                       name="email"
                       required
@@ -270,12 +271,13 @@
                 <div class="col-12 col-lg-2 pt-lg-2">
                   <div class="form-group">
                     <input
-                      id="age"
+                      id="preregister_age"
+                      min="18"
                       type="number"
-                       class="form-control required"
-                       aria-required="true"
+                      class="form-control required"
+                      aria-required="true"
                       placeholder="Age"
-                      name="email"
+                      name="age"
                       required
                     />
                   </div>
@@ -284,13 +286,41 @@
                   <button
                     type="submit"
                     class="btn btn-primary"
+                    id="submit-preregister"
                     onclick="sendEmail()"
                   >
                     Pre-Register
                   </button>
                 </div>
               </div>
-              <div class="message" role="alert"></div>
+              <div
+                class="message alert alert-success alert-dismissible fade hide"
+                style="
+                  position: fixed;
+                  bottom: 5px;
+                  left: 2;
+                  width: 96%;
+                  z-index: 1000;
+                "
+                role="alert"
+              >
+                <button
+                  type="button"
+                  class="close"
+                  style="color: black"
+                  data-dismiss="alert"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <h6 style="color: black; font-weight: 500" class="text-center">
+                  Thank you for Pre-registration, please check your registered
+                  email for confirmation.
+                </h6>
+                <h4 style="color: blueviolet" class="text-center">
+                  Welcome to Decentralized Email Ecosystem
+                </h4>
+              </div>
             </form>
 
             <div class="row mt-4 justify-content-center">
@@ -302,7 +332,7 @@
                   Only Pre-registered users will get FREE access to LedgerMail
                   and FREE XDC coins once it is launched on
                   <span class="h5" style="color: rgb(51, 2, 51)">
-                    1st August 2021
+                    2nd August 2021
                   </span>
                 </p>
               </div>
@@ -310,7 +340,7 @@
             <div class="row my-4 justify-content-center">
               <div class="col-12 text-center">
                 <p
-                  class="h3"
+                  class="h4"
                   style="
                     background: linear-gradient(
                       to right,
@@ -358,21 +388,28 @@
 
     <header class="site-header is-sticky">
       <div class="pre-register-text">
-        <a
-          style="
+        <style>
+          .modal-open {
             cursor: pointer;
-            color: rgb(74, 26, 119);
-            text-decoration: none;
+            color: rgb(61, 10, 109) !important;
+            border: 1px solid rgb(61, 10, 109);
+            border-radius: 3px;
             font-weight: 500;
-          "
-          data-toggle="modal"
-          data-target="#myModal"
-        >
-          Pre-Register
+            font-size: 18px;
+            padding : 3px;
+            
+          }
+          .modal-open:hover {
+            color: white !important;
+            background-color: blueviolet !important;
+          }
+        </style>
+        <a class="modal-open" data-toggle="modal" data-target="#myModal">
+          &nbsp; Pre-Register
         </a>
-        yourself now and get
-        <span style="color: red; font-weight: 500"> FREE</span> access to
-        LedgerMail
+        &nbsp; yourself now and get
+        <span style="font-size: 20px; color: red; font-weight: 500"> FREE</span>
+        access to LedgerMail
       </div>
       <div
         class="pt-2 pt-md-4 pt-lg-5 navbar navbar-expand-lg is-transparent"
@@ -1196,7 +1233,7 @@
                 data-animate="fadeInUp"
                 data-delay=".1"
               >
-                Pricing
+                Pricing for Enterprises
               </h2>
               <p
                 class="animated text-center"
@@ -1885,25 +1922,31 @@
         </div>
         <div class="row">
           <div class="col-lg-12 text-center mt-5">
-            <h4>Pricing for Enterprises</h4>
+              <!-- <h6 class="heading-sm-s2">How it work</h6> -->
+              <h2
+                class="section-title-s6 text-center"
+               
+               
+              >Pricing for Individuals</h2>
           </div>
           <div class="col-lg-12">
             <p class="text-center">
               If you want individual account,
               <a
                 href="#"
-                style="font-weight: 400"
+                style="font-weight: 400;"
                 class="menu-link"
                 data-toggle="modal"
                 data-target="#myModal"
               >
                 Pre-Register
-              </a>
+             
               yourself for
               <span style="color: red; font-size: 24px; font-weight: 500">
                 FREE
               </span>
               here!
+              </a>
             </p>
           </div>
         </div>

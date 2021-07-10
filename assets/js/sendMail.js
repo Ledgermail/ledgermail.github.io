@@ -1,34 +1,56 @@
-function sendEmail() {
+function sendEmail(e) {
+  // e.preventDefault();
+ 
+
   var preregister = $("#preregister-form");
-  preregister.validate({
-    invalidHandler: function () {
-      console.log("1");
-    },
-    submitHandler: function (form) {
-      console.log("🚀 ~ file: sendMail.js ~ line 8 ~ sendEmail ~ form", form);
-      console.log("2");
-    },
-  });
   var alertmessage = preregister.find(".message");
-  var name = document.getElementById("preregister-name");
-  email = preregister.find(".email");
-  age = preregister.find(".age");
 
-  if (name.length && email.length && age.length) {
-    alertmessage
-      .removeClass("alert alert-danger alert-success")
-      .addClass("alert alert-success")
-      .html("Thank you!");
-  }
-  setTimeout(() => {
-    if (contactForm.length > 0) {
-      alert(
-        "pre registration successful. Please check your email for confirmation"
+  var name = document.getElementById("preregister_name").value;
+  email = document.getElementById("preregister_email").value;
+  age = document.getElementById("preregister_age").value;
+  website = document.getElementById("preregister_website").value;
+  if (name != "" && email != "" && Number(age) > 17) {
+     document.getElementById("submit-preregister").disabled = true;
+     document.getElementById("submit-preregister").style.color = "grey";
+    var data = {
+      name: name,
+      email: email,
+      age: age,
+      website: website,
+    };
+    var test = new URLSearchParams(
+      Object.keys(data).map((key) => [key, data[key]])
+    );
+
+    fetch(
+      "https://tqobynyog0.execute-api.us-east-2.amazonaws.com/default/contact-form",
+      {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/json",
+          // 'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: test.toString(),
+      }
+    ).then((response) => {
+      console.log(
+        "🚀 ~ file: sendMail.js ~ line 36 ~ ).then ~ response",
+        response
       );
-    }
-  }, 2000);
+      preregister.clearForm();
+
+      alertmessage.removeClass("hide").addClass("show").slideDown(400);
+      document.getElementById("submit-preregister").disabled = false;
+      document.getElementById("submit-preregister").style.color = "white";
+    });
+
+    // .error((error) => {
+    //   console.log(error);
+    // });
+  }
 
   setTimeout(() => {
-    preregister.clearForm();
+    alertmessage.removeClass("show").addClass("hide");
   }, 10000);
 }
