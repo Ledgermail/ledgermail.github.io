@@ -180,7 +180,10 @@
             background-image: url(/assets/images/background3.png);
           "
         >
-          <div class="modal-body" style="padding-top: 0 !important; padding-bottom: 0 !important">
+          <div
+            class="modal-body"
+            style="padding-top: 0 !important; padding-bottom: 0 !important"
+          >
             <div class="row mb-3 justify-content-center px-1">
               <div class="col-12 text-end" style="padding: 0 !important">
                 <button
@@ -198,12 +201,15 @@
                 </p>
               </div>
             </div>
-            <p class="modal-question" style="margin-bottom: 0 !important;">
+            <p class="modal-question" style="margin-bottom: 0 !important">
               Are you worried about your emails being hacked, Privacy being
               compromised through ads and want to be part of decentralized
               ecosystem with complete control of your data?
             </p>
-            <p class="text-center modal-preregister" style="margin-bottom: 0 !important;">
+            <p
+              class="text-center modal-preregister"
+              style="margin-bottom: 0 !important"
+            >
               Pre-register yourself to access LedgerMail for
               <span
                 class="h3"
@@ -285,21 +291,22 @@
                 <div class="col-auto">
                   <button
                     type="submit"
-                    class="btn btn-primary"
-                    id="submit-preregister"
                     onclick="sendEmail()"
+                    class="btn btn-primary"
+                    value="Pre-Register"
+                    id="submit-preregister"
                   >
                     Pre-Register
                   </button>
                 </div>
               </div>
               <div
-                class="message alert alert-success alert-dismissible fade hide"
+                class="message alert alert-success alert-dismissible fade hide text-center"
                 style="
                   position: fixed;
                   bottom: 5px;
-                  left: 2;
-                  width: 96%;
+                  
+                  width: 95%;
                   z-index: 1000;
                 "
                 role="alert"
@@ -325,7 +332,10 @@
 
             <div class="row mt-4 justify-content-center">
               <div class="col-12 text-center">
-                <p class="modal-note">
+                <p
+                  class="modal-note"
+                  style="color: rgb(121, 15, 15) !important"
+                >
                   <span class="h5" style="color: rgb(121, 15, 15) !important">
                     *
                   </span>
@@ -339,19 +349,7 @@
             </div>
             <div class="row my-4 justify-content-center">
               <div class="col-12 text-center">
-                <p
-                  class="h4"
-                  style="
-                    background: linear-gradient(
-                      to right,
-                      #000000 100%,
-                      #000000 100%
-                    );
-
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                  "
-                >
+                <p class="welcome-message">
                   Welcoming you to the World of Decentralization!
                 </p>
               </div>
@@ -396,8 +394,7 @@
             border-radius: 3px;
             font-weight: 500;
             font-size: 18px;
-            padding : 3px;
-            
+            padding: 3px;
           }
           .modal-open:hover {
             color: white !important;
@@ -412,7 +409,7 @@
         access to LedgerMail
       </div>
       <div
-        class="pt-2 pt-md-4 pt-lg-5 navbar navbar-expand-lg is-transparent"
+        class="pt-5 pt-md-5 navbar navbar-expand-lg is-transparent"
         id="mainnav"
       >
         <nav class="container">
@@ -1922,30 +1919,26 @@
         </div>
         <div class="row">
           <div class="col-lg-12 text-center mt-5">
-              <!-- <h6 class="heading-sm-s2">How it work</h6> -->
-              <h2
-                class="section-title-s6 text-center"
-               
-               
-              >Pricing for Individuals</h2>
+            <!-- <h6 class="heading-sm-s2">How it work</h6> -->
+            <h2 class="section-title-s6 text-center">
+              Pricing for Individuals
+            </h2>
           </div>
           <div class="col-lg-12">
             <p class="text-center">
               If you want individual account,
               <a
                 href="#"
-                style="font-weight: 400;"
+                style="font-weight: 400"
                 class="menu-link"
                 data-toggle="modal"
                 data-target="#myModal"
               >
-                Pre-Register
-             
-              yourself for
-              <span style="color: red; font-size: 24px; font-weight: 500">
-                FREE
-              </span>
-              here!
+                Pre-Register yourself for
+                <span style="color: red; font-size: 24px; font-weight: 500">
+                  FREE
+                </span>
+                here!
               </a>
             </p>
           </div>

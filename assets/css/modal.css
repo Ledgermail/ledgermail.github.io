@@ -54,41 +54,52 @@
   color: black !important;
 }
 
+.welcome-message {
+  font-size: 30px;
+  color: black !important;
+  font-weight: 600;
+}
 @media (max-width: 576px) {
   .modal-title {
-    font-size: 18px;
+    font-size: 16px;
     text-align: left !important;
   }
   .modal-question {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 13px;
   }
   .modal-preregister {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 14px;
+    margin-top: 10px;
+    padding-bottom: 10px;
   }
   .modal-note {
-    font-size: 10px;
-    color: yellow !important;
+    font-size: 11px;
     font-weight: 400;
     line-height: 16px;
+    margin-top: 10px;
   }
   .pre-register-text {
-  text-align: center;
-  position: relative;
-  font-size: 12px;
-  padding: 2px;
-  font-weight: 400;
-  color: black !important;
-  z-index: 0;
-}
+    text-align: center;
+    position: relative;
+    font-size: 13px;
+    line-height: 28px;
+    padding: 4px 4px 0px 4px;
+    font-weight: 400;
+    color: black !important;
+    z-index: 0;
+  }
+  .welcome-message {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
   .modal-title {
     font-size: 18px;
-    text-align: left !important;
+    text-align: center !important;
   }
   .modal-question {
     font-size: 14px;
@@ -99,15 +110,25 @@
     font-weight: 500;
     line-height: 18px;
   }
+
+  .modal-note {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-top: 10px;
+  }
   .pre-register-text {
-  text-align: center;
-  position: relative;
-  font-size: 14px;
-  padding: 5px;
-  font-weight: 400;
-  color: black !important;
-  z-index: 0;
-}
+    text-align: center;
+    position: relative;
+    font-size: 14px;
+    padding: 5px;
+    font-weight: 400;
+    color: black !important;
+    z-index: 0;
+  }
+  .welcome-message {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
