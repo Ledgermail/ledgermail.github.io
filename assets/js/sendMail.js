@@ -2,7 +2,6 @@ $("#submit-preregister").on("touchstart click", sendEmail);
 
 function sendEmail(e) {
   // e.preventDefault();
-  console.log("here");
   var preregister = $("#preregister-form");
   var alertmessage = preregister.find(".message");
 
@@ -37,7 +36,8 @@ function sendEmail(e) {
     ).then((response) => {
       preregister.clearForm();
 
-      alertmessage.removeClass("hide").addClass("show").slideDown(400);
+      
+      alertmessage.removeClass("hide notDisplay").addClass("show display").slideDown(400);
       document.getElementById("submit-preregister").disabled = false;
       document.getElementById("submit-preregister").style.color = "white";
     });
@@ -48,6 +48,6 @@ function sendEmail(e) {
   }
 
   setTimeout(() => {
-    alertmessage.removeClass("show").addClass("hide");
+    alertmessage.removeClass("show display").addClass("hide notDisplay");
   }, 10000);
 }
