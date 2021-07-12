@@ -1,10 +1,8 @@
-$("#submit-preregister").on("touchstart click", sendEmail 
- 
-);
+$("#submit-preregister").on("touchstart click", sendEmail);
 
 function sendEmail(e) {
   // e.preventDefault();
-
+  console.log("here");
   var preregister = $("#preregister-form");
   var alertmessage = preregister.find(".message");
 
