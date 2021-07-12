@@ -1,6 +1,9 @@
+$("#submit-preregister").on("touchstart click", sendEmail 
+ 
+);
+
 function sendEmail(e) {
   // e.preventDefault();
- 
 
   var preregister = $("#preregister-form");
   var alertmessage = preregister.find(".message");
@@ -10,8 +13,8 @@ function sendEmail(e) {
   age = document.getElementById("preregister_age").value;
   website = document.getElementById("preregister_website").value;
   if (name != "" && email != "" && Number(age) > 17) {
-     document.getElementById("submit-preregister").disabled = true;
-     document.getElementById("submit-preregister").style.color = "grey";
+    document.getElementById("submit-preregister").disabled = true;
+    document.getElementById("submit-preregister").style.color = "grey";
     var data = {
       name: name,
       email: email,
@@ -34,7 +37,6 @@ function sendEmail(e) {
         body: test.toString(),
       }
     ).then((response) => {
-   
       preregister.clearForm();
 
       alertmessage.removeClass("hide").addClass("show").slideDown(400);

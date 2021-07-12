@@ -249,7 +249,7 @@
 
               <div class="row justify-content-center py-lg-2">
                 <div class="col-12 col-lg-5 pt-lg-2">
-                  <div class="form-group">
+                  <div class="input-field">
                     <input
                       id="preregister_name"
                       type="text"
@@ -262,7 +262,7 @@
                   </div>
                 </div>
                 <div class="col-12 col-lg-5 pt-lg-2">
-                  <div class="form-group">
+                  <div class="input-field mt-3">
                     <input
                       id="preregister_email"
                       type="email"
@@ -275,7 +275,7 @@
                   </div>
                 </div>
                 <div class="col-12 col-lg-2 pt-lg-2">
-                  <div class="form-group">
+                  <div class="input-field mt-3">
                     <input
                       id="preregister_age"
                       min="18"
@@ -289,15 +289,16 @@
                   </div>
                 </div>
                 <div class="col-auto">
-                  <button
-                    type="submit"
-                    onclick="sendEmail()"
-                    class="btn btn-primary"
-                    value="Pre-Register"
-                    id="submit-preregister"
-                  >
-                    Pre-Register
-                  </button>
+                  <div class="input-field mt-3">
+                    <button
+                      type="submit"
+                      class="btn btn-primary"
+                      value="Pre-Register"
+                      id="submit-preregister"
+                    >
+                      Pre-Register
+                    </button>
+                  </div>
                 </div>
               </div>
               <div
@@ -305,7 +306,7 @@
                 style="
                   position: fixed;
                   bottom: 5px;
-                  
+
                   width: 95%;
                   z-index: 1000;
                 "
@@ -320,13 +321,13 @@
                 >
                   <span aria-hidden="true">&times;</span>
                 </button>
-                <h6 style="color: black; font-weight: 500" class="text-center">
+                <p style="color: black; font-weight: 500" class="text-center">
                   Thank you for Pre-registration, please check your registered
                   email for confirmation.
-                </h6>
-                <h4 style="color: blueviolet" class="text-center ">
+                </p>
+                <h5 style="color: blueviolet" class="text-center">
                   Welcome to Decentralized Email Ecosystem
-                </h4>
+                </h5>
               </div>
             </form>
 
