@@ -231,9 +231,9 @@
               <iframe name="hiddenFrame"></iframe>
             </div>
 
-            <!-- action="https://tqobynyog0.execute-api.us-east-2.amazonaws.com/default/contact-form"
-            method="POST" -->
             <form
+              action="https://tqobynyog0.execute-api.us-east-2.amazonaws.com/default/contact-form"
+              method="POST"
               target="hiddenFrame"
               id="preregister-form"
               class="float-right"
@@ -290,14 +290,14 @@
                 </div>
                 <div class="col-auto">
                   <div class="input-field mt-3">
-                    <button
+                    <div
                       type="submit"
                       class="btn btn-primary"
                       value="Pre-Register"
                       id="submit-preregister"
                     >
                       Pre-Register
-                    </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -402,7 +402,13 @@
             background-color: blueviolet !important;
           }
         </style>
-        <a class="modal-open" data-toggle="modal" data-target="#myModal">
+        <a
+          href="#"
+          style="font-weight: 400"
+          class="modal-open"
+          data-toggle="modal"
+          data-target="#myModal"
+        >
           &nbsp; Pre-Register
         </a>
         &nbsp; yourself now and get
