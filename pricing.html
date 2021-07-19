@@ -3,9 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <meta name="author" content="Softnio" />
-    
-    
-    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-4BGMDBHW9H"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-4BGMDBHW9H");
+    </script>
+
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -107,17 +119,13 @@
                 <a class="nav-link menu-link" href="./#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link menu-link" href="./#features"
-                  >Features</a
-                >
+                <a class="nav-link menu-link" href="./#features">Features</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link menu-link" href="./#pricing">Pricing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link menu-link" href="./#contact"
-                  >Contact</a
-                >
+                <a class="nav-link menu-link" href="./#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -141,9 +149,7 @@
                 class="form-message form-message-s2 text-left"
                 action="https://tqobynyog0.execute-api.us-east-2.amazonaws.com/default/contact-form"
                 method="POST"
-                
               >
-             
                 <div class="row">
                   <div
                     class="input-field animated fadeInUp col-lg-6"
