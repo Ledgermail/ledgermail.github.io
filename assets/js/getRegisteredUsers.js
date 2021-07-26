@@ -75,10 +75,6 @@ function DownloadJsonData() {
   var CSV = "";
   //This condition will generate the Label/Header
   if (ShowLabel) {
-    console.log(
-      "🚀 ~ file: getRegisteredUsers.js ~ line 65 ~ verifyUser ~ password",
-      password
-    );
     var row = "";
     //This loop will extract the label from 1st index of on array
     for (var index in arrData[0]) {
