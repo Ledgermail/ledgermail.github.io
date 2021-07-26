@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html class="js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Softnio" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Ledgermail.io - is  World's first email service on Blockchain - Ledgermail integrates with browsers and existing email web apps to allow easy access to ledgermail and send private, secure and encrypted emails."
+    />
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <link href="https://css.gg/password.css" rel="stylesheet" />
+    <link href="https://css.gg/user.css" rel="stylesheet" />
+    <title>
+      World's first email service on Blockchain | Best Blockchain based
+      Encrypted Email Service
+    </title>
+    <!-- Vendor Bundle CSS -->
+    <link rel="stylesheet" href="assets/css/vendor.bundle.css?ver=142" />
+    <style>
+      .display {
+        display: flex;
+      }
+      .notDisplay {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container p-5">
+      <div id="auth" class="row mt-5 display justify-content-center">
+        <div class="col-md-4">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1"
+                ><i class="gg-user"></i
+              ></span>
+            </div>
+            <input
+              id="username"
+              type="text"
+              class="form-control required"
+              placeholder="Username "
+              aria-required="true"
+              aria-label="Username"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1"
+                ><i class="gg-password"></i
+              ></span>
+            </div>
+            <input
+              id="password"
+              type="password"
+              class="form-control required"
+              aria-required="true"
+              placeholder="Password"
+              aria-label="Password"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+        </div>
+        <div class="col-auto">
+          <input type="submit" class="btn btn-primary" id="submitPassword" value="submit" />
+        </div>
+         <div class="col-12">
+
+           <div id="message" style="color: red"></div>
+         </div>
+      </div>
+      <div id="datasection" class="row notDisplay justify-content-between">
+        <div class="col-auto">
+          <p class="h5">Total Registrations : <span id="count"> 0 </span></p>
+        </div>
+        <div class="col-auto">
+          <input type="button" class="btn btn-primary" id="download" value="Download as Excel" />
+        </div>
+      </div>
+      <div id="datatables" class="row notDisplay justify-content-center mt-5">
+        <div class="col-12">
+          <table id="table" class="table table-sm table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Age</th>
+                <th scope="col">Date & Time</th>
+              </tr>
+            </thead>
+            <tbody id="dataTable"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/getRegisteredUsers.js"></script>
+    <!-- <script src="assets/js/jquery.bundle.js?ver=142"></script> -->
+    <!-- <script src="assets/js/script.js?ver=142"></script> -->
+    <!-- <script src="assets/js/captcha.js"></script> -->
+    <!-- <script src="assets/js/custom.js"></script> -->
+    <!-- <script src="assets/js/slider-script.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script> -->
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </body>
+</html>
