@@ -7,13 +7,10 @@ var xmlHttp = new XMLHttpRequest();
 function verifyUser() {
   var username = document.getElementById("username").value;
   var password = document.getElementById("password").value;
-  // if (username === "secretUser@pingala" && password === "Pingala@software.#") {
-
-  if (username === "test" && password === "test") {
+  if (username === "secretUser@pingala" && password === "Pingala@software.#") {
     var datable = document.getElementById("datatables");
     var datasection = document.getElementById("datasection");
     var auth = document.getElementById("auth");
-    // datable.classList.add()
     datable.classList.toggle("notDisplay");
     datable.classList.toggle("display");
     datasection.classList.toggle("notDisplay");
@@ -39,7 +36,7 @@ for (let i = 0; i < users.total; i++) {
   let tr = document.createElement("tr");
 
   tr.innerHTML = `
-    <td> ${i+1}</td>
+    <td> ${i + 1}</td>
     <td> ${users.data[i].name}</td>
     <td> ${users.data[i].email}</td>
     <td> ${users.data[i].age}</td>
