@@ -1,10 +1,11 @@
 $("#submit-preregister").on("touchstart click", sendEmail);
-
 function sendEmail(e) {
   // e.preventDefault();
   var preregister = $("#preregister-form");
   var alertmessage = preregister.find(".message");
-
+  var errormessage = preregister.find(".errorMessage");
+  alertmessage.removeClass("show display").addClass("hide notDisplay");
+  errormessage.removeClass("show display").addClass("hide notDisplay");
   var name = document.getElementById("preregister_name").value;
   email = document.getElementById("preregister_email").value;
   age = document.getElementById("preregister_age").value;
@@ -22,26 +23,32 @@ function sendEmail(e) {
       Object.keys(data).map((key) => [key, data[key]])
     );
 
-    fetch(
-      "https://tqobynyog0.execute-api.us-east-2.amazonaws.com/default/contact-form",
-      {
-        method: "POST",
-        mode: "no-cors",
-        headers: {
-          "Content-Type": "application/json",
-          // 'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: test.toString(),
+    fetch("https://pingala-test-server.herokuapp.com", {
+      method: "POST",
+      // mode: "no-cors",
+      headers: {
+        "Content-Type": "application/json",
+        // 'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: JSON.stringify(data),
+    }).then((response) => {
+      if (response.status === 200) {
+        preregister.clearForm();
+        alertmessage
+          .removeClass("hide notDisplay")
+          .addClass("show display")
+          .slideDown(400);
+        document.getElementById("submit-preregister").disabled = false;
+        document.getElementById("submit-preregister").style.color = "white";
+      } else if (response.status === 502) {
+        errormessage
+          .removeClass("hide notDisplay")
+          .addClass("show display")
+          .slideDown(400);
+        document.getElementById("submit-preregister").disabled = false;
+        document.getElementById("submit-preregister").style.color = "white";
       }
-    ).then((response) => {
-      preregister.clearForm();
-
-      
-      alertmessage.removeClass("hide notDisplay").addClass("show display").slideDown(400);
-      document.getElementById("submit-preregister").disabled = false;
-      document.getElementById("submit-preregister").style.color = "white";
     });
-
     // .error((error) => {
     //   console.log(error);
     // });
@@ -49,5 +56,6 @@ function sendEmail(e) {
 
   setTimeout(() => {
     alertmessage.removeClass("show display").addClass("hide notDisplay");
+    errormessage.removeClass("show display").addClass("hide notDisplay");
   }, 10000);
 }

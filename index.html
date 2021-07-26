@@ -2,14 +2,19 @@
 <html class="js">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4BGMDBHW9H"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-4BGMDBHW9H"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-4BGMDBHW9H');
-</script>
+      gtag("config", "G-4BGMDBHW9H");
+    </script>
     <meta charset="utf-8" />
     <meta name="author" content="Softnio" />
     <meta
@@ -298,7 +303,6 @@
                   </div>
                 </div>
                 <div class="col-auto">
-                  
                   <button
                     type="submit"
                     class="btn btn-primary"
@@ -309,21 +313,20 @@
                   </button>
                 </div>
               </div>
-               <style>
+              <style>
                 .display {
                   display: inline;
                 }
                 .notDisplay {
                   display: none;
                 }
-
               </style>
               <div
                 class="message notDisplay alert alert-success alert-dismissible fade hide text-center"
                 style="
                   position: fixed;
                   bottom: 5px;
-                  
+
                   width: 95%;
                   z-index: 1000;
                 "
@@ -342,9 +345,37 @@
                   Thank you for Pre-registration, please check your registered
                   email for confirmation.
                 </h6>
-                <h4 style="color: blueviolet" class="text-center ">
+                <h4 style="color: blueviolet" class="text-center">
                   Welcome to Decentralized Email Ecosystem
                 </h4>
+              </div>
+              <div
+                class="errorMessage notDisplay alert alert-danger alert-dismissible fade hide text-center"
+                style="
+                  position: fixed;
+                  bottom: 5px;
+
+                  width: 95%;
+                  z-index: 1000;
+                "
+                role="alert"
+              >
+                <button
+                  type="button"
+                  class="close"
+                  style="color: black"
+                  data-dismiss="alert"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <h6 style="color: black; font-weight: 500" class="text-center">
+                  Email address Already Reigstered with Ledgermail. please try
+                  with different Email address
+                </h6>
+                <!-- <h4 style="color: blueviolet" class="text-center">
+                  Welcome to Decentralized Email Ecosystem
+                </h4> -->
               </div>
             </form>
 
@@ -403,7 +434,7 @@
     </div>
 
     <header class="site-header is-sticky">
-      <div class="pre-register-text" style="z-index: 100;">
+      <div class="pre-register-text" style="z-index: 100">
         <style>
           .modal-open {
             cursor: pointer;
@@ -413,7 +444,6 @@
             font-weight: 500;
             font-size: 18px;
             padding: 3px;
-            "
           }
           .modal-open:hover {
             color: white !important;
