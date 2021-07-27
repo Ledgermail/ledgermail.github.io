@@ -1,3 +1,4 @@
+
 @-webkit-keyframes colorchange {
   100% {
     color: black;
@@ -9,6 +10,7 @@
     color: rgb(200, 5, 5);
   }
 }
+
 
 .modal-header {
   font-size: 28px;
