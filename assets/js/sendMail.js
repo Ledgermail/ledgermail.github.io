@@ -23,7 +23,7 @@ function sendEmail(e) {
       Object.keys(data).map((key) => [key, data[key]])
     );
 
-    fetch("https://pingala-test-server.herokuapp.com", {
+    fetch("https://pl-reg.herokuapp.com/", {
       method: "POST",
       // mode: "no-cors",
       headers: {
