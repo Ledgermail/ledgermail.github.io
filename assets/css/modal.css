@@ -10,11 +10,37 @@
   }
 }
 
-.modal-title {
-  font-size: 30px;
-  font-weight: bold;
+.modal-header {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 1px;
+  color: red !important;
+  text-align: center !important;
+  border-bottom: none;
+  padding: 0;
+  margin-bottom: 1%;
+}
+.modal-sub-header {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
   letter-spacing: 1px;
   color: #060612 !important;
+  text-align: center !important;
+  border-bottom: none;
+  margin-bottom: 1%;
+}
+
+.modal-title {
+  font-size: 30px;
+   font-weight: 600;
+
+  letter-spacing: 1px;
+  color: #185e7a !important;
+  /* color: #0c9c0c !important; */
+  /* color: #060612 !important; */
+
   text-align: center !important;
 }
 
@@ -28,10 +54,14 @@
 }
 
 .modal-preregister {
-  font-size: 26px;
-  color: rgb(51, 2, 51) !important;
+  font-size: 24px;
+  color: #060612 !important;
+
+  /* color: #330233 !important; */
+  /* color:#105a77 !important; */
+
   font-weight: 500;
-  line-height: 26px;
+  line-height: 24px;
 }
 
 .modal-note {
@@ -56,13 +86,23 @@
 
 .welcome-message {
   font-size: 30px;
-  color: black !important;
+  /* color: black !important; */
+  color: #185e7a !important;
+  /* color: #0c9c0c !important; */
+
   font-weight: 600;
 }
 @media (max-width: 576px) {
+  .modal-header {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .modal-sub-header {
+    font-size: 11px;
+    line-height: 15px;
+  }
   .modal-title {
     font-size: 16px;
-    text-align: left !important;
   }
   .modal-question {
     font-size: 12px;
@@ -97,9 +137,16 @@
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
+  .modal-header {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .modal-sub-header {
+    font-size: 12px;
+    line-height: 16px;
+  }
   .modal-title {
     font-size: 18px;
-    text-align: center !important;
   }
   .modal-question {
     font-size: 14px;
@@ -132,9 +179,16 @@
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
+  .modal-header {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .modal-sub-header {
+    font-size: 12px;
+    line-height: 16px;
+  }
   .modal-title {
     font-size: 18px;
-    text-align: center !important;
   }
   .modal-question {
     font-size: 14px;
@@ -149,9 +203,16 @@
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
+  .modal-header {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .modal-sub-header {
+    font-size: 12px;
+    line-height: 16px;
+  }
   .modal-title {
     font-size: 18px;
-    text-align: left !important;
   }
   .modal-question {
     font-size: 14px;
@@ -165,9 +226,13 @@
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+  .modal-header {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
   .modal-title {
     font-size: 28px;
-    text-align: center !important;
   }
   .modal-question {
   }
