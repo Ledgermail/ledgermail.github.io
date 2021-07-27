@@ -1,27 +1,7 @@
 document.getElementById("download").addEventListener("click", DownloadJsonData);
-
 document.getElementById("submitPassword").addEventListener("click", verifyUser);
 
 var xmlHttp = new XMLHttpRequest();
-
-function verifyUser() {
-  var username = document.getElementById("username").value;
-  var password = document.getElementById("password").value;
-  if (username === "secretUser@pingala" && password === "Pingala@software.#") {
-    var datable = document.getElementById("datatables");
-    var datasection = document.getElementById("datasection");
-    var auth = document.getElementById("auth");
-    datable.classList.toggle("notDisplay");
-    datable.classList.toggle("display");
-    datasection.classList.toggle("notDisplay");
-    datasection.classList.toggle("display");
-    auth.classList.toggle("display");
-    auth.classList.toggle("notDisplay");
-  } else {
-    document.getElementById("message").innerText =
-      " wrong username or password";
-  }
-}
 xmlHttp.open(
   "GET",
   "https://pingala-test-server.herokuapp.com/ledgermail-pre-registrations",
@@ -45,6 +25,25 @@ for (let i = 0; i < users.total; i++) {
   row.appendChild(tr);
 }
 row.innerHTML;
+
+function verifyUser() {
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+  if (username === "secretUser@pingala" && password === "Pingala@software.#") {
+    var datable = document.getElementById("datatables");
+    var datasection = document.getElementById("datasection");
+    var auth = document.getElementById("auth");
+    datable.classList.toggle("notDisplay");
+    datable.classList.toggle("display");
+    datasection.classList.toggle("notDisplay");
+    datasection.classList.toggle("display");
+    auth.classList.toggle("display");
+    auth.classList.toggle("notDisplay");
+  } else {
+    document.getElementById("message").innerText =
+      " wrong username or password";
+  }
+}
 
 function formatDate(date) {
   var hours = date.getHours();
