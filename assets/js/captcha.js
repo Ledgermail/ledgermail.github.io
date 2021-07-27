@@ -78,7 +78,7 @@
   };
 
   if (!$().validate || !$().ajaxSubmit) {
-    console.log("contactForm: jQuery Form or Form Validate not Defined.");
+    // console.log("contactForm: jQuery Form or Form Validate not Defined.");
     return true;
   }
   // ContactForm
