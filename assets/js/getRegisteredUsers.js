@@ -3,32 +3,36 @@ document.getElementById("logout").addEventListener("click", logOut);
 document.getElementById("submitPassword").addEventListener("click", verifyUser);
 
 var xmlHttp = new XMLHttpRequest();
-
+let users = {};
 if (localStorage.getItem("key") === "pingalasoftwareAccess") {
-   xmlHttp.open(
-     "GET",
-     "https://pl-reg.herokuapp.com/ledgermail-pre-registrations",
-     false
-   );
-   xmlHttp.send(null);
-   users = JSON.parse(xmlHttp.responseText);
-   document.getElementById("count").innerHTML = users.total;
-   let row = document.getElementById("dataTable");
+  fetchData();
+  toggleClasess();
+}
 
-   for (let i = 0; i < users.total; i++) {
-     let tr = document.createElement("tr");
+async function fetchData() {
+  xmlHttp.open(
+    "GET",
+    "https://pl-reg.herokuapp.com/ledgermail-pre-registrations",
+    false
+  );
+  xmlHttp.send(null);
+  users = await JSON.parse(xmlHttp.responseText);
+  document.getElementById("count").innerHTML = users.total;
+  let row = document.getElementById("dataTable");
 
-     tr.innerHTML = `
+  for (let i = 0; i < users.total; i++) {
+    let tr = document.createElement("tr");
+
+    tr.innerHTML = `
     <td> ${i + 1}</td>
     <td> ${users.data[i].name}</td>
     <td> ${users.data[i].email}</td>
     <td> ${users.data[i].age}</td>
     <td> ${formatDate(new Date(users.data[i].time))}</td>
    `;
-     row.appendChild(tr);
-   }
-   row.innerHTML;
-  toggleClasess();
+    row.appendChild(tr);
+  }
+  row.innerHTML;
 }
 
 function verifyUser() {
@@ -36,6 +40,7 @@ function verifyUser() {
   var password = document.getElementById("password").value;
   if (username === "secretUser@pingala" && password === "Pingala@software.#") {
     localStorage.setItem("key", "pingalasoftwareAccess");
+    fetchData();
     toggleClasess();
   } else {
     document.getElementById("message").innerText =
@@ -47,7 +52,6 @@ function logOut() {
   console.log(localStorage.getItem("key"));
   localStorage.removeItem("key");
   toggleClasess();
-
 }
 
 function toggleClasess() {
