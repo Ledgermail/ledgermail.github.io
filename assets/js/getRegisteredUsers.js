@@ -3,7 +3,7 @@ document.getElementById("download").addEventListener("click", DownloadJsonData);
 document.getElementById("submitPassword").addEventListener("click", verifyUser);
 
 var xmlHttp = new XMLHttpRequest();
-
+let users = {};
 function verifyUser() {
   var username = document.getElementById("username").value;
   var password = document.getElementById("password").value;
@@ -17,34 +17,34 @@ function verifyUser() {
     datasection.classList.toggle("display");
     auth.classList.toggle("display");
     auth.classList.toggle("notDisplay");
-  } else {
-    document.getElementById("message").innerText =
-      " wrong username or password";
-  }
-}
-xmlHttp.open(
-  "GET",
-  "https://pl-reg.herokuapp.com/ledgermail-pre-registrations",
-  false
-);
-xmlHttp.send(null);
-users = JSON.parse(xmlHttp.responseText);
-document.getElementById("count").innerHTML = users.total;
-let row = document.getElementById("dataTable");
+    xmlHttp.open(
+      "GET",
+      "https://pl-reg.herokuapp.com/ledgermail-pre-registrations",
+      false
+    );
+    xmlHttp.send(null);
+    users = JSON.parse(xmlHttp.responseText);
+    document.getElementById("count").innerHTML = users.total;
+    let row = document.getElementById("dataTable");
 
-for (let i = 0; i < users.total; i++) {
-  let tr = document.createElement("tr");
+    for (let i = 0; i < users.total; i++) {
+      let tr = document.createElement("tr");
 
-  tr.innerHTML = `
+      tr.innerHTML = `
     <td> ${i + 1}</td>
     <td> ${users.data[i].name}</td>
     <td> ${users.data[i].email}</td>
     <td> ${users.data[i].age}</td>
     <td> ${formatDate(new Date(users.data[i].time))}</td>
    `;
-  row.appendChild(tr);
+      row.appendChild(tr);
+    }
+    row.innerHTML;
+  } else {
+    document.getElementById("message").innerText =
+      " wrong username or password";
+  }
 }
-row.innerHTML;
 
 function formatDate(date) {
   var hours = date.getHours();
@@ -54,19 +54,23 @@ function formatDate(date) {
   hours = hours ? hours : 12;
   minutes = minutes < 10 ? "0" + minutes : minutes;
   var strTime = hours + ":" + minutes + " " + ampm;
-    return (
-      date.getDate() +
-      "/" +
-      (date.getMonth() +
-      1 )+
-      "/" +
-      date.getFullYear() +
-      "  " +
-      strTime
-    );
+  return (
+    date.getDate() +
+    "/" +
+    (date.getMonth() + 1) +
+    "/" +
+    date.getFullYear() +
+    "  " +
+    strTime
+  );
 }
 
 function DownloadJsonData() {
+  var name = document.getElementById("checkName").checked;
+  var email = document.getElementById("checkEmail").checked;
+  var age = document.getElementById("checkAge").checked;
+  var date = document.getElementById("checkDate").checked;
+
   var JSONData = users.data,
     FileTitle = "registered_users",
     ShowLabel = true;
@@ -75,6 +79,15 @@ function DownloadJsonData() {
   if (ShowLabel) {
     var row = "";
     for (var index in arrData[0]) {
+      if (
+        (index === "name" && !name) ||
+        (index === "email" && !email) ||
+        (index === "age" && !age) ||
+        (index === "time" && !date)
+      ) {
+        continue;
+      }
+
       row += index + ",";
     }
     row = row.slice(0, -1);
@@ -83,6 +96,14 @@ function DownloadJsonData() {
   for (var i = 0; i < arrData.length; i++) {
     var row = "";
     for (var index in arrData[i]) {
+      if (
+        (index === "name" && !name) ||
+        (index === "email" && !email) ||
+        (index === "age" && !age) ||
+        (index === "time" && !date)
+      ) {
+        continue;
+      }
       if (String(index) === "time") {
         row += '"' + formatDate(new Date(arrData[i][index])) + '",';
       } else row += '"' + arrData[i][index] + '",';
