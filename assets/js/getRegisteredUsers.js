@@ -1,51 +1,70 @@
 document.getElementById("download").addEventListener("click", DownloadJsonData);
-
+document.getElementById("logout").addEventListener("click", logOut);
 document.getElementById("submitPassword").addEventListener("click", verifyUser);
 
 var xmlHttp = new XMLHttpRequest();
+
+if (localStorage.getItem("key") === "pingalasoftwareAccess") {
+  toggleClasess();
+}
 
 function verifyUser() {
   var username = document.getElementById("username").value;
   var password = document.getElementById("password").value;
   if (username === "secretUser@pingala" && password === "Pingala@software.#") {
-    var datable = document.getElementById("datatables");
-    var datasection = document.getElementById("datasection");
-    var auth = document.getElementById("auth");
-    datable.classList.toggle("notDisplay");
-    datable.classList.toggle("display");
-    datasection.classList.toggle("notDisplay");
-    datasection.classList.toggle("display");
-    auth.classList.toggle("display");
-    auth.classList.toggle("notDisplay");
+    localStorage.setItem("key", "pingalasoftwareAccess");
+    toggleClasess();
     xmlHttp.open(
-  "GET",
-  "https://pl-reg.herokuapp.com/ledgermail-pre-registrations",
-  false
-);
-xmlHttp.send(null);
-users = JSON.parse(xmlHttp.responseText);
-document.getElementById("count").innerHTML = users.total;
-let row = document.getElementById("dataTable");
+      "GET",
+      "https://pl-reg.herokuapp.com/ledgermail-pre-registrations",
+      false
+    );
+    xmlHttp.send(null);
+    users = JSON.parse(xmlHttp.responseText);
+    document.getElementById("count").innerHTML = users.total;
+    let row = document.getElementById("dataTable");
 
-for (let i = 0; i < users.total; i++) {
-  let tr = document.createElement("tr");
+    for (let i = 0; i < users.total; i++) {
+      let tr = document.createElement("tr");
 
-  tr.innerHTML = `
+      tr.innerHTML = `
     <td> ${i + 1}</td>
     <td> ${users.data[i].name}</td>
     <td> ${users.data[i].email}</td>
     <td> ${users.data[i].age}</td>
     <td> ${formatDate(new Date(users.data[i].time))}</td>
    `;
-  row.appendChild(tr);
-}
-row.innerHTML;
+      row.appendChild(tr);
+    }
+    row.innerHTML;
   } else {
     document.getElementById("message").innerText =
       " wrong username or password";
   }
 }
 
+function logOut() {
+  console.log(localStorage.getItem("key"));
+  localStorage.removeItem("key");
+  toggleClasess();
+
+}
+
+function toggleClasess() {
+  var datable = document.getElementById("datatables");
+  var datasection = document.getElementById("datasection");
+  var logoutButton = document.getElementById("logoutButton");
+
+  var auth = document.getElementById("auth");
+  datable.classList.toggle("notDisplay");
+  datable.classList.toggle("display");
+  logoutButton.classList.toggle("display");
+  logoutButton.classList.toggle("notDisplay");
+  datasection.classList.toggle("notDisplay");
+  datasection.classList.toggle("display");
+  auth.classList.toggle("display");
+  auth.classList.toggle("notDisplay");
+}
 
 function formatDate(date) {
   var hours = date.getHours();
