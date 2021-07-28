@@ -24,7 +24,7 @@ function verifyUser() {
 }
 xmlHttp.open(
   "GET",
-  "https://pingala-test-server.herokuapp.com/ledgermail-pre-registrations",
+  "https://pl-reg.herokuapp.com/ledgermail-pre-registrations",
   false
 );
 xmlHttp.send(null);
