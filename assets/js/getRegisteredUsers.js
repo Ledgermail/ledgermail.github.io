@@ -5,6 +5,29 @@ document.getElementById("submitPassword").addEventListener("click", verifyUser);
 var xmlHttp = new XMLHttpRequest();
 
 if (localStorage.getItem("key") === "pingalasoftwareAccess") {
+   xmlHttp.open(
+     "GET",
+     "https://pl-reg.herokuapp.com/ledgermail-pre-registrations",
+     false
+   );
+   xmlHttp.send(null);
+   users = JSON.parse(xmlHttp.responseText);
+   document.getElementById("count").innerHTML = users.total;
+   let row = document.getElementById("dataTable");
+
+   for (let i = 0; i < users.total; i++) {
+     let tr = document.createElement("tr");
+
+     tr.innerHTML = `
+    <td> ${i + 1}</td>
+    <td> ${users.data[i].name}</td>
+    <td> ${users.data[i].email}</td>
+    <td> ${users.data[i].age}</td>
+    <td> ${formatDate(new Date(users.data[i].time))}</td>
+   `;
+     row.appendChild(tr);
+   }
+   row.innerHTML;
   toggleClasess();
 }
 
@@ -14,29 +37,6 @@ function verifyUser() {
   if (username === "secretUser@pingala" && password === "Pingala@software.#") {
     localStorage.setItem("key", "pingalasoftwareAccess");
     toggleClasess();
-    xmlHttp.open(
-      "GET",
-      "https://pl-reg.herokuapp.com/ledgermail-pre-registrations",
-      false
-    );
-    xmlHttp.send(null);
-    users = JSON.parse(xmlHttp.responseText);
-    document.getElementById("count").innerHTML = users.total;
-    let row = document.getElementById("dataTable");
-
-    for (let i = 0; i < users.total; i++) {
-      let tr = document.createElement("tr");
-
-      tr.innerHTML = `
-    <td> ${i + 1}</td>
-    <td> ${users.data[i].name}</td>
-    <td> ${users.data[i].email}</td>
-    <td> ${users.data[i].age}</td>
-    <td> ${formatDate(new Date(users.data[i].time))}</td>
-   `;
-      row.appendChild(tr);
-    }
-    row.innerHTML;
   } else {
     document.getElementById("message").innerText =
       " wrong username or password";
