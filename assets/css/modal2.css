@@ -1,4 +1,3 @@
-
 @-webkit-keyframes colorchange {
   100% {
     color: black;
@@ -11,6 +10,15 @@
   }
 }
 
+.link {
+  color: #08bcf0 !important;
+}
+
+.link:hover,
+.link:active,
+.link:focus {
+  color: #8255fd !important;
+}
 
 .modal-header {
   font-size: 28px;
@@ -33,10 +41,10 @@
   border-bottom: none;
   margin-bottom: 1%;
 }
- 
+
 .modal-title {
   font-size: 30px;
-   font-weight: 600;
+  font-weight: 600;
 
   letter-spacing: 1px;
   color: #185e7a !important;
@@ -196,7 +204,7 @@
     font-size: 14px;
     line-height: 18px;
   }
- .modal-preregister {
+  .modal-preregister {
     font-size: 16px;
     font-weight: 500;
     line-height: 18px;
@@ -208,7 +216,7 @@
     font-weight: 400;
     line-height: 16px;
   }
-   .welcome-message {
+  .welcome-message {
     font-size: 18px;
   }
 }
