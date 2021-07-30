@@ -2664,7 +2664,7 @@ select:focus {
 .site-header .navbar-brand img {
   width: auto;
   max-width: 100%;
-  max-height: 40px;
+  max-height: 70px;
 }
 .site-header .navbar-header .quote-btn {
   display: none;
