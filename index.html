@@ -79,7 +79,7 @@
   </head>
 
   <body
-    class="theme-dark io-lungwort"
+    class="theme-light io-lungwort"
     data-spy="scroll"
     data-target="#mainnav"
     data-offset="80"
@@ -481,7 +481,7 @@
               class="logo logo-light"
               alt="logo"
               src="images/logo-light.png"
-              srcset="images/logo-light.png "
+              srcset="images/logo-light.png"
             />
           </a>
 
@@ -511,12 +511,12 @@
                 }
               </style>
               <li class="nav-item">
-                <a class="nav-link menu-link" href="/#why"
-                  >Why<span class="sr-only">(current)</span></a
+                <a class="nav-link menu-link" href="/#problem"
+                  >Problems<span class="sr-only">(current)</span></a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link menu-link" href="/#about">About</a>
+                <a class="nav-link menu-link" href="/#why">Why</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link menu-link" href="/#features">Features</a>
@@ -686,214 +686,7 @@
       <!-- End Banner/Slider -->
     </header>
     <!-- End Header -->
-
-    <div class="section section-pad section-bg-dark" id="why">
-      <div class="container">
-        <div class="row align-items-start">
-          <div class="col-md-5 pt-md-5">
-            <div
-              class="res-m-btm animated"
-              data-animate="fadeInUp"
-              data-delay=".1"
-            >
-              <img src="images/lungwort/graph-lungwort-b.png" alt="graph" />
-            </div>
-          </div>
-
-          <div class="col-md-6 order-md-first order-last mr-md-5">
-            <style>
-              .icon::before {
-                content: "\003e";
-                float: left;
-                margin-right: 15px;
-                color: #08bcf0;
-                font-size: 40px;
-                margin: 0;
-                transition: all 0.5s;
-              }
-              .rotate {
-                -webkit-transform: rotate(90deg);
-                -moz-transform: rotate(90deg);
-                transform: rotate(90deg);
-                transition: all 0.5s;
-              }
-              .revert {
-                -webkit-transform: rotate(0deg);
-                -moz-transform: rotate(0deg);
-                transform: rotate(0deg);
-                transition: all 0.5s;
-              }
-            </style>
-
-            <div class="text-block">
-              <!-- <h6 class="heading-sm-s2">Why Ledgermail?</h6> -->
-              <h2 class="animated" data-animate="fadeInUp" data-delay=".2">
-                Why Decentralized Email Solution?
-              </h2>
-              <div class="feature-1">
-                <div
-                  class="animated lead row d-flex align-items-center"
-                  id="securityHeader"
-                  data-animate="fadeInUp"
-                  data-delay=".3"
-                >
-                  <div
-                    class="col-auto"
-                    data-toggle="collapse"
-                    type="button"
-                    data-target="#security"
-                    aria-expanded="false"
-                    onclick="updateSecurity('security')"
-                    style="cursor: pointer"
-                  >
-                    <div class="icon d-flex" id="securityIcon"></div>
-                  </div>
-                  <div
-                    class="col-auto"
-                    data-toggle="collapse"
-                    type="button"
-                    data-target="#security"
-                    aria-expanded="false"
-                    onclick="updateSecurity('security')"
-                    style="cursor: pointer"
-                  >
-                    Security
-                  </div>
-                </div>
-
-                <p class="collapse" id="security">
-                  Legacy email service providers rely on obsolete protocols,
-                  like IMAP/SMTP, which were designed and developed in 1982 and
-                  last updated in 2008. They are, as such, not only cumbersome
-                  to use, but also highly susceptible to hacks and exploits. In
-                  the past two years alone, 94% of cyberattacks were carried out
-                  via email, resulting in over $26 Billion in losses worldwide.
-                </p>
-              </div>
-              <div class="feature-2">
-                <div
-                  class="animated lead row d-flex align-items-center"
-                  id="privacyHeader"
-                  data-animate="fadeInUp"
-                  data-delay=".3"
-                  onclick="updateSecurity('privacy')"
-                >
-                  <div
-                    class="col-auto"
-                    data-toggle="collapse"
-                    type="button"
-                    data-target="#privacy"
-                    aria-expanded="false"
-                    style="cursor: pointer"
-                  >
-                    <div class="icon d-flex" id="privacyIcon"></div>
-                  </div>
-                  <div
-                    class="col-auto"
-                    data-toggle="collapse"
-                    type="button"
-                    data-target="#privacy"
-                    aria-expanded="false"
-                    style="cursor: pointer"
-                  >
-                    Privacy
-                  </div>
-                </div>
-
-                <p class="collapse" id="privacy">
-                  Legacy email service providers rely on obsolete protocols,
-                  like IMAP/SMTP, which were designed and developed in 1982 and
-                  last updated in 2008. They are, as such, not only cumbersome
-                  to use, but also highly susceptible to hacks and exploits. In
-                  the past two years alone, 94% of cyberattacks were carried out
-                  via email, resulting in over $26 Billion in losses worldwide.
-                </p>
-              </div>
-              <div class="feature-3">
-                <div
-                  class="animated lead row d-flex align-items-center"
-                  id="encryptionHeader"
-                  aria-expanded="false"
-                  data-animate="fadeInUp"
-                  data-delay=".4"
-                >
-                  <div
-                    style="cursor: pointer"
-                    class="col-auto"
-                    data-toggle="collapse"
-                    type="button"
-                    data-target="#encryption"
-                    onclick="updateSecurity('encryption')"
-                  >
-                    <div class="icon d-flex" id="encryptionIcon"></div>
-                  </div>
-                  <div
-                    style="cursor: pointer"
-                    class="col-auto"
-                    data-toggle="collapse"
-                    type="button"
-                    data-target="#encryption"
-                    onclick="updateSecurity('encryption')"
-                  >
-                    Encryption
-                  </div>
-                </div>
-
-                <p class="collapse" id="encryption">
-                  Legacy email service providers either don’t offer any
-                  encryption at all or provide inadequate encryption in terms of
-                  network connection. However, actual email content and
-                  attachments remain unencrypted thus if hacker manages to tap
-                  into your network, all your unencrypted messages will be
-                  exposed to outside world.
-                </p>
-              </div>
-              <div class="feature-4">
-                <div
-                  class="animated lead row d-flex align-items-center"
-                  id="centralizedHeader"
-                  data-animate="fadeInUp"
-                  data-delay=".3"
-                >
-                  <div
-                    class="col-auto"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#centralized"
-                    aria-expanded="false"
-                    style="cursor: pointer"
-                    onclick="updateSecurity('centralized')"
-                  >
-                    <div class="icon d-flex" id="centralizedIcon"></div>
-                  </div>
-                  <div
-                    class="col-auto"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#centralized"
-                    aria-expanded="false"
-                    style="cursor: pointer"
-                    onclick="updateSecurity('centralized')"
-                  >
-                    Centralized Governance
-                  </div>
-                </div>
-
-                <p class="collapse" id="centralized">
-                  Legacy email service providers are centralized. They control
-                  your data and, that means, they can lose control of your data
-                  too. Their servers, with your data on them, can be destroyed,
-                  on purpose or by accident, and they can be seized by malicious
-                  hackers, state or even nonstate actors.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="section section-pad section-bg-dark" id="about">
+    <div class="section section-pad section-bg-dark" id="problem">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-6">
@@ -953,8 +746,210 @@
         </div>
       </div>
     </div>
+    <div class="section section-pad section-bg-dark" id="why">
+      <div class="container">
+        <div class="row align-items-start">
+          <div class="col-md-5 pt-md-5">
+            <div
+              class="res-m-btm animated"
+              data-animate="fadeInUp"
+              data-delay=".1"
+            >
+              <img src="images/lungwort/graph-lungwort-b.png" alt="graph" />
+            </div>
+          </div>
 
-    <div class="section section-pad section-bg-alt" id="features">
+          <div class="col-md-6 order-md-first order-last mr-md-5">
+            <style>
+              .icon::before {
+                content: "\003e";
+                float: left;
+                margin-right: 15px;
+                color: #08bcf0;
+                font-size: 40px;
+                margin: 0;
+                transition: all 0.5s;
+              }
+              .rotate {
+                -webkit-transform: rotate(90deg);
+                -moz-transform: rotate(90deg);
+                transform: rotate(90deg);
+                transition: all 0.5s;
+              }
+              .revert {
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                transform: rotate(0deg);
+                transition: all 0.5s;
+              }
+            </style>
+
+            <div class="text-block animated" data-animate="fadeInUp" data-delay=".3" >
+              <!-- <h6 class="heading-sm-s2">Why Ledgermail?</h6> -->
+              <h2   >
+                Why Decentralized Email Solution?
+              </h2>
+              <div class="feature-1">
+                <div
+                  class=" lead row d-flex align-items-center"
+                  id="securityHeader"
+                  data-animate="fadeInUp"
+                 
+                >
+                  <div
+                    class="col-auto"
+                    data-toggle="collapse"
+                    type="button"
+                    data-target="#security"
+                    aria-expanded="false"
+                    onclick="updateSecurity('security')"
+                    style="cursor: pointer"
+                  >
+                    <div class="icon d-flex" id="securityIcon"></div>
+                  </div>
+                  <div
+                    class="col-auto"
+                    data-toggle="collapse"
+                    type="button"
+                    data-target="#security"
+                    aria-expanded="false"
+                    onclick="updateSecurity('security')"
+                    style="cursor: pointer"
+                  >
+                    Security
+                  </div>
+                </div>
+
+                <p class="collapse" id="security">
+                  Legacy email service providers rely on obsolete protocols,
+                  like IMAP/SMTP, which were designed and developed in 1982 and
+                  last updated in 2008. They are, as such, not only cumbersome
+                  to use, but also highly susceptible to hacks and exploits. In
+                  the past two years alone, 94% of cyberattacks were carried out
+                  via email, resulting in over $26 Billion in losses worldwide.
+                </p>
+              </div>
+              <div class="feature-2">
+                <div
+                  class="lead row d-flex align-items-center"
+                  id="privacyHeader"
+                  data-animate="fadeInUp"
+                  onclick="updateSecurity('privacy')"
+                >
+                  <div
+                    class="col-auto"
+                    data-toggle="collapse"
+                    type="button"
+                    data-target="#privacy"
+                    aria-expanded="false"
+                    style="cursor: pointer"
+                  >
+                    <div class="icon d-flex" id="privacyIcon"></div>
+                  </div>
+                  <div
+                    class="col-auto"
+                    data-toggle="collapse"
+                    type="button"
+                    data-target="#privacy"
+                    aria-expanded="false"
+                    style="cursor: pointer"
+                  >
+                    Privacy
+                  </div>
+                </div>
+
+                <p class="collapse" id="privacy">
+                  Legacy email service providers rely on obsolete protocols,
+                  like IMAP/SMTP, which were designed and developed in 1982 and
+                  last updated in 2008. They are, as such, not only cumbersome
+                  to use, but also highly susceptible to hacks and exploits. In
+                  the past two years alone, 94% of cyberattacks were carried out
+                  via email, resulting in over $26 Billion in losses worldwide.
+                </p>
+              </div>
+              <div class="feature-3">
+                <div
+                  class="lead row d-flex align-items-center"
+                  id="encryptionHeader"
+                  aria-expanded="false"
+                  data-animate="fadeInUp"
+                >
+                  <div
+                    style="cursor: pointer"
+                    class="col-auto"
+                    data-toggle="collapse"
+                    type="button"
+                    data-target="#encryption"
+                    onclick="updateSecurity('encryption')"
+                  >
+                    <div class="icon d-flex" id="encryptionIcon"></div>
+                  </div>
+                  <div
+                    style="cursor: pointer"
+                    class="col-auto"
+                    data-toggle="collapse"
+                    type="button"
+                    data-target="#encryption"
+                    onclick="updateSecurity('encryption')"
+                  >
+                    Encryption
+                  </div>
+                </div>
+
+                <p class="collapse" id="encryption">
+                  Legacy email service providers either don’t offer any
+                  encryption at all or provide inadequate encryption in terms of
+                  network connection. However, actual email content and
+                  attachments remain unencrypted thus if hacker manages to tap
+                  into your network, all your unencrypted messages will be
+                  exposed to outside world.
+                </p>
+              </div>
+              <div class="feature-4">
+                <div
+                  class="lead row d-flex align-items-center"
+                  id="centralizedHeader"
+                  data-animate="fadeInUp"
+                >
+                  <div
+                    class="col-auto"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#centralized"
+                    aria-expanded="false"
+                    style="cursor: pointer"
+                    onclick="updateSecurity('centralized')"
+                  >
+                    <div class="icon d-flex" id="centralizedIcon"></div>
+                  </div>
+                  <div
+                    class="col-auto"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#centralized"
+                    aria-expanded="false"
+                    style="cursor: pointer"
+                    onclick="updateSecurity('centralized')"
+                  >
+                    Centralized Governance
+                  </div>
+                </div>
+
+                <p class="collapse" id="centralized">
+                  Legacy email service providers are centralized. They control
+                  your data and, that means, they can lose control of your data
+                  too. Their servers, with your data on them, can be destroyed,
+                  on purpose or by accident, and they can be seized by malicious
+                  hackers, state or even nonstate actors.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section  section-pad section-bg-alt" id="features">
       <div class="background-shape bs-reverse"></div>
       <div class="container">
         <div class="row">
@@ -2336,7 +2331,7 @@
                 <em class="fa fa-user"></em>
                 <span>Mr. Suraj Mulla</span>
               </li>
-              <li
+              <!-- <li
                 class="animated fadeInUp"
                 data-animate="fadeInUp"
                 data-delay=".5"
@@ -2344,7 +2339,7 @@
               >
                 <em class="fa fa-phone"></em>
                 <span>+91 7972816337</span>
-              </li>
+              </li> -->
               <li>
                 <em class="fas fa-handshake fa"></em>
                 <!-- Calendly link widget begin -->
@@ -2499,6 +2494,7 @@
 
     <div class="section footer-scetion footer-lungwort">
       <div class="container">
+        &nbsp;
         <div class="row text-center">
           <div class="col-md-12">
             <ul class="social">
@@ -2531,10 +2527,10 @@
               </li>
             </ul>
             <a href="#" class="footer-logo"
-              ><img src="images/logo.png" srcset="images/logo2x.png 2x"
+              ><img src="images/logo.png" srcset="images/logo.png 2x"
             /></a>
             <span class="copyright-text">
-              Copyright &copy; 2019, Ledgermail - A Pingala product
+              Copyright &copy; 2021, Ledgermail - A Pingala product
             </span>
           </div>
         </div>
