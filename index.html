@@ -79,7 +79,7 @@
   </head>
 
   <body
-    class="theme-light io-lungwort"
+    class="theme-dark io-lungwort"
     data-spy="scroll"
     data-target="#mainnav"
     data-offset="80"
@@ -688,66 +688,6 @@
     <!-- End Header -->
     <div class="section section-pad section-bg-dark" id="problem">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <div
-              class="res-m-btm text-center animated"
-              data-animate="fadeInUp"
-              data-delay=".1"
-            >
-              <img src="images/asset_1.png" alt="graph" />
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="text-block">
-              <h6
-                class="heading-sm-s2 animated"
-                data-animate="fadeInUp"
-                data-delay=".2"
-              >
-                What is LedgerMail
-              </h6>
-              <h2 class="animated" data-animate="fadeInUp" data-delay=".3">
-                A Decentralized Solution to transfer Secure, Private and
-                Encrypted Emails
-              </h2>
-              <p class="animated" data-animate="fadeInUp" data-delay=".4">
-                The Blockchain Network is an underlying infrastructure that
-                supports LedgerMail service which operates in a decentralized
-                ecosystem. LedgerMail uses DPoS algorithm which provides faster
-                transactions and less energy consumption.
-              </p>
-              <p class="animated" data-animate="fadeInUp" data-delay=".5">
-                LedgerMail replaces existing email transfer protocols such as
-                IMAP/SMTP with Blockchain Technology where messages are stored
-                on shared ledgers in a decentralized way.
-              </p>
-              <p class="animated" data-animate="fadeInUp" data-delay=".6">
-                LedgerMail encrypts emails on the client side with recipients
-                public key. The emails sent on the network are verified &
-                authenticated for the correct recipient. This avoids any hacks
-                of modified headers and spam emails possible in existing email
-                protocols.
-              </p>
-              <p class="animated" data-animate="fadeInUp" data-delay=".6">
-                LedgerMail uses asymmetric encryption which means only sender &
-                receiver can read emails with their private keys resulting in
-                transcendent security, enhanced privacy and cryptographic
-                encryption.
-              </p>
-              <p class="animated" data-animate="fadeInUp" data-delay=".6">
-                Disruptive, Immutable, Secure, Highly Customizable & Cost
-                Effective Solution which will replace the traditional way of
-                email exchange with the Power of Blockchain.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section section-pad section-bg-dark" id="why">
-      <div class="container">
         <div class="row align-items-start">
           <div class="col-md-5 pt-md-5">
             <div
@@ -784,17 +724,25 @@
               }
             </style>
 
-            <div class="text-block animated" data-animate="fadeInUp" data-delay=".3" >
+            <div
+              class="text-block animated"
+              data-animate="fadeInUp"
+              data-delay=".3"
+            >
+            <h6
+                class="heading-sm-s2 animated"
+                data-animate="fadeInUp"
+                data-delay=".2"
+              >
+                problems
+              </h6>
               <!-- <h6 class="heading-sm-s2">Why Ledgermail?</h6> -->
-              <h2   >
-                Why Decentralized Email Solution?
-              </h2>
-              <div class="feature-1">
+              <h2>What is Problem with Legacy Email Providers?</h2>
+              <div class="problem-1">
                 <div
-                  class=" lead row d-flex align-items-center"
+                  class="lead row d-flex align-items-center"
                   id="securityHeader"
                   data-animate="fadeInUp"
-                 
                 >
                   <div
                     class="col-auto"
@@ -802,7 +750,7 @@
                     type="button"
                     data-target="#security"
                     aria-expanded="false"
-                    onclick="updateSecurity('security')"
+                    onclick="updateProblem('security')"
                     style="cursor: pointer"
                   >
                     <div class="icon d-flex" id="securityIcon"></div>
@@ -813,10 +761,10 @@
                     type="button"
                     data-target="#security"
                     aria-expanded="false"
-                    onclick="updateSecurity('security')"
+                    onclick="updateProblem('security')"
                     style="cursor: pointer"
                   >
-                    Security
+                    Insecure
                   </div>
                 </div>
 
@@ -829,12 +777,11 @@
                   via email, resulting in over $26 Billion in losses worldwide.
                 </p>
               </div>
-              <div class="feature-2">
+              <div class="problem-2">
                 <div
                   class="lead row d-flex align-items-center"
                   id="privacyHeader"
                   data-animate="fadeInUp"
-                  onclick="updateSecurity('privacy')"
                 >
                   <div
                     class="col-auto"
@@ -843,6 +790,7 @@
                     data-target="#privacy"
                     aria-expanded="false"
                     style="cursor: pointer"
+                    onclick="updateProblem('privacy')"
                   >
                     <div class="icon d-flex" id="privacyIcon"></div>
                   </div>
@@ -853,21 +801,22 @@
                     data-target="#privacy"
                     aria-expanded="false"
                     style="cursor: pointer"
+                    onclick="updateProblem('privacy')"
                   >
-                    Privacy
+                    No Privacy
                   </div>
                 </div>
 
                 <p class="collapse" id="privacy">
-                  Legacy email service providers rely on obsolete protocols,
-                  like IMAP/SMTP, which were designed and developed in 1982 and
-                  last updated in 2008. They are, as such, not only cumbersome
-                  to use, but also highly susceptible to hacks and exploits. In
-                  the past two years alone, 94% of cyberattacks were carried out
-                  via email, resulting in over $26 Billion in losses worldwide.
+                  Legacy email service providers like Google make their money by
+                  riffling through your data. They read your emails and analyze
+                  their contents in order to make you a better target for the
+                  ads they bombard you with. That’s their business model. Data
+                  privacy is only an illusion. Read more about email privacy, or
+                  the lack thereof, here.
                 </p>
               </div>
-              <div class="feature-3">
+              <div class="problem-3">
                 <div
                   class="lead row d-flex align-items-center"
                   id="encryptionHeader"
@@ -880,7 +829,7 @@
                     data-toggle="collapse"
                     type="button"
                     data-target="#encryption"
-                    onclick="updateSecurity('encryption')"
+                    onclick="updateProblem('encryption')"
                   >
                     <div class="icon d-flex" id="encryptionIcon"></div>
                   </div>
@@ -890,9 +839,9 @@
                     data-toggle="collapse"
                     type="button"
                     data-target="#encryption"
-                    onclick="updateSecurity('encryption')"
+                    onclick="updateProblem('encryption')"
                   >
-                    Encryption
+                    No Encryption
                   </div>
                 </div>
 
@@ -905,7 +854,7 @@
                   exposed to outside world.
                 </p>
               </div>
-              <div class="feature-4">
+              <div class="problem-4">
                 <div
                   class="lead row d-flex align-items-center"
                   id="centralizedHeader"
@@ -918,7 +867,7 @@
                     data-target="#centralized"
                     aria-expanded="false"
                     style="cursor: pointer"
-                    onclick="updateSecurity('centralized')"
+                    onclick="updateProblem('centralized')"
                   >
                     <div class="icon d-flex" id="centralizedIcon"></div>
                   </div>
@@ -929,7 +878,7 @@
                     data-target="#centralized"
                     aria-expanded="false"
                     style="cursor: pointer"
-                    onclick="updateSecurity('centralized')"
+                    onclick="updateProblem('centralized')"
                   >
                     Centralized Governance
                   </div>
@@ -948,13 +897,222 @@
         </div>
       </div>
     </div>
-
-    <div class="section  section-pad section-bg-alt" id="features">
-      <div class="background-shape bs-reverse"></div>
+    <div class="section section-pad section-bg-dark" id="why">
       <div class="container">
         <div class="row">
+          <div class="col-md-5 mt-md-5">
+            <div
+              class="res-m-btm text-center animated"
+              data-animate="fadeInUp"
+              data-delay=".1"
+            >
+              <img src="images/asset_1.png" alt="graph" />
+            </div>
+          </div>
+
+          <div class="col-md-6 ml-md-5">
+            <div class="text-block">
+              <h6
+                class="heading-sm-s2 animated"
+                data-animate="fadeInUp"
+                data-delay=".2"
+              >
+                why
+              </h6>
+              <h2 class="animated" data-animate="fadeInUp" data-delay=".3">
+                Why LedgerMail?
+              </h2>
+              <p class="animated" data-animate="fadeInUp" data-delay=".4">
+                A Decentralized Email Solution which is on a mission to Protect
+                Digital Rights of Email Users in Decentralized Way!
+              </p>
+              <p class="animated" data-animate="fadeInUp" data-delay=".5">
+                LedgerMail is an immutable, truly private, completely secure,
+                fully customizable, and cost-effective email service that will
+                soon render the old ways of providing email service obsolete by
+                leveraging the power of blockchain technology.
+              </p>
+              <div class="why animated" data-animate="fadeInUp" data-delay=".6">
+                <div class="why-1">
+                  <div
+                    class="lead row d-flex align-items-center"
+                    id="whyReplacementHeader"
+                    data-animate="fadeInUp"
+                  >
+                    <div
+                      class="col-auto"
+                      data-toggle="collapse"
+                      type="button"
+                      data-target="#whyReplacement"
+                      aria-expanded="false"
+                      style="cursor: pointer"
+                      onclick="updateWhy('whyReplacement')"
+                    >
+                      <div class="icon d-flex" id="whyReplacementIcon"></div>
+                    </div>
+                    <div
+                      class="col-10 col-md-auto"
+                      data-toggle="collapse"
+                      type="button"
+                      data-target="#whyReplacement"
+                      aria-expanded="false"
+                      style="cursor: pointer"
+                      onclick="updateWhy('whyReplacement')"
+                    >
+                      Replacement of Traditional Protocols
+                    </div>
+                  </div>
+
+                  <p class="collapse" id="whyReplacement">
+                    LedgerMail replaces traditional, obsolete and cumbersome
+                    Email transfer protocols such as IMAP/SMTP with immutable,
+                    tamper-proof and revolutionary Blockchain Technology.
+                    Transfer of each email is considered as a Blockchain
+                    Transaction and each transaction is validated with XDPoS 2.0
+                    consensus mechanism.
+                  </p>
+                </div>
+                <div class="why-2">
+                  <div
+                    class="lead row d-flex align-items-center"
+                    id="whySecurityHeader"
+                    data-animate="fadeInUp"
+                  >
+                    <div
+                      class="col-auto"
+                      data-toggle="collapse"
+                      type="button"
+                      data-target="#whySecurity"
+                      aria-expanded="false"
+                      style="cursor: pointer"
+                      onclick="updateWhy('whySecurity')"
+                    >
+                      <div class="icon d-flex" id="whySecurityIcon"></div>
+                    </div>
+                    <div
+                      class="col-10 col-md-auto"
+                      data-toggle="collapse"
+                      type="button"
+                      data-target="#whySecurity"
+                      aria-expanded="false"
+                      style="cursor: pointer"
+                      onclick="updateWhy('whySecurity')"
+                    >
+                      Security of Blockchain 4.0
+                    </div>
+                  </div>
+
+                  <p class="collapse" id="whySecurity">
+                    In collaboration with XDC Network, LedgerMail operates on
+                    4th generation Hybrid Blockchain Platform which is a
+                    lightning fast, enterprise-ready, super secure, accountable
+                    and forensic control enabled military grade fabric based on
+                    Delegated Proof of Stake (XDPoS 2.0) algorithm with 108
+                    transaction-validating master nodes (and 192 additional
+                    standby nodes) scattered around the globe.
+                  </p>
+                </div>
+                <div class="why-3">
+                  <div
+                    class="lead row d-flex align-items-center"
+                    id="whyEncryptionHeader"
+                    data-animate="fadeInUp"
+                  >
+                    <div
+                      class="col-auto"
+                      data-toggle="collapse"
+                      type="button"
+                      data-target="#whyEncryption"
+                      aria-expanded="false"
+                      style="cursor: pointer"
+                      onclick="updateWhy('whyEncryption')"
+                    >
+                      <div class="icon d-flex" id="whyEncryptionIcon"></div>
+                    </div>
+                    <div
+                      class="col-10 col-md-auto"
+                      data-toggle="collapse"
+                      type="button"
+                      data-target="#whyEncryption"
+                      aria-expanded="false"
+                      style="cursor: pointer"
+                      onclick="updateWhy('whyEncryption')"
+                    >
+                      Cryptographic Encryption
+                    </div>
+                  </div>
+
+                  <p class="collapse" id="whyEncryption">
+                    LedgerMail uses Cryptographic Algorithms with asymmetric
+                    encryption on the client side with recipients public key.
+                    The emails sent on the network are verified & authenticated
+                    for the correct recipient. This avoids any hacks of modified
+                    headers and spam emails possible in existing email
+                    protocols.
+                  </p>
+                </div>
+                <div class="why-4">
+                  <div
+                    class="lead row d-flex align-items-center"
+                    id="whyDecentralizationHeader"
+                    data-animate="fadeInUp"
+                  >
+                    <div
+                      class="col-auto"
+                      data-toggle="collapse"
+                      type="button"
+                      data-target="#whyDecentralization"
+                      aria-expanded="false"
+                      style="cursor: pointer"
+                      onclick="updateWhy('whyDecentralization')"
+                    >
+                      <div
+                        class="icon d-flex"
+                        id="whyDecentralizationIcon"
+                      ></div>
+                    </div>
+                    <div
+                      class="col-10 col-md-auto"
+                      data-toggle="collapse"
+                      type="button"
+                      data-target="#whyDecentralization"
+                      aria-expanded="false"
+                      style="cursor: pointer"
+                      onclick="updateWhy('whyDecentralization')"
+                    >
+                      Decentralization
+                    </div>
+                  </div>
+
+                  <p class="collapse" id="whyDecentralization">
+                    LedgerMail operates on fully decentralized network where
+                    nodes are distributed across the network to form immutable
+                    network which makes it impossible to be controlled and
+                    hacked by external parties. There is no single authority to
+                    manipulate and control user data and LedgerMail ensures to
+                    bring zero trust mechanism.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section section-pad section-bg-alt" id="features">
+      <div class="background-shape bs-reverse"></div>
+      <div class="container">
+        <div class="row justify-content-center">
           <div class="col-lg-12">
             <div class="section-head-s6">
+              <h6
+                class="heading-sm-s2 animated"
+                data-animate="fadeInUp"
+                data-delay=".2"
+              >
+                features
+              </h6>
               <!-- <h6 class="heading-sm-s2">How it work</h6> -->
               <h2
                 class="section-title-s6 animated text-center"
@@ -2322,7 +2480,7 @@
                 <em class="fa fa-envelope"></em>
                 <span>info@ledgermail.io</span>
               </li>
-<!--               <li
+              <!--               <li
                 class="animated fadeInUp"
                 data-animate="fadeInUp"
                 data-delay=".4"
@@ -2331,7 +2489,7 @@
                 <em class="fa fa-user"></em>
                 <span>Mr. Suraj Mulla</span>
               </li> -->
-<!--               <li
+              <!--               <li
                 class="animated fadeInUp"
                 data-animate="fadeInUp"
                 data-delay=".5"
@@ -2494,7 +2652,7 @@
 
     <div class="section footer-scetion footer-lungwort">
       <div class="container">
-	      &nbsp;
+        &nbsp;
         <div class="row text-center">
           <div class="col-md-12">
             <ul class="social">
