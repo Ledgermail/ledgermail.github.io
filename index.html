@@ -32,7 +32,7 @@
     </title>
     <!-- Vendor Bundle CSS -->
     <link rel="stylesheet" href="assets/css/vendor.bundle.css?ver=142" />
-
+    <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet"> -->
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="assets/css/style.css?ver=142" />
     <link rel="stylesheet" href="assets/css/theme-blue.css?ver=142" />
@@ -597,20 +597,33 @@
                   </h1>
                   <h3 class="animated" data-animate="fadeInUp" data-delay=".1">
                     Operating on XDPoS 2.0 & Blockchain 4.0 spearheaded by
-                   <a href="https://xinfin.org/" target="_blank" class="link" style="text-decoration : underline"> XinFin Network </a>
+                    <a
+                      href="https://xinfin.org/"
+                      target="_blank"
+                      class="link"
+                      style="text-decoration: underline"
+                    >
+                      XinFin Network
+                    </a>
                   </h3>
                   <h6
                     class="lead animated"
                     data-animate="fadeInUp"
                     data-delay=".2"
-                    style="color: #08bcf0 !important; font-size: 1.15rem;font-weight: 500;"
+                    style="
+                      color: #08bcf0 !important;
+                      font-size: 1.15rem;
+                      font-weight: 500;
+                    "
                   >
                     Protecting Digital Rights of Email Users & Preventing Email
                     Attacks in a Decentralized Way! <br />
                     Change your Email Ecosystem without changing your Email ID.
                   </h6>
                 </div>
-                <div class="header-txt tab-center text-center mt-3 mobile-center">
+                <div
+                  class="header-txt tab-center text-center mt-3 mobile-center"
+                >
                   <ul
                     class="btns animated"
                     data-animate="fadeInUp"
@@ -628,7 +641,7 @@
                           border-radius: 4px;
                         "
                       >
-                      Get Free Access
+                        Get Free Access
                       </a>
                     </li>
                   </ul>
@@ -638,7 +651,8 @@
                     data-delay="2.0"
                     style="color: #08bcf0 !important ; font-size: small"
                   >
-                   You can use your primary Email ID ( No Credit card required )
+                    You can use your primary Email ID ( No Credit card required
+                    )
                   </p>
                 </div>
               </div>
@@ -670,8 +684,8 @@
 
     <div class="section section-pad section-bg-dark" id="why">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6">
+        <div class="row align-items-start ">
+          <div class="col-md-5 pt-md-5">
             <div
               class="res-m-btm animated"
               data-animate="fadeInUp"
@@ -681,74 +695,193 @@
             </div>
           </div>
 
-          <div class="col-md-6 order-md-first order-last">
+          <div class="col-md-6 order-md-first order-last mr-md-5">
+            <style>
+              .icon::before {
+                content: "\003e";
+                float: left;
+                margin-right: 15px;
+                color: #08bcf0;
+                font-size: 40px;
+                margin: 0;
+                transition: all 0.5s;
+              }
+              .rotate {
+                -webkit-transform: rotate(90deg);
+                -moz-transform: rotate(90deg);
+                transform: rotate(90deg);
+                transition: all 0.5s;
+              }
+              .revert {
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                transform: rotate(0deg);
+                transition: all 0.5s;
+              }
+            </style>
+
             <div class="text-block">
               <!-- <h6 class="heading-sm-s2">Why Ledgermail?</h6> -->
               <h2 class="animated" data-animate="fadeInUp" data-delay=".2">
                 Why Decentralized Email Solution?
               </h2>
-              <p
-                class="lead animated color-info"
-                data-animate="fadeInUp"
-                data-delay=".3"
-              >
-                1. Because current email ecosystem is obsolete, hackable and
-                cumbersome in nature:
-              </p>
-              <p class="animated" data-animate="fadeInUp" data-delay=".3">
-                Current email transfer protocols such as IMAP/SMTP were designed
-                & developed in 1982 and were last updated in 2008. Having such
-                an outdated email transfer protocols resulted as an easy target
-                for sophisticated hackers.
-              </p>
-              <p class="animated" data-animate="fadeInUp" data-delay=".3">
-                94% of cyber attacks are carried out through emails where as $26
-                Billion of monetary loss has been complained in past 2 years.
-              </p>
+              <div class="feature-1">
+                <div
+                  class="animated lead row d-flex align-items-center"
+                  id="securityHeader"
+                  data-animate="fadeInUp"
+                  data-delay=".3"
+                >
+                  <div
+                    class="col-auto"
+                    data-toggle="collapse"
+                    type="button"
+                    data-target="#security"
+                    aria-expanded="false"
+                    onclick="updateSecurity('security')"
+                    style="cursor: pointer"
+                  >
+                    <div class="icon d-flex" id="securityIcon"></div>
+                  </div>
+                  <div
+                    class="col-auto"
+                    data-toggle="collapse"
+                    type="button"
+                    data-target="#security"
+                    aria-expanded="false"
+                    onclick="updateSecurity('security')"
+                    style="cursor: pointer"
+                  >
+                    Security
+                  </div>
+                </div>
 
-              <p
-                class="lead animated mt-5"
-                data-animate="fadeInUp"
-                data-delay=".4"
-              >
-                2. Because user privacy is getting compromised through current
-                email providers:
-              </p>
-              <p class="animated" data-animate="fadeInUp" data-delay=".4">
-                Email service providers read, process and target ads to it's
-                users. Making meaningful use of email data is the way free
-                services make money.
-                <a
-                  href="https://en.wikipedia.org/wiki/Email_privacy#Email_privacy_concerns_(US)"
-                  target="_blank"
+                <p class="collapse" id="security">
+                  Legacy email service providers rely on obsolete protocols,
+                  like IMAP/SMTP, which were designed and developed in 1982 and
+                  last updated in 2008. They are, as such, not only cumbersome
+                  to use, but also highly susceptible to hacks and exploits. In
+                  the past two years alone, 94% of cyberattacks were carried out
+                  via email, resulting in over $26 Billion in losses worldwide.
+                </p>
+              </div>
+              <div class="feature-2">
+                <div
+                  class="animated lead row d-flex align-items-center"
+                  id="privacyHeader"
+                  data-animate="fadeInUp"
+                  data-delay=".3"
+                  onclick="updateSecurity('privacy')"
                 >
-                  Read more on email privacy</a
+                  <div
+                    class="col-auto"
+                    data-toggle="collapse"
+                    type="button"
+                    data-target="#privacy"
+                    aria-expanded="false"
+                    style="cursor: pointer"
+                  >
+                    <div class="icon d-flex" id="privacyIcon"></div>
+                  </div>
+                  <div
+                    class="col-auto"
+                    data-toggle="collapse"
+                    type="button"
+                    data-target="#privacy"
+                    aria-expanded="false"
+                    style="cursor: pointer"
+                  >
+                    Privacy
+                  </div>
+                </div>
+
+                <p class="collapse" id="privacy">
+                  Legacy email service providers rely on obsolete protocols,
+                  like IMAP/SMTP, which were designed and developed in 1982 and
+                  last updated in 2008. They are, as such, not only cumbersome
+                  to use, but also highly susceptible to hacks and exploits. In
+                  the past two years alone, 94% of cyberattacks were carried out
+                  via email, resulting in over $26 Billion in losses worldwide.
+                </p>
+              </div>
+              <div class="feature-3">
+                <div
+                  class="animated lead row d-flex align-items-center"
+                  id="encryptionHeader"
+                  aria-expanded="false"
+                  data-animate="fadeInUp"
+                  data-delay=".4"
                 >
-              </p>
-              <p
-                class="lead animated mt-5"
-                data-animate="fadeInUp"
-                data-delay=".5"
-              >
-                3. Because, even encrypted email services can be hacked:
-              </p>
-              <p class="animated" data-animate="fadeInUp" data-delay=".5">
-                Current encryption only provides network level encryption,
-                payload data or actual email content still remains unencrypted
-                and makes it vulnerable to breach.
-              </p>
-              <p
-                class="lead animated mt-5"
-                data-animate="fadeInUp"
-                data-delay=".6"
-              >
-                4. Because centralized storage is failing to secure user data:
-              </p>
-              <p class="animated" data-animate="fadeInUp" data-delay=".7">
-                Having centralized storage for information can be vulnerable to
-                single point of failure which can suffer a catastrophic failure,
-                accidentally burn to ground or be seized by a third party.
-              </p>
+                  <div
+                    style="cursor: pointer"
+                    class="col-auto"
+                    data-toggle="collapse"
+                    type="button"
+                    data-target="#encryption"
+                    onclick="updateSecurity('encryption')"
+                  >
+                    <div class="icon d-flex" id="encryptionIcon"></div>
+                  </div>
+                  <div
+                    style="cursor: pointer"
+                    class="col-auto"
+                    data-toggle="collapse"
+                    type="button"
+                    data-target="#encryption"
+                    onclick="updateSecurity('encryption')"
+                  >
+                    Encryption
+                  </div>
+                </div>
+
+                <p class="collapse" id="encryption">
+                  Legacy email service providers either don’t offer any
+                  encryption at all or provide inadequate encryption in terms of
+                  network connection. However, actual email content and
+                  attachments remain unencrypted thus if hacker manages to tap
+                  into your network, all your unencrypted messages will be
+                  exposed to outside world.
+                </p>
+              </div>
+              <div class="feature-4">
+                <div
+                  class="animated lead row d-flex align-items-center"
+                  id="centralizedHeader"
+                  data-animate="fadeInUp"
+                  data-delay=".3"
+                >
+                  <div
+                    class="col-auto"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#centralized"
+                    aria-expanded="false"
+                    style="cursor: pointer"
+                    onclick="updateSecurity('centralized')"
+                  >
+                    <div class="icon d-flex" id="centralizedIcon"></div>
+                  </div>
+                  <div
+                    class="col-auto"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#centralized"
+                    aria-expanded="false"
+                    style="cursor: pointer"
+                    onclick="updateSecurity('centralized')"
+                  >
+                    Centralized Governance
+                  </div>
+                </div>
+
+                <p class="collapse" id="centralized">
+                  Legacy email service providers are centralized. They control
+                  your data and, that means, they can lose control of your data
+                  too. Their servers, with your data on them, can be destroyed,
+                  on purpose or by accident, and they can be seized by malicious
+                  hackers, state or even nonstate actors.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -2413,6 +2546,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <script src="assets/js/sendMail.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="assets/js/whyDataToggle.js"></script>
+
     <script>
       //   onLoad();
     </script>
