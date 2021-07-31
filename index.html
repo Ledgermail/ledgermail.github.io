@@ -522,7 +522,14 @@
                 <a class="nav-link menu-link" href="/#features">Features</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link menu-link" href="/#pricing">Pricing</a>
+                <a class="nav-link menu-link" href="/#interoperability"
+                  >Interoperability</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu-link" href="/#partnership"
+                  >Partnership</a
+                >
               </li>
               <!-- <li class="nav-item"><a class="nav-link menu-link" href="#tokenSale">Token Sale</a></li> -->
               <!-- <li class="nav-item"><a class="nav-link menu-link" href="#whitepaper">Whitepaper</a></li> -->
@@ -686,6 +693,60 @@
       <!-- End Banner/Slider -->
     </header>
     <!-- End Header -->
+    <style>
+      .icon::before {
+        content: "\003e";
+        float: left;
+        margin-right: 15px;
+        color: #08bcf0;
+        font-size: 40px;
+        margin: 0;
+        transition: all 0.5s;
+      }
+      .rotate {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        transform: rotate(90deg);
+        transition: all 0.5s;
+      }
+      .revert {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+        transition: all 0.5s;
+      }
+
+      .point {
+        font-weight: 400;
+        font-size: 24px;
+      }
+
+      @media (max-width: 576px) {
+        .point {
+          font-size: 16px;
+        }
+        .icon::before {
+          font-size: 30px;
+        }
+      }
+      @media (min-width: 577) and (max-width: 768px) {
+        .point {
+          font-size: 16px;
+        }
+        .icon::before {
+          font-size: 30px;
+        }
+      }
+      @media (min-width: 769px) and (max-width: 992px) {
+        .point {
+          font-size: 18px;
+        }
+        .icon::before {
+          font-size: 32px;
+        }
+      
+      }
+    </style>
     <div class="section section-pad section-bg-dark" id="problem">
       <div class="container">
         <div class="row align-items-start">
@@ -700,30 +761,6 @@
           </div>
 
           <div class="col-md-6 order-md-first order-last mr-md-5">
-            <style>
-              .icon::before {
-                content: "\003e";
-                float: left;
-                margin-right: 15px;
-                color: #08bcf0;
-                font-size: 40px;
-                margin: 0;
-                transition: all 0.5s;
-              }
-              .rotate {
-                -webkit-transform: rotate(90deg);
-                -moz-transform: rotate(90deg);
-                transform: rotate(90deg);
-                transition: all 0.5s;
-              }
-              .revert {
-                -webkit-transform: rotate(0deg);
-                -moz-transform: rotate(0deg);
-                transform: rotate(0deg);
-                transition: all 0.5s;
-              }
-            </style>
-
             <div
               class="text-block animated"
               data-animate="fadeInUp"
@@ -756,7 +793,7 @@
                     <div class="icon d-flex" id="securityIcon"></div>
                   </div>
                   <div
-                    class="col-auto"
+                    class="col-auto point"
                     data-toggle="collapse"
                     type="button"
                     data-target="#security"
@@ -795,7 +832,7 @@
                     <div class="icon d-flex" id="privacyIcon"></div>
                   </div>
                   <div
-                    class="col-auto"
+                    class="col-auto point"
                     data-toggle="collapse"
                     type="button"
                     data-target="#privacy"
@@ -847,7 +884,7 @@
                   </div>
                   <div
                     style="cursor: pointer"
-                    class="col-auto"
+                    class="col-auto point"
                     data-toggle="collapse"
                     type="button"
                     data-target="#encryption"
@@ -884,7 +921,7 @@
                     <div class="icon d-flex" id="centralizedIcon"></div>
                   </div>
                   <div
-                    class="col-auto"
+                    class="col-10 col-lg-auto point"
                     type="button"
                     data-toggle="collapse"
                     data-target="#centralized"
@@ -963,7 +1000,7 @@
                       <div class="icon d-flex" id="whyReplacementIcon"></div>
                     </div>
                     <div
-                      class="col-10 col-md-auto"
+                      class="col-10 col-lg-auto point"
                       data-toggle="collapse"
                       type="button"
                       data-target="#whyReplacement"
@@ -1002,7 +1039,7 @@
                       <div class="icon d-flex" id="whySecurityIcon"></div>
                     </div>
                     <div
-                      class="col-10 col-md-auto"
+                      class="col-10 col-lg-auto point"
                       data-toggle="collapse"
                       type="button"
                       data-target="#whySecurity"
@@ -1042,7 +1079,7 @@
                       <div class="icon d-flex" id="whyEncryptionIcon"></div>
                     </div>
                     <div
-                      class="col-10 col-md-auto"
+                      class="col-10 col-lg-auto point"
                       data-toggle="collapse"
                       type="button"
                       data-target="#whyEncryption"
@@ -1084,7 +1121,7 @@
                       ></div>
                     </div>
                     <div
-                      class="col-10 col-md-auto"
+                      class="col-10 col-lg-auto point"
                       data-toggle="collapse"
                       type="button"
                       data-target="#whyDecentralization"
@@ -1284,7 +1321,7 @@
     </div>
   </section> -->
 
-    <div class="section section-pad no-pb section-bg">
+    <div class="section section-pad no-pb section-bg" id="interoperability">
       <div class="container">
         <div class="row align-items-center justify-content-between">
           <div class="col-md-4">
@@ -1332,7 +1369,7 @@
                       <div class="icon d-flex" id="signUpIcon"></div>
                     </div>
                     <div
-                      class="col-10 col-md-auto"
+                      class="col-10 col-lg-auto point"
                       data-toggle="collapse"
                       type="button"
                       data-target="#signUp"
@@ -1385,7 +1422,7 @@
                       <div class="icon d-flex" id="interfaceIcon"></div>
                     </div>
                     <div
-                      class="col-10 col-md-auto"
+                      class="col-10 col-lg-auto point"
                       data-toggle="collapse"
                       type="button"
                       data-target="#interface"
@@ -1482,7 +1519,7 @@
                       <div class="icon d-flex" id="isolationIcon"></div>
                     </div>
                     <div
-                      class="col-10 col-md-auto"
+                      class="col-10 col-lg-auto point"
                       data-toggle="collapse"
                       type="button"
                       data-target="#isolation"
@@ -1537,7 +1574,7 @@
                       <div class="icon d-flex" id="recieveIcon"></div>
                     </div>
                     <div
-                      class="col-10 col-md-auto"
+                      class="col-10 col-lg-auto point"
                       data-toggle="collapse"
                       type="button"
                       data-target="#recieve"
@@ -1798,7 +1835,7 @@
       </div>
     </section>
 
-    <section class="section section-pad section-bg-alt" id="pricing">
+    <section class="section section-pad section-bg-alt" id="partnership">
       <div class="background-shape bs-reverse"></div>
       <div class="container">
         <div class="row">
@@ -1820,33 +1857,25 @@
                 For Enterprises, LedgerMail will be setup on Permissioned
                 Blockchain Platform of XDC Network.
               </h6>
-              <h6
+              <div
                 class="animated text-center"
                 data-animate="fadeInUp"
-                data-delay=".3"
-              >
-                If your organization wants access to 10000+ user accounts
-                (including employees, users and enterprise clients) then
-                LedgerMail would love to Partner with you!
-              </h6>
-              <h4
-                class="my-5 animated text-center"
-                data-animate="fadeInUp"
                 data-delay=".4"
-                style="color: #08bcf0 !important"
               >
-                Let’s Partner to Secure your Email Platforms in a Decentralized
-                Way!
-              </h4>
-              <p
-                class="text-center animated"
-                data-animate="fadeInUp"
-                data-delay=".5"
-              >
+                <h6>
+                  If your organization wants access to 10000+ user accounts
+                  (including employees, users and enterprise clients) then
+                  LedgerMail would love to Partner with you!
+                </h6>
+                <h4 class="my-5" style="color: #08bcf0 !important">
+                  Let’s Partner to Secure your Email Platforms in a
+                  Decentralized Way!
+                </h4>
+
                 <a href="#contact" class="menu-link btn">
                   Discuss Partnership Opportunity
                 </a>
-              </p>
+              </div>
             </div>
           </div>
         </div>
@@ -2756,7 +2785,7 @@
       <div class="container">
         &nbsp;
         <div class="row text-center">
-          <div class="col-md-12" >
+          <div class="col-md-12">
             <ul class="social" size="30px">
               <li class="animated" data-animate="fadeInUp" data-delay=".2">
                 <a
