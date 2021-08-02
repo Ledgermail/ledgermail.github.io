@@ -10,6 +10,18 @@
   }
 }
 
+@-webkit-keyframes colorchange2 {
+  100% {
+    color: #185e7a;
+  }
+  50% {
+    color: rgb(87, 21, 149);
+  }
+  0% {
+    color: rgb(200, 5, 5);
+  }
+}
+
 .link {
   color: #08bcf0 !important;
 }
