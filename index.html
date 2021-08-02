@@ -233,16 +233,9 @@
             </p>
             <p
               class="modal-question px-lg-5; mt-3"
-              style="
-                margin-bottom: 0 !important;
-                font-weight: bold;
-              "
+              style="margin-bottom: 0 !important; font-weight: bold; "
             >
-              LedgerMail will be live in &nbsp; &nbsp;<span
-                id="timer"
-                class="timer"
-              >
-              </span>
+              <span id="timer" style="-webkit-animation: colorchange 1s infinite alternate" class="h2 timer"> </span>
             </p>
             <p
               class="text-center modal-preregister px-lg-5"
@@ -472,6 +465,12 @@
             display: none;
           }
           .timer {
+            /* color: #ad0606; */
+            letter-spacing: 2px;
+            /* font-size: 24px;
+            font-weight: 600; */
+          }
+          .timer-2 {
             color: #ad0606;
             letter-spacing: 2px;
             font-size: 24px;
@@ -481,23 +480,20 @@
             .br {
               display: inline;
             }
-            .timer {
+            .timer-2 {
               font-size: 20px;
               line-height: 18px;
             }
           }
         </style>
 
-        LedgerMail will be live in &nbsp; &nbsp;<span id="timer2" class="timer">
-        </span
-        >, &nbsp; &nbsp;
-        <br class="br" />
+       
         <a class="modal-open" data-toggle="modal" data-target="#myModal">
           &nbsp; Pre-Register
         </a>
         &nbsp; to grab your
         <span style="font-size: 20px; color: red; font-weight: 500"> FREE</span>
-        access
+        access in  <br class="br" /> <span id="timer2" class="timer-2"> </span>
       </div>
       <div
         class="pt-5 pt-md-5 navbar navbar-expand-lg is-transparent"
