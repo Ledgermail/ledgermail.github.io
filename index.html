@@ -287,6 +287,9 @@
                       class="form-control required"
                       aria-required="true"
                       placeholder="Primary Email Address"
+                      oninvalid="this.setCustomValidity('Enter valid email address')"
+                      oninput="this.setCustomValidity('')"
+
                       name="email"
                       required
                     />
