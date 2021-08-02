@@ -11,8 +11,8 @@ function sendEmail(e) {
   age = document.getElementById("preregister_age").value;
   website = document.getElementById("preregister_website").value;
 
-  // if (name != "" && ValidateEmail(email) && Number(age) > 17) {
-  if (name != "" && email != "" && Number(age) > 17) {
+  if (name != "" && ValidateEmail(email) && Number(age) > 17) {
+    // if (name != "" && email != "" && Number(age) > 17) {
     document.getElementById("submit-preregister").disabled = true;
     document.getElementById("submit-preregister").style.color = "grey";
     var data = {
@@ -62,10 +62,12 @@ function sendEmail(e) {
   }, 10000);
 }
 
-// function ValidateEmail(mail) {
-//   if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
-//     return true;
-//   }
-//   alert("Enter valid email address");
-//   return false;
-// }
+function ValidateEmail(mail) {
+  if (mail === "") {
+    return false;
+  } else if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
+    return true;
+  }
+  alert("Enter valid email address");
+  return false;
+}

@@ -232,6 +232,19 @@
               Decentralization of Blockchain to prevent Email attacks!
             </p>
             <p
+              class="modal-question px-lg-5; mt-3"
+              style="
+                margin-bottom: 0 !important;
+                font-weight: bold;
+              "
+            >
+              LedgerMail will be live in &nbsp; &nbsp;<span
+                id="timer"
+                class="timer"
+              >
+              </span>
+            </p>
+            <p
               class="text-center modal-preregister px-lg-5"
               style="margin-bottom: 0 !important"
             >
@@ -289,7 +302,6 @@
                       placeholder="Primary Email Address"
                       oninvalid="this.setCustomValidity('Enter valid email address')"
                       oninput="this.setCustomValidity('')"
-
                       name="email"
                       required
                     />
@@ -459,14 +471,27 @@
           .br {
             display: none;
           }
+          .timer {
+            color: #ad0606;
+            letter-spacing: 2px;
+            font-size: 24px;
+            font-weight: 600;
+          }
           @media (max-width: 576px) {
             .br {
               display: inline;
             }
+            .timer {
+              font-size: 20px;
+              line-height: 18px;
+            }
           }
         </style>
 
-        LedgerMail will be live on 4th August 2021, <br class="br" />
+        LedgerMail will be live in &nbsp; &nbsp;<span id="timer2" class="timer">
+        </span
+        >, &nbsp; &nbsp;
+        <br class="br" />
         <a class="modal-open" data-toggle="modal" data-target="#myModal">
           &nbsp; Pre-Register
         </a>
@@ -2847,6 +2872,7 @@
     <script src="assets/js/sendMail.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="assets/js/whyDataToggle.js"></script>
+    <script src="assets/js/countdown.js"></script>
 
     <script>
       //   onLoad();
