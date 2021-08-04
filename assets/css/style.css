@@ -2697,7 +2697,7 @@ select:focus {
   font-size: 13px;
   font-weight: 500;
   line-height: 38px;
-  margin: 0 16px;
+  margin: 0 12px;
   transition: all 0.35s ease;
 }
 .navbar .navbar-nav > li > a.nav-link {
