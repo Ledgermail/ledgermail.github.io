@@ -42,6 +42,7 @@
     <link rel="stylesheet" href="assets/css/faq-section.css" />
     <link rel="stylesheet" href="assets/css/intro-video.css" />
     <link rel="stylesheet" href="assets/css/modal2.css" />
+    <link href="https://css.gg/play-button-o.css" rel="stylesheet" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <!-- text -->
@@ -182,6 +183,233 @@
         </div>
       </div>
     </div>
+    <!-- add -->
+    <!-- <div id="myModal" class="modal fade mt-5">
+      <div class="modal-dialog modal-lg">
+        <div
+          class="modal-content"
+          style="
+            color: white;
+            background-size: cover;
+
+            background-image: url(/assets/images/background3.png);
+          "
+        >
+          <div
+            class="modal-body"
+            style="padding-top: 0 !important; padding-bottom: 0 !important"
+          >
+            <div class="row mb-3 justify-content-center px-1">
+              <div class="col-12 text-end" style="padding: 0 !important">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  style="color: #060612"
+                >
+                  &times;
+                </button>
+              </div>
+
+              <div class="col-12" style="padding: 0 !important">
+                <p class="modal-header" style="">
+                  How long Digital Rights of Email Users will be Compromised,
+                  Controlled & Manipulated?
+                </p>
+                <p class="modal-sub-header px-lg-5">
+                  Join our mission of Protecting Digital Rights of each email
+                  user in a Decentralized Way!
+                </p>
+                <p class="modal-title">
+                  LedgerMail – Decentralized Email Solution
+                </p>
+              </div>
+            </div>
+            <p
+              class="modal-question px-lg-5"
+              style="margin-bottom: 0 !important"
+            >
+              Highest Level of Security, Privacy, Cryptographic Encryption and
+              Decentralization of Blockchain to prevent Email attacks!
+            </p>
+            <p
+              class="modal-question px-lg-5; mt-3"
+              style="margin-bottom: 0 !important; font-weight: bold"
+            >
+              <span id="timer" class="h2 timer"> </span>
+            </p>
+            <p
+              class="text-center modal-preregister px-lg-5"
+              style="margin-bottom: 0 !important"
+            >
+              Pre-register yourself now to get
+              <span
+                class="h3"
+                style="-webkit-animation: colorchange 1s infinite alternate"
+                >FREE</span
+              >
+
+              access to LedgerMail & Win 10 XDC Coins
+            </p>
+            <div style="display: none">
+              <iframe name="hiddenFrame"></iframe>
+            </div>
+
+            <form
+              target="hiddenFrame"
+              id="preregister-form"
+              class="float-right"
+              style="min-width: 100%"
+              role="form"
+            >
+              <input
+                type="hidden"
+                name="website"
+                id="preregister_website"
+                value="ledgermail-preregister"
+              />
+
+              <div class="row justify-content-center py-lg-2">
+                <div class="col-12 col-lg-5 pt-lg-2">
+                  <div class="form-group">
+                    <input
+                      id="preregister_name"
+                      type="text"
+                      class="form-control required name"
+                      aria-required="true"
+                      placeholder="Name"
+                      name="name"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-lg-5 pt-lg-2">
+                  <div class="form-group">
+                    <input
+                      id="preregister_email"
+                      pattern="[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)+"
+                      type="email"
+                      class="form-control required"
+                      aria-required="true"
+                      placeholder="Primary Email Address"
+                      oninvalid="this.setCustomValidity('Enter valid email address')"
+                      oninput="this.setCustomValidity('')"
+                      name="email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-lg-2 pt-lg-2">
+                  <div class="form-group">
+                    <input
+                      id="preregister_age"
+                      min="18"
+                      type="number"
+                      class="form-control required"
+                      aria-required="true"
+                      placeholder="Age"
+                      name="age"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <button
+                    type="submit"
+                    class="btn btn-primary"
+                    value="Pre-Register"
+                    id="submit-preregister"
+                  >
+                    Pre-Register
+                  </button>
+                </div>
+              </div>
+              <style>
+                .display {
+                  display: inline;
+                }
+                .notDisplay {
+                  display: none;
+                }
+              </style>
+              <div
+                class="message notDisplay alert alert-success alert-dismissible fade hide text-center"
+                style="
+                  position: fixed;
+                  bottom: 5px;
+
+                  width: 95%;
+                  z-index: 1000;
+                "
+                role="alert"
+              >
+                <button
+                  type="button"
+                  class="close"
+                  style="color: black"
+                  data-dismiss="alert"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <h6 style="color: black; font-weight: 500" class="text-center">
+                  Thank you for Pre-registration, please check your registered
+                  email for confirmation.
+                </h6>
+                <h4 style="color: blueviolet" class="text-center">
+                  Welcome to Decentralized Email Ecosystem
+                </h4>
+              </div>
+              <div
+                class="errorMessage notDisplay alert alert-danger alert-dismissible fade hide text-center"
+                style="
+                  position: fixed;
+                  bottom: 5px;
+
+                  width: 95%;
+                  z-index: 1000;
+                "
+                role="alert"
+              >
+                <button
+                  type="button"
+                  class="close"
+                  style="color: black"
+                  data-dismiss="alert"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <h6 style="color: black; font-weight: 500" class="text-center">
+                  This email address is already reigstered with Ledgermail.
+                  Please try with different email address
+                </h6>
+             
+              </div>
+            </form>
+
+            <div class="row mt-4 justify-content-center">
+              <div class="col-12 text-center">
+                <p class="modal-question mt-2 px-lg-5">
+                  LedgerMail in collaboration with XinFin Network operating on
+                  Military Grade, Super Secure, Accountable and Fastest version
+                  of Blockchain 4.0 & XDPoS 2.0
+                
+                </p>
+              </div>
+            </div>
+            <div class="row mb-3 mt-2 justify-content-center">
+              <div class="col-12 text-center">
+                <p class="welcome-message">
+                  Let’s Build Decentralized Email Ecosystem!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- end -->
 
     <div
       class="modal fade hero-video-popup"
@@ -206,9 +434,43 @@
         </div>
       </div>
     </div>
-
+    <div
+      class="modal fade hero-video-popup"
+      id="steps-to-signup-video-popup"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content text-center">
+          <style>
+            .video {
+              height: 400px;
+              width: 70%;
+            }
+            @media screen and (max-width: 576px) {
+              .video {
+                width: 100%;
+                height: 350px;
+              }
+            }
+          </style>
+          <div class="modal-body p-0">
+            <iframe
+              class="video"
+              src="https://www.youtube.com/embed/EmWn0QyK3tI"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
     <header class="site-header is-sticky">
-      <div class="pre-register-text" style="z-index: 100">
+      <div class="pre-register-text py-1" style="z-index: 100">
         <style>
           .modal-open {
             cursor: pointer;
@@ -247,18 +509,28 @@
               line-height: 18px;
             }
           }
-        </style>
-       Get Ready, Ledgermail will be live Soon
-
-<!--         <span id="timer2" class="timer-2"> </span> -->
+        </style> 
+        LedgerMail is
+        <span style="font-size: 20px; color: #000; font-weight: 500"> LIVE</span
+        >,&nbsp;
+        <a
+          href="https://mail.ledgermail.io/auth/login"
+          class="modal-open"
+          target="_blank"
+        >
+          &nbsp; Sign Up &nbsp;</a
+        >
+        &nbsp;for
+        <span style="font-size: 20px; color: red; font-weight: 500"> FREE</span>
+        <!-- access in <span id="timer2" class="timer-2"> </span> -->
       </div>
       <div
-        class="pt-5 pt-md-5 navbar navbar-expand-lg is-transparent"
+        class="pt-4 pt-md-5 navbar navbar-expand-xl is-transparent"
         id="mainnav"
       >
         <nav class="container">
           <a
-            class="navbar-brand animated"
+            class="navbar-brand animated d-flex"
             data-animate="fadeInDown"
             data-delay=".65"
             href="./"
@@ -276,6 +548,13 @@
               src="images/logo-light.png"
               srcset="images/logo-light.png 2x"
             />
+            <span class="badge" style="color: #08bcf0"> Beta </span>
+             <!-- <span
+              class="badge"
+              style="float: right; margin-top: -10px; color: #08bcf0"
+            >
+              Beta
+            </span> -->
           </a>
 
           <button
@@ -301,6 +580,26 @@
               <style>
                 .menu-link {
                   font-size: 16px !important;
+                }
+                .signupButton {
+                  border: 1px solid #08bcf0;
+                  border-radius: 30px;
+                  padding: 0px 20px !important;
+                  background-color: #08bcf0 !important;
+                }
+
+                .signupButton:hover {
+                  background-color: #0584a7 !important;
+                  border-color: #0584a7;
+                  color: #ffffff !important;
+                }
+                @media screen and (max-width: 991px) {
+                  .nav-link {
+                    display: inline;
+                  }
+                  .signupButton {
+                    padding: 2px 20px !important;
+                  }
                 }
               </style>
               <li class="nav-item">
@@ -331,6 +630,23 @@
               <!-- <li class="nav-item"><a class="nav-link menu-link" href="#faq">Faqs</a></li> -->
               <li class="nav-item">
                 <a class="nav-link menu-link" href="/#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link menu-link"
+                  target="_blank"
+                  href="https://mail.ledgermail.io/auth/login"
+                  >Sign In</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link menu-link signupButton"
+                  target="_blank"
+                  href="https://mail.ledgermail.io/auth/signup"
+                >
+                  Sign Up for FREE
+                </a>
               </li>
             </ul>
             <!-- <ul class="navbar-btns animated remove-animation" data-animate="fadeInDown" data-delay="1.15">
@@ -434,18 +750,34 @@
                     data-animate="fadeInUp"
                     data-delay="1.65"
                   >
-                    <li>
+                    <li class="mx-5">
                       <a
-                        class="btn btn-outline menu-link disabled"
-                       
+                        class="btn btn-outline menu-link"
+                        href="https://mail.ledgermail.io/auth/signup"
+                        target="_blank"
                         style="
-                          padding: 14px 35px;
+                          padding: 8px 35px;
                           font-size: 20px;
                           -ms-border-radius: 4px;
                           border-radius: 4px;
                         "
                       >
                         Get Free Access
+                      </a>
+                    </li>
+                    <li class="mx-5">
+                      <a
+                        class="btn btn-outline menu-link d-flex align-items-center"
+                        data-toggle="modal"
+                        data-target="#steps-to-signup-video-popup"
+                        style="
+                          padding: 8px 25px;
+                          font-size: 20px;
+                          -ms-border-radius: 4px;
+                          border-radius: 4px;
+                        "
+                      >
+                        Steps to Sign Up <i class="gg-play-button-o ml-2"></i>
                       </a>
                     </li>
                   </ul>
