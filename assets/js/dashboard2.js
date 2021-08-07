@@ -12,8 +12,11 @@ async function getData() {
   //     "🚀 ~ file: dashboard.js ~ line 6 ~ getData ~ xmlHttp.responseText",
   //     data
   //   );
-  count = await JSON.parse(xmlHttp.responseText);
-  console.log("🚀 ~ file: dashboard.js ~ line 10 ~ getData ~ count", count);
+  // count = await JSON.parse(xmlHttp.responseText);
+  console.log(
+    "🚀 ~ file: dashboard.js ~ line 10 ~ getData ~ count",
+    xmlHttp.responseText
+  );
 }
 
 getData();
