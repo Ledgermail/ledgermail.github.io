@@ -13,10 +13,9 @@ async function getData() {
   //     data
   //   );
   // count = await JSON.parse(xmlHttp.responseText);
-  console.log(
-    "test",
-    await xmlHttp.responseText
-  );
+  let x = 0;
+  console.log("test", (x = await JSON.parse(xmlHttp.responseText)));
+  document.getElementById("topic").innerHTML = x.totalRegistrations;
 }
 
 getData();
