@@ -2,6 +2,8 @@ var xmlHttp = new XMLHttpRequest();
 document.getElementById("refresh").addEventListener("click", getData);
 
 async function getData() {
+  document.getElementById("refresh").disabled = true;
+  document.getElementById("refresh").style.color = "grey";
   xmlHttp.open("GET", "http://pl-reg.herokuapp.com/user-count", false);
   xmlHttp.send(null);
 
@@ -16,8 +18,10 @@ async function getData() {
   //   );
   // count = await JSON.parse(xmlHttp.responseText);
   let x = 0;
-  console.log("test", (x = await JSON.parse(xmlHttp.responseText)));
+  x = await JSON.parse(xmlHttp.responseText);
   document.getElementById("totalSignups").innerHTML = x.totalRegistrations;
+   document.getElementById("refresh").disabled = false;
+   document.getElementById("refresh").style.color = "white";
 }
 
 getData();
