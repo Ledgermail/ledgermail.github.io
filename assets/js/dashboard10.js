@@ -20,8 +20,8 @@ async function getData() {
   let x = 0;
   x = await JSON.parse(xmlHttp.responseText);
   document.getElementById("totalSignups").innerHTML = x.totalRegistrations;
-   document.getElementById("refresh").disabled = false;
-   document.getElementById("refresh").style.color = "white";
+   await document.getElementById("refresh").disabled = false;
+   await document.getElementById("refresh").style.color = "white";
 }
 
 getData();
