@@ -1,6 +1,6 @@
 var xmlHttp = new XMLHttpRequest();
 async function getData() {
-  xmlHttp.open("GET", "http://pl-reg.herokuapp.com/user-count", true);
+  xmlHttp.open("GET", "http://pl-reg.herokuapp.com/user-count", false);
   xmlHttp.send(null);
 
   //   data = await fetch("http://pl-reg.herokuapp.com/user-count", {
@@ -14,7 +14,7 @@ async function getData() {
   //   );
   // count = await JSON.parse(xmlHttp.responseText);
   console.log(
-    "🚀 ~ file: dashboard.js ~ line 10 ~ getData ~ count",
+    "test",
     await xmlHttp.responseText
   );
 }
