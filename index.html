@@ -27,7 +27,8 @@
     />
     <link rel="shortcut icon" href="images/favicon.png" />
     <title>
-      World's First Decentralized Email Solution | Blockchain based encrypted and free email service
+      World's First Decentralized Email Solution | Blockchain based encrypted
+      and free email service
     </title>
     <!-- Vendor Bundle CSS -->
     <link rel="stylesheet" href="assets/css/vendor.bundle.css?ver=142" />
@@ -436,34 +437,34 @@
       </div>
     </div>
     <div
-      class="modal fade hero-video-popup"
+      class="modal fade"
       id="steps-to-signup-video-popup"
       tabindex="-1"
       role="dialog"
       aria-labelledby="exampleModalCenterTitle"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content text-center">
           <style>
             .video {
-              height: 400px;
-              width: 70%;
+               width: 100%;
+                height: 450px;
+              margin-bottom: -15px;
             }
             @media screen and (max-width: 576px) {
               .video {
-                width: 100%;
-                height: 350px;
+                
+                height: 315px;
               }
             }
           </style>
           <div class="modal-body p-0">
             <iframe
-              class="video"
-              src="https://www.youtube.com/embed/beH0HdDtsqU"
+              class="video yt_player_iframe"
+              src="https://www.youtube.com/embed/beH0HdDtsqU?enablejsapi=1&version=3&playerapiid=ytplayer"
               title="YouTube video player"
               frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
           </div>
@@ -3227,8 +3228,13 @@
     <script src="assets/js/whyDataToggle.js"></script>
     <script src="assets/js/countdown.js"></script>
     <script>
-      $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({});
+      $("#steps-to-signup-video-popup").on("hide.bs.modal", function () {
+        console.log("herhe");
+
+        $(".yt_player_iframe")[0].contentWindow.postMessage(
+          '{"event":"command","func":"' + "stopVideo" + '","args":""}',
+          "*"
+        );
       });
     </script>
   </body>
