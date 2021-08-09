@@ -460,7 +460,7 @@
           </style>
           <div class="modal-body p-0">
             <iframe
-             class="video"
+              class="video"
               src="https://www.youtube.com/embed/beH0HdDtsqU"
               title="YouTube video player"
               frameborder="0"
@@ -1308,7 +1308,7 @@
           data-animate="fadeInUp"
           data-delay=".3"
         >
-          <div class="owl-carousel owl-theme">
+          <div class="owl-carousel owl-carousel-one owl-theme">
             <div class="item first prev">
               <div class="feature-card features-box-s4">
                 <div class="features-icon-s4">
@@ -2590,7 +2590,22 @@
         </div> -->
       </div>
     </section>
-
+    <style>
+      .media {
+        height: 70px;
+        background-color: #ffffff;
+      }
+      @media (max-width: 1000px) {
+        .media {
+          height: 50px;
+        }
+      }
+      @media (max-width: 600px) {
+        .media {
+          height: 40px;
+        }
+      }
+    </style>
     <section class="section section-pad-md section-bg" id="media">
       <div class="container">
         <div class="row justify-content-center">
@@ -2604,163 +2619,133 @@
                 Media Publications
               </h2>
             </div>
-
-            <!-- <div class="gaps size-1x d-none d-md-block"></div> -->
+            <div class="gaps size-2x"></div>
+            <div class="gaps size-1x d-none d-md-block"></div>
           </div>
         </div>
-        <div class="row justify-content-center align-items-center">
-          <div class="col-lg-3 col-md-7 px-md-3 px-lg-4 py-2 py-lg-3">
+        <div
+          id="oc-clients"
+          class="owl-carousel owl-carousel-two image-carousel carousel-widget"
+        >
+          <div class="oc-item">
             <a
               target="_blank"
               href="https://www.marketwatch.com/press-release/ledgermail---worlds-first-decentralized-email-solution-2021-08-05?tesla=y"
             >
               <img
-                class="p-2 p-lg-3"
+                class="p-2 p-lg-3 media"
                 src="images/media/market-watch.png"
                 alt="market-watch"
                 style="background-color: #ffffff"
-              />
-            </a>
+            /></a>
           </div>
-          <div class="col-6 col-md-4 col-lg-3 px-md-3 px-lg-4 py-2 py-lg-3">
+          <div class="oc-item">
             <a
               target="_blank"
               href="https://markets.businessinsider.com/news/stocks/ledgermail---world-s-first-decentralized-email-solution-1030697146"
             >
               <img
-                class="p-2 p-lg-3"
-                src="images/media/markets-insider.png"
-                alt="markets-insider"
-                style="background-color: #ffffff"
+                class="p-2 p-lg-3 media"
+                src="images/media/insider.png"
+                alt="insider"
               />
             </a>
           </div>
-
-          <div class="col-6 col-md-5 col-lg-3 px-md-3 px-lg-4 py-2 py-lg-3">
+          <div class="oc-item">
             <a
               target="_blank"
               href="https://www.benzinga.com/pressreleases/21/08/g22368397/ledgermail-announced-a-unique-blockchain-powered-decentralized-email-service-platform"
             >
               <img
-                class="p-2 p-lg-3"
+                class="p-2 p-lg-3 media"
                 src="images/media/benziga.png"
                 alt="benziga"
-                style="background-color: #ffffff"
               />
             </a>
           </div>
-          <div class="col-lg-3 col-md-6 px-md-3 px-lg-4 py-2 py-lg-3">
+          <div class="oc-item">
             <a
               target="_blank"
               href="https://www.accesswire.com/658568/LedgerMail--Worlds-First-Decentralized-Email-Solution"
             >
               <img
-                class="p-1 p-lg-2"
+                class="p-1 p-lg-2 media"
                 src="images/media/accesswire.png"
                 alt="accesswire"
-                style="background-color: #ffffff"
               />
             </a>
           </div>
-        </div>
-        <div class="row justify-content-center align-items-center">
-          <div class="col-lg-auto col-6 col-md-4 px-md-3 px-lg-4 py-2 py-lg-3">
+          <div class="oc-item">
             <a
               target="_blank"
               href="https://news.yahoo.com/news/ledgermail-announced-unique-blockchain-powered-063900771.html"
             >
               <img
-                class="p-2 p-lg-3"
+                class="p-2 p-lg-3 media"
                 src="images/media/yahoo-news.png"
                 alt="yahoo-news"
-                style="background-color: #ffffff"
               />
             </a>
           </div>
-          <div class="col-lg-auto col-md-4 col-6 px-md-3 px-lg-4 py-2 py-lg-3">
-            <a
-              target="_blank"
-              href="https://money.yahoo.com/news/ledgermail-announced-unique-blockchain-powered-063900771.html"
-            >
-              <img
-                class="p-2 p-lg-3"
-                src="images/media/yahoo-money.png"
-                alt="yahoo-money"
-                style="background-color: #ffffff"
-              />
-            </a>
-          </div>
-          <div class="col-lg-auto col-12 col-md-4 px-md-3 px-lg-4 py-2 py-lg-3">
-            <a
-              target="_blank"
-              href="https://finance.yahoo.com/news/ledgermail-announced-unique-blockchain-powered-063900771.html?guccounter=1"
-            >
-              <img
-                class="p-2 p-lg-3"
-                src="images/media/yahoo-finance.png"
-                alt="yahoo-finance"
-                style="background-color: #ffffff"
-              />
-            </a>
-          </div>
-        </div>
-        <div class="row justify-content-center align-items-center">
-          <div class="col-md-7 col-lg-3 px-md-3 px-lg-4 py-2 py-lg-3">
+          <div class="oc-item">
             <a
               target="_blank"
               href="https://martechseries.com/content/email-mktg/ledgermail-announced-a-unique-blockchain-powered-decentralized-email-service-platform/"
             >
               <img
-                class="p-2 p-lg-3"
+                class="p-2 p-lg-3 media"
                 src="images/media/martechseries.png"
                 alt="martechseries"
-                style="background-color: #ffffff"
               />
             </a>
           </div>
-          <div class="col-6 col-lg-3 col-md-5 px-md-3 px-lg-4 py-2 py-lg-3">
+          <div class="oc-item">
             <a
               target="_blank"
               href="https://www.globenewswire.com/news-release/2021/08/06/2276219/0/en/LedgerMail-Announced-A-Unique-Blockchain-Powered-Decentralized-Email-Service-Platform.html"
             >
               <img
-                class="p-2 p-lg-3"
+                class="p-1 media"
                 src="images/media/globenewswire.svg"
                 alt="globenewswire"
-                style="background-color: #ffffff"
               />
             </a>
           </div>
 
-          <div class="col-6 col-md-4 col-lg-auto px-md-3 px-lg-4 py-2 py-lg-3">
+          <div class="oc-item">
             <a
               target="_blank"
               href="https://oltnews.com/ledgermail-announced-unique-blockchain-powered-globenewswire"
             >
               <img
-                class="p-2 p-lg-3"
+                class="p-2 p-lg-3 media"
                 src="images/media/oltnews.png"
                 alt="oltnews"
-                style="background-color: #ffffff"
               />
             </a>
           </div>
-          <div class="col-lg-3 col-md-7 px-md-3 px-lg-4 py-2 py-lg-3">
+          <div class="oc-item">
             <a
               target="_blank"
               href="https://cryptonewsbtc.org/2021/08/06/ledgermail-announced-a-unique-blockchain-powered/#google_vignette"
             >
               <img
-                class="p-3 p-lg-4"
+                class="p-3 p-lg-4 media"
                 src="images/media/cryptoNewsBtc.png"
                 alt="cryptoNewsBtc"
-                style="background-color: #ffffff"
               />
             </a>
           </div>
-        </div>
-        <div class="row justify-content-center align-items-center">
-          <div class="col-lg-2 col-6 col-md-4 px-md-3 px-lg-4 py-2 py-lg-3">
+          <div class="oc-item">
+            <a target="_blank" href="https://news.cnyes.com/news/id/4696517">
+              <img
+                class="p-2 p-lg-3 media"
+                src="images/media/cnyes.png"
+                alt="cnyes"
+              />
+            </a>
+          </div>
+          <!-- <div class="oc-item">
             <a
               target="_blank"
               href="http://businesstechnologiesdaily.com/ledgermail-introduced-a-distinctive-blockchain-powered/"
@@ -2769,21 +2754,199 @@
                 class="p-1 p-lg-1"
                 src="images/media/businesstechnologiesdaily.png"
                 alt="businesstechnologiesdaily"
-                style="background-color: #ffffff"
+                style="background-color: #ffffff; height: 70px; width : 80px"
               />
             </a>
-          </div>
-          <div class="col-lg-auto col-md-4 col-6 px-md-3 px-lg-4 py-2 py-lg-3">
-            <a target="_blank" href="https://news.cnyes.com/news/id/4696517">
-              <img
-                class="p-2 p-lg-3"
-                src="images/media/cnyes.png"
-                alt="cnyes"
-                style="background-color: #ffffff"
-              />
-            </a>
-          </div>
+          </div> -->
         </div>
+        <!-- <div>
+          <div class="row justify-content-center align-items-center">
+            <div class="col-lg-3 col-md-7 px-md-3 px-lg-4 py-2 py-lg-3">
+              <a
+                target="_blank"
+                href="https://www.marketwatch.com/press-release/ledgermail---worlds-first-decentralized-email-solution-2021-08-05?tesla=y"
+              >
+                <img
+                  class="p-2 p-lg-3"
+                  src="images/media/market-watch.png"
+                  alt="market-watch"
+                  style="background-color: #ffffff"
+                />
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 px-md-3 px-lg-4 py-2 py-lg-3">
+              <a
+                target="_blank"
+                href="https://markets.businessinsider.com/news/stocks/ledgermail---world-s-first-decentralized-email-solution-1030697146"
+              >
+                <img
+                  class="p-2 p-lg-3"
+                  src="images/media/markets-insider.png"
+                  alt="markets-insider"
+                  style="background-color: #ffffff"
+                />
+              </a>
+            </div>
+
+            <div class="col-6 col-md-5 col-lg-3 px-md-3 px-lg-4 py-2 py-lg-3">
+              <a
+                target="_blank"
+                href="https://www.benzinga.com/pressreleases/21/08/g22368397/ledgermail-announced-a-unique-blockchain-powered-decentralized-email-service-platform"
+              >
+                <img
+                  class="p-2 p-lg-3"
+                  src="images/media/benziga.png"
+                  alt="benziga"
+                  style="background-color: #ffffff"
+                />
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-6 px-md-3 px-lg-4 py-2 py-lg-3">
+              <a
+                target="_blank"
+                href="https://www.accesswire.com/658568/LedgerMail--Worlds-First-Decentralized-Email-Solution"
+              >
+                <img
+                  class="p-1 p-lg-2"
+                  src="images/media/accesswire.png"
+                  alt="accesswire"
+                  style="background-color: #ffffff"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="row justify-content-center align-items-center">
+            <div
+              class="col-lg-auto col-6 col-md-4 px-md-3 px-lg-4 py-2 py-lg-3"
+            >
+              <a
+                target="_blank"
+                href="https://news.yahoo.com/news/ledgermail-announced-unique-blockchain-powered-063900771.html"
+              >
+                <img
+                  class="p-2 p-lg-3"
+                  src="images/media/yahoo-news.png"
+                  alt="yahoo-news"
+                  style="background-color: #ffffff"
+                />
+              </a>
+            </div>
+            <div
+              class="col-lg-auto col-md-4 col-6 px-md-3 px-lg-4 py-2 py-lg-3"
+            >
+              <a
+                target="_blank"
+                href="https://money.yahoo.com/news/ledgermail-announced-unique-blockchain-powered-063900771.html"
+              >
+                <img
+                  class="p-2 p-lg-3"
+                  src="images/media/yahoo-money.png"
+                  alt="yahoo-money"
+                  style="background-color: #ffffff"
+                />
+              </a>
+            </div>
+            <div
+              class="col-lg-auto col-12 col-md-4 px-md-3 px-lg-4 py-2 py-lg-3"
+            >
+              <a
+                target="_blank"
+                href="https://finance.yahoo.com/news/ledgermail-announced-unique-blockchain-powered-063900771.html?guccounter=1"
+              >
+                <img
+                  class="p-2 p-lg-3"
+                  src="images/media/yahoo-finance.png"
+                  alt="yahoo-finance"
+                  style="background-color: #ffffff"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="row justify-content-center align-items-center">
+            <div class="col-md-7 col-lg-3 px-md-3 px-lg-4 py-2 py-lg-3">
+              <a
+                target="_blank"
+                href="https://martechseries.com/content/email-mktg/ledgermail-announced-a-unique-blockchain-powered-decentralized-email-service-platform/"
+              >
+                <img
+                  class="p-2 p-lg-3"
+                  src="images/media/martechseries.png"
+                  alt="martechseries"
+                  style="background-color: #ffffff"
+                />
+              </a>
+            </div>
+            <div class="col-6 col-lg-3 col-md-5 px-md-3 px-lg-4 py-2 py-lg-3">
+              <a
+                target="_blank"
+                href="https://www.globenewswire.com/news-release/2021/08/06/2276219/0/en/LedgerMail-Announced-A-Unique-Blockchain-Powered-Decentralized-Email-Service-Platform.html"
+              >
+                <img
+                  class="p-2 p-lg-3"
+                  src="images/media/globenewswire.svg"
+                  alt="globenewswire"
+                  style="background-color: #ffffff"
+                />
+              </a>
+            </div>
+
+            <div
+              class="col-6 col-md-4 col-lg-auto px-md-3 px-lg-4 py-2 py-lg-3"
+            >
+              <a
+                target="_blank"
+                href="https://oltnews.com/ledgermail-announced-unique-blockchain-powered-globenewswire"
+              >
+                <img
+                  class="p-2 p-lg-3"
+                  src="images/media/oltnews.png"
+                  alt="oltnews"
+                  style="background-color: #ffffff"
+                />
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-7 px-md-3 px-lg-4 py-2 py-lg-3">
+              <a
+                target="_blank"
+                href="https://cryptonewsbtc.org/2021/08/06/ledgermail-announced-a-unique-blockchain-powered/#google_vignette"
+              >
+                <img
+                  class="p-3 p-lg-4"
+                  src="images/media/cryptoNewsBtc.png"
+                  alt="cryptoNewsBtc"
+                  style="background-color: #ffffff"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="row justify-content-center align-items-center">
+            <div class="col-lg-2 col-6 col-md-4 px-md-3 px-lg-4 py-2 py-lg-3">
+              <a
+                target="_blank"
+                href="http://businesstechnologiesdaily.com/ledgermail-introduced-a-distinctive-blockchain-powered/"
+              >
+                <img
+                  class="p-1 p-lg-1"
+                  src="images/media/businesstechnologiesdaily.png"
+                  alt="businesstechnologiesdaily"
+                  style="background-color: #ffffff"
+                />
+              </a>
+            </div>
+            <div
+              class="col-lg-auto col-md-4 col-6 px-md-3 px-lg-4 py-2 py-lg-3"
+            >
+              <a target="_blank" href="https://news.cnyes.com/news/id/4696517">
+                <img
+                  class="p-2 p-lg-3"
+                  src="images/media/cnyes.png"
+                  alt="cnyes"
+                  style="background-color: #ffffff"
+                />
+              </a>
+            </div>
+          </div>
+        </div> -->
       </div>
     </section>
 
@@ -3064,5 +3227,10 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="assets/js/whyDataToggle.js"></script>
     <script src="assets/js/countdown.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({});
+      });
+    </script>
   </body>
 </html>
