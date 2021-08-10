@@ -2667,12 +2667,12 @@ select:focus {
   max-height: 50px;
 }
 
-@media only screen and (max-width : 576px){
+@media only screen and (max-width: 576px) {
   .site-header .navbar-brand img {
-  width: auto;
-  max-width: 100%;
-  max-height: 30px;
-}
+    width: auto;
+    max-width: 100%;
+    max-height: 30px;
+  }
 }
 .site-header .navbar-header .quote-btn {
   display: none;
@@ -5380,8 +5380,8 @@ select:focus {
   background-color: #fff;
 }
 .card:hover {
-    transform: scale(1.05);
-    transition: .5s;
+  transform: scale(1.05);
+  transition: 0.5s;
 }
 .io-dark-light .section-light.section-bg .accordion .card:last-child,
 .io-dark-light .section-light-alt.section-bg .accordion .card:last-child {
@@ -5698,24 +5698,40 @@ label.error {
 }
 .social li {
   display: inline-block;
-  margin: 0 4px;
+  margin: 0 12px;
 }
 .social li a {
   color: #3c3c3c;
   background: #fff;
   display: inline-block;
-  height: 30px;
-  width: 30px;
-  font-size: 16px;
+  height: 42px;
+  width: 42px;
+  font-size: 20px;
   text-align: center;
   border-radius: 50%;
-  line-height: 30px;
+  line-height: 44px;
 }
 .social li a:hover {
   background: #7a0fff;
   color: #fff;
 }
 
+@media only screen and (max-width: 560px) {
+  .social li {
+    margin: 0px 5px;
+  }
+  .social li a {
+    color: #3c3c3c;
+    background: #fff;
+    display: inline-block;
+    height: 34px;
+    width: 34px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 34px;
+  }
+}
 @media only screen and (max-width: 320px) {
   .social {
     margin: 15px 0 0;
@@ -11991,7 +12007,7 @@ label.error {
   font-weight: 400;
   margin-bottom: 11px;
   color: #08bcf0;
-   padding-bottom: 23px;
+  padding-bottom: 23px;
   margin-bottom: 20px;
 }
 

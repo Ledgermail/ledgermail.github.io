@@ -35,7 +35,7 @@
     <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet"> -->
     <!-- Custom styles for this template -->
     <!-- <link rel="stylesheet" href="assets/css/style.css?ver=142" /> -->
-    <link rel="stylesheet" href="assets/css/styleTwo.css?ver=142" />
+    <link rel="stylesheet" href="assets/css/style.css?ver=142" />
 
     <link rel="stylesheet" href="assets/css/theme-blue.css?ver=142" />
     <link rel="stylesheet" href="assets/css/custom.css" />
@@ -448,13 +448,12 @@
         <div class="modal-content text-center">
           <style>
             .video {
-               width: 100%;
-                height: 450px;
+              width: 100%;
+              height: 450px;
               margin-bottom: -15px;
             }
             @media screen and (max-width: 576px) {
               .video {
-                
                 height: 315px;
               }
             }
@@ -483,10 +482,19 @@
             font-size: 18px;
             padding: 3px;
           }
+          .modal-open-disabled {
+            color: grey !important;
+            border: 1px solid grey;
+            border-radius: 3px;
+            font-weight: 500;
+            font-size: 18px;
+            padding: 3px;
+          }
           .modal-open:hover {
             color: white !important;
             background-color: blueviolet !important;
           }
+
           .br {
             display: none;
           }
@@ -512,12 +520,15 @@
             }
           }
         </style>
-
-        <a
+        <!-- <a
           href="https://mail.ledgermail.io/auth/signup"
           class="modal-open"
           target="_blank"
         >
+          &nbsp; Sign Up &nbsp;</a
+        > -->
+
+        <a class="modal-open-disabled" target="_blank">
           &nbsp; Sign Up &nbsp;</a
         >
         &nbsp;for
@@ -587,6 +598,13 @@
                   padding: 0px 20px !important;
                   background-color: #08bcf0 !important;
                 }
+                .signupButton-disabled {
+                  color: grey !important;
+                  border: 1px solid grey;
+                  border-radius: 30px;
+                  padding: 0px 20px !important;
+                  background-color: rgb(197, 197, 197) !important;
+                }
 
                 .signupButton:hover {
                   background-color: #0584a7 !important;
@@ -640,9 +658,16 @@
                 >
               </li>
               <li class="nav-item">
+                <!-- <a -->
+                <!-- class="nav-link menu-link signupButton" -->
+                <!-- href="https://mail.ledgermail.io/auth/signup" -->
+                <!-- target="_blank" -->
+                <!-- > -->
+                <!-- Sign Up for FREE -->
+                <!-- </a> -->
                 <a
-                  class="nav-link menu-link signupButton"
-                  href="https://mail.ledgermail.io/auth/signup"
+                  class="nav-link menu-link signupButton-disabled"
+                  target="_blank"
                 >
                   Sign Up for FREE
                 </a>
@@ -3195,6 +3220,15 @@
               <li class="animated" data-animate="fadeInUp" data-delay=".2">
                 <a href="https://twitter.com/ledgermail" target="_blank"
                   ><em class="fab fa-twitter"></em
+                ></a>
+              </li>
+               <li class="animated" data-animate="fadeInUp" data-delay=".2">
+                <a href="https://www.instagram.com/ledgermail_official/" target="_blank"
+                  ><em class="fab fa-instagram"></em
+                ></a>
+              </li> <li class="animated" data-animate="fadeInUp" data-delay=".2">
+                <a href="https://www.reddit.com/user/LedgerMail_Official" target="_blank"
+                  ><em  class="fab fa-reddit"></em
                 ></a>
               </li>
               <!-- <li><a href="#"><em class="fab fa-youtube"></em></a></li> -->
