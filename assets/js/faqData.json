@@ -1,0 +1,58 @@
+[
+  {
+    "question": "What is a Blockchain based Decentralized Email Solution?",
+    "answer": "Blockchain based email solution leverages Blockchain technology as its underlying mechanism and operates in a decentralized way, where there is no single authority to control email service.<br>Current email transfer protocols such as IMAP/SMTP are replaced with Blockchain technology, where messages, files and attachments are stored in shared ledgers of blockchain which are distributed across the network."
+  },
+  {
+    "question": "What is difference between Legacy email providers and LedgerMail?",
+    "answer": "Legacy email providers such as Gmail, Outlook, Yahoo etc. uses IMAP/SMTP as email transfer protocols and have centralized governance over email ecosystem. <br> LedgerMail replaces these protocols with Blockchain technology and builds decentralized email ecosystem with no single point of control or failure."
+  },
+  {
+    "question": "Does LedgerMail provides end to end encryption?",
+    "answer": "Yes, LedgerMail uses cryptographic algorithms to encrypt email text and attachments which are end to end encrypted. LedgerMail uses Public/Private key sharing mechanism to achieve asymmetric encryption."
+  },
+  {
+    "question": "Can I use any email ID of Gmail, Outlook or even my personal domain?",
+    "answer": "Yes, you can use any email ID even with custom domains to Sign Up to LedgerMail. LedgerMail is email ID, alias and domain agnostic, which means users with any valid email ID can Sign up to LedgerMail with that email ID."
+  },
+  {
+    "question": "If I use my Gmail ID to Sign up, will I receive emails coming to Gmail in LedgerMail Inbox?",
+    "answer": "Emails which are sent from LedgerMail will get reflected in LedgerMail Inbox. All other emails which are sent to your Gmail ID, will reflect in your Gmail Inbox.<br>To provide users with highest level of security, LedgerMail is isolated from outside interference from where external breach may happen. It is very much similar to using Telegram/WhatsApp where both sender and recipient needs to be part of same application. You can use your mobile number to Sign Up to Telegram, WhatsApp and several other messaging applications, but messages which are sent from Telegram will reflect only in Telegram application. <br> In same way, emails which are sent from LedgerMail will only reflect in LedgerMail application."
+  },
+  {
+    "question": "Can I send or forward emails to my contacts which are not part of LedgerMail?",
+    "answer": "No, you can not send emails to contacts which are not part of LedgerMail. For successful email exchange, the sender and recipient both needs to be part of LedgerMail platform. <br>LedgerMail does not use traditional email transfer protocols and to achieve asymmetric encryption & validate blockchain transactions both the users has to be part of LedgerMail platform. You can invite your contacts to be part of LedgerMail and start having secure email exchange."
+  },
+  {
+    "question": "How does LedgerMail prevents me from email attacks?",
+    "answer": "LedgerMail assigns unique blockchain wallet ID to each user and map it internally with email ID to achieve interoperability and ease of access. With this unique wallet ID, each user now has its own digital identity which cannot be spoofed or impersonated. <br> LedgerMail uses cryptographic asymmetric encryption where the receiver with a private key can decrypt the messages and read them. Email tampering is not possible in this case. <br>LedgerMail can not be used to send bulk emails and neither LedgerMail organization shares any data with third party tools for marketing purpose. <br> LedgerMail is designed to use between trusted parties only, if you receive email from unknown user then you can avoid interaction with such users. In this way, LedgerMail prevents you from Email Spoofing, Tampering, Spamming and Phishing attacks. "
+  },
+  {
+    "question": "If I lost my seed words, can I retrieve my account?",
+    "answer": "No, if you lose your Mnemonic (Seed Words) then you cannot retrieve your account. Seed words are nothing but your Private key to decrypt the messages which is not stored on LedgerMail servers. We suggest you to never lose your Mnemonic phrase and store it securely. "
+  },
+  {
+    "question": "Can LedgerMail employees or engineers read my emails?",
+    "answer": "No, we don’t have any access to user data and neither we can spy on user emails. LedgerMail cryptographically encrypts the messages as soon as user clicks on the Sent button and it gets decrypted only when receiver with the private key opens the email. In between, this email & attachments are end to end encrypted and no one can read these emails, neither employees or engineers at LedgerMail."
+  },
+  {
+    "question": "How can I perform Search activity on emails?",
+    "answer": "In LedgerMail, email body and attachments are completely encrypted so the Search operation can not be performed on the same. To enable users with Search operation, LedgerMail does not encrypt Email Subject and the Search can be performed on Email Subjects."
+  },
+  {
+    "question": "What is the size of your Blockchain Network?",
+    "answer": "LedgerMail is operating on public blockchain platform of XDC Network which has 108 transaction validating Master Nodes and 192 additional standby nodes which are scattered across the globe."
+  },
+  {
+    "question": "Is there an impact on the speed with which messages are received/delivered as a result of the validation process?",
+    "answer": "Yes, there will be a fraction of delay compared to speed at which legacy email providers exchange emails considering we have to validate each transaction over the Blockchain network. <br> With adoption of Blockchain 4.0 and XDPoS 2.0 consensus protocol of XDC Network, speed of transactions will improve significantly and users can experience near real time experience."
+  },
+  {
+    "question": "What is the energy consumption and how you are trying to build environment friendly ecosystem?",
+    "answer": " LedgerMail operates on 3rd generation XDC Blockchain with XDPoS consensus mechanism which is a Carbon Neutral Blockchain Platform with very minimal of 0.000000118 kWh energy consumption per transaction. With adoption of Blockchain 4.0 and XDPoS 2.0, LedgerMail will further reduce this energy consumption and reinvigorate building environment friendly ecosystem."
+  },
+  {
+    "question": "What is the transaction fees associated with LedgerMail?",
+    "answer": "Each email transfer consumes very minimum transaction fees of 0.0125 XDC for validation. "
+  }
+]
