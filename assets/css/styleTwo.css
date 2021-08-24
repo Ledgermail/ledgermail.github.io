@@ -5698,7 +5698,7 @@ label.error {
 }
 .social li {
   display: inline-block;
-  margin: 0 12px;
+  margin: 0 6px;
 }
 .social li a {
   color: #3c3c3c;
@@ -5709,7 +5709,7 @@ label.error {
   font-size: 20px;
   text-align: center;
   border-radius: 50%;
-  line-height: 44px;
+  line-height: 42px;
 }
 .social li a:hover {
   background: #7a0fff;
@@ -12057,7 +12057,7 @@ label.error {
   padding: 60px 0 80px;
 }
 .footer-lungwort .social {
-  margin-bottom: 60px;
+  margin-bottom: 0px;
 }
 .footer-lungwort .social li a {
   color: #fff;
