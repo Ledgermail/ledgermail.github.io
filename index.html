@@ -1,0 +1,1623 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/df2e57ffba.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/node_modules/tw-elements/dist/js/index.min.js"></script>
+
+    <title>Ledgermail | Home</title>
+  </head>
+  <body class="font-custom">
+    <div>
+      <!-- nav -->
+      <header class="header-section text-white h-24 bg-white">
+        <nav class="nav-container">
+          <div>
+            <a href="/">
+              <img src="/assets/img/logo-2.png" alt="" class="nav-icon" />
+            </a>
+          </div>
+          <div class="lg:hidden block">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              id="menu-button"
+              class="h-6 w-6 cursor-pointer svg-light"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="white"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </div>
+          <div
+            class="hidden w-full lg:flex md:items-center lg:w-auto"
+            id="menu"
+          >
+            <ul class="nav-items" id="navItems">
+              <li>
+                <a class="nav-item text-active" href="/">Home</a>
+              </li>
+              <li>
+                <a class="nav-item" href="./about-us.html">About</a>
+              </li>
+              <li>
+                <a class="nav-item" href="./our-ecosystem.html"
+                  >Our Ecosystem</a
+                >
+              </li>
+              <li>
+                <a
+                  class="nav-item feature-nav"
+                  id="featureNav"
+                  href="./index.html#features"
+                  >Features</a
+                >
+              </li>
+              <li>
+                <a class="nav-item" href="./contact-us.html"> Contact Us </a>
+              </li>
+              <li>
+                <a class="nav-item" href="#"> Sign In </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="nav-item-signup text-white bg-secondary rounded-xl"
+                >
+                  Sign Up for Free
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- nav-end -->
+
+      <!-- body -->
+      <main class="contents-width">
+        <!--header-section  -->
+        <section></section>
+        <section class="home-intro items-center flex justify-center">
+          <div>
+            <div class="grid md:grid-cols-7 lg:grid-cols-6 gap-6 items-center">
+              <div
+                class="justify-center md:col-span-4 lg:col-span-3 xl:col-span-4"
+              >
+                <div
+                  class="text-3xl md:text-6xl text-center text-primary font-semibold"
+                >
+                  World's First <br />
+                  Decentralized Email Solution
+                </div>
+                <div class="text-xl sm:text-2xl text-center">
+                  Protecting Digital Rights of Email Users & Preventing Email
+                  Attacks in a Decentralized Way!
+                </div>
+              </div>
+              <div class="justify-self-center md:col-span-3 xl:col-span-2">
+                <iframe
+                  class="video-frame"
+                  src="https://www.youtube.com/embed/iVNBMmyq_1c"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div
+              class="grid md:grid-cols-9 gap-3 items-center md:justify-between justify-center"
+            >
+              <div class="md:col-span-1 xl:col-span-2">
+                <img src="/assets/img/Build_XDC.png" alt="" />
+              </div>
+              <div
+                class="md:col-span-4 grid grid-cols-auto grid-cols-2 justify-between gap-3"
+              >
+                <div>
+                  <button class="home-button">GET FREE ACCESS</button>
+                </div>
+                <div>
+                  <button class="home-button">STEPS TO SIGNUP</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- header-section-end -->
+
+        <!-- dashboard -->
+        <section class="my-24" id="dashboard">
+          <div class="section-title">DASHBOARD</div>
+          <!-- stats -->
+          <div class="stats mb-16">
+            <!-- desktop -->
+            <div class="hidden xl:block border stat-container-border">
+              <div class="grid grid-cols-3 stat-border-bottom">
+                <div class="stat-border-right px-4 py-3">
+                  <div class="stat-numbers" id="totalUsersWeb">0</div>
+                  <div class="grid grid-cols-5">
+                    <div class="">
+                      <i
+                        class="material-icons stat-icon text-white stat-background-1"
+                        aria-hidden="true"
+                      >
+                        groups
+                      </i>
+                    </div>
+                    <div class="col-span-4">
+                      <div class="text-xl font-semibold mb-4">Total Users</div>
+                      <div class="stat-border-bottom-container">
+                        <div class="stat-border-1"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="stat-border-right px-4 py-3">
+                  <div class="stat-numbers" id="totalMailsWeb">0</div>
+                  <div class="grid grid-cols-5">
+                    <div class="">
+                      <i
+                        class="material-icons stat-icon text-white stat-background-2"
+                        aria-hidden="true"
+                      >
+                        compare_arrows
+                      </i>
+                    </div>
+                    <div class="col-span-4">
+                      <div class="text-xl font-semibold mb-4">
+                        Total Email Exchange
+                      </div>
+                      <div class="stat-border-bottom-container">
+                        <div class="stat-border-2"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="px-4 py-3">
+                  <div class="stat-numbers" id="activeWalletsWeb">0</div>
+                  <div class="grid grid-cols-5">
+                    <div class="">
+                      <i
+                        class="material-icons text-white stat-icon stat-background-3"
+                        aria-hidden="true"
+                      >
+                        account_balance_wallet
+                      </i>
+                    </div>
+                    <div class="col-span-4">
+                      <div class="text-xl font-semibold mb-4">
+                        Active Wallets
+                      </div>
+                      <div class="stat-border-bottom-container">
+                        <div class="stat-border-3"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid-cols-3">
+                <div class="stat-border-right px-4 py-3">
+                  <div class="stat-numbers" id="usersFromTopCompetitionWeb">
+                    0
+                  </div>
+                  <div class="grid grid-cols-5">
+                    <div class="">
+                      <i
+                        class="material-icons stat-icon text-white stat-background-4"
+                        aria-hidden="true"
+                      >
+                        group
+                      </i>
+                    </div>
+                    <div class="col-span-4">
+                      <div class="text-xl font-semibold mb-4">
+                        Users from Top Competition
+                      </div>
+                      <div class="stat-border-bottom-container">
+                        <div class="stat-border-4"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="stat-border-right px-4 py-3">
+                  <div class="stat-numbers" id="userCreditedAmountWeb">0</div>
+                  <div class="grid grid-cols-5">
+                    <div class="">
+                      <i
+                        class="material-icons stat-icon text-white stat-background-5"
+                        aria-hidden="true"
+                      >
+                        credit_score
+                      </i>
+                    </div>
+                    <div class="col-span-4">
+                      <div class="text-xl font-semibold mb-4">
+                        User Credited XDC
+                      </div>
+                      <div class="stat-border-bottom-container">
+                        <div class="stat-border-5"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="px-4 py-3">
+                  <div class="stat-numbers" id="referralCreditedAmountWeb">
+                    0
+                  </div>
+                  <div class="grid grid-cols-5">
+                    <div class="">
+                      <i
+                        class="material-icons text-white stat-icon stat-background-6"
+                        aria-hidden="true"
+                      >
+                        group_add
+                      </i>
+                    </div>
+                    <div class="col-span-4">
+                      <div class="text-xl font-semibold mb-4">
+                        Referral Credited XDC
+                      </div>
+                      <div class="stat-border-bottom-container">
+                        <div class="stat-border-6"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- desktop-end -->
+
+            <!-- tab -->
+            <div
+              class="hidden md:block xl:hidden container stat-container-border"
+            >
+              <div class="grid grid-cols-2 stat-border-bottom">
+                <div class="stat-border-right px-4 py-3">
+                  <div class="stat-numbers" id="totalUsersTab">0</div>
+                  <div class="grid grid-cols-5">
+                    <div class="">
+                      <i
+                        class="material-icons stat-icon text-white stat-background-1"
+                        aria-hidden="true"
+                      >
+                        groups
+                      </i>
+                    </div>
+                    <div class="col-span-4">
+                      <div class="text-xl font-semibold mb-4">Total Users</div>
+                      <div class="stat-border-bottom-container">
+                        <div class="stat-border-1"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="px-4 py-3">
+                  <div class="stat-numbers" id="totalMailsTab">0</div>
+                  <div class="grid grid-cols-5">
+                    <div class="">
+                      <i
+                        class="material-icons stat-icon text-white stat-background-2"
+                        aria-hidden="true"
+                      >
+                        compare_arrows
+                      </i>
+                    </div>
+                    <div class="col-span-4">
+                      <div class="text-xl font-semibold mb-4">
+                        Total Email Exchange
+                      </div>
+                      <div class="stat-border-bottom-container">
+                        <div class="stat-border-2"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 stat-border-bottom">
+                <div class="stat-border-right px-4 py-3">
+                  <div class="stat-numbers" id="activeWalletsTab">0</div>
+                  <div class="grid grid-cols-5">
+                    <div class="">
+                      <i
+                        class="material-icons text-white stat-icon stat-background-3"
+                        aria-hidden="true"
+                      >
+                        account_balance_wallet
+                      </i>
+                    </div>
+                    <div class="col-span-4">
+                      <div class="text-xl font-semibold mb-4">
+                        Active Wallets
+                      </div>
+                      <div class="stat-border-bottom-container">
+                        <div class="stat-border-3"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="px-4 py-3">
+                  <div class="stat-numbers" id="usersFromTopCompetitionTab">
+                    0
+                  </div>
+                  <div class="grid grid-cols-5">
+                    <div class="">
+                      <i
+                        class="material-icons stat-icon text-white stat-background-4"
+                        aria-hidden="true"
+                      >
+                        group
+                      </i>
+                    </div>
+                    <div class="col-span-4">
+                      <div class="text-xl font-semibold mb-4">
+                        Users from Top Competition
+                      </div>
+                      <div class="stat-border-bottom-container">
+                        <div class="stat-border-4"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid-cols-2">
+                <div class="stat-border-right px-4 py-3">
+                  <div class="stat-numbers" id="userCreditedAmountTab">0</div>
+                  <div class="grid grid-cols-5">
+                    <div class="">
+                      <i
+                        class="material-icons stat-icon text-white stat-background-5"
+                        aria-hidden="true"
+                      >
+                        credit_score
+                      </i>
+                    </div>
+                    <div class="col-span-4">
+                      <div class="text-xl font-semibold mb-4">
+                        User Credited XDC
+                      </div>
+                      <div class="stat-border-bottom-container">
+                        <div class="stat-border-5"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="px-4 py-3">
+                  <div class="stat-numbers" id="referralCreditedAmountTab">
+                    0
+                  </div>
+                  <div class="grid grid-cols-5">
+                    <div class="">
+                      <i
+                        class="material-icons text-white stat-icon stat-background-6"
+                        aria-hidden="true"
+                      >
+                        group_add
+                      </i>
+                    </div>
+                    <div class="col-span-4">
+                      <div class="text-xl font-semibold mb-4">
+                        Referral Credited XDC
+                      </div>
+                      <div class="stat-border-bottom-container">
+                        <div class="stat-border-6"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- tab-end -->
+            <!-- mobile -->
+            <div class="md:hidden container stat-container-border">
+              <div class="grid grid-cols-1">
+                <div class="stat-border-bottom px-4 py-3">
+                  <div class="stat-numbers-mobile" id="totalUsersMobile">0</div>
+                  <div class="grid grid-cols-5">
+                    <div class="">
+                      <i
+                        class="material-icons stat-icon text-white stat-background-1"
+                        aria-hidden="true"
+                      >
+                        groups
+                      </i>
+                    </div>
+                    <div class="col-span-4">
+                      <div class="text-xl font-semibold mb-4">Total Users</div>
+                      <div class="stat-border-bottom-container">
+                        <div class="stat-border-1"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="stat-border-bottom px-4 py-3">
+                  <div class="stat-numbers-mobile" id="totalMailsMobile">0</div>
+                  <div class="grid grid-cols-5">
+                    <div class="">
+                      <i
+                        class="material-icons stat-icon text-white stat-background-2"
+                        aria-hidden="true"
+                      >
+                        compare_arrows
+                      </i>
+                    </div>
+                    <div class="col-span-4">
+                      <div class="text-xl font-semibold mb-4">
+                        Total Email Exchange
+                      </div>
+                      <div class="stat-border-bottom-container">
+                        <div class="stat-border-2"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="stat-border-bottom px-4 py-3">
+                  <div class="stat-numbers-mobile" id="activeWalletsMobile">
+                    0
+                  </div>
+                  <div class="grid grid-cols-5">
+                    <div class="">
+                      <i
+                        class="material-icons text-white stat-icon stat-background-3"
+                        aria-hidden="true"
+                      >
+                        account_balance_wallet
+                      </i>
+                    </div>
+                    <div class="col-span-4">
+                      <div class="text-xl font-semibold mb-4">
+                        Active Wallets
+                      </div>
+                      <div class="stat-border-bottom-container">
+                        <div class="stat-border-3"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="stat-border-bottom px-4 py-3">
+                  <div
+                    class="stat-numbers-mobile"
+                    id="usersFromTopCompetitionMobile"
+                  >
+                    0
+                  </div>
+                  <div class="grid grid-cols-5">
+                    <div class="">
+                      <i
+                        class="material-icons stat-icon text-white stat-background-4"
+                        aria-hidden="true"
+                      >
+                        group
+                      </i>
+                    </div>
+                    <div class="col-span-4">
+                      <div class="text-xl font-semibold mb-4">
+                        Users from Top Competition
+                      </div>
+                      <div class="stat-border-bottom-container">
+                        <div class="stat-border-4"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="stat-border-bottom px-4 py-3">
+                  <div
+                    class="stat-numbers-mobile"
+                    id="userCreditedAmountMobile"
+                  >
+                    0
+                  </div>
+                  <div class="grid grid-cols-5">
+                    <div class="">
+                      <i
+                        class="material-icons stat-icon text-white stat-background-5"
+                        aria-hidden="true"
+                      >
+                        credit_score
+                      </i>
+                    </div>
+                    <div class="col-span-4">
+                      <div class="text-xl font-semibold mb-4">
+                        User Credited XDC
+                      </div>
+                      <div class="stat-border-bottom-container">
+                        <div class="stat-border-5"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="px-4 py-3">
+                  <div
+                    class="stat-numbers-mobile"
+                    id="referralCreditedAmountMobile"
+                  >
+                    0
+                  </div>
+                  <div class="grid grid-cols-5">
+                    <div class="">
+                      <i
+                        class="material-icons text-white stat-icon stat-background-6"
+                        aria-hidden="true"
+                      >
+                        group_add
+                      </i>
+                    </div>
+                    <div class="col-span-4">
+                      <div class="text-xl font-semibold mb-4">
+                        Referral Credited XDC
+                      </div>
+                      <div class="stat-border-bottom-container">
+                        <div class="stat-border-6"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- mobile-end -->
+          </div>
+          <!-- stats-end -->
+
+          <!-- dash-slider -->
+
+          <div class="dashboard swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/assets/img/home/dash-slider/slider-1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/home/dash-slider/slider-2.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- dash-slider-end -->
+        </section>
+        <!-- dashboard-end -->
+
+        <!-- Problems -->
+        <section class="my-24" id="problems">
+          <div class="grid lg:grid-cols-10 gap-6">
+            <div class="section-header lg:col-span-5">PROBLEMS</div>
+          </div>
+          <div class="grid lg:grid-cols-9 mt-6 gap-6">
+            <div class="problems lg:col-span-4 order-2 lg:order-1">
+              <div class="section-subheader">
+                What is Problem with Legacy Email Providers?
+              </div>
+              <div class="accordion" id="accordionExample5">
+                <div class="accordion-item collapse-expand-item">
+                  <h2 class="accordion-header mb-0" id="headingOne5">
+                    <button
+                      id="buttonOne"
+                      class="collapse-expand-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne5"
+                      aria-expanded="false"
+                      aria-controls="collapseOne5"
+                      onclick="updateProblem('buttonOne')"
+                    >
+                      <div>
+                        <i
+                          class="expandOne material-icons expand-icon"
+                          aria-hidden="true"
+                        >
+                          keyboard_arrow_right
+                        </i>
+                        <i
+                          class="collapseOne material-icons collapse-icon"
+                          aria-hidden="true"
+                        >
+                          remove
+                        </i>
+                      </div>
+                      Insecure
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne5"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingOne5"
+                  >
+                    <div class="accordion-body collapse-expand-body">
+                      Legacy email service providers rely on obsolete protocols,
+                      like IMAP/SMTP, which were designed and developed in 1982
+                      and last updated in 2008. They are, as such, not only
+                      cumbersome to use but also highly susceptible to hacks and
+                      exploits. In the past two years alone, 94% of cyberattacks
+                      were carried out via email, resulting in over $26 Billion
+                      in losses worldwide.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item collapse-expand-item">
+                  <h2 class="accordion-header mb-0" id="headingTwo5">
+                    <button
+                      id="buttonTwo"
+                      onclick="updateProblem('buttonTwo')"
+                      class="collapse-expand-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo5"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo5"
+                    >
+                      <div>
+                        <i
+                          class="expandTwo material-icons expand-icon"
+                          aria-hidden="true"
+                        >
+                          keyboard_arrow_right
+                        </i>
+                        <i
+                          class="collapseTwo material-icons collapse-icon"
+                          aria-hidden="true"
+                        >
+                          remove
+                        </i>
+                      </div>
+                      No Privacy
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo5"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo5"
+                  >
+                    <div class="accordion-body collapse-expand-body">
+                      Legacy email service providers like Google make their
+                      money by riffling through your data. They read your emails
+                      and analyze their contents in order to make you a better
+                      target for the ads they bombard you with. That’s their
+                      business model. Data privacy is only an illusion. Read
+                      more about email privacy, or the lack thereof, here .
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item collapse-expand-item">
+                  <h2 class="accordion-header mb-0" id="headingThree5">
+                    <button
+                      class="collapse-expand-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree5"
+                      aria-expanded="false"
+                      aria-controls="collapseThree5"
+                      id="buttonThree"
+                      onclick="updateProblem('buttonThree')"
+                    >
+                      <div>
+                        <i
+                          class="expandThree material-icons expand-icon"
+                          aria-hidden="true"
+                        >
+                          keyboard_arrow_right
+                        </i>
+                        <i
+                          class="collapseThree material-icons collapse-icon"
+                          aria-hidden="true"
+                        >
+                          remove
+                        </i>
+                      </div>
+                      No Encryption
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree5"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree5"
+                  >
+                    <div class="accordion-body collapse-expand-body">
+                      Legacy email service providers either don’t offer any
+                      encryption at all or provide inadequate encryption in
+                      terms of network connection. However, actual email content
+                      and attachments remain unencrypted thus if a hacker
+                      manages to tap into your network, all your unencrypted
+                      messages will be exposed to the outside world.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item collapse-expand-item">
+                  <h2 class="accordion-header mb-0" id="headingFour5">
+                    <button
+                      class="collapse-expand-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour5"
+                      aria-expanded="false"
+                      aria-controls="collapseFour5"
+                      id="buttonFour"
+                      onclick="updateProblem('buttonFour')"
+                    >
+                      <div>
+                        <i
+                          class="expandFour material-icons expand-icon"
+                          aria-hidden="true"
+                        >
+                          keyboard_arrow_right
+                        </i>
+                        <i
+                          class="collapseFour material-icons collapse-icon"
+                          aria-hidden="true"
+                        >
+                          remove
+                        </i>
+                      </div>
+                      Centralized Governance
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFour5"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingFour5"
+                  >
+                    <div class="accordion-body collapse-expand-body">
+                      Legacy email service providers are centralized. They
+                      control your data and, that means, they can lose control
+                      of your data too. Their servers, with your data on them,
+                      can be destroyed, on purpose or by accident, and they can
+                      be seized by malicious hackers, state, or even non-state
+                      actors.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="problems lg:col-span-5 order-1 lg:order-2 lg:justify-self-end justify-self-center"
+            >
+              <img src="/assets/img/home/Problems.png" alt="" />
+            </div>
+          </div>
+        </section>
+        <!-- problems-end -->
+
+        <!-- Solutions -->
+        <section class="my-24" id="solutions">
+          <div class="grid lg:grid-cols-10 lg:gap-6">
+            <div class="lg:col-span-5"></div>
+            <div class="section-header lg:col-span-5">SOLUTION</div>
+          </div>
+          <div class="grid lg:grid-cols-9 mt-6">
+            <div
+              class="problems lg:col-span-5 lg:justify-self-start justify-self-center"
+            >
+              <img src="/assets/img/home/Solutions.png" alt="" />
+            </div>
+            <div class="problems lg:col-span-4">
+              <div class="section-subheader">Why LedgerMail?</div>
+              <div class="section-description">
+                LedgerMail is an immutable, truly private, completely secure,
+                fully customizable, and cost-effective email service that will
+                soon render the old ways of providing email service obsolete by
+                leveraging the power of blockchain technology.
+              </div>
+              <div class="accordion" id="accordionExample5">
+                <div class="accordion-item collapse-expand-item">
+                  <h2 class="accordion-header mb-0" id="headingSix5">
+                    <button
+                      id="buttonSix"
+                      class="collapse-expand-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseSix5"
+                      aria-expanded="false"
+                      aria-controls="collapseSix5"
+                      onclick="updateProblem('buttonSix')"
+                    >
+                      <div>
+                        <i
+                          class="expandSix material-icons expand-icon"
+                          aria-hidden="true"
+                        >
+                          keyboard_arrow_right
+                        </i>
+                        <i
+                          class="collapseSix material-icons collapse-icon"
+                          aria-hidden="true"
+                        >
+                          remove
+                        </i>
+                      </div>
+                      Replacement of Traditional Protocols
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseSix5"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingSix5"
+                  >
+                    <div class="accordion-body collapse-expand-body">
+                      Legacy email service providers rely on obsolete protocols,
+                      like IMAP/SMTP, which were designed and developed in 1982
+                      and last updated in 2008. They are, as such, not only
+                      cumbersome to use but also highly susceptible to hacks and
+                      exploits. In the past two years alone, 94% of cyberattacks
+                      were carried out via email, resulting in over $26 Billion
+                      in losses worldwide.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item collapse-expand-item">
+                  <h2 class="accordion-header mb-0" id="headingSeven5">
+                    <button
+                      id="buttonSeven"
+                      onclick="updateProblem('buttonSeven')"
+                      class="collapse-expand-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseSeven5"
+                      aria-expanded="false"
+                      aria-controls="collapseSeven5"
+                    >
+                      <div>
+                        <i
+                          class="expandSeven material-icons expand-icon"
+                          aria-hidden="true"
+                        >
+                          keyboard_arrow_right
+                        </i>
+                        <i
+                          class="collapseSeven material-icons collapse-icon"
+                          aria-hidden="true"
+                        >
+                          remove
+                        </i>
+                      </div>
+                      Security of Blockchain 4.0
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseSeven5"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingSeven5"
+                  >
+                    <div class="accordion-body collapse-expand-body">
+                      Legacy email service providers like Google make their
+                      money by riffling through your data. They read your emails
+                      and analyze their contents in order to make you a better
+                      target for the ads they bombard you with. That’s their
+                      business model. Data privacy is only an illusion. Read
+                      more about email privacy, or the lack thereof, here .
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item collapse-expand-item">
+                  <h2 class="accordion-header mb-0" id="headingEight5">
+                    <button
+                      class="collapse-expand-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseEight5"
+                      aria-expanded="false"
+                      aria-controls="collapseEight5"
+                      id="buttonEight"
+                      onclick="updateProblem('buttonEight')"
+                    >
+                      <div>
+                        <i
+                          class="expandEight material-icons expand-icon"
+                          aria-hidden="true"
+                        >
+                          keyboard_arrow_right
+                        </i>
+                        <i
+                          class="collapseEight material-icons collapse-icon"
+                          aria-hidden="true"
+                        >
+                          remove
+                        </i>
+                      </div>
+                      Cryptographic Encryption
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseEight5"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingEight5"
+                  >
+                    <div class="accordion-body collapse-expand-body">
+                      Legacy email service providers either don’t offer any
+                      encryption at all or provide inadequate encryption in
+                      terms of network connection. However, actual email content
+                      and attachments remain unencrypted thus if a hacker
+                      manages to tap into your network, all your unencrypted
+                      messages will be exposed to the outside world.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item collapse-expand-item">
+                  <h2 class="accordion-header mb-0" id="headingNine5">
+                    <button
+                      class="collapse-expand-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseNine5"
+                      aria-expanded="false"
+                      aria-controls="collapseNine5"
+                      id="buttonNine"
+                      onclick="updateProblem('buttonNine')"
+                    >
+                      <div>
+                        <i
+                          class="expandNine material-icons expand-icon"
+                          aria-hidden="true"
+                        >
+                          keyboard_arrow_right
+                        </i>
+                        <i
+                          class="collapseNine material-icons collapse-icon"
+                          aria-hidden="true"
+                        >
+                          remove
+                        </i>
+                      </div>
+                      Decentralization
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseNine5"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingNine5"
+                  >
+                    <div class="accordion-body collapse-expand-body">
+                      Legacy email service providers are centralized. They
+                      control your data and, that means, they can lose control
+                      of your data too. Their servers, with your data on them,
+                      can be destroyed, on purpose or by accident, and they can
+                      be seized by malicious hackers, state, or even non-state
+                      actors.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- solutions-end -->
+
+        <!-- Features -->
+        <section class="my-24" id="features">
+          <div class="section-title">FEATURES</div>
+          <div class="section-description text-center">
+            An altruistic vision backed by Passion, Innovation and Industry
+            Experience to build Decentralized Email Ecosystem
+          </div>
+          <div class="features swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide py-10 px-4">
+                <div>
+                  <img
+                    src="/assets/img/home/features/Decentralization.jpg"
+                    alt=""
+                  />
+                  <div class="feature-title">Decentralization</div>
+                  <div class="feature-description">
+                    We are leveraging Blockchain Technology to store emails on
+                    shared ledger with distribution of nodes across Blockchain
+                    Network.
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide py-10 px-4">
+                <div>
+                  <img src="/assets/img/home/features/Security.jpg" alt="" />
+                  <div class="feature-title">Security</div>
+                  <div class="feature-description">
+                    We are inheriting all the capabilities of Blockchain
+                    Technology to build immutable, tamper-proof and non-hackable
+                    service within Decentralized Email Ecosystem.
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide py-10 px-4">
+                <div>
+                  <img src="/assets/img/home/features/Encryption.jpg" alt="" />
+                  <div class="feature-title">Decentralization</div>
+                  <div class="feature-description">
+                    Cryptographic algorithms, Asymmetric-Key Mechanism and
+                    Hashing Functions to provide highest level of Encryption
+                    mechanism.
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide py-10 px-4">
+                <div>
+                  <img src="/assets/img/home/features/Prevention.jpg" alt="" />
+                  <div class="feature-title">Prevention</div>
+                  <div class="feature-description">
+                    No more header manipulation, editing or overwriting to spoof
+                    Email ID’s, breach the network and hack the user data.
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide py-10 px-4">
+                <div>
+                  <img src="/assets/img/home/features/Security.jpg" alt="" />
+                  <div class="feature-title">Security</div>
+                  <div class="feature-description">
+                    We are inheriting all the capabilities of Blockchain
+                    Technology to build immutable, tamper-proof and non-hackable
+                    service within Decentralized Email Ecosystem.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
+        <!-- Features-end -->
+
+        <!-- interoperability -->
+        <section class="my-24">
+          <div class="grid lg:grid-cols-10 lg:gap-6">
+            <div class="section-header lg:col-span-6">INTEROPERABILITY</div>
+          </div>
+          <div class="grid lg:grid-cols-11 lg:mt-6 lg:gap-8 xl:gap-24 gap-4">
+            <div class="lg:col-span-7 order-2 lg:order-1 mt-8">
+              <div class="section-subheader">
+                Seamless & Hassle-free Experience
+              </div>
+              <div class="accordion" id="accordionExample5">
+                <div class="accordion-item collapse-expand-item">
+                  <h2 class="accordion-header mb-0" id="headingTen5">
+                    <button
+                      id="buttonTen"
+                      class="collapse-expand-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTen5"
+                      aria-expanded="false"
+                      aria-controls="collapseTen5"
+                      onclick="updateProblem('buttonTen')"
+                    >
+                      <div>
+                        <i
+                          class="expandTen material-icons expand-icon"
+                          aria-hidden="true"
+                        >
+                          keyboard_arrow_right
+                        </i>
+                        <i
+                          class="collapseTen material-icons collapse-icon"
+                          aria-hidden="true"
+                        >
+                          remove
+                        </i>
+                      </div>
+                      Sign Up to LedgerMail with current Email ID
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTen5"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTen5"
+                  >
+                    <div class="accordion-body collapse-expand-body">
+                      <div class="mb-4">
+                        LedgerMail is ID agnostic which means, users can Sign Up
+                        to LedgerMail with their existing and valid email ID
+                        irrespective of domain.
+                      </div>
+                      <div class="mb-4">
+                        Users can have an email ID with any custom domain such
+                        as gmail.com, yahoo.com, aol.com, outlook.com or even
+                        customized premium company domains.
+                      </div>
+                      <div class="mb-4">
+                        LedgerMail treats each email transfer as a blockchain
+                        transaction and users will be assigned a unique Wallet
+                        ID which will get mapped internally with a given Email
+                        ID.
+                      </div>
+                      <div class="mb-4">
+                        However, users don’t need to worry about these complex
+                        backend operations and focus on having a seamless
+                        experience of using LedgerMail.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item collapse-expand-item">
+                  <h2 class="accordion-header mb-0" id="headingEleven5">
+                    <button
+                      id="buttonEleven"
+                      onclick="updateProblem('buttonEleven')"
+                      class="collapse-expand-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseEleven5"
+                      aria-expanded="false"
+                      aria-controls="collapseEleven5"
+                    >
+                      <div>
+                        <i
+                          class="expandEleven material-icons expand-icon"
+                          aria-hidden="true"
+                        >
+                          keyboard_arrow_right
+                        </i>
+                        <i
+                          class="collapseEleven material-icons collapse-icon"
+                          aria-hidden="true"
+                        >
+                          remove
+                        </i>
+                      </div>
+                      Customizable LedgerMail Interface
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseEleven5"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingEleven5"
+                  >
+                    <div class="accordion-body collapse-expand-body">
+                      <div class="mb-4">
+                        As we are using these platforms for quite some time and
+                        we are used to their user interface, LedgerMail provides
+                        customized UI of these platforms.
+                      </div>
+                      <div class="mb-4">
+                        Enabling a simple Chromium-based browser extension,
+                        acting as a secure vault in which users’ public and
+                        private keys are stored, LedgerMail will take you to
+                        customized UI from where you can exchange secure emails.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="lg:col-span-4 order-1 lg:order-2 lg:justify-self-end justify-self-center"
+            >
+              <img src="/assets/img/home/interoperability/1.png" alt="" />
+            </div>
+          </div>
+          <div class="grid lg:grid-cols-11 lg:mt-6  mt-24 lg:gap-8 xl:gap-24">
+            <div
+              class="lg:col-span-4  lg:justify-self-end justify-self-center"
+            >
+              <img src="/assets/img/home/interoperability/2.png" alt="" />
+            </div>
+            <div class="lg:col-span-7 lg:mt-8">
+              <div class="accordion" id="accordionExample5">
+                <div class="accordion-item collapse-expand-item">
+                  <h2 class="accordion-header mb-0" id="headingTwelve5">
+                    <button
+                      id="buttonTwelve"
+                      class="collapse-expand-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwelve5"
+                      aria-expanded="false"
+                      aria-controls="collapseTwelve5"
+                      onclick="updateProblem('buttonTwelve')"
+                    >
+                      <div >
+                        <i
+                          class="expandTwelve material-icons expand-icon"
+                          aria-hidden="true"
+                        >
+                          keyboard_arrow_right
+                        </i>
+                        <i
+                          class="collapseTwelve material-icons collapse-icon"
+                          aria-hidden="true"
+                        >
+                          remove
+                        </i>
+                      </div>
+                      Isolation from outside interference
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwelve5"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwelve5"
+                  >
+                    <div class="accordion-body collapse-expand-body">
+                      <div class="mb-4">
+                        While transferring secure emails through LedgerMail,
+                        sender needs to ensure receiver is also part of
+                        LedgerMail Ecosystem.
+                      </div>
+                      <div class="mb-4">
+                        If recipient is not part of LedgerMail ecosystem then
+                        sender can invite recipient and with few clicks Sign Up
+                        can be completed.
+                      </div>
+                      <div class="mb-4">
+                        This is very much similar to using messaging
+                        applications such as Signal, Telegram or WhatsApp, where
+                        it is required that both sender and receiver to be part
+                        of same application.
+                      </div>
+                      <div class="mb-4">
+                        We are ensuring to build completely isolated and highly
+                        secure Email Ecosystem where no external breach is
+                        possible through traditional email protocols or email
+                        providers.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item collapse-expand-item">
+                  <h2 class="accordion-header mb-0" id="headingThirteen5">
+                    <button
+                      id="buttonThirteen"
+                      onclick="updateProblem('buttonThirteen')"
+                      class="collapse-expand-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThirteen5"
+                      aria-expanded="false"
+                      aria-controls="collapseThirteen5"
+                    >
+                      <div>
+                        <i
+                          class="expandThirteen material-icons expand-icon"
+                          aria-hidden="true"
+                        >
+                          keyboard_arrow_right
+                        </i>
+                        <i
+                          class="collapseThirteen material-icons collapse-icon"
+                          aria-hidden="true"
+                        >
+                          remove
+                        </i>
+                      </div>
+                      Continue receiving emails through Legacy Applications
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThirteen5"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThirteen5"
+                  >
+                    <div class="accordion-body collapse-expand-body">
+                      <div class="mb-4">
+                        As users are signing up to LedgerMail with existing
+                        email ID, it does not mean users will stop receiving
+                        emails from senders who are not part of LedgerMail.
+                      </div>
+                      <div class="mb-4">
+                        Emails which are not sent through LedgerMail will still
+                        get received in your inbox, however they won’t be
+                        encrypted or decentralized.
+                      </div>
+                      <div class="mb-4">
+                        LedgerMail encourages users to invite all the contacts
+                        to LedgerMail where we can build Decentralized Email
+                        Ecosystem and reduce dependency from Legacy Email
+                        Services.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- interoperabilit-end -->
+
+        <!-- How-it-works -->
+        <section class="my-24">
+          <div class="section-title">HOW IT WORKS</div>
+          <div class="flex justify-center">
+            <img
+              class=""
+              src="/assets/img/home/how-it-works/how-it-works.gif"
+              alt=""
+            />
+          </div>
+        </section>
+        <!-- how-it-works-end -->
+
+        <!-- Enterprises -->
+        <section class="my-24">
+          <div class="section-title">FOR ENTERPRISES</div>
+
+          <div class="grid lg:grid-cols-12 mt-6 gap-16">
+            <div
+              class="lg:col-span-6 lg:justify-self-start justify-self-center"
+            >
+              <img
+                class="customization-image bg-gray-800"
+                src="/assets/img/home/customization.png"
+                alt=""
+              />
+              <img
+                class="commercialization-image hidden bg-gray-800"
+                src="/assets/img/home/commercialization.png"
+                alt=""
+              />
+            </div>
+            <div class="lg:col-span-5 lg:mt-8">
+              <div class="grid grid-cols-2">
+                <div
+                  class="customization-header text-center text-xl text-gray-700 font-semibold py-2 border-b border-primary"
+                  onclick="switchEnterprises('customization')"
+                >
+                  Customization
+                </div>
+                <div
+                  class="commercialization-header text-center text-xl text-gray-700 font-semibold py-2 border-primary"
+                  onclick="switchEnterprises('commercialization')"
+                >
+                  commercialization
+                </div>
+              </div>
+
+              <div class="mt-8 px-4 text-lg text-gray-500 customization-text">
+                <ol class="list-decimal">
+                  <li>Customization of LedgerMail UI as per email platform.</li>
+                  <li>
+                    Customization of LedgerMail functionalities for Chat and
+                    Messaging.
+                  </li>
+                  <li>
+                    On-board users at scale without worrying about email domain.
+                  </li>
+                  <li>Easy integration with Web Applications.</li>
+                  <li>
+                    Develop LedgerMail Ecosystem to transfer decentralized
+                    emails.
+                  </li>
+                </ol>
+              </div>
+              <div
+                class="hidden mt-8 px-4 text-lg text-gray-500 commercialization-text"
+              >
+                <ol class="list-decimal">
+                  <li>For inter-user communication</li>
+                  <li>PaaS for LedgerMail</li>
+                  <li>Competitive Advantage</li>
+                  <li>Value added and must have security service</li>
+                  <li>
+                    Commercialization factors such as email ID, email transfer,
+                    storage capacity, support
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Enterprises-end -->
+
+        <!-- partner-with-ledgermail -->
+        <section class="my-24">
+          <div class="section-title">PARTNER WITH LEDGERMAIL</div>
+          <div class="partner-text">
+            For Enterprises, LedgerMail will be setup on Permissioned Blockchain
+            Platform of XDC Network.
+          </div>
+          <div class="partner-text mt-8">
+            If your organization wants access to 10000+ user accounts (including
+            employees, users and enterprise clients) then <br />
+            <span class="font-semibold">
+              LedgerMail would love to Partner with you!
+            </span>
+          </div>
+          <div
+            class="mt-8 text-center lg:text-4xl text-2xl text-primary font-semibold"
+          >
+            Let’s Partner to Secure your Email Platforms in a Decentralized Way!
+          </div>
+
+          <div class="flex space-x-2 justify-center mt-8">
+            <button
+              class="bg-blue-500 lg:text-lg hover:bg-blue-700 text-white font-semibold py-3 px-4 xl:px-8 rounded shadow-md shadow-gray-500"
+            >
+              DISCUSS PARTNERSHIP OPPORTUNITY
+            </button>
+          </div>
+        </section>
+        <!-- partner-with-ledgermail-end -->
+
+        <!-- partners -->
+        <section class="my-24" id="partners">
+          <div class="section-title animated fadeInUp">OUR PARTNERS</div>
+          <div class="partners swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/assets/img/home/partners/1.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/home/partners/2.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/home/partners/3.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/home/partners/4.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/home/partners/5.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/home/partners/6.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/home/partners/7.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/home/partners/8.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- partners-end -->
+
+        <!-- media-publications -->
+        <section class="my-24">
+          <div class="section-title">MEDIA PUBLICATIONS</div>
+          <div class="media swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/assets/img/home/media-publications/1.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/home/media-publications/3.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/home/media-publications/4.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/home/media-publications/5.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/home/media-publications/6.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/home/media-publications/7.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/home/media-publications/8.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/home/media-publications/9.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- media-publications-end -->
+      </main>
+      <!-- footer -->
+      <footer class="contents-width bg-gray-900 pb-4 pt-8">
+        <div
+          class="grid lg:grid-cols-4 md:grid-cols-3 text-white lg:gap-3 md:gap-0 gap-6 items-top"
+        >
+          <div class="">
+            <div class="flex justify-center md:justify-start">
+              <img src="/assets/img/logo-2.png" class="h-28" alt="" />
+            </div>
+            <div
+              class="grid md:grid-cols-8 grid-cols-6 my-6 items-center text-center md:text-left text-gray-400"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-youtube"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+          </div>
+          <div>
+            <div class="footer-header">Quick links</div>
+            <a href="/" class="flex my-3 items-center">
+              <div href="">
+                <i class="material-icons footer-icons" aria-hidden="true">
+                  open_in_new
+                </i>
+              </div>
+              <div class="footer-links">Home</div>
+            </a>
+            <a href="/about-us.html" class="flex my-3 items-center">
+              <div class="">
+                <i class="material-icons footer-icons" aria-hidden="true">
+                  open_in_new
+                </i>
+              </div>
+              <div class="footer-links">About Us</div>
+            </a>
+            <a href="/our-ecosystem.html" class="flex my-3 items-center">
+              <div class="">
+                <i class="material-icons footer-icons" aria-hidden="true">
+                  open_in_new
+                </i>
+              </div>
+              <div class="footer-links">Our Ecosystem</div>
+            </a>
+            <a href="/index.html#features" class="flex my-3 items-center">
+              <div class="">
+                <i class="material-icons footer-icons" aria-hidden="true">
+                  open_in_new
+                </i>
+              </div>
+              <div class="footer-links">Features</div>
+            </a>
+            <a href="/contact-us.html" class="flex my-3 items-center">
+              <div class="">
+                <i class="material-icons footer-icons" aria-hidden="true">
+                  open_in_new
+                </i>
+              </div>
+              <div class="footer-links">Contact Us</div>
+            </a>
+          </div>
+          <div>
+            <div class="footer-header">Get Support</div>
+
+            <div class="flex my-3 items-center">
+              <div class="">
+                <i class="material-icons footer-icons" aria-hidden="true">
+                  email
+                </i>
+              </div>
+              <a href="mailto: info@ledgermail.io" class="footer-links"
+                >info@ledgermail.io</a
+              >
+            </div>
+            <div class="flex my-3 items-center">
+              <div class="">
+                <i class="material-icons footer-icons" aria-hidden="true">
+                  call
+                </i>
+              </div>
+              <a href="tel:+971 508607011" class="footer-links"
+                >+971 508607011</a
+              >
+            </div>
+          </div>
+          <div>
+            <div class="footer-header">Find us</div>
+            <div class="text-lg text-gray-400 mt-2">
+              Binary Tower, Business Bay, Dubai, UAE.
+            </div>
+            <div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28883.718220244893!2d55.266376!3d25.187544!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe9ca814013344df7!2sThe%20Binary%20Tower!5e0!3m2!1sen!2sus!4v1648034738247!5m2!1sen!2sus"
+                style="border: 0; width: 100%"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="mt-4 text-center text-white">
+          &copy; Copyright 2022 | LedgerFi IT Solutions | All Rights Reserved.
+          Privacy Policy | Terms of use
+        </div>
+      </footer>
+      <!-- footer-end -->
+    </div>
+    <script src="/assets/js/nav.js"></script>
+    <script src="assets/js/stats.js"></script>
+    <script src="/assets/js/corouselItemIcon.js"></script>
+    <script src="/assets/js/enterpriseSwitch.js"></script>
+    <script src="/assets/js/swiperParameters.js"></script>
+  </body>
+</html>
