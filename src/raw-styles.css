@@ -10,7 +10,7 @@
 }
 /* nav */
 .nav-container {
-  @apply flex flex-wrap border-gray-100 lg:h-24 z-50 items-center justify-between w-full py-2 md:py-4 lg:py-0 text-lg px-4 2xl:px-32 xl:px-16 md:px-8 top-0 shadow-md fixed;
+  @apply flex flex-wrap lg:h-24 z-50 items-center justify-between w-full py-2 md:py-4 lg:py-0 text-lg px-4 2xl:px-32 xl:px-16 md:px-8 top-0 fixed;
 }
 .nav-icon {
   @apply lg:w-24 md:w-16 w-20 lg:my-2;
@@ -33,7 +33,7 @@
 }
 
 .nav-light {
-  @apply bg-white;
+  @apply bg-white lg:bg-transparent;
 }
 
 .nav-dark {
@@ -41,7 +41,7 @@
 }
 
 .nav-item {
-  @apply text-lg  md:px-4 py-2 block hover:text-primary text-center;
+  @apply text-lg  md:px-4 py-2 block hover:text-secondary text-center;
 }
 
 .nav-item-signup-light {
