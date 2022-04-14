@@ -12,16 +12,21 @@ function submitForm() {
         data.number = document.getElementById("number").value;
         data.subject = document.getElementById("subject").value;
         data.message = document.getElementById("message").value;
-        {
-          email: "";
-          firstName: "";
-          lastName: "";
-          message: "";
-          number: "";
-          subject: "";
-        }
-        console.log("🚀 ~ file: contactUs.html ~ line 353 ~ data", data);
-        // document.getElementById("contactForm").reset();
+
+      
+        // const url = "http://localhost:3000/ledgermail/contact-form";
+
+       
+
+        // fetch(url, {
+        //   method: "POST",
+        //   headers: { "Content-Type": "application/json" },
+        //   body: JSON.stringify(data),
+        // }).then((res) => {
+        //   console.log("Request complete! response:", res);
+        // });
+       
+        document.getElementById("contactForm").reset();
       });
   });
 }

@@ -2,7 +2,7 @@ const ledgerMail = document.querySelector(".ledgerMail");
 const ledgerChat = document.querySelector(".ledgerChat");
 const ledgerPay = document.querySelector(".ledgerPay");
 const ledgerLive = document.querySelector(".ledgerLive");
-const mental = document.querySelector(".mental");
+const minto = document.querySelector(".minto");
 
 const sectionOptions = {
   rootMargin: " 10px 0px 0px 0px",
@@ -24,4 +24,4 @@ sectionObserver.observe(ledgerMail);
 sectionObserver.observe(ledgerChat);
 sectionObserver.observe(ledgerPay);
 sectionObserver.observe(ledgerLive);
-sectionObserver.observe(mental);
+sectionObserver.observe(minto);

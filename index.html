@@ -12,19 +12,26 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script
-      src="https://kit.fontawesome.com/df2e57ffba.js"
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+      integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
       crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     ></script>
     <script src="/node_modules/tw-elements/dist/js/index.min.js"></script>
-
+    <meta
+      name="description"
+      content="LedgerMail -  World's First Blockchain Email Service on a mission of protecting Digital Rights of email users in a Decentralized way! Highest level of Email Security, Privacy, Encryption and Prevention from email attacks with 4th generation Blockchain."
+    />
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.png" />
     <title>Ledgermail | Home</title>
   </head>
   <body class="font-custom">
     <div>
       <!-- nav -->
-      <header class="header-section text-white h-24 bg-white">
+      <header class="header-section text-white md:h-20 lg:h-24 bg-white">
         <nav class="nav-container">
           <div>
             <a href="/">
@@ -79,12 +86,7 @@
                 <a class="nav-item" href="#"> Sign In </a>
               </li>
               <li>
-                <a
-                  href="#"
-                  class="nav-item-signup text-white bg-secondary rounded-xl"
-                >
-                  Sign Up for Free
-                </a>
+                <a href="#" class="nav-item-signup"> Sign Up for Free </a>
               </li>
             </ul>
           </div>
@@ -98,22 +100,39 @@
         <section></section>
         <section class="home-intro items-center flex justify-center">
           <div>
-            <div class="grid md:grid-cols-7 lg:grid-cols-6 gap-6 items-center">
-              <div
-                class="justify-center md:col-span-4 lg:col-span-3 xl:col-span-4"
-              >
+            <div class="grid md:grid-cols-9 gap-6 items-center">
+              <div class="justify-center md:col-span-5">
                 <div
-                  class="text-3xl md:text-6xl text-center text-primary font-semibold"
+                  class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-primary font-semibold"
                 >
                   World's First <br />
-                  Decentralized Email Solution
+                  Blockchain Email Service
                 </div>
-                <div class="text-xl sm:text-2xl text-center">
-                  Protecting Digital Rights of Email Users & Preventing Email
-                  Attacks in a Decentralized Way!
+                <div class="md:text-lg lg:text-xl xl:text-2xl text-center">
+                  Spearheading Web 3.0 Communication Protocols & Protecting
+                  Digital Rights of Email Users
+                </div>
+                <div
+                  class="grid lg:grid-cols-11 gap-3 items-center md:justify-between justify-center"
+                >
+                  <div class="lg:col-span-3">
+                    <img src="/assets/img/Build_XDC.png" alt="" />
+                  </div>
+                  <div
+                    class="lg:col-span-8 grid grid-cols-2 justify-center gap-3"
+                  >
+                    <div>
+                      <button class="home-button">GET FREE ACCESS</button>
+                    </div>
+                    <div>
+                      <button class="home-button">
+                        STEPS TO SIGNUP &nbsp;
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="justify-self-center md:col-span-3 xl:col-span-2">
+              <div class="justify-self-center md:col-span-4">
                 <iframe
                   class="video-frame"
                   src="https://www.youtube.com/embed/iVNBMmyq_1c"
@@ -122,23 +141,6 @@
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 ></iframe>
-              </div>
-            </div>
-            <div
-              class="grid md:grid-cols-9 gap-3 items-center md:justify-between justify-center"
-            >
-              <div class="md:col-span-1 xl:col-span-2">
-                <img src="/assets/img/Build_XDC.png" alt="" />
-              </div>
-              <div
-                class="md:col-span-4 grid grid-cols-auto grid-cols-2 justify-between gap-3"
-              >
-                <div>
-                  <button class="home-button">GET FREE ACCESS</button>
-                </div>
-                <div>
-                  <button class="home-button">STEPS TO SIGNUP</button>
-                </div>
               </div>
             </div>
           </div>
@@ -1033,11 +1035,21 @@
               <div class="swiper-slide py-10 px-4">
                 <div>
                   <img src="/assets/img/home/features/Encryption.jpg" alt="" />
-                  <div class="feature-title">Decentralization</div>
+                  <div class="feature-title">Encryption</div>
                   <div class="feature-description">
                     Cryptographic algorithms, Asymmetric-Key Mechanism and
                     Hashing Functions to provide highest level of Encryption
                     mechanism.
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide py-10 px-4">
+                <div>
+                  <img src="/assets/img/home/features/Privacy.jpg" alt="" />
+                  <div class="feature-title">Privacy</div>
+                  <div class="feature-description">
+                    Eliminating centralized governance and using asymmetric
+                    cryptography for enhancing the privacy of users.
                   </div>
                 </div>
               </div>
@@ -1048,17 +1060,6 @@
                   <div class="feature-description">
                     No more header manipulation, editing or overwriting to spoof
                     Email ID’s, breach the network and hack the user data.
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide py-10 px-4">
-                <div>
-                  <img src="/assets/img/home/features/Security.jpg" alt="" />
-                  <div class="feature-title">Security</div>
-                  <div class="feature-description">
-                    We are inheriting all the capabilities of Blockchain
-                    Technology to build immutable, tamper-proof and non-hackable
-                    service within Decentralized Email Ecosystem.
                   </div>
                 </div>
               </div>
@@ -1195,10 +1196,8 @@
               <img src="/assets/img/home/interoperability/1.png" alt="" />
             </div>
           </div>
-          <div class="grid lg:grid-cols-11 lg:mt-6  mt-24 lg:gap-8 xl:gap-24">
-            <div
-              class="lg:col-span-4  lg:justify-self-end justify-self-center"
-            >
+          <div class="grid lg:grid-cols-11 lg:mt-6 mt-24 lg:gap-8 xl:gap-24">
+            <div class="lg:col-span-4 lg:justify-self-end justify-self-center">
               <img src="/assets/img/home/interoperability/2.png" alt="" />
             </div>
             <div class="lg:col-span-7 lg:mt-8">
@@ -1215,7 +1214,7 @@
                       aria-controls="collapseTwelve5"
                       onclick="updateProblem('buttonTwelve')"
                     >
-                      <div >
+                      <div>
                         <i
                           class="expandTwelve material-icons expand-icon"
                           aria-hidden="true"
@@ -1358,16 +1357,16 @@
             <div class="lg:col-span-5 lg:mt-8">
               <div class="grid grid-cols-2">
                 <div
-                  class="customization-header text-center text-xl text-gray-700 font-semibold py-2 border-b border-primary"
+                  class="customization-header border-b enterprises-header"
                   onclick="switchEnterprises('customization')"
                 >
                   Customization
                 </div>
                 <div
-                  class="commercialization-header text-center text-xl text-gray-700 font-semibold py-2 border-primary"
+                  class="commercialization-header enterprises-header"
                   onclick="switchEnterprises('commercialization')"
                 >
-                  commercialization
+                  Commercialization
                 </div>
               </div>
 
@@ -1463,9 +1462,9 @@
               <div class="swiper-slide">
                 <img src="/assets/img/home/partners/7.jpg" alt="" />
               </div>
-              <div class="swiper-slide">
+              <!-- <div class="swiper-slide">
                 <img src="/assets/img/home/partners/8.jpg" alt="" />
-              </div>
+              </div> -->
             </div>
           </div>
         </section>
@@ -1517,12 +1516,27 @@
             <div
               class="grid md:grid-cols-8 grid-cols-6 my-6 items-center text-center md:text-left text-gray-400"
             >
-              <i class="fa-brands fa-facebook-f"></i>
-              <i class="fa-brands fa-twitter"></i>
-              <i class="fa-brands fa-youtube"></i>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-linkedin-in"></i>
-              <i class="fa-regular fa-envelope"></i>
+              <a href="https://www.facebook.com/LedgerFi" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCU4YmhP_A2V76rnafyGKZqA"
+                target="_blank"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a href="https://www.instagram.com/ledger_fi/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/ledgerfi-it-solutions/"
+                target="_blank"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="mailto: info@ledgermail.io" target="_blank">
+                <i class="fa-regular fa-envelope"></i>
+              </a>
             </div>
           </div>
           <div>
@@ -1571,26 +1585,34 @@
           <div>
             <div class="footer-header">Get Support</div>
 
-            <div class="flex my-3 items-center">
+            <a href="mailto: info@ledgermail.io" class="flex my-3 items-center">
               <div class="">
                 <i class="material-icons footer-icons" aria-hidden="true">
                   email
                 </i>
               </div>
-              <a href="mailto: info@ledgermail.io" class="footer-links"
-                >info@ledgermail.io</a
-              >
-            </div>
-            <div class="flex my-3 items-center">
+              <div class="footer-links">info@ledgermail.io</div>
+            </a>
+            <a href="tel:+971 508607011" class="flex my-3 items-center">
               <div class="">
                 <i class="material-icons footer-icons" aria-hidden="true">
                   call
                 </i>
               </div>
-              <a href="tel:+971 508607011" class="footer-links"
-                >+971 508607011</a
-              >
-            </div>
+              <div class="footer-links">+971 508607011</div>
+            </a>
+            <a
+              href="/public/faq.html"
+              target="_blank"
+              class="flex my-3 items-center"
+            >
+              <div class="">
+                <i class="material-icons footer-icons" aria-hidden="true">
+                  question_mark
+                </i>
+              </div>
+              <div class="footer-links">FAQs</div>
+            </a>
           </div>
           <div>
             <div class="footer-header">Find us</div>
@@ -1609,7 +1631,21 @@
         </div>
         <div class="mt-4 text-center text-white">
           &copy; Copyright 2022 | LedgerFi IT Solutions | All Rights Reserved.
-          Privacy Policy | Terms of use
+          <a
+            href="/public/privacy-policy.html"
+            class="text-purple-500"
+            target="_blank"
+          >
+            Privacy Policy
+          </a>
+          <span class="text-purple-500"> | </span>
+          <a
+            href="/public/terms-of-use.html"
+            class="text-purple-500"
+            target="_blank"
+          >
+            Terms of use
+          </a>
         </div>
       </footer>
       <!-- footer-end -->

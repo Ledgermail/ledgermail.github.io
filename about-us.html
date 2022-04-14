@@ -14,17 +14,23 @@
     />
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script
-      src="https://kit.fontawesome.com/df2e57ffba.js"
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+      integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
       crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     ></script>
     <script src="/node_modules/tw-elements/dist/js/index.min.js"></script>
-
+    <meta
+    name="description"
+    content="LedgerMail -  World's First Blockchain Email Service on a mission of protecting Digital Rights of email users in a Decentralized way! Highest level of Email Security, Privacy, Encryption and Prevention from email attacks with 4th generation Blockchain."
+  />
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.png" />
     <title>Ledgermail | About Us</title>
   </head>
   <body class="font-custom">
     <div>
       <!-- nav -->
-      <header class="header-section text-white h-24 bg-white">
+      <header class="header-section text-white md:h-20 lg:h-24 bg-white">
         <nav class="nav-container">
           <div>
             <a href="/">
@@ -74,12 +80,7 @@
                 <a class="nav-item" href="#"> Sign In </a>
               </li>
               <li>
-                <a
-                  href="#"
-                  class="nav-item-signup text-white bg-secondary rounded-xl"
-                >
-                  Sign Up for Free
-                </a>
+                <a href="#" class="nav-item-signup"> Sign Up for Free </a>
               </li>
             </ul>
           </div>
@@ -94,6 +95,10 @@
           <div class="about-text">
             <div class="page-title">About Us</div>
             <div class="lg:px-24 md:px-8 px-2 details text-xl text-gray-600">
+              <div class="my-8">
+                LedgerMail is one of the flagship products of the LedgerFi
+                Ecosystem
+              </div>
               <div class="my-8">
                 LedgerFi IT Solutions is an UAE based emerging IT solutions
                 company focused on blockchain enabled decentralized applications
@@ -145,7 +150,8 @@
                       Decentralized Email Solution
                     </div>
                     <button
-                      class="bg-secondary lg:text-lg hover:bg-primary text-white font-semibold py-2 px-4 xl:px-8 shadow-md shadow-gray-500 mt-3"
+                      class="about-ecosystem-button"
+                      onclick="location.assign('/')"
                     >
                       Learn More
                     </button>
@@ -158,10 +164,14 @@
                     <div class="about-ecosystem-description">
                       Decentralized Instant Messaging Solution
                     </div>
-                    <button
-                      class="bg-secondary lg:text-lg hover:bg-primary text-white font-semibold py-2 px-4 xl:px-8 shadow-md shadow-gray-500 mt-3"
+                    <!-- <button
+                      class="about-ecosystem-button"
+                      onclick="location.assign('/')"
                     >
                       Learn More
+                    </button> -->
+                    <button class="about-ecosystem-button-disabled" disabled>
+                      Coming Soon
                     </button>
                   </div>
                 </div>
@@ -172,10 +182,14 @@
                     <div class="about-ecosystem-description">
                       Decentralized Audio & Video Platform
                     </div>
-                    <button
-                      class="bg-secondary lg:text-lg hover:bg-primary text-white font-semibold py-2 px-4 xl:px-8 shadow-md shadow-gray-500 mt-3"
+                    <!-- <button
+                      class="about-ecosystem-button"
+                      onclick="location.assign('/')"
                     >
                       Learn More
+                    </button> -->
+                    <button class="about-ecosystem-button-disabled" disabled>
+                      Coming Soon
                     </button>
                   </div>
                 </div>
@@ -186,24 +200,32 @@
                     <div class="about-ecosystem-description">
                       Decentralized Payment Solution
                     </div>
-                    <button
-                      class="bg-secondary lg:text-lg hover:bg-primary text-white font-semibold py-2 px-4 xl:px-8 shadow-md shadow-gray-500 mt-3"
+                    <!-- <button
+                      class="about-ecosystem-button"
+                      onclick="location.assign('/')"
                     >
                       Learn More
+                    </button> -->
+                    <button class="about-ecosystem-button-disabled" disabled>
+                      Coming Soon
                     </button>
                   </div>
                 </div>
                 <div class="swiper-slide py-10 px-4 text-center">
                   <div>
                     <img src="/assets/img/ledgerFi/meta.jpg" alt="" />
-                    <div class="about-ecosystem-title">Project MENTAL</div>
+                    <div class="about-ecosystem-title">MINTO</div>
                     <div class="about-ecosystem-description">
-                      Metaverse Enabled NFT Transfer Across LedgerFi
+                      Metaverse Interconnected NFT Transfer for OG’s
                     </div>
-                    <button
-                      class="bg-secondary lg:text-lg hover:bg-primary text-white font-semibold py-2 px-4 xl:px-8 shadow-md shadow-gray-500 mt-3"
+                    <!-- <button
+                      class="about-ecosystem-button"
+                      onclick="location.assign('/')"
                     >
                       Learn More
+                    </button> -->
+                    <button class="about-ecosystem-button-disabled" disabled>
+                      Coming Soon
                     </button>
                   </div>
                 </div>
@@ -241,9 +263,9 @@
                 <div class="swiper-slide">
                   <img src="/assets/img/home/partners/7.jpg" alt="" />
                 </div>
-                <div class="swiper-slide">
+                <!-- <div class="swiper-slide">
                   <img src="/assets/img/home/partners/8.jpg" alt="" />
-                </div>
+                </div> -->
               </div>
             </div>
           </section>
@@ -277,16 +299,16 @@
           <!-- vision-mission-end -->
         </div>
         <!-- our-team -->
-        <section class="contents-width bg-gray-100 mt-24 py-8">
-          <div class="section-title animated fadeInUp capitalise">OUR TEAM</div>
+        <section class="contents-width bg-gray-100 mt-16 py-16">
+          <div class="section-title animated fadeInUp uppercase">Our Team</div>
           <div
-            class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 md:gap-16 gap-4"
+            class="grid md:grid-cols-3 xl:gap-16 md:gap-16 gap-4 xl:px-16 md:px-8 px-4"
           >
             <div class="card">
-              <div class="">
+              <div class="flex justify-center">
                 <img
                   class="card-image"
-                  src="/assets/img/profile/profile2.png"
+                  src="/assets/img/profile/vinay.jpg"
                   alt=""
                 />
               </div>
@@ -295,16 +317,19 @@
                 <div class="team-person-designation">Founder, CEO</div>
               </div>
               <div class="team-person-social">
-                <i class="mx-4 fa-brands fa-facebook-f"></i>
-                <i class="mx-4 fa-brands fa-twitter"></i>
-                <i class="mx-4 fa-brands fa-linkedin-in"></i>
+                <a
+                  href="https://www.linkedin.com/in/vinaykrishna/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
               </div>
             </div>
             <div class="card">
-              <div class="">
+              <div class="flex justify-center">
                 <img
                   class="card-image"
-                  src="/assets/img/profile/profile3.png"
+                  src="/assets/img/profile/puja.jpg"
                   alt=""
                 />
               </div>
@@ -313,13 +338,13 @@
                 <div class="team-person-designation">Chief People Officer</div>
               </div>
               <div class="team-person-social">
-                <i class="mx-4 fa-brands fa-facebook-f"></i>
-                <i class="mx-4 fa-brands fa-twitter"></i>
-                <i class="mx-4 fa-brands fa-linkedin-in"></i>
+                <a href="https://www.linkedin.com/in/pujakumaripingala/">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
               </div>
             </div>
             <div class="card">
-              <div class="">
+              <div class="flex justify-center">
                 <img
                   class="card-image"
                   src="/assets/img/profile/profile4.png"
@@ -327,107 +352,95 @@
                 />
               </div>
               <div class="description border-b pb-6">
-                <div class="team-person-name">Suraj R. Mulla</div>
+                <div class="team-person-name">Sujit Varghese</div>
+                <div class="team-person-designation">General Manager</div>
+              </div>
+              <div class="team-person-social">
+                <a href="#"></a>
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+            </div>
+            <div class="card">
+              <div class="flex justify-center">
+                <img
+                  class="card-image"
+                  src="/assets/img/profile/suraj.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="description border-b pb-6">
+                <div class="team-person-name">Suraj Mulla</div>
                 <div class="team-person-designation">
                   VP of Sales & Marketing
                 </div>
               </div>
               <div class="team-person-social">
-                <i class="mx-4 fa-brands fa-facebook-f"></i>
-                <i class="mx-4 fa-brands fa-twitter"></i>
-                <i class="mx-4 fa-brands fa-linkedin-in"></i>
+                <a href="https://www.linkedin.com/in/surajmulla/">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
               </div>
             </div>
             <div class="card">
-              <div class="">
+              <div class="flex justify-center">
                 <img
                   class="card-image"
-                  src="/assets/img/profile/profile1.png"
+                  src="/assets/img/profile/santhosh.jpg"
                   alt=""
                 />
               </div>
               <div class="description border-b pb-6">
                 <div class="team-person-name">Santhosh Thomas</div>
-                <div class="team-person-designation">Head of Technology</div>
-              </div>
-              <div class="team-person-social">
-                <i class="mx-4 fa-brands fa-facebook-f"></i>
-                <i class="mx-4 fa-brands fa-twitter"></i>
-                <i class="mx-4 fa-brands fa-linkedin-in"></i>
-              </div>
-            </div>
-            <div class="card">
-              <div class="">
-                <img
-                  class="card-image"
-                  src="/assets/img/profile/profile4.png"
-                  alt=""
-                />
-              </div>
-              <div class="description border-b pb-6">
-                <div class="team-person-name">Tibin Thomas</div>
                 <div class="team-person-designation">
-                  Senior Blockchain Developer
+                  Senior Blockchain Architect
                 </div>
               </div>
               <div class="team-person-social">
-                <i class="mx-4 fa-brands fa-facebook-f"></i>
-                <i class="mx-4 fa-brands fa-twitter"></i>
-                <i class="mx-4 fa-brands fa-linkedin-in"></i>
+                <a href="https://www.linkedin.com/in/santhoshkthomas/">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
               </div>
             </div>
             <div class="card">
-              <div class="">
+              <div class="flex justify-center">
                 <img
                   class="card-image"
-                  src="/assets/img/profile/profile2.png"
+                  src="/assets/img/profile/Avinash.jpeg"
                   alt=""
                 />
               </div>
               <div class="description border-b pb-6">
-                <div class="team-person-name">Ajay Kumar</div>
-                <div class="team-person-designation">Full Stack Developer</div>
+                <div class="team-person-name">Avinash Mishra</div>
+                <div class="team-person-designation">Head of DevOps</div>
               </div>
               <div class="team-person-social">
-                <i class="mx-4 fa-brands fa-facebook-f"></i>
-                <i class="mx-4 fa-brands fa-twitter"></i>
-                <i class="mx-4 fa-brands fa-linkedin-in"></i>
+                <a href="#"></a>
+                <i class="fa-brands fa-linkedin-in"></i>
               </div>
             </div>
+          </div>
+          <div class="section-title animated fadeInUp uppercase mt-16">
+            Our Advisor
+          </div>
+          <div
+            class="grid md:grid-cols-3 xl:gap-16 md:gap-16 gap-4 xl:px-16 md:px-8 px-4"
+          >
+            <div></div>
             <div class="card">
-              <div class="">
+              <div class="flex justify-center">
                 <img
                   class="card-image"
-                  src="/assets/img/profile/profile2.png"
+                  src="/assets/img/profile/raj.jpeg"
                   alt=""
                 />
               </div>
               <div class="description border-b pb-6">
-                <div class="team-person-name">Vinay Krishna</div>
-                <div class="team-person-designation">Founder, CEO</div>
+                <div class="team-person-name">Raj Kapoor</div>
+                <div class="team-person-designation">Business Advisor</div>
               </div>
               <div class="team-person-social">
-                <i class="mx-4 fa-brands fa-facebook-f"></i>
-                <i class="mx-4 fa-brands fa-twitter"></i>
-                <i class="mx-4 fa-brands fa-linkedin-in"></i>
-              </div>
-            </div>
-            <div class="card">
-              <div class="">
-                <img
-                  class="card-image"
-                  src="/assets/img/profile/profile3.png"
-                  alt=""
-                />
-              </div>
-              <div class="description border-b pb-6">
-                <div class="team-person-name">Puja Kumari</div>
-                <div class="team-person-designation">Chief People Officer</div>
-              </div>
-              <div class="team-person-social">
-                <i class="mx-4 fa-brands fa-facebook-f"></i>
-                <i class="mx-4 fa-brands fa-twitter"></i>
-                <i class="mx-4 fa-brands fa-linkedin-in"></i>
+                <a href="#" target="_blank">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -448,12 +461,27 @@
             <div
               class="grid md:grid-cols-8 grid-cols-6 my-6 items-center text-center md:text-left text-gray-400"
             >
-              <i class="fa-brands fa-facebook-f"></i>
-              <i class="fa-brands fa-twitter"></i>
-              <i class="fa-brands fa-youtube"></i>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-linkedin-in"></i>
-              <i class="fa-regular fa-envelope"></i>
+              <a href="https://www.facebook.com/LedgerFi" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCU4YmhP_A2V76rnafyGKZqA"
+                target="_blank"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a href="https://www.instagram.com/ledger_fi/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/ledgerfi-it-solutions/"
+                target="_blank"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="mailto: info@ledgermail.io" target="_blank">
+                <i class="fa-regular fa-envelope"></i>
+              </a>
             </div>
           </div>
           <div>
@@ -502,22 +530,34 @@
           <div>
             <div class="footer-header">Get Support</div>
 
-            <div class="flex my-3 items-center">
+            <a href="mailto: info@ledgermail.io" class="flex my-3 items-center">
               <div class="">
                 <i class="material-icons footer-icons" aria-hidden="true">
                   email
                 </i>
               </div>
               <div class="footer-links">info@ledgermail.io</div>
-            </div>
-            <div class="flex my-3 items-center">
+            </a>
+            <a href="tel:+971 508607011" class="flex my-3 items-center">
               <div class="">
                 <i class="material-icons footer-icons" aria-hidden="true">
                   call
                 </i>
               </div>
               <div class="footer-links">+971 508607011</div>
-            </div>
+            </a>
+            <a
+              href="/public/faq.html"
+              target="_blank"
+              class="flex my-3 items-center"
+            >
+              <div class="">
+                <i class="material-icons footer-icons" aria-hidden="true">
+                  question_mark
+                </i>
+              </div>
+              <div class="footer-links">FAQs</div>
+            </a>
           </div>
           <div>
             <div class="footer-header">Find us</div>
@@ -536,7 +576,21 @@
         </div>
         <div class="mt-4 text-center text-white">
           &copy; Copyright 2022 | LedgerFi IT Solutions | All Rights Reserved.
-          Privacy Policy | Terms of use
+          <a
+            href="/public/privacy-policy.html"
+            class="text-purple-500"
+            target="_blank"
+          >
+            Privacy Policy
+          </a>
+          <span class="text-purple-500"> | </span>
+          <a
+            href="/public/terms-of-use.html"
+            class="text-purple-500"
+            target="_blank"
+          >
+            Terms of use
+          </a>
         </div>
       </footer>
       <!-- footer-end -->

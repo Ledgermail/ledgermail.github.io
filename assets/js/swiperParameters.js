@@ -49,7 +49,13 @@ let ecosystem = new Swiper(".ecosystem", {
       : window.innerWidth >= 640
       ? 2
       : 1,
-  spaceBetween: 48,
+  spaceBetween:   window.innerWidth >= 1280
+  ? 8
+  : window.innerWidth >= 1024
+  ? 16
+  : window.innerWidth >= 640
+  ? 32
+  : 0,
   speed: 1000,
   loop: true,
 });

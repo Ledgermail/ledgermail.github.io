@@ -3,9 +3,10 @@ const nav = document.querySelector("nav");
 const navItems = document.querySelector(".nav-items");
 let iconColor = document.getElementById("menu-button");
 const sectionOne = document.querySelector(".header-section");
+const signUp = document.querySelector(".nav-item-signup");
 
 const sectionOneOptions = {
-  rootMargin: " 50px 0px 0px 0px",
+  rootMargin: " 0px 0px 0px 0px",
 };
 
 const sectionOneObserver = new IntersectionObserver(function (
@@ -20,12 +21,16 @@ const sectionOneObserver = new IntersectionObserver(function (
       navItems.classList.remove("text-dark");
       navItems.classList.add("text-light");
       iconColor.setAttribute("stroke", "white");
+      signUp.classList.remove("nav-item-signup-light");
+      signUp.classList.add("nav-item-signup-dark");
     } else {
       nav.classList.remove("nav-dark");
       nav.classList.add("nav-light");
       navItems.classList.remove("text-light");
       navItems.classList.add("text-dark");
       iconColor.setAttribute("stroke", "black");
+      signUp.classList.remove("nav-item-signup-dark");
+      signUp.classList.add("nav-item-signup-light");
     }
   });
 },
