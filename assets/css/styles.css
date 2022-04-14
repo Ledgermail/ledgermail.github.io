@@ -4196,6 +4196,10 @@ textarea.form-control.is-invalid{
   display: none;
 }
 
+.h-24{
+  height: 6rem;
+}
+
 .h-6{
   height: 1.5rem;
 }
@@ -4304,10 +4308,6 @@ textarea.form-control.is-invalid{
   gap: 2rem;
 }
 
-.gap-12{
-  gap: 3rem;
-}
-
 .gap-3{
   gap: 0.75rem;
 }
@@ -4347,11 +4347,6 @@ textarea.form-control.is-invalid{
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
-.bg-white{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .bg-green-100{
   --tw-bg-opacity: 1;
   background-color: rgb(220 252 231 / var(--tw-bg-opacity));
@@ -4365,6 +4360,11 @@ textarea.form-control.is-invalid{
 .bg-gray-900{
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-gray-800{
@@ -4647,17 +4647,13 @@ textarea.form-control.is-invalid{
 
 @media (min-width: 768px){
   .nav-container{
-    height: 5rem;
-  }
-
-  .nav-container{
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
 
   .nav-container{
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
@@ -4818,10 +4814,12 @@ textarea.form-control.is-invalid{
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
+}
 
+@media (min-width: 1024px){
   .nav-item-signup-light{
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
@@ -4853,10 +4851,12 @@ textarea.form-control.is-invalid{
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
+}
 
+@media (min-width: 1024px){
   .nav-item-signup-dark{
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
@@ -6152,11 +6152,6 @@ textarea.form-control.is-invalid{
     font-size: 3.75rem;
     line-height: 1;
   }
-
-  .sm\:text-7xl{
-    font-size: 4.5rem;
-    line-height: 1;
-  }
 }
 
 @media (min-width: 768px){
@@ -6201,16 +6196,16 @@ textarea.form-control.is-invalid{
     display: block;
   }
 
+  .md\:flex{
+    display: flex;
+  }
+
   .md\:grid{
     display: grid;
   }
 
   .md\:hidden{
     display: none;
-  }
-
-  .md\:h-20{
-    height: 5rem;
   }
 
   .md\:grid-cols-3{
@@ -6326,20 +6321,12 @@ textarea.form-control.is-invalid{
     display: none;
   }
 
-  .lg\:h-24{
-    height: 6rem;
-  }
-
   .lg\:w-auto{
     width: auto;
   }
 
   .lg\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-3{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-11{
