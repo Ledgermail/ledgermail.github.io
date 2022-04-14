@@ -388,7 +388,7 @@
 }
 
 .footer-icons {
-  @apply text-purple-700 text-xl;
+  @apply text-primary text-xl;
 }
 
 /* faq */

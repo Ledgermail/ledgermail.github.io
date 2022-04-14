@@ -4516,11 +4516,6 @@ textarea.form-control.is-invalid{
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-.text-purple-500{
-  --tw-text-opacity: 1;
-  color: rgb(168 85 247 / var(--tw-text-opacity));
-}
-
 .text-secondary{
   --tw-text-opacity: 1;
   color: rgb(232 129 5 / var(--tw-text-opacity));
@@ -5997,7 +5992,7 @@ textarea.form-control.is-invalid{
   font-size: 1.25rem;
   line-height: 1.75rem;
   --tw-text-opacity: 1;
-  color: rgb(126 34 206 / var(--tw-text-opacity));
+  color: rgb(0 120 212 / var(--tw-text-opacity));
 }
 
 /* faq */

@@ -1,5 +1,5 @@
 $(document).ready(async function () {
-  await fetch("https://d278shrvx9bxd1.cloudfront.net/api/admin/public")
+  await fetch("https://dtblqcmpw8s6x.cloudfront.net/api/admin/public")
     .then((response) => response.json())
     .then((data) => {
       let stats = data.publicDetails;
