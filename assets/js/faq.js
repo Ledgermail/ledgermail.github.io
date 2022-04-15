@@ -1,5 +1,5 @@
 $(document).ready(async function () {
-  await fetch("./assets/js/faqData.json")
+  await fetch("/assets/js/faqData.json")
     .then((response) => response.json())
     .then((data) => {
       Object.keys(data).map((key) => {
@@ -42,4 +42,3 @@ function showQuestions(data) {
   item.classList.add("faq-singular");
   container.appendChild(item);
 }
-
