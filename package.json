@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/Ledgermail/ledgermail.github.io#readme",
   "devDependencies": {
-    "tailwindcss": "^3.0.23"
+    "tailwindcss": "^3.0.23",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
   },
   "dependencies": {
     "cors": "^2.8.5",
