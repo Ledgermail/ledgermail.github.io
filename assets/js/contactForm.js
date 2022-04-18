@@ -28,7 +28,7 @@ function submitForm() {
         error.classList.add("hidden");
         success.classList.add("hidden");
 
-        // contactButton.disabled = true;
+        contactButton.disabled = true;
         contactButton.innerText = "sending Message...";
         if (
           data.firstName.length === 0 ||
@@ -53,18 +53,17 @@ function submitForm() {
           body: JSON.stringify(data),
         })
           .then((res) => {
-            if (res.status === 404 || res.status === 405) {
-              setTimeout(() => {
-                error.classList.toggle("hidden");
-              }, 10000);
-              error.classList.toggle("hidden");
-            }
-            if (res.status === 200) {
+            if (res.status < 400) {
               setTimeout(() => {
                 success.classList.toggle("hidden");
               }, 10000);
               success.classList.toggle("hidden");
               document.getElementById("contactForm").reset();
+            } else {
+              setTimeout(() => {
+                error.classList.toggle("hidden");
+              }, 10000);
+              error.classList.toggle("hidden");
             }
           })
           .then(() => {
