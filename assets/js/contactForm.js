@@ -5,7 +5,15 @@ function submitForm() {
         action: "submit",
       })
       .then(function (token) {
+        let invalid = document.querySelector(".invalid-info");
+        let success = document.querySelector(".success-info");
+        let error = document.querySelector(".error-info");
+        let firstName = document.querySelector(".first-label");
+        let email = document.querySelector(".email-label");
+        let message = document.querySelector(".message-label");
+        let contactButton = document.querySelector(".contact-button");
         let data = {};
+
         data.firstName = document.getElementById("first_name").value;
         data.lastName = document.getElementById("last_name").value;
         data.email = document.getElementById("email").value;
@@ -13,20 +21,56 @@ function submitForm() {
         data.subject = document.getElementById("subject").value;
         data.message = document.getElementById("message").value;
 
-      
-        // const url = "http://localhost:3000/ledgermail/contact-form";
+        firstName.classList.remove("text-red-700");
+        email.classList.remove("text-red-700");
+        message.classList.remove("text-red-700");
+        invalid.classList.add("hidden");
+        error.classList.add("hidden");
+        success.classList.add("hidden");
 
-       
+        contactButton.disabled = true;
+        contactButton.innerText = "sending Message...";
+        if (
+          data.firstName.length === 0 ||
+          data.email.length === 0 ||
+          data.message.length === 0
+        ) {
+          firstName.classList.add("text-red-700");
+          email.classList.add("text-red-700");
+          message.classList.add("text-red-700");
+          invalid.classList.toggle("hidden");
+          contactButton.disabled = false;
+          contactButton.innerText = " Send message!";
+          return;
+        }
 
-        // fetch(url, {
-        //   method: "POST",
-        //   headers: { "Content-Type": "application/json" },
-        //   body: JSON.stringify(data),
-        // }).then((res) => {
-        //   console.log("Request complete! response:", res);
-        // });
-       
-        document.getElementById("contactForm").reset();
+        const url =
+          "https://dtblqcmpw8s6x.cloudfront.net/api/admin/website-contact";
+
+        fetch(url, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data),
+        })
+          .then((res) => {
+            if (res.status === 404 || res.status === 405) {
+              setTimeout(() => {
+                error.classList.toggle("hidden");
+              }, 10000);
+              error.classList.toggle("hidden");
+            }
+            if (res.status === 200) {
+              setTimeout(() => {
+                success.classList.toggle("hidden");
+              }, 10000);
+              success.classList.toggle("hidden");
+              document.getElementById("contactForm").reset();
+            }
+          })
+          .then(() => {
+            contactButton.disabled = false;
+            contactButton.innerText = " Send message!";
+          });
       });
   });
 }

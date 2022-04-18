@@ -214,7 +214,7 @@
                   <div class="first_name my-4 md:my-0">
                     <label
                       for="first_name"
-                      class="inline-block mb-2 text-gray-500 text-xl"
+                      class="first-label inline-block mb-2 text-gray-500 text-xl"
                     >
                       First Name *
                     </label>
@@ -228,7 +228,7 @@
                   <div class="last_name my-4 md:my-0">
                     <label
                       for="last_name"
-                      class="inline-block mb-2 text-gray-500 text-xl"
+                      class="last-label inline-block mb-2 text-gray-500 text-xl"
                     >
                       Last Name
                     </label>
@@ -242,7 +242,7 @@
                   <div class="email my-4 md:my-0">
                     <label
                       for="email"
-                      class="inline-block mb-2 text-gray-500 text-xl"
+                      class="email-label inline-block mb-2 text-gray-500 text-xl"
                     >
                       Email Address *
                     </label>
@@ -256,7 +256,7 @@
                   <div class="number my-4 md:my-0">
                     <label
                       for="number"
-                      class="inline-block mb-2 text-gray-500 text-xl"
+                      class="number-label inline-block mb-2 text-gray-500 text-xl"
                     >
                       Phone Number
                     </label>
@@ -270,7 +270,7 @@
                   <div class="subject md:col-span-2 my-4 md:my-0">
                     <label
                       for="subject"
-                      class="inline-block mb-2 text-gray-500 text-xl"
+                      class="subject-label inline-block mb-2 text-gray-500 text-xl"
                     >
                       Subject
                     </label>
@@ -284,7 +284,7 @@
                   <div class="message md:col-span-2 my-4 md:my-0">
                     <label
                       for="message"
-                      class="inline-block mb-2 text-gray-500 text-xl"
+                      class="message-label inline-block mb-2 text-gray-500 text-xl"
                     >
                       How can we help? *
                     </label>
@@ -295,12 +295,29 @@
                       name="message"
                     ></textarea>
                   </div>
-                  <input type="hidden" name="website" value="ledgermail-test" />
+                  <div class="col-span-2">
+                    <div class="hidden invalid-info text-red-700 text-lg">
+                      Please fill in all the required fields *
+                    </div>
+
+                    <div
+                      class=" hidden success-info text-green-800 bg-green-100 p-4 text-lg"
+                    >
+                      Thank you for getting in touch. We will respond to you
+                      very soon.
+                    </div>
+                    <div
+                      class=" hidden error-info text-red-800 bg-red-100 p-4 text-lg"
+                    >
+                      Something went wrong, Please try again later!
+                    </div>
+                  </div>
                   <div class="button md:col-span-2 my-4 md:my-0">
                     <button
                       class="contact-button buttons"
                       type="button"
                       onclick="submitForm()"
+                      value=""
                     >
                       Send message!
                     </button>
