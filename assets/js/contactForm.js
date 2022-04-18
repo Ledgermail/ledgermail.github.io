@@ -28,7 +28,7 @@ function submitForm() {
         error.classList.add("hidden");
         success.classList.add("hidden");
 
-        contactButton.disabled = true;
+        // contactButton.disabled = true;
         contactButton.innerText = "sending Message...";
         if (
           data.firstName.length === 0 ||
@@ -40,7 +40,7 @@ function submitForm() {
           message.classList.add("text-red-700");
           invalid.classList.toggle("hidden");
           contactButton.disabled = false;
-          contactButton.innerText = " Send message!";
+          contactButton.innerText = "Send message!";
           return;
         }
 
@@ -69,7 +69,7 @@ function submitForm() {
           })
           .then(() => {
             contactButton.disabled = false;
-            contactButton.innerText = " Send message!";
+            contactButton.innerText = "Send message!";
           });
       });
   });
