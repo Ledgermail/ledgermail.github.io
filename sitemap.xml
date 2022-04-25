@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://ledgermail.io/</loc>
+  <lastmod>2022-04-18T05:52:41+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://ledgermail.io/about-us.html</loc>
+  <lastmod>2022-04-18T05:52:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://ledgermail.io/our-ecosystem.html</loc>
+  <lastmod>2022-04-18T05:52:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://ledgermail.io/index.html</loc>
+  <lastmod>2022-04-18T05:52:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://ledgermail.io/contact-us.html</loc>
+  <lastmod>2022-04-18T05:52:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://ledgermail.io/public/faq.html</loc>
+  <lastmod>2022-04-18T05:52:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://ledgermail.io/public/privacy-policy.html</loc>
+  <lastmod>2022-04-18T05:52:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://ledgermail.io/public/terms-of-use.html</loc>
+  <lastmod>2022-04-18T05:52:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
