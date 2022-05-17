@@ -6,12 +6,14 @@ $(document).ready(async function () {
         showQuestions(data[key]);
       });
     });
-  // await $(".faqs-container .faq-singular:first-child")
-  //   .addClass("active")
-  //   .children(".faq-answer")
-  //   .slideDown(); //Remove this line if you dont want the first item to be opened automatically.
+  var questionNumber = window.location.search.split("=").pop();
+  if (!isNaN(questionNumber))
+    await $(".faqs-container .faq-singular:nth-child(" + questionNumber + ")")
+      .addClass("active")
+      .children(".faq-answer")
+      .slideDown(); //Remove this line if you dont want the first item to be opened automatically.
   await $(".faq-question").bind("click", function () {
-    console.log($(this));
+    console.log($(this).parent().hasClass("active"));
     if ($(this).parent().hasClass("active")) {
       $(this).next().slideUp();
       $(this).parent().removeClass("active");
