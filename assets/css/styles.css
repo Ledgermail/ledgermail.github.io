@@ -4086,6 +4086,10 @@ textarea.form-control.is-invalid{
   grid-column: span 10 / span 10;
 }
 
+.col-span-2{
+  grid-column: span 2 / span 2;
+}
+
 .col-span-4{
   grid-column: span 4 / span 4;
 }
@@ -4367,6 +4371,11 @@ textarea.form-control.is-invalid{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-red-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
+}
+
 .bg-orange-400{
   --tw-bg-opacity: 1;
   background-color: rgb(251 146 60 / var(--tw-bg-opacity));
@@ -4390,11 +4399,6 @@ textarea.form-control.is-invalid{
   padding: 1rem;
 }
 
-.py-16{
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -4408,6 +4412,11 @@ textarea.form-control.is-invalid{
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .py-4{
@@ -4529,6 +4538,21 @@ textarea.form-control.is-invalid{
 .text-gray-500{
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.text-red-700{
+  --tw-text-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-text-opacity));
+}
+
+.text-green-800{
+  --tw-text-opacity: 1;
+  color: rgb(22 101 52 / var(--tw-text-opacity));
+}
+
+.text-red-800{
+  --tw-text-opacity: 1;
+  color: rgb(153 27 27 / var(--tw-text-opacity));
 }
 
 .shadow-md{
