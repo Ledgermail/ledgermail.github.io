@@ -21,8 +21,8 @@ $(document).ready(async function () {
       .addClass("active")
       .children(".faq-answer")
       .slideDown(); //Remove this line if you dont want the first item to be opened automatically.
+  } else {
   }
-
   await $(".faq-question").bind("click", function () {
     if ($(this).parent().hasClass("active")) {
       $(this).next().slideUp();
