@@ -7,22 +7,23 @@ $(document).ready(async function () {
       });
     });
   var questionNumber = window.location.search.split("=").pop();
-  if (!isNaN(questionNumber)) {
+  if (questionNumber) {
     $("html, body").animate(
       {
-        scrollTop: $(".faq-singular:nth-child(" + questionNumber + ")").offset()
-          .top-10,
+        scrollTop:
+          $(".faq-singular:nth-child(" + questionNumber + ")").offset().top -
+          10,
       },
       1500
     );
-// await $('body').scrollTo('#target')
+    // await $('body').scrollTo('#target')
     await $(".faqs-container .faq-singular:nth-child(" + questionNumber + ")")
       .addClass("active")
       .children(".faq-answer")
       .slideDown(); //Remove this line if you dont want the first item to be opened automatically.
   }
+
   await $(".faq-question").bind("click", function () {
-    console.log($(this).parent().hasClass("active"));
     if ($(this).parent().hasClass("active")) {
       $(this).next().slideUp();
       $(this).parent().removeClass("active");
