@@ -23,6 +23,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/steps-to-signup-popup.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
@@ -130,6 +131,21 @@
       </header>
       <!-- nav-end -->
 
+      <!-- Steps to signup [popup] -->
+      <div class="video-popup">
+        <div class="popup-bg"></div>
+        <div class="popup-content">
+          <!--         <p class="popup-title">Youtube</p> -->
+          <!-- src="https://www.youtube.com/watch?v=V3yNtUG-aVU&feature=emb_title" -->
+          <iframe
+            src="//www.youtube.com/embed/V3yNtUG-aVU?enablejsapi=1"
+            class="video"
+          ></iframe>
+          <!-- <button class="home-button close-btn">close</button> -->
+        </div>
+      </div>
+      <!-- Steps to signup [popup] -->
+
       <!-- body -->
       <main class="contents-width">
         <!--header-section  -->
@@ -165,9 +181,11 @@
                         GET FREE ACCESS
                       </button>
                     </div>
-                    <!--                     <div>
-                      <button class="home-button">STEPS TO SIGNUP</button>
-                    </div> -->
+                    <div>
+                      <button id="signup-steps" class="home-button">
+                        STEPS TO SIGNUP
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1700,5 +1718,6 @@
     <script src="/assets/js/corouselItemIcon.js"></script>
     <script src="/assets/js/enterpriseSwitch.js"></script>
     <script src="/assets/js/swiperParameters.js"></script>
+    <script src="/assets/js/steps-to-signup-popup.js"></script>
   </body>
 </html>
