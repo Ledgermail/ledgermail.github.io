@@ -1,17 +1,29 @@
 $(document).ready(async function () {
-  await fetch("./assets/js/faqData.json")
+  await fetch("/assets/js/faqData.json")
     .then((response) => response.json())
     .then((data) => {
       Object.keys(data).map((key) => {
         showQuestions(data[key]);
       });
     });
-  // await $(".faqs-container .faq-singular:first-child")
-  //   .addClass("active")
-  //   .children(".faq-answer")
-  //   .slideDown(); //Remove this line if you dont want the first item to be opened automatically.
+  var questionNumber = window.location.search.split("=").pop();
+  if (questionNumber) {
+    $("html, body").animate(
+      {
+        scrollTop:
+          $(".faq-singular:nth-child(" + questionNumber + ")").offset().top -
+          10,
+      },
+      1500
+    );
+    // await $('body').scrollTo('#target')
+    await $(".faqs-container .faq-singular:nth-child(" + questionNumber + ")")
+      .addClass("active")
+      .children(".faq-answer")
+      .slideDown(); //Remove this line if you dont want the first item to be opened automatically.
+  } else {
+  }
   await $(".faq-question").bind("click", function () {
-    console.log($(this));
     if ($(this).parent().hasClass("active")) {
       $(this).next().slideUp();
       $(this).parent().removeClass("active");
@@ -42,4 +54,3 @@ function showQuestions(data) {
   item.classList.add("faq-singular");
   container.appendChild(item);
 }
-

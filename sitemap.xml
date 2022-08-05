@@ -8,13 +8,43 @@
 
 
 <url>
-  <loc>https://ledgermail.io/</loc>
-  <lastmod>2018-11-22T09:35:28+00:00</lastmod>
+  <loc>http://ledgermail.io/</loc>
+  <lastmod>2022-04-18T05:52:41+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://ledgermail.io/index.html</loc>
-  <lastmod>2018-11-22T09:35:28+00:00</lastmod>
+  <loc>http://ledgermail.io/about-us.html</loc>
+  <lastmod>2022-04-18T05:52:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://ledgermail.io/our-ecosystem.html</loc>
+  <lastmod>2022-04-18T05:52:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://ledgermail.io/index.html</loc>
+  <lastmod>2022-04-18T05:52:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://ledgermail.io/contact-us.html</loc>
+  <lastmod>2022-04-18T05:52:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://ledgermail.io/public/faq.html</loc>
+  <lastmod>2022-04-18T05:52:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://ledgermail.io/public/privacy-policy.html</loc>
+  <lastmod>2022-04-18T05:52:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://ledgermail.io/public/terms-of-use.html</loc>
+  <lastmod>2022-04-18T05:52:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 

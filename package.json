@@ -1,0 +1,31 @@
+{
+  "name": "ledgermail.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "npx tailwindcss -i ./src/raw-styles.css -o ./assets/css/styles.css --watch "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ledgermail/ledgermail.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ledgermail/ledgermail.github.io/issues"
+  },
+  "homepage": "https://github.com/Ledgermail/ledgermail.github.io#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.23",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "nodemailer": "^6.7.3",
+    "tw-elements": "^1.0.0-alpha11"
+  }
+}
