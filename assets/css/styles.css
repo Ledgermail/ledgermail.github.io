@@ -6448,6 +6448,10 @@ textarea.form-control.is-invalid{
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
+.test{
+  margin-bottom: 1rem;
+}
+
 .hover\:bg-blue-700:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
