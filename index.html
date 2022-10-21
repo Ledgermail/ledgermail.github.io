@@ -9,6 +9,19 @@
       src="https://www.googletagmanager.com/gtag/js?id=G-4BGMDBHW9H"
     ></script>
     <script>
+
+        function buttonHandler() {
+          var t = document.getElementById("messageButton");
+          if(t.value=="YES"){
+            document.getElementById("chatMessage").style.display = "none";
+            t.value="NO";
+          }
+          else if(t.value=="NO"){
+            document.getElementById("chatMessage").style.display = "block";
+            t.value="YES";
+          }
+          console.log(t.value);
+        }   
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
@@ -48,13 +61,21 @@
     />
     <meta
       name="description"
-      content="LedgerMail- World's first Blockchain Email Solution on mission pf protecting Digital Rights of email users. provides highest level of Email Security, Privacy, Encryption and Prevention from email attacks with 4th generation Blockchain"
+      content="LedgerMail- World's first Blockchain Email Solution on mission of protecting Digital Rights of email users. provides highest level of Email Security, Privacy, Encryption and Prevention from email attacks with 4th generation Blockchain"
     />
     <link rel="icon" type="image/x-icon" href="/assets/img/favicon.png" />
     <title>Ledgermail - Web3 Email</title>
+    <style>
+    .collapse-icon-d, #chatMessage { display: none;}
+    /* :root{
+      --df-messenger-button-titlebar-color: white !important;
+    }
+      */
+    </style>
+
   </head>
   <body class="font-custom">
-    <div>
+    <div>  
       <!-- nav -->
       <header class="header-section text-white h-24 bg-white">
         <nav class="nav-container">
@@ -685,7 +706,7 @@
                           keyboard_arrow_right
                         </i>
                         <i
-                          class="collapseOne material-icons collapse-icon"
+                          class="collapseOne material-icons collapse-icon collapse-icon-d"
                           aria-hidden="true"
                         >
                           remove
@@ -730,7 +751,7 @@
                           keyboard_arrow_right
                         </i>
                         <i
-                          class="collapseTwo material-icons collapse-icon"
+                          class="collapseTwo material-icons collapse-icon collapse-icon-d"
                           aria-hidden="true"
                         >
                           remove
@@ -774,7 +795,7 @@
                           keyboard_arrow_right
                         </i>
                         <i
-                          class="collapseThree material-icons collapse-icon"
+                          class="collapseThree material-icons collapse-icon collapse-icon-d"
                           aria-hidden="true"
                         >
                           remove
@@ -818,7 +839,7 @@
                           keyboard_arrow_right
                         </i>
                         <i
-                          class="collapseFour material-icons collapse-icon"
+                          class="collapseFour material-icons collapse-icon collapse-icon-d"
                           aria-hidden="true"
                         >
                           remove
@@ -894,7 +915,7 @@
                           keyboard_arrow_right
                         </i>
                         <i
-                          class="collapseSix material-icons collapse-icon"
+                          class="collapseSix material-icons collapse-icon collapse-icon-d"
                           aria-hidden="true"
                         >
                           remove
@@ -938,7 +959,7 @@
                           keyboard_arrow_right
                         </i>
                         <i
-                          class="collapseSeven material-icons collapse-icon"
+                          class="collapseSeven material-icons collapse-icon collapse-icon-d"
                           aria-hidden="true"
                         >
                           remove
@@ -984,7 +1005,7 @@
                           keyboard_arrow_right
                         </i>
                         <i
-                          class="collapseEight material-icons collapse-icon"
+                          class="collapseEight material-icons collapse-icon collapse-icon-d"
                           aria-hidden="true"
                         >
                           remove
@@ -1028,7 +1049,7 @@
                           keyboard_arrow_right
                         </i>
                         <i
-                          class="collapseNine material-icons collapse-icon"
+                          class="collapseNine material-icons collapse-icon collapse-icon-d"
                           aria-hidden="true"
                         >
                           remove
@@ -1160,7 +1181,7 @@
                           keyboard_arrow_right
                         </i>
                         <i
-                          class="collapseTen material-icons collapse-icon"
+                          class="collapseTen material-icons collapse-icon collapse-icon-d"
                           aria-hidden="true"
                         >
                           remove
@@ -1219,7 +1240,7 @@
                           keyboard_arrow_right
                         </i>
                         <i
-                          class="collapseEleven material-icons collapse-icon"
+                          class="collapseEleven material-icons collapse-icon collapse-icon-d"
                           aria-hidden="true"
                         >
                           remove
@@ -1282,7 +1303,7 @@
                           keyboard_arrow_right
                         </i>
                         <i
-                          class="collapseTwelve material-icons collapse-icon"
+                          class="collapseTwelve material-icons collapse-icon collapse-icon-d"
                           aria-hidden="true"
                         >
                           remove
@@ -1342,7 +1363,7 @@
                           keyboard_arrow_right
                         </i>
                         <i
-                          class="collapseThirteen material-icons collapse-icon"
+                          class="collapseThirteen material-icons collapse-icon collapse-icon-d"
                           aria-hidden="true"
                         >
                           remove
@@ -1726,11 +1747,20 @@
       </footer>
       <!-- footer-end -->
     </div>
-    <script src="/assets/js/nav.js"></script>
-    <script src="assets/js/stats.js"></script>
-    <script src="/assets/js/corouselItemIcon.js"></script>
-    <script src="/assets/js/enterpriseSwitch.js"></script>
-    <script src="/assets/js/swiperParameters.js"></script>
-    <script src="/assets/js/steps-to-signup-popup.js"></script>
+    <df-messenger id="chatbot"
+    intent="WELCOME"
+    chat-title="LedgerChat"
+    chat-icon= './assets/img/favicon.png'
+    agent-id="55d8c999-745b-42d3-9e74-16995375a10a"
+    language-code="en"
+  ></df-messenger>
+  
+  <script src="/assets/js/nav.js"></script>
+  <script src="assets/js/stats.js"></script>
+  <script src="/assets/js/corouselItemIcon.js"></script>
+  <script src="/assets/js/enterpriseSwitch.js"></script>
+  <script src="/assets/js/swiperParameters.js"></script>
+  <script src="/assets/js/steps-to-signup-popup.js"></script>
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
   </body>
 </html>
