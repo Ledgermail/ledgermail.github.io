@@ -44,8 +44,7 @@ function submitForm() {
           return;
         }
 
-        const url =
-          "https://dtblqcmpw8s6x.cloudfront.net/api/admin/website-contact";
+        const url = "https://mail.ledgermail.io/api/admin/website-contact";
 
         fetch(url, {
           method: "POST",
