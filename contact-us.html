@@ -3,6 +3,11 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Preconnect to Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+        <!-- Load Material Icons stylesheet -->
         <link
             href="https://fonts.googleapis.com/icon?family=Material+Icons"
             rel="stylesheet"
@@ -11,10 +16,19 @@
         <link
             rel="stylesheet"
             href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+            media="print"
+            onload="this.media='all'"
         />
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
         <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+        ></script>
+        <script
+            async
+            src="https://unpkg.com/swiper@8/swiper-bundle.min.js"
+        ></script>
+        <script
+            async
             src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
             integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
             crossorigin="anonymous"
@@ -23,9 +37,14 @@
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+            media="print"
+            onload="this.media='all'"
         />
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+        <script async src="https://cdn.tailwindcss.com"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"
+            defer
+        ></script>
         <meta
             name="description"
             content="LedgerMail - World's first Decentralized Email Solution on a mission of protecting Digital Rights of email users in a Decentralized way! Highest level of Email Security, Privacy, Encryption and Prevention from email attacks with 4th generation Blockchain."
@@ -226,6 +245,7 @@
                                     <a
                                         href="https://www.youtube.com/channel/UCU4YmhP_A2V76rnafyGKZqA"
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                     >
                                         <i class="fa-brands fa-youtube"></i>
                                     </a>
@@ -430,6 +450,7 @@
                             <a
                                 href="https://www.youtube.com/channel/UCU4YmhP_A2V76rnafyGKZqA"
                                 target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 <i class="fa-brands fa-youtube"></i>
                             </a>
@@ -622,9 +643,16 @@
             <!-- footer-end -->
         </div>
 
-        <script src="/assets/js/nav.js"></script>
-        <script src="/assets/js/contactUsAnimations.js"></script>
-        <script src="/assets/js/contactForm.js"></script>
-        <script src="https://www.google.com/recaptcha/api.js?render=6LeHBSUfAAAAAAt-BKDFMUsxpsjoaE6oM4KKAsRN"></script>
+        <script defer src="/assets/js/nav.js"></script>
+        <script defer src="/assets/js/contactUsAnimations.js"></script>
+        <script defer src="/assets/js/contactForm.js"></script>
+        <!-- Preconnect to Google domain -->
+        <link rel="preconnect" href="https://www.google.com" crossorigin />
+
+        <!-- Load reCAPTCHA script asynchronously -->
+        <script
+            async
+            src="https://www.google.com/recaptcha/api.js?render=6LeHBSUfAAAAAAt-BKDFMUsxpsjoaE6oM4KKAsRN"
+        ></script>
     </body>
 </html>
