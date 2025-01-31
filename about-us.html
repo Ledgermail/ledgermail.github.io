@@ -4,16 +4,22 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <!-- Preconnect to Google Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<!-- Load Material Icons stylesheet -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" /> 
   <link rel="stylesheet" href="/assets/css/styles.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" media="print" onload="this.media='all'"/>
+  <script async src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
     integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" media="print" onload="this.media='all'"/>
+  <script async src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js" defer></script>
   <meta name="description"
     content="LedgerMail - World's first Decentralized Email Solution on a mission of protecting Digital Rights of email users in a Decentralized way! Highest level of Email Security, Privacy, Encryption and Prevention from email attacks with 4th generation Blockchain." />
   <meta name="description"
@@ -44,7 +50,15 @@
               <a class="nav-item" href="/">Home</a>
             </li>
             <li>
-              <a class="nav-item text-active" href="./about-us.html">About</a>
+                <a
+                    class="nav-item feature-nav"
+                    id="featureNav"
+                    href="./features.html"
+                    >Features</a
+                >
+            </li>
+            <li>
+              <a class="nav-item text-active" href="./about-us.html" style="display: none">About</a>
             </li>
             <li>
               <a class="nav-item" href="./our-ecosystem.html">Our Ecosystem</a>
@@ -328,7 +342,7 @@
               </a>
             </div>
           </div>
-          <div class="card team-card">
+          <!-- <div class="card team-card">
             <div class="flex justify-center">
               <img class="card-image team-img" src="/assets/img/profile/sujit.jpg" alt="" />
             </div>
@@ -372,7 +386,7 @@
                 <i class="fa-brands fa-linkedin-in"></i>
               </a>
             </div>
-          </div>
+          </div> -->
           <!-- <div class="card team-card">
             <div class="flex justify-center">
               <img class="card-image team-img" src="/assets/img/profile/avinash.jpg" alt="" />
@@ -402,6 +416,39 @@
           </div> -->
 
         </div>
+
+        <div class="grid md:grid-cols-2 xl:gap-16 md:gap-16 gap-4 xl:px-16 md:px-8 px-4 py-16">
+          <div class="card team-card">
+            <div class="flex justify-center">
+              <img class="card-image team-img" src="/assets/img/profile/sujit.jpg" alt="" />
+            </div>
+            <div class="description border-b pb-6">
+              <div class="team-person-name">Sujit Varghese</div>
+              <div class="team-person-designation">General Manager</div>
+            </div>
+            <div class="team-person-social">
+              <a href="#"></a>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          </div>
+          <div class="card team-card">
+            <div class="flex justify-center">
+              <img class="card-image team-img" src="/assets/img/profile/santhosh.jpg" alt="" />
+            </div>
+            <div class="description border-b pb-6">
+              <div class="team-person-name">Santhosh Thomas</div>
+              <div class="team-person-designation">
+                Senior Blockchain Architect
+              </div>
+            </div>
+            <div class="team-person-social">
+              <a href="https://www.linkedin.com/in/santhoshkthomas/">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
         <div class="section-title animated fadeInUp uppercase mt-16">
           Our Advisor
         </div>
@@ -453,7 +500,7 @@
             <a href="https://www.facebook.com/ledgermail.io" target="_blank">
               <i class="fa-brands fa-facebook-f"></i>
             </a>
-            <a href="https://www.youtube.com/channel/UCU4YmhP_A2V76rnafyGKZqA" target="_blank">
+            <a href="https://www.youtube.com/channel/UCU4YmhP_A2V76rnafyGKZqA" target="_blank" rel="noopener noreferrer">
               <i class="fa-brands fa-youtube"></i>
             </a>
             <a href="https://www.instagram.com/ledgermail_official/" target="_blank">
@@ -575,10 +622,10 @@
     <!-- footer-end -->
   </div>
   <script></script>
-  <script src="/assets/js/nav.js"></script>
-  <script src="/assets/js/corouselItemIcon.js"></script>
-  <script src="/assets/js/swiperParameters.js"></script>
-  <script src="/assets/js/aboutAnimations.js"></script>
+  <script defer src="/assets/js/nav.js"></script>
+  <script defer src="/assets/js/corouselItemIcon.js"></script>
+  <script defer src="/assets/js/swiperParameters.js"></script>
+  <script defer src="/assets/js/aboutAnimations.js"></script>
 </body>
 
 </html>
